@@ -182,10 +182,6 @@ _Note from carot: RISC-V does not have flags (NZCV/arithmetic flags as they're c
 
 ## The Math Section
 
-<p align="center">
-  <img width="460" height="300" src="https://around.uoregon.edu/sites/around2.uoregon.edu/files/field/image/math_grant_shutterstock.jpg">
-</p>
-
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
 ### Binary
