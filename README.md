@@ -171,6 +171,8 @@ Why would we ever use this? Great question! Let me let you in on a secret - ever
 Let’s talk through these logical operations a bit.
 
 #### AND
+![Screen Shot 2022-05-17 at 10 53 15 AM](https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png)
+
 And is always false unless both inputs are true.
 
 | In | Out |
@@ -181,6 +183,8 @@ And is always false unless both inputs are true.
 | 11 |  1  |
 
 #### OR
+![Screen Shot 2022-05-17 at 10 53 20 AM](https://user-images.githubusercontent.com/621904/168842251-b04cdc4d-6c3e-458b-8968-c1eef1fc2b0c.png)
+
 OR is always false unless one of the inputs is true.
 
 | In | Out |
@@ -191,6 +195,8 @@ OR is always false unless one of the inputs is true.
 | 11 |  1  |
 
 #### NOT
+![Screen Shot 2022-05-17 at 10 53 29 AM](https://user-images.githubusercontent.com/621904/168842309-66cc8fe3-d4e5-41e0-9ea1-8bc4e2a9bd21.png)
+
 NOT only requires 1 input, and it flips the input.
 
 | In | Out |
@@ -199,6 +205,8 @@ NOT only requires 1 input, and it flips the input.
 | 1  |  0  |
 
 #### NAND
+![Screen Shot 2022-05-17 at 10 53 35 AM](https://user-images.githubusercontent.com/621904/168842382-d854d2f1-c20d-46fc-a302-4972343305ca.png)
+
 NAND is always true unless both inputs are true.
 
 | In | Out |
@@ -209,6 +217,8 @@ NAND is always true unless both inputs are true.
 | 11 |  0  |
 
 #### NOR
+![Screen Shot 2022-05-17 at 10 53 25 AM](https://user-images.githubusercontent.com/621904/168842428-dd63a889-4774-4f7b-845e-3ae43c7c9b75.png)
+
 NOR is always false unless both inputs are false.
 
 | In | Out |
@@ -219,6 +229,8 @@ NOR is always false unless both inputs are false.
 | 11 |  0  |
 
 #### XOR
+![Screen Shot 2022-05-17 at 10 53 38 AM](https://user-images.githubusercontent.com/621904/168842465-f8251a20-8962-4221-9146-93e4e6b01908.png)
+
 XOR is always false unless the inputs are different.
 
 | In | Out |
@@ -229,6 +241,8 @@ XOR is always false unless the inputs are different.
 | 11 |  0  |
 
 #### XNOR
+![xnor](https://user-images.githubusercontent.com/621904/168848632-9e62e088-3dbf-4007-a435-fe34e6fb4c8b.png)
+
 XNOR is always false unless the inputs are the same.
 
 | In | Out |
