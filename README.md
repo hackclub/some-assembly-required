@@ -96,11 +96,8 @@ Let’s think about our processor as a warehouse, where we are packing boxes. El
 
 Our box is getting sent to the filling station! It travels down the conveyor belt and ends up at a machine. In CPU terms, we are at a transistor. Transistors are where calculations happen, and they consist of 3 things: an input (the current), an output (the result of the current), and a bridge (something that checks the current versus a stored electrical signal, and either passes the current on or not). So for our box metaphor, the input would be our box, the bridge would check if it’s already filled, and if not, it would fill it. Our output would be the filled box. Then it would travel on the next conveyor belt, or bus, to the next station it needs - maybe to be taped up?
 
-_Note: fill out pipelining_
-In order to send out our boxes faster, we can add more boxes to our conveyor belts. In CPU terms, this is known as pipelining.
-
-_Note: processor ticks_
-Every processor tick, an instruction is read. The CPU reads the area of the system that contains the next instruction, finds the first X bits, and checks their voltage. Then it knows what the command is. Next, if necessary, it reads for arguments.
+### Clock ticks
+Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
 
 ### Input and Output
 _Note: mention how data gets into the computer and how it comes back out_
@@ -128,10 +125,10 @@ A nice thing about registers is that processors have a few of them, each one bei
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we still only have a limited amount of space in our registers. The actual size depends from processor to processor, but you can think in the range of 256 bytes for general purpose registers in modern processors. Memory, on the other hand, can easily hold 4GB of memory - over 15 million times the size! Since we’re processing so much data, we very quickly run out of space in our registers. So things that may have to sit for a second while we calculate other things, we throw into memory.
 
-### Program counter
+#### Program counter
 The program counter is a special register that we can’t access directly, but it points to the memory address (or mailbox number, in our previous metaphor!) of the current line of the current program we’re executing. For example, let’s say we are executing an assembly program. We have an instruction that’s loading a number into a register. Once that instruction finishes running, the program counter increments to the memory address of the next line of the program.
 
-### Stack pointer
+#### Stack pointer
 Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
 The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
@@ -140,10 +137,17 @@ So now that we know about the stack, the stack pointer is a special register the
 
 Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
-### Flags
+#### Flags
 Potentially notes about flags: check if all CPUs have this
 
 _Note from carot: RISC-V does not have flags (NZCV/arithmetic flags as they're called). Off the top of my head, I can't think of any other architectures that DONT have flags._
+
+## The Math Section
+
+If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
+
+### Binary
+_Note: fill this in_
 
 ### Boolean logic
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
@@ -226,12 +230,12 @@ Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every sin
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
-### Binary
-_Note: fill this in_
-
 ### Hexadecimal
+_Note: fill this out_
+
 All numbers in assembly language are represented by hexadecimal
 Our usual numbers are base 10
+
 When you see 125 as a number, you can think of that as:
 (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
 100 + 20 + 5 = 125
@@ -240,9 +244,6 @@ When you see 7D, you can think of that as:
 D = 13
 (7 * 16^1) + 13
 112 + 13 = 125
-- All numbers are in hex format, represented by the $ prefix
-- Any numbers that have the additional prefix of # will mean a base 10 number instead of a memory address
-- Any numbers that have % are base 2
 
 ## Assembly language
 There are many different assembly languages, depending on the processor you want to talk to. X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data. 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today. Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
@@ -259,6 +260,7 @@ In our examples, each line we write in assembly maps to a single instruction to 
 
 A computer can only process one byte at a time.
 
+_Note: potentially fill this out_
 Note: Can multi-core processors process more than one byte at a time?
 I’ll add some notes here for a brief overview:
 We start by asking: Can 1 core execute more than 1 instruction at a time? Yes! How?
