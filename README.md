@@ -96,7 +96,7 @@ You may be wondering what machine code actually looks like. If you are, you’re
 ADD x3, x8, x9
 ```
 
-In machine code, this may end up looking like binary, or base 2:
+In machine code, this may end up looking like binary, or base 2 (we will talk about what binary is a little bit later):
 
 ```
 00000001 00000011 00001000 00001001
@@ -142,21 +142,21 @@ You may have heard the term “memory” thrown around when talking about comput
   <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
 </p>
 
-Accessing your RAM is kind of like accessing a large mailbox at the post office. Each piece of data has an “address”, or a mailbox number, where you can grab the contents out of it. You can clear out those contents, and then store new pieces of mail there.
+Accessing your RAM is kind of like going to the post office. Each piece of data (mail, in our metaphor) has an "address" (mailbox number) where you can view the contents (mail). You can also clear out the contents (take the mail out of the box), and then store new pieces of data (get new pieces of mail).
 
-Our pieces of mail in the CPU are bytes. Bytes get stored in RAM in the form of electricity. Because it’s stored as electricity, when your computer turns off and no more electricity is traveling to it, all of the things stored in your RAM get cleared out! It’s like if every night when your post office closed, all of the mail was thrown out. Eep! That’s why it’s short term memory - let’s make sure to store important things in the hard drive or somewhere else, lest it be thrown away!
+Our pieces of mail are actually just electrical currents. Because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when your post office closed, all of the mail was thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away!
 
-You have a good amount of space at the post office to store your things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for quicker smaller storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
+Our RAM, or post office, has quite a bit of room to store our things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster (but smaller) storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
 
 <p align="center">
   <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
 </p>
 
-Registers are where the CPU can store numbers so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
+Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
 
 A nice thing about registers is that processors have a few of them, each one being available for different purposes. Some of them are directly accessible by you for setting values and reading values through assembly instructions, but some are used internally and can’t be directly accessed.
 
-Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we still only have a limited amount of space in our registers. The actual size depends from processor to processor, but you can think in the range of 256 bytes for general purpose registers in modern processors. Memory, on the other hand, can easily hold 4GB of memory - over 15 million times the size! Since we’re processing so much data, we very quickly run out of space in our registers. So things that may have to sit for a second while we calculate other things, we throw into memory.
+Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory.
 
 #### Program counter
 The program counter is a special register that we can’t access directly, but it points to the memory address (or mailbox number, in our previous metaphor!) of the current line of the current program we’re executing. For example, let’s say we are executing an assembly program. We have an instruction that’s loading a number into a register. Once that instruction finishes running, the program counter increments to the memory address of the next line of the program.
