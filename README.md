@@ -1,5 +1,5 @@
 # Assembly Language
-## Talking to the CPU
+### Talking to the CPU
 
 Resources:
 6502
@@ -31,7 +31,7 @@ I hope this guide helps you to demystify one of the lower layers, and hopefully 
 
 In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary except as an academic exercise. That being said, I think that building an understanding of how your computer works at a fundamental level can be eye opening and inspiring for all of the other tasks you perform on your computer.
 
-### The CPU
+## The CPU
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, known as the CPU or the processor, which effectively acts as the brain of the computer. Computers contain other processing units (like the graphics card!) that are responsible for processing more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can read values, set values, and perform simple math calculations like addition and subtraction. You hand it numbers, and it’s put to work crunching the data however you’d like.
 
 One way we can communicate directly with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. An abstraction means that it’s a layer above some other layer that makes that thing easier to do.
@@ -56,7 +56,7 @@ F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4
 
 So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
 
-```
+```assembly_x86
 # Written in ARM Cortex-A Assembly
 LD x8, 24 # Load the number stored in memory address 24 into register 8
 LD x9, 48 # Load the number stored in memory address 48 into register 9
@@ -71,7 +71,7 @@ All programming languages are some level of abstraction above machine code, but 
 
 You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last ADD line to machine code.
 
-```
+```assembly_x86
 ADD x3, x8, x9
 ```
 
@@ -89,7 +89,7 @@ Which maps to:
 
 The decoder would see the first 1, and it would know that the first number it receives should map to an instruction, and instruction 1 is ADD. Next it knows it’s looking for the save destination, and that destination is register 3. Then it knows that the next 2 arguments are the registers that it needs to go retrieve data from, 8 and 9. It retrieves the data from there, adds them together, and saves that new value to register 3.
 
-#### Electricity and the physical world
+### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, binary exists as the inclusion and absence of electrical signals - 1 representing the presence of electricity, and 0 the lack of electricity.
 
 Let’s think about our processor as a warehouse, where we are packing boxes. Electrical signals representing one unit of data can be a single box. A box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
@@ -106,14 +106,14 @@ Every processor tick, an instruction is read. The CPU reads the area of the syst
 _Note: mention how data gets into the computer and how it comes back out_
 _Note: Memory-mapped I/O (MMIO) vs port-mapped I/O (PMIO)_
 
-#### Decoder
+### Decoder
 A decoder in a CPU is a specialized device that takes in an input, in the form of a byte, and decodes what it’s trying to do. These tasks are represented as our assembly instructions. So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
 
 How does the decoder know how to decode? It’s built physically into the chip itself, where the circuitry determines the instruction set.
 
 _Note: Look into microcode?_
 
-#### Registers
+### Registers
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
 Accessing your RAM is kind of like accessing a large mailbox at the post office. Each piece of data has an “address”, or a mailbox number, where you can grab the contents out of it. You can clear out those contents, and then store new pieces of mail there.
@@ -128,10 +128,10 @@ A nice thing about registers is that processors have a few of them, each one bei
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we still only have a limited amount of space in our registers. The actual size depends from processor to processor, but you can think in the range of 256 bytes for general purpose registers in modern processors. Memory, on the other hand, can easily hold 4GB of memory - over 15 million times the size! Since we’re processing so much data, we very quickly run out of space in our registers. So things that may have to sit for a second while we calculate other things, we throw into memory.
 
-#### Program counter
+### Program counter
 The program counter is a special register that we can’t access directly, but it points to the memory address (or mailbox number, in our previous metaphor!) of the current line of the current program we’re executing. For example, let’s say we are executing an assembly program. We have an instruction that’s loading a number into a register. Once that instruction finishes running, the program counter increments to the memory address of the next line of the program.
 
-#### Stack pointer
+### Stack pointer
 Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
 The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
@@ -140,12 +140,12 @@ So now that we know about the stack, the stack pointer is a special register the
 
 Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
-#### Flags
+### Flags
 Potentially notes about flags: check if all CPUs have this
 
 _Note from carot: RISC-V does not have flags (NZCV/arithmetic flags as they're called). Off the top of my head, I can't think of any other architectures that DONT have flags._
 
-#### Boolean logic
+### Boolean logic
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
 
 Since we represent data in the physical world with the inclusion or absence of electrical signals, we can use something called boolean logic to determine whether a “statement” is true or false. A statement here is just boolean values, and we pass them to operations we can use depending on our use case.
@@ -154,7 +154,7 @@ Why would we ever use this? Great question! Let me let you in on a secret - ever
 
 Let’s talk through these logical operations a bit.
 
-##### AND
+#### AND
 And is always false unless both inputs are true.
 
 | In | Out |
@@ -164,7 +164,7 @@ And is always false unless both inputs are true.
 | 01 |  0  |
 | 11 |  1  |
 
-##### OR
+#### OR
 OR is always false unless one of the inputs is true.
 
 | In | Out |
@@ -174,7 +174,7 @@ OR is always false unless one of the inputs is true.
 | 01 |  1  |
 | 11 |  1  |
 
-##### NOT
+#### NOT
 NOT only requires 1 input, and it flips the input.
 
 | In | Out |
@@ -182,7 +182,7 @@ NOT only requires 1 input, and it flips the input.
 | 0  |  1  |
 | 1  |  0  |
 
-##### NAND
+#### NAND
 NAND is always true unless both inputs are true.
 
 | In | Out |
@@ -192,7 +192,7 @@ NAND is always true unless both inputs are true.
 | 01 |  1  |
 | 11 |  0  |
 
-##### NOR
+#### NOR
 NOR is always false unless both inputs are false.
 
 | In | Out |
@@ -202,7 +202,7 @@ NOR is always false unless both inputs are false.
 | 01 |  0  |
 | 11 |  0  |
 
-##### XOR
+#### XOR
 XOR is always false unless the inputs are different.
 
 | In | Out |
@@ -212,7 +212,7 @@ XOR is always false unless the inputs are different.
 | 01 |  1  |
 | 11 |  0  |
 
-##### XNOR
+#### XNOR
 XNOR is always false unless the inputs are the same.
 
 | In | Out |
@@ -226,10 +226,10 @@ Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every sin
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
-#### Binary
+### Binary
 _Note: fill this in_
 
-#### Hexadecimal
+### Hexadecimal
 All numbers in assembly language are represented by hexadecimal
 Our usual numbers are base 10
 When you see 125 as a number, you can think of that as:
@@ -244,7 +244,7 @@ D = 13
 - Any numbers that have the additional prefix of # will mean a base 10 number instead of a memory address
 - Any numbers that have % are base 2
 
-### Assembly language
+## Assembly language
 There are many different assembly languages, depending on the processor you want to talk to. X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data. 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today. Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
 
 Each 1 or 0 in binary is called a bit (or binary digit). We can’t store much information in a single bit, so bytes were invented to be the standard data size that a computer works with. A byte is composed of 8 bits, because a single letter like “a” takes 1 byte, or 8 bits to represent. It’s not because “a” is complicated to represent, but instead it’s that we’re mapping some set of characters to numbers (in this case, we’re referring to A-Z, 0-9, and so on), and we want the number of possibilities that 8 bits affords us.
