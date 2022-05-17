@@ -57,13 +57,13 @@ F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4
 So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
 
 ```asm
-# Written in ARM Cortex-A Assembly
-LD x8, 24 # Load the number stored in memory address 24 into register 8
-LD x9, 48 # Load the number stored in memory address 48 into register 9
-ADD x3, x8, x9 # Add the contents of registers x8 and x9 and save that value into register 3
+; Written in ARM Cortex-A Assembly
+LD x8, 24 ; Load the number stored in memory address 24 into register 8
+LD x9, 48 ; Load the number stored in memory address 48 into register 9
+ADD x3, x8, x9 ; Add the contents of registers x8 and x9 and save that value into register 3
 ```
 
-_A note: everything after the # is comments for other humans, not code to execute, so the computer ignores it._
+_A note: everything after the ; are comments for other humans, not code to execute, so the computer ignores it._
 
 I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. We have to remember that this was one of the first human readable programming languages, so this was a big step up from just looking at numbers.
 
