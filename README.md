@@ -133,8 +133,6 @@ A decoder in a CPU is a specialized device that takes in an input, in the form o
 
 How does the decoder know how to decode? It’s built physically into the chip itself, where the circuitry determines the instruction set.
 
-_Note: Look into microcode?_
-
 ### Registers
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
