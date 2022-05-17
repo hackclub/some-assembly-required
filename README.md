@@ -44,9 +44,18 @@ I hope this guide helps you to demystify one of the lower layers, and hopefully 
 In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary except as an academic exercise. That being said, I think that building an understanding of how your computer works at a fundamental level can be eye opening and inspiring for all of the other tasks you perform on your computer.
 
 ## The CPU
+
+<p align="center">
+  <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
+</p>
+
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, known as the CPU or the processor, which effectively acts as the brain of the computer. Computers contain other processing units (like the graphics card!) that are responsible for processing more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can read values, set values, and perform simple math calculations like addition and subtraction. You hand it numbers, and it’s put to work crunching the data however you’d like.
 
 One way we can communicate directly with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. An abstraction means that it’s a layer above some other layer that makes that thing easier to do.
+
+<p align="center">
+  <img width="460" height="300" src="https://www.familyhandyman.com/wp-content/uploads/2019/05/08.jpg">
+</p>
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
 
@@ -104,6 +113,10 @@ The decoder would see the first 1, and it would know that the first number it re
 ### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, binary exists as the inclusion and absence of electrical signals - 1 representing the presence of electricity, and 0 the lack of electricity.
 
+<p align="center">
+  <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
+</p>
+
 Let’s think about our processor as a warehouse, where we are packing boxes. Electrical signals representing one unit of data can be a single box. A box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
 Our box is getting sent to the filling station! It travels down the conveyor belt and ends up at a machine. In CPU terms, we are at a transistor. Transistors are where calculations happen, and they consist of 3 things: an input (the current), an output (the result of the current), and a bridge (something that checks the current versus a stored electrical signal, and either passes the current on or not). So for our box metaphor, the input would be our box, the bridge would check if it’s already filled, and if not, it would fill it. Our output would be the filled box. Then it would travel on the next conveyor belt, or bus, to the next station it needs - maybe to be taped up?
@@ -125,11 +138,19 @@ _Note: Look into microcode?_
 ### Registers
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
+<p align="center">
+  <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
+</p>
+
 Accessing your RAM is kind of like accessing a large mailbox at the post office. Each piece of data has an “address”, or a mailbox number, where you can grab the contents out of it. You can clear out those contents, and then store new pieces of mail there.
 
 Our pieces of mail in the CPU are bytes. Bytes get stored in RAM in the form of electricity. Because it’s stored as electricity, when your computer turns off and no more electricity is traveling to it, all of the things stored in your RAM get cleared out! It’s like if every night when your post office closed, all of the mail was thrown out. Eep! That’s why it’s short term memory - let’s not store anything important in there, lest it be thrown away!
 
 You have a good amount of space at the post office to store your things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for quicker smaller storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
+
+<p align="center">
+  <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
+</p>
 
 Registers are where the CPU can store small amounts of data so that it can keep interacting with that data. The only data it can store is numbers. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
 
@@ -141,6 +162,11 @@ Now you may be asking yourself - why don’t we store everything in the register
 The program counter is a special register that we can’t access directly, but it points to the memory address (or mailbox number, in our previous metaphor!) of the current line of the current program we’re executing. For example, let’s say we are executing an assembly program. We have an instruction that’s loading a number into a register. Once that instruction finishes running, the program counter increments to the memory address of the next line of the program.
 
 #### Stack pointer
+
+<p align="center">
+  <img width="460" height="300" src="https://miro.medium.com/max/473/0*JiJbCGM41tSnn_va.png">
+</p>
+
 Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
 The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
@@ -156,9 +182,17 @@ _Note from carot: RISC-V does not have flags (NZCV/arithmetic flags as they're c
 
 ## The Math Section
 
+<p align="center">
+  <img width="460" height="300" src="https://around.uoregon.edu/sites/around2.uoregon.edu/files/field/image/math_grant_shutterstock.jpg">
+</p>
+
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
 ### Binary
+
+<p align="center">
+  <img width="460" height="300" src="https://images.easytechjunkie.com/green-lit-numbers.jpg">
+</p>
 _Note: fill this in_
 
 ### Boolean logic
