@@ -169,7 +169,12 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 <p align="center">
   <img width="460" height="300" src="https://images.easytechjunkie.com/green-lit-numbers.jpg">
 </p>
-_Note: fill this in_
+
+When people hear that I program for a living, they think that I stare at 0s and 1s all day. Luckily I do not, because that would give me a migraine. However, binary is important to talk about, because everything the computer is doing can be represented by these digits. These digits are referred to as binary, which is a number system that has 2 as its base.
+
+When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it.
+
+_Note: Finish filling this in_
 
 ### Boolean logic
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
