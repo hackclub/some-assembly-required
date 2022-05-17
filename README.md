@@ -39,7 +39,7 @@ Thanks for edits:
 
 Computers are simple. I know they don’t seem simple, but I promise you that at their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. Computers have been built up layer by layer over time, making them feel like an overwhelming black hole.
 
-I hope this guide helps you to demystify one of the lower layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
+I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
 
 In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary except as an academic exercise. That being said, I think that building an understanding of how your computer works at a fundamental level can be eye opening and inspiring for all of the other tasks you perform on your computer.
 
@@ -50,7 +50,7 @@ One way we can communicate directly with the CPU is by writing instructions for 
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
 
-In our case, assembly code is the human-readable layer above something called machine code. CPU’s can only understand numbers, so machine code is the numbers that the CPU reads to execute instructions. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
+In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 
 It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
@@ -87,26 +87,28 @@ You may be wondering what machine code actually looks like. If you are, you’re
 ADD x3, x8, x9
 ```
 
-In machine code, this may end up looking like:
+In machine code, this may end up looking like binary, or base 2:
 
 ```
 00000001 00000011 00001000 00001001
 ```
 
-Which maps to:
+Which, in base 10, is:
 
 ```
 1 3 8 9
 ```
 
-The decoder would see the first 1, and it would know that the first number it receives should map to an instruction, and instruction 1 is ADD. Next it knows it’s looking for the save destination, and that destination is register 3. Then it knows that the next 2 arguments are the registers that it needs to go retrieve data from, 8 and 9. It retrieves the data from there, adds them together, and saves that new value to register 3.
+The decoder would see the first 1, and it would know that the first number it receives should map to an instruction, and instruction 1 is ADD. It knows that the ADD instruction's first argument is the save destination, and it sees that the next byte has the value 3, so it knows that its save destination is register 3. Then it knows that the next 2 arguments are the registers that it needs to go retrieve data from, 8 and 9. It retrieves the data from there, adds them together, and saves that new value to register 3.
 
 ### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, binary exists as the inclusion and absence of electrical signals - 1 representing the presence of electricity, and 0 the lack of electricity.
 
 Let’s think about our processor as a warehouse, where we are packing boxes. Electrical signals representing one unit of data can be a single box. A box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
-Our box is getting sent to the filling station! It travels down the conveyor belt and ends up at a machine. In CPU terms, we are at a transistor. Transistors are where calculations happen, and they consist of 3 things: an input (the current), an output (the result of the current), and a bridge (something that checks the current versus a stored electrical signal, and either passes the current on or not). So for our box metaphor, the input would be our box, the bridge would check if it’s already filled, and if not, it would fill it. Our output would be the filled box. Then it would travel on the next conveyor belt, or bus, to the next station it needs - maybe to be taped up?
+Our box is getting sent to the filling station! It travels down the conveyor belt and ends up at a machine that fills the box. In CPU terms, this is our transistor. Transistors are where calculations happen, and they consist of 3 things: an input (the current), a bridge (something that checks the current versus a stored electrical signal, and either passes the current on or not), and an output (the result of what happened in the bridge, which would either be a current or a lack of current).
+
+So for our box metaphor, the input would be our box, the bridge would check if it’s already filled, and if not, it would fill it. Our output would be the filled box. Then the box would travel on the next conveyor belt, or bus, to the next station it needs - maybe to be taped up?
 
 ### Clock ticks
 Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
@@ -127,11 +129,11 @@ You may have heard the term “memory” thrown around when talking about comput
 
 Accessing your RAM is kind of like accessing a large mailbox at the post office. Each piece of data has an “address”, or a mailbox number, where you can grab the contents out of it. You can clear out those contents, and then store new pieces of mail there.
 
-Our pieces of mail in the CPU are bytes. Bytes get stored in RAM in the form of electricity. Because it’s stored as electricity, when your computer turns off and no more electricity is traveling to it, all of the things stored in your RAM get cleared out! It’s like if every night when your post office closed, all of the mail was thrown out. Eep! That’s why it’s short term memory - let’s not store anything important in there, lest it be thrown away!
+Our pieces of mail in the CPU are bytes. Bytes get stored in RAM in the form of electricity. Because it’s stored as electricity, when your computer turns off and no more electricity is traveling to it, all of the things stored in your RAM get cleared out! It’s like if every night when your post office closed, all of the mail was thrown out. Eep! That’s why it’s short term memory - let’s make sure to store important things in the hard drive or somewhere else, lest it be thrown away!
 
 You have a good amount of space at the post office to store your things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for quicker smaller storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
 
-Registers are where the CPU can store small amounts of data so that it can keep interacting with that data. The only data it can store is numbers. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
+Registers are where the CPU can store numbers so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
 
 A nice thing about registers is that processors have a few of them, each one being available for different purposes. Some of them are directly accessible by you for setting values and reading values through assembly instructions, but some are used internally and can’t be directly accessed.
 
@@ -143,9 +145,9 @@ The program counter is a special register that we can’t access directly, but i
 #### Stack pointer
 Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
-The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few values while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
 
-So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, we increment the pointer. Every time we pop off of the stack, we decrement it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
+So now we know about what the stack is. Our CPU has a special register called the stack pointer which keeps track of where the top of the stack is. So every time we push onto the stack, we increment the pointer. Every time we pop off of the stack, we decrement it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
 
 Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
