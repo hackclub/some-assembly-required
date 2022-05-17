@@ -56,7 +56,7 @@ F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4
 
 So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
 
-```assembly_x86
+```asm
 # Written in ARM Cortex-A Assembly
 LD x8, 24 # Load the number stored in memory address 24 into register 8
 LD x9, 48 # Load the number stored in memory address 48 into register 9
@@ -71,7 +71,7 @@ All programming languages are some level of abstraction above machine code, but 
 
 You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last ADD line to machine code.
 
-```assembly_x86
+```asm
 ADD x3, x8, x9
 ```
 
