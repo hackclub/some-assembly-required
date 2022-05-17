@@ -159,29 +159,9 @@ A nice thing about registers is that processors have a few of them, each one bei
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory.
 
 #### Program counter
-The program counter is a special register that we can’t access directly, but it stores the memory address of the current line of the current program we’re executing. For example, let’s say we are executing an assembly program. We have an instruction that’s loading a number into a register. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
-
-#### Stack pointer
-
-<p align="center">
-  <img width="460" height="300" src="https://miro.medium.com/max/473/0*JiJbCGM41tSnn_va.png">
-</p>
-
-Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
-
-The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few values while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
-
-So now we know about what the stack is. Our CPU has a special register called the stack pointer which keeps track of where the top of the stack is. So every time we push onto the stack, we increment the pointer. Every time we pop off of the stack, we decrement it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
-
-Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
-
-#### Flags
-Potentially notes about flags: check if all CPUs have this
-
-_Note from carot: RISC-V does not have flags (NZCV/arithmetic flags as they're called). Off the top of my head, I can't think of any other architectures that DONT have flags._
+The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which I wanted to mention specifically because I personally wondered how the computer keeps track of the code it's executing. This stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
 ## The Math Section
-
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
 ### Binary
