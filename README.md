@@ -2,6 +2,7 @@
 ### Talking to the CPU
 
 Resources:
+
 X86
 https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
 
