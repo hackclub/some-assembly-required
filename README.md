@@ -1,6 +1,14 @@
 # Assembly Language
 ### Talking to the CPU
 
+<p align="center">
+  <img width="460" height="300" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8688491/hiE5vMs.gif">
+</p>
+
+<p align="center">
+  <em>This guide is currently under construction. Read at your own risk of me explaining math wrong!</em>
+</p>
+
 Resources:
 
 X86
