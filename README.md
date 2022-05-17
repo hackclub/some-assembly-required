@@ -4,7 +4,7 @@
 Resources:
 
 X86
-https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
+- https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
 
 6502
 - https://skilldrick.github.io/easy6502/
