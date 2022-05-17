@@ -27,7 +27,7 @@ RISC-V
 - https://godbolt.org/
 
 Thanks for edits:
-@TheOneKevin, @exu3, @jakeboxer
+[@TheOneKevin](https://github.com/theonekevin), [@exu3](https://github.com/exu3), [@jakeboxer](https://github.com/jakeboxer)
 
 Computers are simple. I know they don’t seem simple, but I promise you that at their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. Computers have been built up layer by layer over time, making them feel like an overwhelming black hole.
 
