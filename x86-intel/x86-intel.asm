@@ -1,15 +1,23 @@
-; https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
+; nasm -f macho64 x86-intel.asm
+; ld x86-intel.o -o x86-intel -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie
+; ./x86-intel
 
-; Generate an object file using yasm
-; yasm -f macho64 x86-intel.asm
+; nasm -f macho64 x86-intel.asm && ld x86-intel.o -o x86-intel -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./x86-intel
 
-; Use the linker to link to the system's dylibs (dynamic libraries)
-; ld -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -o x86-intel x86-intel.o
+section .data
+    msg: db "Hello, world!", 10
+    .len: equ $ - msg
 
-  section  .data
-message: db    "Hello, World!", 0Ah, 00h
-  global  _main
-  section  .text
+section .text
+    global _main
+
 _main:
-  mov    rax, 0x02000004    ; system call for write
-  syscall                   ; execute syscall (exit)
+    mov     rax, 0x2000004 ; write
+    mov     rdi, 1 ; stdout
+    mov     rsi, msg
+    mov     rdx, msg.len
+    syscall
+
+    mov     rax, 0x2000001 ; exit
+    mov     rdi, 0
+    syscall
