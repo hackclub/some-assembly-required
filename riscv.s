@@ -1,6 +1,13 @@
-# Basics of RISC-V
-# To use this, paste this into a RISC-V interpreter, like:
+## Examples of basic RISC-V instructions being used
+
+# To run this, paste the file contents into a RISC-V interpreter, like:
 # https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/
+
+# Basic RISC-V tutorial:
+# https://medium.com/swlh/risc-v-assembly-for-beginners-387c6cd02c49
+
+# Instruction set:
+# https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 
 ## Saving numbers to registers
 # There's no way to directly add a value to a register
