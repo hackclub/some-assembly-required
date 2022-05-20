@@ -19,7 +19,7 @@ Print: ; print expects the calling location to be at top of stack
 
 DisplayArg:
   add rsp, 770 ; for some reason we have to add 770 to our stack pointer to get to where our argument is
-  mov rsi, rsp + 10  ; contents of memory address of stack pointer
+  mov rsi, rsp  ; contents of memory address of stack pointer
   mov rdx, 5    ; how long is the message?
 
   call Print
