@@ -26,7 +26,7 @@
 ; ./hello-world
 
 ; Run this line to run all the commands from above:
-; nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world.out -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
+; nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
 
 ;; Assembly Code
 
