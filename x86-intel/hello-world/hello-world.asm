@@ -37,7 +37,8 @@ section .data
     ; saves the ASCII number equivalent of this msg into memory, retrievable later by its label
     ; 10 is ASCII for a newline
     msg: db "Hello, world!", 10
-    ; Define an assemble-time constant (not stored by itself in the output file, but will appear as an immediate operand in insns that use it)
+
+    ; Define an assemble-time constant, which is calculated during compilation
     ; Calculate len = string length.  subtract the address of the start of the string from the current position ($)
     .len: equ $ - msg
 

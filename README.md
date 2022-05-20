@@ -13,6 +13,7 @@ Resources:
 
 X86
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
+- https://github.com/0xAX/asm
 
 6502
 - https://skilldrick.github.io/easy6502/
@@ -34,8 +35,12 @@ RISC-V
 
 - https://godbolt.org/
 
-Thanks for edits:
-[@TheOneKevin](https://github.com/theonekevin), [@exu3](https://github.com/exu3), [@jakeboxer](https://github.com/jakeboxer)
+Contributors:
+- [@jessicard](https://github.com/jessicard)
+- [@TheOneKevin](https://github.com/theonekevin)
+- [@exu3](https://github.com/exu3)
+- [@bellesea](https://github.com/bellesea)
+- [@jakeboxer](https://github.com/jakeboxer)
 
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
 
