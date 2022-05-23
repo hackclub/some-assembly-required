@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <em>This guide is currently under construction. Read at your own risk!!</em>
+  <em>Currently under construction. Read at your own risk!!</em>
 </p>
 
 ------------------
