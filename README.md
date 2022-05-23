@@ -9,6 +9,8 @@
   <em>Currently under construction. Read at your own risk!!</em>
 </p>
 
+This repository is meant to be a high level guide about how in the world we are able to actually talk to our computers. It is also meant to be a living artifact of a few different assembly code examples, since I personally learn better when I can both have a concept explained to me metaphorically, but then I can also see it in practice.
+
 ------------------
 
 ### Code
