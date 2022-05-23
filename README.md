@@ -16,6 +16,17 @@ Contributors:
 - [@bellesea](https://github.com/bellesea)
 - [@jakeboxer](https://github.com/jakeboxer)
 
+## Sections
+1. [The CPU](#the-cpu)
+2. [Electricity and the physical world](#electricity-and-the-physical-world)
+  - [Registers](#registers)
+3. [Assembly Language](#assembly-language-1)
+4. [The Math Section](#the-math-section)
+  - [Binary](#binary)
+  - [Boolean Logic](#boolean-logic)
+  - [Hexadecimal](#hexadecimal)
+5. [Resources](#resources)
+
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
 
 I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
