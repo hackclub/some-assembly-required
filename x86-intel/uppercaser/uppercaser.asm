@@ -1,5 +1,5 @@
 ;; x86 Intel syntax
-; yasm -f macho64 cmdargs.asm && ld cmdargs.o -o cmdargs -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./cmdargs
+; yasm -f macho64 uppercaser.asm && ld uppercaser.o -o uppercaser -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser
 
 section .data
 
@@ -69,16 +69,15 @@ _main:
   mov rdx, 1
 
   ; Print our number!
-  ; Note: call automatically pushes our caller memory address (here, it's .printNumberOfArgs) onto
+  ; Note: call automatically pushes our caller memory address (that's us!) onto
   ; the stack
-  ; ret is called in .print, which cleans up for us by popping our memory address off the stack
+  ; ret is called in .print, which cleans up for us by popping our mem address off the stack
   call .print
 
   ; Let's clean up after ourselves. We're done with the ASCII character we pushed onto the stack for printing, so let's
   ; dispose of it. You may be expecting to see a `pop` instruction here, but `pop` also stores the value in a register,
   ; which we don't need to do here, since we're just disposing of it. Instead, we just add 8 to the stack pointer,
-  ; which effectively removes the top value of the stack without putting it anywhere. Each "item" on the stack is a
-  ; word, which is 8 bytes.
+  ; which effectively removes the top value of the stack without putting it anywhere.
   add rsp, 8
 
   ; Return back to _main (which is the memory address that is currently on the top of the stack).
@@ -226,8 +225,10 @@ _main:
   push rbx
   push rbx
 
-  ; Calculate the length of our string!
-  call .strLen
+  ; We need to iterate over our characters to do a few things:
+  ; - Calculate the length of our string so we can dynamically print it out
+  ; - Uppercase letters
+  call .iterate
 
   ; By convention, if functions have return values, they put them in rax, so we expect .strLen to have put the length
   ; of the string into rax. Move it into rdx so .print can use it.
@@ -246,22 +247,27 @@ _main:
 
   ret
 
-.strLen:
-  ; Get the string length by iterating over the characters in memory until we hit
-  ; a null (0) byte. Character arrays are terminated when you hit 0.
+.iterate:
+  ; We need to iterate over our characters to do a few things:
+  ; - Calculate the length of our string so we can dynamically print it out
+  ; - Uppercase letters
 
-  ; Dig into the stack a little to get the string into rsi, but then put the return address back on the stack so we can
-  ; return at the end of this function.
+  ; Dig into the stack a little to get the argument string into rsi, but then put
+  ; the return address back on the stack so we can return at the end of this function.
   pop rbx
   pop rsi
   push rbx
 
-  ; rax will hold our string length counter. We'll be incrementing this as we run through the string. We start it at -1
-  ; because our loop always does at least one increment, even on a 0-length string.
+  ; We can get the string length by iterating over the characters in memory until
+  ; we hit a null (0) byte. Character arrays are terminated when you hit 0.
+
+  ; rax will hold our string length counter. We'll be incrementing this as we run
+  ; through the string. We start it at -1 because our loop always does at least
+  ; one increment, even on a 0-length string.
   mov rax, -1
 
-  ; This is where we loop over the string to count the characters!
-  .strLenLoopStart:
+  ; This is where we loop over each character in the string!
+  .iterateLoop:
     ; First, we increment the length counter. This is why we started it at -1: the loop always executes at least once,
     ; and rax will be incremented from -1 to 0 on the first iteration, which will give us a value of 0 on an empty
     ; string.
@@ -295,15 +301,43 @@ _main:
     ; (the null character).
     cmp byte [rsi + rax], 0
 
-    ; jne stands for "Jump if Not Equal". The jne instruction checks the EFLAGS register we described above.
-    ; If EFLAGS says that the result of the comparison was "not equal", it jumps to the specified label.
-    ; So, in this case, if the current character is not null, we jump back up to the beginning of the loop!
-    ; If the current character IS null, this instruction does nothing, which means the loop effectively ends. This is
-    ; exactly what we want, because a null character indicates the end of a string, which means we're done counting!
-    jne .strLenLoopStart
+    ; jz stands for "Jump if Zero". The jz instruction checks the EFLAGS register we described above.
+    ; If EFLAGS is zero, it jumps to the specified label.
+    ; So, in this case, if the current character is null, we jump to a return statement!
+    ; This is exactly what we want, because a null character indicates the end of a string, which means
+    ; we're done counting!
+    ;
+    ; This is effectively an early return statement.
+    jz .return
 
-  ret
+    call .uppercase
+    call .iterateLoop
 
+  .uppercase:
+    ; Compare our current character to see if it's within the bounds of being
+    ; a lower case letter
+    ; 97 is the beginning of the lowercase ASCII characters
+    cmp byte [rsi + rax], 97
+
+    ; jl stands for "Jump if Lower". The jl instruction checks the EFLAGS register we described above.
+    ; We want to return early if our current character is lower than where the lower case
+    ; letters start, meaning it's not a character that's uppercase-able.
+    jl .return
+
+    ; Compare our current character to see if it's within the bounds of being
+    ; a lower case letter
+    ; 122 is the end of the lowercase ASCII characters
+    cmp byte [rsi + rax], 122
+
+    ; jg stands for "Jump if Greater". The jg instruction checks the EFLAGS register we described above.
+    ; We want to return early if our current character is higjer than where the lower case
+    ; letters end, meaning it's not a character that's uppercase-able
+    jg .return
+
+    ; Subtracting 32 from our current character gives us the uppercase character
+    ; in ASCII
+    sub byte [rsi + rax], 32
+    ret
 
 ; In .print, we're going to make a syscall, which makes some assumptions about what's in our registers. Specifically:
 ;
@@ -336,21 +370,21 @@ _main:
   ; Argument 3 (the length of the string to print) is in rdx and should've also been set by the caller.
   mov rdi, 1
 
-  ; syscall takes stuff we've set up in registers and calls it accordingly.
+  ; syscall takes all of the stuff we've set up in registers and calls it accordingly.
   ; Here, we've set values on:
   ;
   ; rax, rdi, rsi, and rdx
   ;
   ; which translates to:
-  ; rax = call sys_write function
-  ; rdi = write to stdout
-  ; rsi = pointer to the first character in the string
-  ; rdx = the length of the string
   ;
   ; sys_write(rdi, rsi, rdx)
   syscall
 
   ; return back to whatever called .print
+  ret
+
+; Labelled return that we can call when we are conditionally jumping around.
+.return:
   ret
 
 .exit:
