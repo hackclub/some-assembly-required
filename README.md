@@ -199,6 +199,38 @@ WRITING NOTE: Wait to talk about this part until you get to jump/call instructio
 
 The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which I wanted to mention specifically because I personally wondered how the computer keeps track of the code it's executing. This stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
+## Assembly language
+There are many different assembly languages, depending on the processor you want to talk to. X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data. 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today. Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
+
+Each 1 or 0 in binary is called a bit (or binary digit). We can’t store much information in a single bit, so bytes were invented to be the standard data size that a computer works with. A byte is composed of 8 bits, because a single letter like “a” takes 1 byte, or 8 bits to represent. It’s not because “a” is complicated to represent, but instead it’s that we’re mapping some set of characters to numbers (in this case, we’re referring to A-Z, 0-9, and so on), and we want the number of possibilities that 8 bits affords us.
+
+So if we only have 1 bit, we can represent 2 numbers (0 and 1). If we have 2 bits, 4 numbers (0-3). 3 bits, 8 numbers (0-7). n bits, 2^n numbers. That means that a byte can hold 2^8 numbers, since a byte is 8 bits. That leaves us with 256 different values we can use!
+
+Let’s say you need to store a number that is higher than 255, since 256 values mean we can store numbers 0 - 255 (since we want to include 0). We then need multiple bytes to represent that number.
+
+Have you heard of 32 bit or 64 bit processors? That’s referring to the same thing! So, instead of their registers holding a single byte, a 32 bit processor holds 4 bytes (32 / 8, since a byte is 8 bits), and a 64 bit processor holds 8 bytes.
+
+In our examples, each line we write in assembly maps to a single instruction to the CPU. For example, an instruction could be to add two numbers together. A caveat here is that in more complex processors, instructions can be mapped to multiple instructions to the CPU, but we are going to keep it simple in our examples.
+
+A computer can only process one byte at a time.
+
+_Note: potentially fill this out_
+Note: Can multi-core processors process more than one byte at a time?
+I’ll add some notes here for a brief overview:
+We start by asking: Can 1 core execute more than 1 instruction at a time? Yes! How?
+Memory access takes time (sometimes up to 200 “processor ticks”!!), during this time the CPU core is “stalled” and is doing nothing at all. Can we find something useful for the CPU core to do in the meantime? Yes!
+Look ahead for instructions to execute (out-of-order)
+Execute more than 1 instruction at a time (superscalar) by combining instructions
+Can more than 1 core access memory?
+No! But… if memory access is not immediately granted, that core can find something useful to do in the meantime (using aforementioned techniques)
+But now instructions are out-of-order! The programmer expects their program to execute in-order. Will there be consequences? Yes! This is a veryyyy complex problem to solve.
+What if instead of accessing 1 byte at a time, we access 16 bytes? If 1 memory chip can pump out 4 bytes per tick, what if you have 4 memory chips? They can pump out 4x4 bytes per “processor tick”!
+Look at the M1 Pro. How many memory chips can you count? 2
+Each chip has 2 interfaces
+Each interface can pump out 2 bytes/tick (aka Double Data Rate, DDR)
+There are 3.2 GT/s (3.2 billion “ticks” per second)
+Total, 3.2 * 16 * 2 * 2 around 200 GBps (gigaBITS/second), as advertised! Very cool.
+
 ## The Math Section
 WRITING NOTE: This part can all probably be moved after a lot of the assembly, maybe if there's a spot where we talk about bitmasking and stuff. I say this because I know math can be intimidating to people who are otherwise interested in programming, so the math stuff would probably be more helpful as an appendix.
 
@@ -325,35 +357,3 @@ When you see 7D, you can think of that as:
 D = 13
 (7 * 16^1) + 13
 112 + 13 = 125
-
-## Assembly language
-There are many different assembly languages, depending on the processor you want to talk to. X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data. 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today. Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
-
-Each 1 or 0 in binary is called a bit (or binary digit). We can’t store much information in a single bit, so bytes were invented to be the standard data size that a computer works with. A byte is composed of 8 bits, because a single letter like “a” takes 1 byte, or 8 bits to represent. It’s not because “a” is complicated to represent, but instead it’s that we’re mapping some set of characters to numbers (in this case, we’re referring to A-Z, 0-9, and so on), and we want the number of possibilities that 8 bits affords us.
-
-So if we only have 1 bit, we can represent 2 numbers (0 and 1). If we have 2 bits, 4 numbers (0-3). 3 bits, 8 numbers (0-7). n bits, 2^n numbers. That means that a byte can hold 2^8 numbers, since a byte is 8 bits. That leaves us with 256 different values we can use!
-
-Let’s say you need to store a number that is higher than 255, since 256 values mean we can store numbers 0 - 255 (since we want to include 0). We then need multiple bytes to represent that number.
-
-Have you heard of 32 bit or 64 bit processors? That’s referring to the same thing! So, instead of their registers holding a single byte, a 32 bit processor holds 4 bytes (32 / 8, since a byte is 8 bits), and a 64 bit processor holds 8 bytes.
-
-In our examples, each line we write in assembly maps to a single instruction to the CPU. For example, an instruction could be to add two numbers together. A caveat here is that in more complex processors, instructions can be mapped to multiple instructions to the CPU, but we are going to keep it simple in our examples.
-
-A computer can only process one byte at a time.
-
-_Note: potentially fill this out_
-Note: Can multi-core processors process more than one byte at a time?
-I’ll add some notes here for a brief overview:
-We start by asking: Can 1 core execute more than 1 instruction at a time? Yes! How?
-Memory access takes time (sometimes up to 200 “processor ticks”!!), during this time the CPU core is “stalled” and is doing nothing at all. Can we find something useful for the CPU core to do in the meantime? Yes!
-Look ahead for instructions to execute (out-of-order)
-Execute more than 1 instruction at a time (superscalar) by combining instructions
-Can more than 1 core access memory?
-No! But… if memory access is not immediately granted, that core can find something useful to do in the meantime (using aforementioned techniques)
-But now instructions are out-of-order! The programmer expects their program to execute in-order. Will there be consequences? Yes! This is a veryyyy complex problem to solve.
-What if instead of accessing 1 byte at a time, we access 16 bytes? If 1 memory chip can pump out 4 bytes per tick, what if you have 4 memory chips? They can pump out 4x4 bytes per “processor tick”!
-Look at the M1 Pro. How many memory chips can you count? 2
-Each chip has 2 interfaces
-Each interface can pump out 2 bytes/tick (aka Double Data Rate, DDR)
-There are 3.2 GT/s (3.2 billion “ticks” per second)
-Total, 3.2 * 16 * 2 * 2 around 200 GBps (gigaBITS/second), as advertised! Very cool.
