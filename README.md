@@ -189,6 +189,8 @@ Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this
 ### Instructions
 _Note: These examples are written in X86-64 Intel syntax assembly language_
 
+#### Comments
+
 ```asm
   ; Note: Anything that comes after a semicolon is considered a comment.
   ;       A comment in code means that the compiler will ignore it, so you have
