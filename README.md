@@ -48,7 +48,7 @@ You could skip all of this assembly shenanigans by writing the machine code dire
 01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
 ```
 
-Machine code can also look like this, if you viewed it with a hex editor (we will talk about [what hex is](###hexadecimal) a little bit later):
+Machine code can also look like this, if you viewed it with a hex editor (we will talk about [what hex is](#hexadecimal) a little bit later):
 
 ```
 F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4 44
@@ -75,7 +75,7 @@ You may be wondering what machine code actually looks like. If you are, you’re
 ADD x3, x8, x9
 ```
 
-In machine code, this may end up looking like binary, or base 2 (we will talk about [what binary is](###binary) a little bit later):
+In machine code, this may end up looking like binary, or base 2 (we will talk about [what binary is](#binary) a little bit later):
 
 ```
 00000001 00000011 00001000 00001001
