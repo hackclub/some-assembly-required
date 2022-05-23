@@ -11,6 +11,9 @@
 
 Resources:
 
+Comp sci fundamentals
+- https://www.youtube.com/playlist?app=desktop&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
+
 X86
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
 - https://github.com/0xAX/asm
