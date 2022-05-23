@@ -169,9 +169,22 @@ There are many different assembly languages, depending on the processor you want
 
 ### Registers
 
+_NOTE: fill this section out_
+
+Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
+
 <p align="center">
   <img height="300" src="https://i.stack.imgur.com/eaSf7.jpg">
 </p>
+
+#### The Stack
+Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+
+The purpose of the stack is to store things for later. Now you might say, Jessica, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+
+So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, we increment the pointer. Every time we pop off of the stack, we decrement it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
+
+Ever heard of a stack overflow? Maybe stackoverflow.com? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
 ### Instructions
 _Note: These examples are written in X86-64 Intel syntax assembly language_
