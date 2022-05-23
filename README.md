@@ -105,7 +105,7 @@ The decoder knows that the `add` instruction's first argument is both:
   - the save destination
   - and the location of the first number to add
 
-The decoder then sees that the next byte has the value 12, so it knows that its save destination is register 12 (`r12`). It can then grab the data out of `r12` for the math part.
+The decoder then sees that the next byte has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the data out of `r12` for the math part.
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
