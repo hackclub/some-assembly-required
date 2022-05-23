@@ -30,9 +30,9 @@ _main:
   mov r12, rdi ; argc
   mov r13, rsi ; argv[][]
 
-  ; Print the argument count
-  call .printNumberOfArgs
-  call .printNewline
+  ; Uncomment the next two lines to print the argument count
+  ; call .printNumberOfArgs
+  ; call .printNewline
 
   ; Print all arguments, separated by newlines.
   ;
@@ -130,7 +130,10 @@ _main:
 
   ; rax will hold the counter for how many of our command-line args we've been through. We'll be incrementing this by 1
   ; every time we print a command-line arg.
-  mov rax, 0
+  ;
+  ; We will start at 1 since we are skipping our first command line argument,
+  ; our program ("./uppercaser.asm").
+  mov rax, 1
 
   ; This is where we loop over the command-line args args!
   .printArgsLoopStart:
@@ -225,7 +228,15 @@ _main:
   ;
   ; So, with all that in mind, we follow rcx into memory and move the value (which is our command-line arg) into rcx so
   ; that the sys_write syscall can write it when we call .print below.
-  mov rbx, qword [rcx]
+  ;
+  ; We are adding 8 to [rcx] so that we can skip 1 word, 8 bytes ahead.
+  ;
+  ; This brings us to our second command line argument in memory, which is
+  ; the first thing you typed in after the program.
+  ;
+  ; If we didn't skip ahead, we'd also be printing out the program
+  ; ("./uppercaser.asm")
+  mov rbx, qword [rcx + 8]
 
   ; Push the memory address of our command-line arg onto the stack twice.
   ; The first one is to keep the value safe, because we need it after our function call.
