@@ -6,15 +6,8 @@
 </p>
 
 <p align="center">
-  <em>This guide is currently under construction. Read at your own risk of me explaining math wrong!</em>
+  <em>This guide is currently under construction. Read at your own risk!!</em>
 </p>
-
-Contributors:
-- [@jessicard](https://github.com/jessicard)
-- [@TheOneKevin](https://github.com/theonekevin)
-- [@exu3](https://github.com/exu3)
-- [@bellesea](https://github.com/bellesea)
-- [@jakeboxer](https://github.com/jakeboxer)
 
 ## Sections
 1. [The CPU](#the-cpu)
@@ -26,6 +19,7 @@ Contributors:
     - [Boolean Logic](#boolean-logic)
     - [Hexadecimal](#hexadecimal)
 1. [Resources](#resources)
+1. [Contributors](#contributors)
 
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
 
@@ -406,3 +400,10 @@ Misc
 - https://godbolt.org/
 - https://www.asciitable.com/
 - https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
+
+## Contributors
+- [@jessicard](https://github.com/jessicard)
+- [@TheOneKevin](https://github.com/theonekevin)
+- [@exu3](https://github.com/exu3)
+- [@bellesea](https://github.com/bellesea)
+- [@jakeboxer](https://github.com/jakeboxer)
