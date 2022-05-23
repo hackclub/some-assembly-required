@@ -69,15 +69,16 @@ _main:
   mov rdx, 1
 
   ; Print our number!
-  ; Note: call automatically pushes our caller memory address (that's us!) onto
+  ; Note: call automatically pushes our caller memory address (here, it's .printNumberOfArgs) onto
   ; the stack
-  ; ret is called in .print, which cleans up for us by popping our mem address off the stack
+  ; ret is called in .print, which cleans up for us by popping our memory address off the stack
   call .print
 
   ; Let's clean up after ourselves. We're done with the ASCII character we pushed onto the stack for printing, so let's
   ; dispose of it. You may be expecting to see a `pop` instruction here, but `pop` also stores the value in a register,
   ; which we don't need to do here, since we're just disposing of it. Instead, we just add 8 to the stack pointer,
-  ; which effectively removes the top value of the stack without putting it anywhere.
+  ; which effectively removes the top value of the stack without putting it anywhere. Each "item" on the stack is a
+  ; word, which is 8 bytes.
   add rsp, 8
 
   ; Return back to _main (which is the memory address that is currently on the top of the stack).
