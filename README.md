@@ -14,10 +14,10 @@
 ### Code
 
 1. RISC-V
-    - [Examples of basic RISC-V instructions being used]("/riscv/riscv.s")
+    - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
 1. X86-64 System V Intel Syntax
-    - [Hello World]("/x86-intel/hello-world/hello-world.asm")
-    - [Uppercaser]("/x86-intel/uppercaser/uppercaser.asm")
+    - [Hello World](/x86-intel/hello-world/hello-world.asm)
+    - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
 
 ------------------
 
