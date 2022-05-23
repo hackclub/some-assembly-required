@@ -55,7 +55,7 @@ In our case, assembly code is the human-readable layer above something called ma
 
 It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
-You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
+You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like (we will talk about [what binary is](#binary) a little bit later):
 
 ```
 01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
@@ -87,7 +87,7 @@ You may be wondering what machine code actually looks like. If you are, you’re
 add r12, 4; Add 4 to whatever is in register 12
 ```
 
-In machine code, this may end up looking like binary, or base 2 (we will talk about [what binary is](#binary) a little bit later):
+In machine code, this may end up looking like [binary](#binary), or base 2:
 
 ```
 00000001 00001100 00001100 00000100
