@@ -11,7 +11,17 @@
 
 ------------------
 
-### Sections
+### Code
+
+1. RISC-V
+    - [Examples of basic RISC-V instructions being used]("/riscv/riscv.s")
+1. X86-64 System V Intel Syntax
+    - [Hello World]("/x86-intel/hello-world/hello-world.asm")
+    - [Uppercaser]("/x86-intel/uppercaser/uppercaser.asm")
+
+------------------
+
+### Guide
 1. [The CPU](#the-cpu)
 1. [Electricity and the physical world](#electricity-and-the-physical-world)
     - [Saving data](#saving-data)
