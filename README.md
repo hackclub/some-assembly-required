@@ -79,7 +79,11 @@ _A note: everything after the ; are comments for other humans, not code to execu
 
 I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, it's far friendlier than just writing a big list of numbers, and that's the real purpose of assembly language: to allow human beings to basically write machine code without just writing a big list of numbers.
 
-All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read.
+All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read. Your CPU is able to read these things with the help of something called a decoder.
+
+A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
+
+How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
 
 You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
@@ -126,17 +130,6 @@ As a box travels around the warehouse on conveyor belts, it will be stopped at d
 WRITING NOTE: Flesh out how this connects to the warehouse metaphor.
 
 Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
-
-### Input and Output
-_Note: mention how data gets into the computer and how it comes back out_
-_Note: Memory-mapped I/O (MMIO) vs port-mapped I/O (PMIO)_
-
-### Decoder
-WRITING NOTE: Flesh out how this connects to the warehouse metaphor.
-
-A decoder in a CPU is a specialized device that takes in an input, in the form of a byte, and decodes what it’s trying to do. These tasks are represented as our assembly instructions. So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
-
-How does the decoder know how to decode? It’s built physically into the chip itself, where the circuitry determines the instruction set.
 
 ### Saving data
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
