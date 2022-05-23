@@ -114,7 +114,7 @@ The decoder then sees that the next byte has the value `12`, so it knows that it
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
 ### Electricity and the physical world
-The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
+The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
 
 <p align="center">
   <br>
@@ -126,8 +126,7 @@ Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse 
 
 As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: a byte travels around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
 
-### Clock ticks
-WRITING NOTE: Flesh out how this connects to the warehouse metaphor.
+In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our processor clock.
 
 Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
 
@@ -226,7 +225,7 @@ _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of condit
 ```
 
 ##### Program counter
-WRITING NOTE: Wait to talk about this part until you get to jump/call instructions in the assembly
+WRITING NOTE: Talk about how this maps to jump/call instructions in assembly
 
 The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
