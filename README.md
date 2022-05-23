@@ -177,24 +177,31 @@ _Note: These examples are written in X86-64 Intel syntax assembly language_
 #### Conditionals
 _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel._
 
+##### Jump if Not Equal
 ```asm
   jne .placeToJump
 ```
 
+##### Jump if Greater
 ```asm
   jg .goHere
 ```
 
+##### Jump if Less
 ```asm
   jl .doSomeMath
 ```
 
+##### Label
 ```asm
-  .goHere:
-    ; do some code here!
+  _main:
+    call .performAddition
+    ; ret will return here and keep executing!
+
+  .performAddition:
+    add rdi, 3
+    ret ; returns back to where you left off in _main!
 ```
-
-
 
 ##### Program counter
 WRITING NOTE: Wait to talk about this part until you get to jump/call instructions in the assembly
