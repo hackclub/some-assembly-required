@@ -10,7 +10,7 @@
 # https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 
 ## Saving numbers to registers
-# There's no way to directly add a value to a register
+# There's no way to directly store a value in a register
 # So we add 0 to a number, and add it to a register
 # zero is another way to reference register x0, which
 # always stays as 0

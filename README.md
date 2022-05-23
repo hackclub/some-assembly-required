@@ -14,6 +14,30 @@ Resources:
 X86
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
 - https://github.com/0xAX/asm
+- https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html
+- https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
+- The "Getting Started Writing Assembly Language" series
+  - https://blog.devgenius.io/getting-started-writing-assembly-language-8ecc116f3627
+  - https://blog.devgenius.io/finding-an-efficient-development-cycle-for-writing-assembly-language-be2092e6db6a
+  - https://blog.devgenius.io/writing-an-x86-64-assembly-language-program-648b6005e8e (ESPECIALLY this one, since it had a lot of the command line arg info, although some of it works differently on mac)
+- https://filippo.io/making-system-calls-from-assembly-in-mac-os-x/
+- http://dustin.schultz.io/mac-os-x-64-bit-assembly-system-calls.html
+- https://0xax.github.io/asm_1/
+- https://github.com/0xAX/asm
+- https://cs61.seas.harvard.edu/site/2018/Asm1/
+- https://www.dreamincode.net/forums/topic/285550-nasm-linux-getting-command-line-parameters/
+- https://stackoverflow.com/questions/53555298/how-to-get-arguments-from-the-command-lineassembly-nasm-ubuntu-32bit
+- https://cs.lmu.edu/~ray/notes/nasmtutorial/
+- https://www.figma.com/file/Uhd6Qe3lzmJ60bBQmkx7Ch/cpu
+- https://gist.github.com/FiloSottile/7125822
+- https://death-of-rats.github.io/posts/yasm-hello-world/
+- https://dev.to/tomassirio/hello-world-in-asm-x8664-jg7
+- https://jameshfisher.com/2018/03/10/linux-assembly-hello-world/
+- https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
+
+Debugger
+- https://github.com/hugsy/gef
+- https://www.sourceware.org/gdb/download/
 
 6502
 - https://skilldrick.github.io/easy6502/
@@ -33,7 +57,10 @@ RISC-V
 - https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 - https://github.com/riscv/riscv-isa-manual/releases/download/Ratified-IMAFDQC/riscv-spec-20191213.pdf
 
+Misc
 - https://godbolt.org/
+- https://www.asciitable.com/
+- https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
 
 Contributors:
 - [@jessicard](https://github.com/jessicard)
@@ -46,7 +73,7 @@ This may sound counterintuitive, but computers are simple. I know you may be sha
 
 I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
 
-In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems or other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightening fast. Even though you or I may never need to write assembly, I think that building an understanding of how your computer works at a fundamental level can be eye opening and make you appreciate all of the other tasks you perform on your computer.
+In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems or other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightning fast. Even though you or I may never need to write assembly, I think that building an understanding of how your computer works at a fundamental level can be eye opening and make you appreciate all of the other tasks you perform on your computer.
 
 ## The CPU
 
@@ -91,7 +118,7 @@ ADD x3, x8, x9 ; Add the contents of registers x8 and x9 and save that value int
 
 _A note: everything after the ; are comments for other humans, not code to execute, so the computer ignores it._
 
-I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. We have to remember that this was one of the first human readable programming languages, so this was a big step up from just looking at numbers.
+I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, it's far friendlier than just writing a big list of numbers, and that's the real purpose of assembly language: to allow human beings to basically write machine code without just writing a big list of numbers.
 
 All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read.
 
@@ -116,19 +143,19 @@ Which, in base 10 (how we normally talk about numbers!), is:
 The decoder would see the first 1, and it would know that the first number it receives should map to an instruction, and instruction 1 is ADD. It knows that the ADD instruction's first argument is the save destination, and it sees that the next byte has the value 3, so it knows that its save destination is register 3. Then it knows that the next 2 arguments are the registers that it needs to go retrieve data from, 8 and 9. It retrieves the data from there, adds them together, and saves that new value to register 3.
 
 ### Electricity and the physical world
-The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, binary exists as the inclusion and absence of electrical signals - 1 representing the presence of electricity, and 0 the lack of electricity.
+The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
 
 <p align="center">
   <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
 </p>
 
-Let’s think about our processor as a warehouse, where we are packing boxes. Electrical signals representing one unit of data can be a single box. A box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
+Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of 8 electrical signals (a byte). A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
-Our box is getting sent to the filling station! It travels down the conveyor belt and ends up at a machine that fills the box. In CPU terms, this is our transistor. Transistors are where calculations happen, and they consist of 3 things: an input (the current), a bridge (something that checks the current versus a stored electrical signal, and either passes the current on or not), and an output (the result of what happened in the bridge, which would either be a current or a lack of current).
-
-So for our box metaphor, the input would be our box, the bridge would check if it’s already filled, and if not, it would fill it. Our output would be the filled box. Then the box would travel on the next conveyor belt, or bus, to the next station it needs - maybe to be taped up?
+As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: a byte travels around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
 
 ### Clock ticks
+WRITING NOTE: Flesh out how this connects to the warehouse metaphor.
+
 Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
 
 ### Input and Output
@@ -136,11 +163,15 @@ _Note: mention how data gets into the computer and how it comes back out_
 _Note: Memory-mapped I/O (MMIO) vs port-mapped I/O (PMIO)_
 
 ### Decoder
+WRITING NOTE: Flesh out how this connects to the warehouse metaphor.
+
 A decoder in a CPU is a specialized device that takes in an input, in the form of a byte, and decodes what it’s trying to do. These tasks are represented as our assembly instructions. So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
 
 How does the decoder know how to decode? It’s built physically into the chip itself, where the circuitry determines the instruction set.
 
 ### Registers
+WRITING NOTE: interleave this stuff in with the assembly stuff
+
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
 <p align="center">
@@ -164,9 +195,13 @@ A nice thing about registers is that processors have a few of them, each one bei
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory.
 
 #### Program counter
+WRITING NOTE: Wait to talk about this part until you get to jump/call instructions in the assembly
+
 The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which I wanted to mention specifically because I personally wondered how the computer keeps track of the code it's executing. This stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
 ## The Math Section
+WRITING NOTE: This part can all probably be moved after a lot of the assembly, maybe if there's a spot where we talk about bitmasking and stuff. I say this because I know math can be intimidating to people who are otherwise interested in programming, so the math stuff would probably be more helpful as an appendix.
+
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
 ### Binary
