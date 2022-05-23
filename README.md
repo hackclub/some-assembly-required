@@ -174,7 +174,12 @@ _Note: These examples are written in X86-64 Intel syntax assembly language_
   sub rdi, 2
 ```
 
-#### Conditionals
+#### Jumps and Conditionals
+This is not an exhaustive list, but a list of some examples of instructions to
+demonstrate the kinds of conditionals assembly provides us.
+
+A conditional is something that relies on a condition being met to execute it.
+
 _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel._
 
 ##### Jump if Not Equal
