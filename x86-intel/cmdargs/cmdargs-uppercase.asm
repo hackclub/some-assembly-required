@@ -225,8 +225,10 @@ _main:
   push rbx
   push rbx
 
-  ; Calculate the length of our string!
-  call .strLen
+  ; We need to iterate over our characters to do a few things:
+  ; - Calculate the length of our string so we can dynamically print it out
+  ; - Uppercase letters
+  call .iterate
 
   ; By convention, if functions have return values, they put them in rax, so we expect .strLen to have put the length
   ; of the string into rax. Move it into rdx so .print can use it.
@@ -245,22 +247,27 @@ _main:
 
   ret
 
-.strLen:
-  ; Get the string length by iterating over the characters in memory until we hit
-  ; a null (0) byte. Character arrays are terminated when you hit 0.
+.iterate:
+  ; We need to iterate over our characters to do a few things:
+  ; - Calculate the length of our string so we can dynamically print it out
+  ; - Uppercase letters
 
-  ; Dig into the stack a little to get the string into rsi, but then put the return address back on the stack so we can
-  ; return at the end of this function.
+  ; Dig into the stack a little to get the argument string into rsi, but then put
+  ; the return address back on the stack so we can return at the end of this function.
   pop rbx
   pop rsi
   push rbx
 
-  ; rax will hold our string length counter. We'll be incrementing this as we run through the string. We start it at -1
-  ; because our loop always does at least one increment, even on a 0-length string.
+  ; We can get the string length by iterating over the characters in memory until
+  ; we hit a null (0) byte. Character arrays are terminated when you hit 0.
+
+  ; rax will hold our string length counter. We'll be incrementing this as we run
+  ; through the string. We start it at -1 because our loop always does at least
+  ; one increment, even on a 0-length string.
   mov rax, -1
 
-  ; This is where we loop over the string to count the characters!
-  .strLenLoopStart:
+  ; This is where we loop over each character in the string!
+  .iterateLoop:
     ; First, we increment the length counter. This is why we started it at -1: the loop always executes at least once,
     ; and rax will be incremented from -1 to 0 on the first iteration, which will give us a value of 0 on an empty
     ; string.
@@ -304,9 +311,11 @@ _main:
     jz .return
 
     call .uppercase
-    call .strLenLoopStart
+    call .iterateLoop
 
   .uppercase:
+    ; Compare our current character to see if it's within the bounds of being
+    ; a lower case letter
     ; 97 is the beginning of the lowercase ASCII characters
     cmp byte [rsi + rax], 97
 
@@ -315,6 +324,8 @@ _main:
     ; letters start, meaning it's not a character that's uppercase-able.
     jl .return
 
+    ; Compare our current character to see if it's within the bounds of being
+    ; a lower case letter
     ; 122 is the end of the lowercase ASCII characters
     cmp byte [rsi + rax], 122
 
