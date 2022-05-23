@@ -18,18 +18,14 @@ Contributors:
 
 ## Sections
 1. [The CPU](#the-cpu)
-
-2. [Electricity and the physical world](#electricity-and-the-physical-world)
-  - [Registers](#registers)
-
-3. [Assembly Language](#assembly-language-1)
-
-4. [The Math Section](#the-math-section)
-  - [Binary](#binary)
-  - [Boolean Logic](#boolean-logic)
-  - [Hexadecimal](#hexadecimal)
-
-5. [Resources](#resources)
+1. [Electricity and the physical world](#electricity-and-the-physical-world)
+    - [Registers](#registers)
+1. [Assembly Language](#assembly-language-1)
+1. [The Math Section](#the-math-section)
+    - [Binary](#binary)
+    - [Boolean Logic](#boolean-logic)
+    - [Hexadecimal](#hexadecimal)
+1. [Resources](#resources)
 
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
 
