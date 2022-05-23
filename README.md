@@ -14,8 +14,8 @@
 ### Sections
 1. [The CPU](#the-cpu)
 1. [Electricity and the physical world](#electricity-and-the-physical-world)
-    - [Registers](#registers)
-1. [Assembly Language](#assembly-language-1)
+    - [Saving data](#saving-data)
+1. [Writing Code](#writing-code)
 1. [The Math Section](#the-math-section)
     - [Binary](#binary)
     - [Boolean Logic](#boolean-logic)
@@ -138,9 +138,7 @@ A decoder in a CPU is a specialized device that takes in an input, in the form o
 
 How does the decoder know how to decode? It’s built physically into the chip itself, where the circuitry determines the instruction set.
 
-### Registers
-WRITING NOTE: interleave this stuff in with the assembly stuff
-
+### Saving data
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
 <p align="center">
@@ -167,7 +165,7 @@ A nice thing about registers is that processors have a few of them, each one bei
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory.
 
-## Assembly language
+## Writing Code
 There are many different assembly languages, depending on the processor you want to talk to.
 
 - X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data.
@@ -240,8 +238,6 @@ WRITING NOTE: Wait to talk about this part until you get to jump/call instructio
 The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
 ## The Math Section
-WRITING NOTE: This part can all probably be moved after a lot of the assembly, maybe if there's a spot where we talk about bitmasking and stuff. I say this because I know math can be intimidating to people who are otherwise interested in programming, so the math stuff would probably be more helpful as an appendix.
-
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
 ### Binary
