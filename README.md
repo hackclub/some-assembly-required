@@ -360,13 +360,15 @@ All numbers in assembly language are represented by hexadecimal
 Our usual numbers are base 10
 
 When you see 125 as a number, you can think of that as:
-(10 * 10^2) + (2 * 10^1) + (5 * 10^0)
-100 + 20 + 5 = 125
+- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
+- 100 + 20 + 5 = 125
+
 Hex is base 16, which means is 0-9, A-F for 10-15
+
 When you see 7D, you can think of that as:
-D = 13
-(7 * 16^1) + 13
-112 + 13 = 125
+- D = 13
+- (7 * 16^1) + 13
+- 112 + 13 = 125
 
 ## Resources
 
