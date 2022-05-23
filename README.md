@@ -9,6 +9,8 @@
   <em>This guide is currently under construction. Read at your own risk!!</em>
 </p>
 
+------------------
+
 ### Sections
 1. [The CPU](#the-cpu)
 1. [Electricity and the physical world](#electricity-and-the-physical-world)
