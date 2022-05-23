@@ -336,12 +336,16 @@ _main:
   ; Argument 3 (the length of the string to print) is in rdx and should've also been set by the caller.
   mov rdi, 1
 
-  ; syscall takes all of the stuff we've set up in registers and calls it accordingly.
+  ; syscall takes stuff we've set up in registers and calls it accordingly.
   ; Here, we've set values on:
   ;
   ; rax, rdi, rsi, and rdx
   ;
   ; which translates to:
+  ; rax = call sys_write function
+  ; rdi = write to stdout
+  ; rsi = pointer to the first character in the string
+  ; rdx = the length of the string
   ;
   ; sys_write(rdi, rsi, rdx)
   syscall
