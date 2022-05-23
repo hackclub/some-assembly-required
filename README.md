@@ -9,7 +9,7 @@
   <em>This guide is currently under construction. Read at your own risk!!</em>
 </p>
 
-## Sections
+### Sections
 1. [The CPU](#the-cpu)
 1. [Electricity and the physical world](#electricity-and-the-physical-world)
     - [Registers](#registers)
@@ -20,6 +20,8 @@
     - [Hexadecimal](#hexadecimal)
 1. [Resources](#resources)
 1. [Contributors](#contributors)
+
+------------------
 
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
 
