@@ -1,4 +1,12 @@
-;; x86 Intel syntax
+
+; ==================================================================================
+; UPPERCASER
+;
+; Uppercases your command line arguments and prints them out!
+; Written as a working example of an x86 Intel syntax assembly language program
+; ==================================================================================
+
+;; x86-64 System V processor, Intel syntax
 ; yasm -f macho64 uppercaser.asm && ld uppercaser.o -o uppercaser -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser
 
 section .data
