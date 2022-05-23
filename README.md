@@ -70,7 +70,7 @@ F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4
 So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
 
 ```asm
-; Written in X86-64 Intel Assembly
+; Written in X86-64 Intel syntax assembly language
 mov r12, r13 ; Load the number stored in register 13 into register 12
 add r12, 4   ; Add 4 to whatever is in register 12
 ```
