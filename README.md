@@ -1,4 +1,4 @@
-# Assembly Language
+# Introduction to Assembly Language
 ### Talking to the CPU
 
 <p align="center">
@@ -128,7 +128,9 @@ As a box travels around the warehouse on conveyor belts, it will be stopped at d
 
 In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our processor clock.
 
-Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time. This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
+Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time.
+
+This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
 
 ### Saving data
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
