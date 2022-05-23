@@ -70,10 +70,9 @@ F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4
 So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
 
 ```asm
-; Written in ARM Cortex-A Assembly
-LD x8, 24 ; Load the number stored in memory address 24 into register 8
-LD x9, 48 ; Load the number stored in memory address 48 into register 9
-ADD x3, x8, x9 ; Add the contents of registers x8 and x9 and save that value into register 3
+; Written in X86-64 Intel Assembly
+mov r12, r13 ; Load the number stored in register 13 into register 12
+add r12, 4   ; Add 4 to whatever is in register 12
 ```
 
 _A note: everything after the ; are comments for other humans, not code to execute, so the computer ignores it._
@@ -82,25 +81,33 @@ I know this doesn’t look extremely friendly, especially compared to the high l
 
 All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read.
 
-You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last ADD line to machine code.
+You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
 ```asm
-ADD x3, x8, x9
+add r12, 4; Add 4 to whatever is in register 12
 ```
 
 In machine code, this may end up looking like binary, or base 2 (we will talk about [what binary is](#binary) a little bit later):
 
 ```
-00000001 00000011 00001000 00001001
+00000001 00001100 00001100 00000100
 ```
 
 Which, in base 10 (how we normally talk about numbers!), is:
 
 ```
-1 3 8 9
+1 12 4
 ```
 
-The decoder would see the first 1, and it would know that the first number it receives should map to an instruction, and instruction 1 is ADD. It knows that the ADD instruction's first argument is the save destination, and it sees that the next byte has the value 3, so it knows that its save destination is register 3. Then it knows that the next 2 arguments are the registers that it needs to go retrieve data from, 8 and 9. It retrieves the data from there, adds them together, and saves that new value to register 3.
+The decoder would see the first `1`, and it would know that the first number it receives should map to an instruction. Let's say instruction 1 is `add`.
+
+The decoder knows that the `add` instruction's first argument is both:
+  - the save destination
+  - and the location of the first number to add
+
+The decoder then sees that the next byte has the value 12, so it knows that its save destination is register 12 (`r12`). It can then grab the data out of `r12` for the math part.
+
+The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
 ### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as binary. In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
