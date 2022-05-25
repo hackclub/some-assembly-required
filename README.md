@@ -1,5 +1,5 @@
-# Introduction to Assembly Language
-### Talking to the CPU
+# Some Assembly Required
+### A playful guide about talking to your computer.
 
 <p align="center">
   <img width="460" height="300" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8688491/hiE5vMs.gif">
@@ -9,7 +9,11 @@
   <em>Currently under construction. Read at your own risk!!</em>
 </p>
 
-This repository is meant to be a high level guide about how in the world we are able to actually talk to our computers. It is also meant to be a living artifact of a few different assembly code examples, since I personally learn better when I can both have a concept explained to me metaphorically, but then I can also see it in practice.
+Since forever ago, I’ve wanted to try writing assembly, even if just to understand why the [Rollercoaster Tycoon creator would write 99% of the game](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) in it.
+
+Embarking on this quest, I quickly found a lot of scattered and difficult to understand resources. It took compiling a bunch of different materials together to come to a high level understanding of what’s happening in my computer.
+
+I wanted to write down my learnings and make an approachable guide for people who are new to this part of their system (like me!), including working code examples. Enjoy!
 
 ------------------
 
@@ -17,9 +21,12 @@ This repository is meant to be a high level guide about how in the world we are 
 
 1. RISC-V
     - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
-1. X86-64 System V Intel Syntax
+1. X86-64 Intel Syntax
     - [Hello World](/x86-intel/hello-world/hello-world.asm)
     - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
+1. C (For comparison purposes)
+    - [Hello World](/c/hello-world/hello-world.c)
+    - [Uppercaser](/c/uppercaser/uppercaser.c)
 
 ------------------
 
@@ -37,65 +44,76 @@ This repository is meant to be a high level guide about how in the world we are 
 
 ------------------
 
-This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that isn't true, but I promise you that computers truly do boil down to only a few basic concepts. At their core, everything they’re doing can be represented by two values: 0 and 1. However, even though computers are fundamentally doing simple tasks, they can be confusing and tedious to learn about. This is because computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that sit on our lap (or desktop!) today. But, these layers also make learning about computers feel like an impenetrable black hole.
+This may sound counterintuitive, but computers are actually quite simple. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
+
+Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at their core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over a long period of time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
+
+Now, I will say that communicating with your CPU directly is generally quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems, doing game engine development, or working on other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightning fast.
+
+Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at this level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
 
 I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
 
-In this guide, we are going to cover what the CPU is, how we can communicate with the CPU, and why any of this matters. I will say, communicating with your CPU directly is usually unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems or other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightning fast. Even though you or I may never need to write assembly, I think that building an understanding of how your computer works at a fundamental level can be eye opening and make you appreciate all of the other tasks you perform on your computer.
+Alright, let's get to the good stuff. Like, what even is a CPU?
 
 ## The CPU
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
-Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, known as the CPU or the processor, which effectively acts as the brain of the computer. Computers contain other processing units (like the graphics card!) that are responsible for processing more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can read values, set values, and perform simple math calculations like addition and subtraction. You hand it numbers, and it’s put to work crunching the data however you’d like.
+Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, also known as the CPU or the processor, which effectively acts as the brain of the computer.
 
-One way we can communicate directly with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. An abstraction means that it’s a layer above some other layer that makes that thing easier to do.
+Computers contain other processing units (like the graphics card!) that are responsible for processing other more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can **read values**, **set values**, and **perform simple math** calculations like addition and subtraction.
+
+You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
+
+One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
+
+What do we mean by an abstraction? Well, an abstraction is a layer above something else that makes that thing easier to do.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://www.familyhandyman.com/wp-content/uploads/2019/05/08.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
-For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
+For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
+In our case, assembly is the steering wheel, and the rods, levers, and other hidden stuff is our machine code.
+
+Here's the thing about computers. They can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
+
+Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 
 It’s like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in imperial measurements (eg cups, tablespoons, etc.), and Icelandic people write recipes in metric measurements (grams, liters, etc.).
 
 Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
-You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like (we will talk about [what binary is](#binary) a little bit later):
+**(COMMENT 🐣: I think this does a good job of explaining the role of an assembler but maybe a language example might be better? Cuz it technically is like two different languages? Eg. It's like if you have a cake recipe written in English (acting as the assembly language), and you want to convert it to French (acting as machine code) for your friend (acting as the computer). Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement in English 2, convert it to French, and write the converted recipe in French. Now your friend can understand the instructions! Look at you go - you’re the assembler here!)**
+
+You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like this in binary (we will talk about [what binary is](#binary) a little bit later):
 
 ```
 01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
 ```
 
-Machine code can also look like this, if you viewed it with a hex editor (we will talk about [what hex is](#hexadecimal) a little bit later):
-
-```
-F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4 44
-```
-
-So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). **(COMMENT 🐣: I'm confused here...are you referring to instructions such as ADD that are in the control unit? If so, I think we need a high level overview of how information is processed in the CPU before this? Also, here does processor refer to CPU?)** Assembly, on the other hand, looks something like:
+Assembly, on the other hand, looks something like:
 
 ```asm
-; Written in X86-64 Intel syntax assembly language
-mov r12, r13 ; Load the number stored in register 13 into register 12
-add r12, 4   ; Add 4 to whatever is in register 12
+mov r12, r13
+add r12, 4
 ```
 
-_A note: everything after the ; are comments for other humans, not code to execute, so the computer ignores it._
-
-I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, it's far friendlier than just writing a big list of numbers, and that's the real purpose of assembly language: to allow human beings to basically write machine code without just writing a big list of numbers.
+I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
 
 **(COMMENT 🐣: Maybe we can move this example section + rest of the CPU explainations to above the part about assembly language and machine code,right after the paragraph about "Have you heard of the companies Intel or AMD?" and we can add a diagram. FLOW: here's a diagram with different sections of the CPU, here are different functions of individual parts, here's how they all work. After that, now here's how you can communicate with the CPU using assembly language etc.)**
 
-All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read. Your CPU is able to read these things with the help of something called a decoder.
+All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.  Your CPU is able to read these numbers with the help of something called a decoder.
 
 A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. **(COMMENT 🐣: I think we need to add brief context about how the assumbly stores instructions otherwise the following sentence is a little confusing, could be a good place for a diagram)** So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
 
@@ -103,7 +121,7 @@ How does the decoder know how to decode these things? It’s actually built phys
 
 **(COMMENT 🐣: would the following section be more useful if the register was briefly explained?)**.
 
-You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
+You may be wondering what how machine code actually works. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
 ```asm
 add r12, 4; Add 4 to whatever is in register 12
@@ -131,15 +149,14 @@ The decoder then sees that the next byte has the value `12`, so it knows that it
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
-**(COMMENT 🐣: I really like the explainations here and think they work really well!)**
-
 ### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 
@@ -157,9 +174,10 @@ This clock is going _fast_. You're seeing something like one vibration every mic
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 Accessing your RAM is kind of like going to the post office. Each piece of data (mail, in our metaphor) has an "address" (mailbox number) where you can view the contents (mail). You can also clear out the contents (take the mail out of the box), and then store new pieces of data (get new pieces of mail).
@@ -169,9 +187,10 @@ Our pieces of mail are actually just electrical currents. Because we store data 
 Our RAM, or post office, has quite a bit of room to store our things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster (but smaller) storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
 
 <p align="center">
-  <br>
+  <br />
   <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
@@ -195,7 +214,10 @@ _NOTE: fill this section out_
 Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
 
 <p align="center">
+  <br />
   <img height="300" src="https://i.stack.imgur.com/eaSf7.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 #### The Stack

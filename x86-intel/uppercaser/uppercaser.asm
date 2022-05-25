@@ -6,7 +6,7 @@
 ; Written as a working example of an x86 Intel syntax assembly language program
 ; ==================================================================================
 
-;; x86-64 System V processor, Intel syntax
+;; x86-64 processor, Intel syntax
 ; yasm -f macho64 uppercaser.asm && ld uppercaser.o -o uppercaser -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser
 
 section .data
@@ -14,7 +14,7 @@ section .data
 section .text
     global _main
 
-; In an x86-64 System V processor, at the beginning of _main:
+; In an x86-64 processor (System V) at the beginning of _main:
 ; rdi - contains argc, which is the name in C for the integer number of command-line arguments that were passed.
 ; rsi - contains argv[][], which is the name in C for the array of command-line arguments. This will be explained
 ;       more below.
