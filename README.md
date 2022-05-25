@@ -65,7 +65,7 @@ For example, let's take a steering wheel. A steering wheel makes driving simple 
 
 In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
 
-It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (acting as the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here! 
+It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (acting as the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
 **(COMMENT 🐣: I think this does a good job of explaining the role of an assembler but maybe a language example might be better? Cuz it technically is like two different languages? Eg. It's like if you have a cake recipe written in English (acting as the assembly language), and you want to convert it to French (acting as machine code) for your friend (acting as the computer). Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement in English 2, convert it to French, and write the converted recipe in French. Now your friend can understand the instructions! Look at you go - you’re the assembler here!)**
 
@@ -101,7 +101,7 @@ A decoder is a specialized device on the CPU that takes input and decodes what i
 
 How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
 
-**(COMMENT 🐣: would the following section be more useful if the register was briefly explained?)**. 
+**(COMMENT 🐣: would the following section be more useful if the register was briefly explained?)**.
 
 You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
@@ -201,7 +201,7 @@ Like we talked about in the [saving data](#saving-data) section, registers are a
 #### The Stack
 Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient! 
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
 
 So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
 
