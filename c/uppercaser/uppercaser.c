@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
   // We only want to print out additional command line arguments, so let's skip
   // our first argument
   if (argc > 1) {
-    for (i = 1; printedArgs < argc; i++) {
+    for (int i = 1; i < argc; i++) {
       printArgument(argv[i]);
     }
   } else {
