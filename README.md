@@ -1,5 +1,5 @@
 # Some Assembly Required
-### A playful guide about how to talk to your computer.
+### A playful guide about talking to your computer.
 
 <p align="center">
   <img width="460" height="300" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8688491/hiE5vMs.gif">
