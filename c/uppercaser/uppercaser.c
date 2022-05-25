@@ -24,9 +24,8 @@ int main(int argc, char **argv) {
   if (argc > 1) {
     int printedArgs = 1;
 
-    while (printedArgs < sizeof argc) {
+    for (printedArgs = 1; printedArgs < argc; printedArgs++) {
       printArgument(argv[printedArgs]);
-      printedArgs++;
     }
   } else {
     printf("No arguments passed!\n");
