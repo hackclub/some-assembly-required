@@ -82,9 +82,13 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
+For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
+In our case, assembly code is the human-readable layer above something called machine code.
+
+CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on.
+
+Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
 
 It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (acting as the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
