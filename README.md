@@ -54,6 +54,8 @@ I will say, communicating with your CPU directly is usually quite unnecessary, a
 
 Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at a fundamental level can be pretty dang cool, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
 
+Alright, let's get to the good stuff. Like, what even is a CPU?
+
 ## The CPU
 
 <p align="center">
