@@ -63,9 +63,11 @@ One way we can communicate directly with the CPU is by writing instructions for 
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
 
-In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
+In our case, assembly code is the human-readable layer above something called machine code. CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on. Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
 
-It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
+It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (acting as the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here! 
+
+**(COMMENT 🐣: I think this does a good job of explaining the role of an assembler but maybe a language example might be better? Cuz it technically is like two different languages? Eg. It's like if you have a cake recipe written in English (acting as the assembly language), and you want to convert it to French (acting as machine code) for your friend (acting as the computer). Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement in English 2, convert it to French, and write the converted recipe in French. Now your friend can understand the instructions! Look at you go - you’re the assembler here!)**
 
 You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like (we will talk about [what binary is](#binary) a little bit later):
 
@@ -79,7 +81,7 @@ Machine code can also look like this, if you viewed it with a hex editor (we wil
 F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4 44
 ```
 
-So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). Assembly, on the other hand, looks something like:
+So you’d have to painstakingly convert numbers mapped to instructions (the number of instructions per processor varies, but it’s somewhere between 50-1000). **(COMMENT 🐣: I'm confused here...are you referring to instructions such as ADD that are in the control unit? If so, I think we need a high level overview of how information is processed in the CPU before this? Also, here does processor refer to CPU?)** Assembly, on the other hand, looks something like:
 
 ```asm
 ; Written in X86-64 Intel syntax assembly language
@@ -91,11 +93,15 @@ _A note: everything after the ; are comments for other humans, not code to execu
 
 I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, it's far friendlier than just writing a big list of numbers, and that's the real purpose of assembly language: to allow human beings to basically write machine code without just writing a big list of numbers.
 
+**(COMMENT 🐣: Maybe we can move this example section + rest of the CPU explainations to above the part about assembly language and machine code,right after the paragraph about "Have you heard of the companies Intel or AMD?" and we can add a diagram. FLOW: here's a diagram with different sections of the CPU, here are different functions of individual parts, here's how they all work. After that, now here's how you can communicate with the CPU using assembly language etc.)**
+
 All programming languages are some level of abstraction above machine code, but in the end, all human written code has to be converted into numbers for your CPU to be able to read. Your CPU is able to read these things with the help of something called a decoder.
 
-A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
+A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. **(COMMENT 🐣: I think we need to add brief context about how the assumbly stores instructions otherwise the following sentence is a little confusing, could be a good place for a diagram)** So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
 
 How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
+
+**(COMMENT 🐣: would the following section be more useful if the register was briefly explained?)**. 
 
 You may be wondering what machine code actually looks like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
@@ -125,6 +131,8 @@ The decoder then sees that the next byte has the value `12`, so it knows that it
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
+**(COMMENT 🐣: I really like the explainations here and think they work really well!)**
+
 ### Electricity and the physical world
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
 
@@ -133,6 +141,7 @@ The CPU is able to interpret machine code, which is just numbers, as instruction
   <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
   <br>
 </p>
+
 
 Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of 8 electrical signals (a byte). A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
@@ -169,7 +178,7 @@ Registers are where the CPU can store small pieces of data so that it can keep i
 
 A nice thing about registers is that processors have a few of them, each one being available for different purposes. Some of them are directly accessible by you for setting values and reading values through assembly instructions, but some are used internally and can’t be directly accessed.
 
-Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory.
+Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory. **(COMMENT 🐣: should we add an explaination of why we only have a limited number of registers? would also help with stack explaination later)**
 
 ## Writing Code
 There are many different assembly languages, depending on the processor you want to talk to.
@@ -190,13 +199,15 @@ Like we talked about in the [saving data](#saving-data) section, registers are a
 </p>
 
 #### The Stack
-Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
 
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient! 
 
 So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
 
 Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+
+**(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
 
 ### Instructions
 _Note: These examples are written in X86-64 Intel syntax assembly language_
