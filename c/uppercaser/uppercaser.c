@@ -7,6 +7,8 @@
 
 // gcc -o uppercaser uppercaser.c && ./uppercaser
 
+#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
 /* function declarations */
@@ -37,5 +39,9 @@ void printNumberOfArgs(int numberOfArgs) {
 }
 
 void printArgument(char *arg) {
+  for (int i = 0; i < strlen(arg); i++) {
+    arg[i] = toupper(arg[i]);
+  }
+
   printf("%s\n", arg);
 }
