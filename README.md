@@ -67,7 +67,7 @@ Alright, let's get to the good stuff. Like, what even is a CPU?
 
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, also known as the CPU or the processor, which effectively acts as the brain of the computer.
 
-Computers contain other processing units (like the graphics card!) that are responsible for processing more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can **read values**, **set values**, and **perform simple math** calculations like addition and subtraction.
+Computers contain other processing units (like the graphics card!) that are responsible for processing other more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can **read values**, **set values**, and **perform simple math** calculations like addition and subtraction.
 
 You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
 
@@ -84,9 +84,7 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly is the human-readable layer above something called machine code.
-
-CPUs can only understand numbers, so machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data.
+In our case, assembly is the human-readable layer above something called machine code. Remember, our CPU can only understand numbers, so machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data.
 
 Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 
