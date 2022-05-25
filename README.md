@@ -53,9 +53,10 @@ In this guide, we are going to cover what the CPU is, how we can communicate wit
 ## The CPU
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, known as the CPU or the processor, which effectively acts as the brain of the computer. Computers contain other processing units (like the graphics card!) that are responsible for processing more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can read values, set values, and perform simple math calculations like addition and subtraction. You hand it numbers, and it’s put to work crunching the data however you’d like.
@@ -63,9 +64,10 @@ Have you heard of the companies Intel or AMD? These are two popular companies th
 One way we can communicate directly with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. An abstraction means that it’s a layer above some other layer that makes that thing easier to do.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://www.familyhandyman.com/wp-content/uploads/2019/05/08.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you.
@@ -144,9 +146,10 @@ The decoder knows that next comes the argument for the number to add. It sees `4
 The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 
@@ -164,9 +167,10 @@ This clock is going _fast_. You're seeing something like one vibration every mic
 You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
 
 <p align="center">
-  <br>
+  <br />
   <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 Accessing your RAM is kind of like going to the post office. Each piece of data (mail, in our metaphor) has an "address" (mailbox number) where you can view the contents (mail). You can also clear out the contents (take the mail out of the box), and then store new pieces of data (get new pieces of mail).
@@ -176,9 +180,10 @@ Our pieces of mail are actually just electrical currents. Because we store data 
 Our RAM, or post office, has quite a bit of room to store our things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster (but smaller) storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
 
 <p align="center">
-  <br>
+  <br />
   <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
-  <br>
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
@@ -202,7 +207,10 @@ _NOTE: fill this section out_
 Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
 
 <p align="center">
+  <br />
   <img height="300" src="https://i.stack.imgur.com/eaSf7.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
 </p>
 
 #### The Stack
