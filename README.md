@@ -46,13 +46,13 @@ I wanted to write down my learnings and make an approachable guide for people wh
 
 This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that can't true, but I promise you that literally everything your computer is doing can be represented by two values: 0 and 1.
 
-I said simple, but I didn't say easy. Even though computers are fundamentally doing fairly simple tasks, they can be quite confusing to learn. We have to remember that computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes.
+Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at the core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
 I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
 
 I will say, communicating with your CPU directly is usually quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems or other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightning fast.
 
-Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at a fundamental level can be pretty dang cool, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
+Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at this level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
 
 Alright, let's get to the good stuff. Like, what even is a CPU?
 
