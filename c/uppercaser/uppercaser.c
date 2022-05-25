@@ -11,7 +11,7 @@
 
 /* function declarations */
 void printNumberOfArgs(int numberOfArgs);
-void printArguments(char **args);
+void printArgument(char *arg);
 
 int main(int argc, char **argv) {
   // Uncomment this to print out number of arguments
@@ -22,7 +22,12 @@ int main(int argc, char **argv) {
   // We only want to print out additional command line arguments, so let's skip
   // our first argument
   if (argc > 1) {
-    printArguments(argv);
+    int printedArgs = 1;
+
+    while (printedArgs < sizeof argc) {
+      printArgument(argv[printedArgs]);
+      printedArgs++;
+    }
   } else {
     printf("No arguments passed!\n");
   }
@@ -34,6 +39,6 @@ void printNumberOfArgs(int numberOfArgs) {
   printf("%i\n", numberOfArgs);
 }
 
-void printArguments(char **args) {
-  printf("%s\n", args[1]);
+void printArgument(char *arg) {
+  printf("%s\n", arg);
 }
