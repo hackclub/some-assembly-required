@@ -24,6 +24,9 @@ I wanted to write down my learnings and make an approachable guide for people wh
 1. X86-64 System V Intel Syntax
     - [Hello World](/x86-intel/hello-world/hello-world.asm)
     - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
+1. C (For comparison purposes)
+    - [Hello World](/c/hello-world/hello-world.c)
+    - [Uppercaser](/c/uppercaser/uppercaser.c)
 
 ------------------
 
