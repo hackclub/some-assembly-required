@@ -44,7 +44,7 @@ I wanted to write down my learnings and make an approachable guide for people wh
 
 ------------------
 
-This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that can't true, but I promise you that literally everything your computer is doing can be represented by two values: 0 and 1.
+This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that can't true, but I promise you that literally everything your computer is doing can be represented by just two values: **0** and **1**.
 
 Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at the core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
