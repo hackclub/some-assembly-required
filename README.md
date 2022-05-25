@@ -84,11 +84,11 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly is the human-readable layer above something called machine code.
+In our case, assembly is the steering wheel, and the rods, levers, and other hidden stuff is our machine code.
 
 Here's the thing about computers. They can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
 
-Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
+Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 
 It’s like if you have a cake recipe written in imperial measurements, and you want to convert it to metric for your Canadian friend. Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (acting as the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
@@ -100,12 +100,6 @@ You could skip all of this assembly shenanigans by writing the machine code dire
 01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
 ```
 
-Machine code can also look like this, as it is commonly viewed in a hex editor (we will talk about [what hex is](#hexadecimal) a little bit later):
-
-```
-F8 12 01 9A DE B6 77 1C E3 28 6A BB 07 07 00 F2 E4 10 DD D0 EF 36 2A 3A 5F AB C4 44
-```
-
 Assembly, on the other hand, looks something like:
 
 ```asm
@@ -113,7 +107,7 @@ mov r12, r13
 add r12, 4
 ```
 
-I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, it's far friendlier than just writing a bunch of numbers.
+I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
 
 **(COMMENT 🐣: Maybe we can move this example section + rest of the CPU explainations to above the part about assembly language and machine code,right after the paragraph about "Have you heard of the companies Intel or AMD?" and we can add a diagram. FLOW: here's a diagram with different sections of the CPU, here are different functions of individual parts, here's how they all work. After that, now here's how you can communicate with the CPU using assembly language etc.)**
 
