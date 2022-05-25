@@ -86,7 +86,7 @@ For example, let's take a steering wheel. A steering wheel makes driving simple 
 
 In our case, assembly is the human-readable layer above something called machine code.
 
-CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on.
+CPUs can only understand numbers, so machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data.
 
 Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read. **(COMMENT 🐣: maybe we can mention why we normally high-level languages and also that it's even more layers of abstraction, could link to your idea of a sample of c code vs assembly)**
 
