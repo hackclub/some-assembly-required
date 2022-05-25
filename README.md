@@ -44,7 +44,7 @@ I wanted to write down my learnings and make an approachable guide for people wh
 
 ------------------
 
-This may sound counterintuitive, but computers are simple. I know you may be shaking your head, insisting that can't true, but I promise you that literally everything your computer is doing can be represented by just two values: **0** and **1**.
+This may sound counterintuitive, but computers are actually quite simple. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
 Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at their core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
@@ -84,7 +84,9 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly is the human-readable layer above something called machine code. Remember, our CPU can only understand numbers, so machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data.
+In our case, assembly is the human-readable layer above something called machine code.
+
+Here's the thing about computers. They can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
 
 Assembly, on the other hand, is a text based language, consisting of acronyms that represent instructions to the computer. Since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 
