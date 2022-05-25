@@ -109,8 +109,6 @@ add r12, 4
 
 I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
 
-**(COMMENT 🐣: Maybe we can move this example section + rest of the CPU explainations to above the part about assembly language and machine code,right after the paragraph about "Have you heard of the companies Intel or AMD?" and we can add a diagram. FLOW: here's a diagram with different sections of the CPU, here are different functions of individual parts, here's how they all work. After that, now here's how you can communicate with the CPU using assembly language etc.)**
-
 All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.  Your CPU is able to read these numbers with the help of something called a decoder.
 
 A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. **(COMMENT 🐣: I think we need to add brief context about how the assumbly stores instructions otherwise the following sentence is a little confusing, could be a good place for a diagram)** So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
