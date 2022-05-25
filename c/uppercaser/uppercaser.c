@@ -22,10 +22,8 @@ int main(int argc, char **argv) {
   // We only want to print out additional command line arguments, so let's skip
   // our first argument
   if (argc > 1) {
-    int printedArgs = 1;
-
-    for (printedArgs = 1; printedArgs < argc; printedArgs++) {
-      printArgument(argv[printedArgs]);
+    for (i = 1; printedArgs < argc; i++) {
+      printArgument(argv[i]);
     }
   } else {
     printf("No arguments passed!\n");
