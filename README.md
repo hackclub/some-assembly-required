@@ -84,7 +84,7 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
-In our case, assembly code is the human-readable layer above something called machine code.
+In our case, assembly is the human-readable layer above something called machine code.
 
 CPUs can only understand numbers, so machine code is just a list of numbers that the CPU reads to figure out what instructions to execute and what data they should operate on.
 
