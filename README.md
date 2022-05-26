@@ -237,7 +237,10 @@ There are many different assembly languages, depending on the processor you want
 - Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
 - RISC-V is a simpler assembly language, made for educational and research purposes
 
-Given that the processor on my Macbook Pro is an Intel X86-64, I will be using X86 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
+Given that the processor on my MacBook Pro is an Intel X86-64, I will be using X86 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
+
+### Data
+_NOTE: Fill this in about bits vs bytes etc_
 
 ### Registers
 
@@ -249,17 +252,6 @@ In order to talk about assembly, we need to dig a bit more into what registers a
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
-
-#### The Stack
-Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
-
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
-
-So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
-
-Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
-
-**(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
 
 ### Instructions
 _Note: These examples are written in X86-64 Intel syntax assembly language_
@@ -320,6 +312,17 @@ _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of condit
 WRITING NOTE: Talk about how this maps to jump/call instructions in assembly
 
 The CPU has many specialized registers, which we don't access directly. One of them is the program counter, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
+
+##### The Stack
+Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+
+So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
+
+Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+
+**(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
 
 ## The Math Section
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
