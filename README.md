@@ -169,7 +169,7 @@ The decoder knows that the `add` instruction's first argument is both:
   - the save destination
   - and the location of the first number to add
 
-The decoder then sees that the next byte has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the number stored in `r12` for the math part.
+The decoder then sees that the next piece of data has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the number stored in `r12` for the math part.
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
@@ -237,10 +237,21 @@ There are many different assembly languages, depending on the processor you want
 - Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
 - RISC-V is a simpler assembly language, made for educational and research purposes
 
-Given that the processor on my MacBook Pro is an Intel X86-64, I will be using X86 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
+Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using X86-64 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
 
 ### Data
-_NOTE: Fill this in about bits vs bytes etc_
+
+We gotta talk about data before we continue. So far, we've been sidestepping around it, talking about it as 1s and 0s, or just _data_. But how data is stored is important for writing assembly.
+
+One unit of data, which is just a single 1 or 0, is called a **bit**.
+
+The smallest collection of bits we refer to is called a **byte*. A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - _everything_ ends up being divisible by 8.
+
+Why 8? Well, when we're representing a single character (like "a"), it takes 8 bits to represent that character in data. That's because each letter is represented by a number, that we can then map to a character when we need to. Have you heard of the [ASCII table](https://www.asciitable.com/)? That table shows each character mapped to its coordinating number!
+
+In order to represent those ASCII numbers in just 0s and 1s, we have to convert our [base 10](#number-systems) number (let's say we're working with "A", which maps to 65) into a [base 2](#binary) number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by [electrical signals being on or off](#electricity-and-the-physical-world), which maps directly to `1`s and `0`s. For more information on converting to binary, see the [binary section](#binary), but for now it's fine to hand wave that part.
+
+Our ASCII table goes up to the number 127, which, in binary is represented by `10000000`. So that's why we need 8 digits!
 
 ### Registers
 
