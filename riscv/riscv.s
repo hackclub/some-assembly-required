@@ -9,18 +9,18 @@
 # Instruction set:
 # https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 
-## Saving numbers to registers
-# There's no way to directly store a value in a register
-# So we add 0 to a number, and add it to a register
-# zero is another way to reference register x0, which
-# always stays as 0
 
-# I stands for immediate, meaning we are working with
+# I (like in ADDI) stands for immediate, meaning we are working with
 # a numerical value for one of the args, instead of
 # retrieving both from registers
 
 ## Add immediate
 # Save the value 1 into register 18
+# There are no commands to directly load numbers into registers
+# Luckily, we have a register available in RISC-V (x0) that's a zero
+# constant, which is also accessible by referencing `zero`. If we add 
+# our number, 1, to the zero register, then save that to x18, it's effectively 
+# just loading 1 into register 18 since it's just adding 1 + 0.
 # x18 = 1
 ADDI x18, zero, 1
 
@@ -39,7 +39,8 @@ ADD x20, x18, x19
 # x21 = 1
 SUB x21, x20, x19
 
-# Memory addresses are in hexadecimal
+# Memory addresses are in hexadecimal 
+# https://github.com/hackclub/some-assembly-required#hexadecimal
 # The RISC-V interpreter is showing the memory addresses in word increments
 # Words are 32 bits or 4 bytes
 
