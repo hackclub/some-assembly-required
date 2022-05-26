@@ -241,6 +241,13 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 ### Data
 
+<p align="center">
+  <br />
+  <img height="300" src="https://learnworthy.net/wp-content/uploads/2020/03/The-amazing-history-of-the-Data-Byte.png">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
 We gotta talk about data before we continue. So far, we've been sidestepping around it, talking about it as 1s and 0s, or just _data_. But how data is stored is important for writing assembly.
 
 One unit of data, which is just a single 1 or 0, is called a **bit**.
