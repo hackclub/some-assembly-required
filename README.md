@@ -118,25 +118,46 @@ I know this doesn’t look extremely friendly, especially compared to the high l
 
 All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.  Your CPU is able to read these numbers with the help of something called a decoder.
 
-A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. **(COMMENT 🐣: I think we need to add brief context about how the assumbly stores instructions otherwise the following sentence is a little confusing, could be a good place for a diagram)** So the decoder sees a specific number, and it’s like oh! I know what the number 2 maps to! It means I want to subtract numbers. So now the decoder can send the data along to the right places to do the things it needs to do.
+#### Decoding our instructions
+
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. 
+
+A CPU has a mapping from number to instruction, something like:
+
+| Number | Instruction |
+| ------ | ----------- |
+|    1   |    `add`    |
+|    2   |    `sub`    |
+|   ...  |     ...     |
+
+The decoder grabs the next instruction to execute, which looks like a bunch of numbers. It looks at the first number, and let's say it sees the number 2. The decoder is then able to map the number 2 to the subtraction instruction. So now the decoder can send the data along to the right places to do the subtraction.
 
 How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
 
-**(COMMENT 🐣: would the following section be more useful if the register was briefly explained?)**.
+#### Putting it all together
 
-You may be wondering what how machine code actually works. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
+You may be wondering what this might look like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
+
+In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily. 
 
 ```asm
 add r12, 4; Add 4 to whatever is in register 12
 ```
 
-In machine code, this may end up looking like [binary](#binary), or base 2:
+In machine code, this may end up looking like this in [binary](#binary) (we will cover binary later), or base 2:
 
 ```
 00000001 00001100 00001100 00000100
 ```
 
-Which, in base 10 (how we normally talk about numbers!), is:
+Which, in [base 10](#number-systems) (how we normally talk about numbers!), is:
 
 ```
 1 12 4
@@ -148,12 +169,15 @@ The decoder knows that the `add` instruction's first argument is both:
   - the save destination
   - and the location of the first number to add
 
-The decoder then sees that the next byte has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the data out of `r12` for the math part.
+The decoder then sees that the next byte has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the number stored in `r12` for the math part.
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
 ### Electricity and the physical world
-The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
+
+Now we know how the CPU is able to interpret machine code, which is just numbers, as instructions. And we know that these instructions can be represented with just 1s and 0s, also known as [binary](#binary).
+
+In the physical world, these binary numbers map to electrical circuits. To simplify a bit, if a circuit contains electrical current, it can be considered "on", or 1. If it doesn't have electrical current, it can be considered "off", or 0. Using this principal, multiple circuits can be arranged in a group to represent binary numbers.
 
 <p align="center">
   <br />
