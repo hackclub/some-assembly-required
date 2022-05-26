@@ -151,7 +151,7 @@ In order to explain this, let's briefly talk about registers. We will get into t
 add r12, 4; Add 4 to the number saved in register 12
 ```
 
-In machine code, this may end up looking like this in [binary](#binary) (we will cover binary later), or base 2:
+In machine code, this may end up looking like this in [binary](#binary) (we will cover what binary is later), or base 2:
 
 ```
 00000001 00001100 00001100 00000100
