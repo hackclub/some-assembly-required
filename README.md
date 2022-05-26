@@ -247,9 +247,8 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 
 <p align="center">
   <br />
-  <img height="100" src="https://learnworthy.net/wp-content/uploads/2020/03/The-amazing-history-of-the-Data-Byte.png">
+  <img height="200" src="https://learnworthy.net/wp-content/uploads/2020/03/The-amazing-history-of-the-Data-Byte.png">
   <br />
-  <span>just a placeholder image to break up the content!</span>
 </p>
 
 The smallest collection of bits is called a **byte**. Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
@@ -264,7 +263,6 @@ Why 8? Well, when we're representing a single character (like "a"), it takes 8 b
   <br />
   <img height="300" src="https://www.asciitable.com/asciifull.gif">
   <br />
-  <span>just a placeholder image to break up the content!</span>
 </p>
 
 In order to represent those ASCII numbers in just 0s and 1s, we have to convert our [base 10](#number-systems) number (let's say we're working with "A", which maps to 65) into a [base 2](#binary) number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by [electrical signals being on or off](#electricity-and-the-physical-world), which maps directly to `1`s and `0`s. For more information on converting to binary, see the [binary section](#binary), but for now it's fine to hand wave that part.
