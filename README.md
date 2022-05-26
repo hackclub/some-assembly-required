@@ -148,7 +148,7 @@ You may be wondering what this might look like. If you are, you’re in luck! Le
 In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily. 
 
 ```asm
-add r12, 4; Add 4 to whatever is in register 12
+add r12, 4; Add 4 to the number saved in register 12
 ```
 
 In machine code, this may end up looking like this in [binary](#binary) (we will cover binary later), or base 2:
