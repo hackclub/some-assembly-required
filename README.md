@@ -187,13 +187,13 @@ In the physical world, these binary numbers map to electrical circuits. To simpl
 </p>
 
 
-Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of 8 electrical signals (a byte). A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
+Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of electrical signals. A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as **buses**. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
-As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: a byte travels around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
+As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: our data, or electrical signals, travel around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
 
-In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our processor clock.
+In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our **processor clock**.
 
-Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time.
+It's not a clock that would be useful for you or me, but is made of material that oscillates at a certain frequency, giving you a bunch of vibrations per second. These vibrations help the processor keep track of time.
 
 This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
 
