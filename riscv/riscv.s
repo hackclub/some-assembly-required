@@ -36,7 +36,8 @@ ADD x20, x18, x19
 # x21 = 1
 SUB x21, x20, x19
 
-# Memory addresses are in hexadecimal (An explaination of hexadecimal is available in the README)
+# Memory addresses are in hexadecimal 
+# https://github.com/hackclub/some-assembly-required#hexadecimal
 # The RISC-V interpreter is showing the memory addresses in word increments
 # Words are 32 bits or 4 bytes
 
