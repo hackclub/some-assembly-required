@@ -245,7 +245,11 @@ We gotta talk about data before we continue. So far, we've been sidestepping aro
 
 One unit of data, which is just a single 1 or 0, is called a **bit**.
 
-The smallest collection of bits we refer to is called a **byte*. A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - _everything_ ends up being divisible by 8.
+The smallest collection of bits is called a **byte**. Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
+
+A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - _everything_ ends up being divisible by 8.
+
+#### Bytes & ASCII
 
 Why 8? Well, when we're representing a single character (like "a"), it takes 8 bits to represent that character in data. That's because each letter is represented by a number, that we can then map to a character when we need to. Have you heard of the [ASCII table](https://www.asciitable.com/)? That table shows each character mapped to its coordinating number!
 
@@ -255,7 +259,7 @@ Our ASCII table goes up to the number 127, which, in binary is represented by `1
 
 ### Registers
 
-In order to talk about assembly, we need to dig a bit more into what registers are. Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
+Now that we know about data, we should talk about storing data. We covered registers in the [saving data](#saving-data) section briefly - registers are available for short term data storage on the CPU.
 
 <p align="center">
   <br />
