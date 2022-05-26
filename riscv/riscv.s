@@ -17,7 +17,10 @@
 ## Add immediate
 # Save the value 1 into register 18
 # There are no commands to directly load numbers into registers
-# Luckily, we have a register available in RISC-V (x0) that's a zero constant, which is also accessible by zero. If we add our number, lets say 1, to the zero register, then save that to x18, it's effectively just loading 1 into register 18 since it's just adding 1 + 0.
+# Luckily, we have a register available in RISC-V (x0) that's a zero
+# constant, which is also accessible by referencing `zero`. If we add 
+# our number, 1, to the zero register, then save that to x18, it's effectively 
+# just loading 1 into register 18 since it's just adding 1 + 0.
 # x18 = 1
 ADDI x18, zero, 1
 
