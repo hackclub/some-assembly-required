@@ -300,20 +300,18 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 </p>
 
 #### Hexadecimal
-_Note: fill this out_
 
 All numbers in assembly language are represented by hexadecimal
-Our usual numbers are base 10
-
-When you see 125 as a number, you can think of that as:
+Our usual numbers are base 10 so when you see 125 as a number, you can think of that as:
 - (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
 - 100 + 20 + 5 = 125
 
-Hex is base 16, which means is 0-9, A-F for 10-15
+Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15). Each digit is the value of the digit (0-15 where 10-15 are represented by A-F) times 16 to the power of the position of the digit (starting with 0 from the right).
 
-When you see 7D, you can think of that as:
+
+7D would translate to:
 - D = 13
-- (7 * 16^1) + 13
+- (7 * 16^1) + (13 * 16^0)
 - 112 + 13 = 125
 
 
@@ -328,7 +326,7 @@ When people hear that I program for a living, they think that I stare at 0s and 
 
 When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it (as seen in the graph above).
 
-With binary, there are only two digits represented: 0 and 1. Each digit is 2 times the value to the right multiplied by the value at position (refer to diagram).
+With binary, there are only two digits represented: 0 and 1. Each digit is the value of the digit (0 or 1) times 2 to the power of the position of the digit (starting with 0 from the right).
 
 
 ### Boolean logic
