@@ -265,9 +265,9 @@ Why 8? Well, when we're representing a single character (like "a"), it takes 8 b
   <br />
 </p>
 
-In order to represent those ASCII numbers in just 0s and 1s, we have to convert our [base 10](#number-systems) number (let's say we're working with "A", which maps to 65) into a [base 2](#binary) number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by [electrical signals being on or off](#electricity-and-the-physical-world), which maps directly to `1`s and `0`s. For more information on converting to binary, see the [binary section](#binary), but for now it's fine to hand wave that part.
+In order to represent those ASCII numbers in just `0`s and `1`s, we have to convert our [base 10](#number-systems) number (let's say we're working with `A`, which maps to `65` on the ASCII table) into a [base 2](#binary) number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by [electrical signals being on or off](#electricity-and-the-physical-world), which maps directly to `1`s and `0`s. For more information on converting to binary, see the [binary section](#binary), but for now it's fine to hand wave that part.
 
-Our ASCII table goes up to the number 127, which, in binary is represented by `10000000`. So that's why we need 8 digits!
+Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
 
 ### Registers
 
