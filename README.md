@@ -127,7 +127,7 @@ All programming languages are some level of abstraction above machine code. But,
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions. 
+A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions.
 
 A CPU has a mapping from number to instruction, something like:
 
@@ -145,7 +145,7 @@ How does the decoder know how to decode these things? It’s actually built phys
 
 You may be wondering what this might look like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
-In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily. 
+In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily.
 
 ```asm
 add r12, 4; Add 4 to the number saved in register 12
@@ -231,16 +231,17 @@ Now you may be asking yourself - why don’t we store everything in the register
 ## Writing Code
 There are many different assembly languages, depending on the processor you want to talk to.
 
-- X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data.
-- 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today
+- X86 is one of the most useful assembly languages, but is also one of the hardest to write. It's used for Intel processors, which have to process a lot of data!
+- ARM is also useful but difficult, used for the new Apple M1 processors
+- 6502 was used for older gaming systems (Atari and NES, for example), but is still used in small devices today
 - Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
-- RISC-V
+- RISC-V is a simpler assembly language, made for educational and research purposes
+
+Given that the processor on my Macbook Pro is an Intel X86-64, I will be using X86 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
 
 ### Registers
 
-_NOTE: fill this section out_
-
-Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
+In order to talk about assembly, we need to dig a bit more into what registers are. Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
 
 <p align="center">
   <br />
@@ -462,7 +463,10 @@ Comp sci fundamentals
 - https://www.nand2tetris.org/
 
 Boolean Logic
-- https://www.youtube.com/watch?v=gI-qXk7XojA 
+- https://www.youtube.com/watch?v=gI-qXk7XojA
+
+Number Systems
+- https://www.mathsisfun.com/binary-number-system.html
 
 X86
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
