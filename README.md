@@ -31,16 +31,18 @@ I wanted to write down my learnings and make an approachable guide for people wh
 ------------------
 
 ### Guide
+
 1. [The CPU](#the-cpu)
-1. [Electricity and the physical world](#electricity-and-the-physical-world)
-    - [Saving data](#saving-data)
-1. [Writing Code](#writing-code)
-1. [The Math Section](#the-math-section)
-    - [Binary](#binary)
-    - [Boolean Logic](#boolean-logic)
-    - [Hexadecimal](#hexadecimal)
-1. [Resources](#resources)
-1. [Contributors](#contributors)
+   - [Electricity and the physical world](#electricity-and-the-physical-world)
+   - [Saving data](#saving-data)
+2. [Communicating with the CPU](#communicating-with-the-cpu)
+   - [Writing Code](#writing-code)
+3. [The Math Section](#the-math-section)
+   - [Hexadecimal](#hexadecimal)
+   - [Binary](#binary)
+   - [Boolean logic](#boolean-logic)
+4. [Resources](#resources)
+5. [Contributors](#contributors)
 
 ------------------
 
@@ -70,6 +72,82 @@ Have you heard of the companies Intel or AMD? These are two popular companies th
 Computers contain other processing units (like the graphics card!) that are responsible for processing other more specific things, but the CPU is your general powerhouse for all computing tasks. That being said, the CPU can do shockingly little: it can **read values**, **set values**, and **perform simple math** calculations like addition and subtraction.
 
 You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
+
+### Electricity and the physical world
+The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
+
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+
+Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of 8 electrical signals (a byte). A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
+
+As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: a byte travels around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
+
+In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our processor clock.
+
+Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time.
+
+This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
+
+### RAM
+You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
+
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+Accessing your RAM is kind of like going to the post office. Each piece of data (mail, in our metaphor) has an "address" (mailbox number) where you can view the contents (mail). You can also clear out the contents (take the mail out of the box), and then store new pieces of data (get new pieces of mail).
+
+Our pieces of mail are actually just electrical currents. Because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when your post office closed, all of the mail was thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away!
+
+Our RAM, or post office, has quite a bit of room to store our things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster (but smaller) storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
+
+<p align="center">
+  <br />
+  <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+### Registers
+
+_NOTE: fill this section out_
+
+Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
+
+Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
+
+A nice thing about registers is that processors have a few of them, each one being available for different purposes. Some of them are directly accessible by you for setting values and reading values through assembly instructions, but some are used internally and can’t be directly accessed.
+
+Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory. **(COMMENT 🐣: should we add an explaination of why we only have a limited number of registers? would also help with stack explaination later)**
+
+<p align="center">
+  <br />
+  <img height="300" src="https://i.stack.imgur.com/eaSf7.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+#### The Stack
+Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+
+So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
+
+Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+
+**(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
+
+## Communicating with the CPU
 
 One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
@@ -147,87 +225,13 @@ The decoder then sees that the next byte has the value `12`, so it knows that it
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
-### Electricity and the physical world
-The CPU is able to interpret machine code, which is just numbers, as instructions. We can represent these instructions as 1s and 0s, also known as [binary](#binary). In the physical world, we represent binary with electrical circuits. A single circuit may contain an electrical signal, or it may not. 1 represents the presence of electricity, and 0 the absence of electricity. Multiple circuits can be arranged in a group to represent binary numbers. For example, 8 circuits could be grouped together to represent a byte.
-
-<p align="center">
-  <br />
-  <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
-  <br />
-  <span>just a placeholder image to break up the content!</span>
-</p>
-
-
-Imagine a warehouse where we are packing boxes. In this metaphor, the warehouse is your CPU, and a box is a grouping of 8 electrical signals (a byte). A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as buses. Buses are effectively just wires that allow electricity to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
-
-As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: a byte travels around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
-
-In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any backups at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our processor clock.
-
-Every processor has its own clock. It's not a clock that would be useful for you or me, but instead is a material that oscillates at a certain frequency, giving you a certain number of vibrations per second. These vibrations help the processor keep track of time.
-
-This clock is going _fast_. You're seeing something like one vibration every microsecond, which is about 1000000 vibrations per second. We call each one of these vibrations a "clock tick". These are important for us because for every clock tick, the CPU reads one instruction.
-
-### Saving data
-You may have heard the term “memory” thrown around when talking about computers. Usually when people use that term, they’re referring to random access memory, or RAM, which is a type of short term storage your computer has.
-
-<p align="center">
-  <br />
-  <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
-  <br />
-  <span>just a placeholder image to break up the content!</span>
-</p>
-
-Accessing your RAM is kind of like going to the post office. Each piece of data (mail, in our metaphor) has an "address" (mailbox number) where you can view the contents (mail). You can also clear out the contents (take the mail out of the box), and then store new pieces of data (get new pieces of mail).
-
-Our pieces of mail are actually just electrical currents. Because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when your post office closed, all of the mail was thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away!
-
-Our RAM, or post office, has quite a bit of room to store our things - enough to hold entire packages! But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster (but smaller) storage, we have a set of tiny mailboxes outside the post office that can just hold letters. Those are our registers.
-
-<p align="center">
-  <br />
-  <img height="300" src="https://m.media-amazon.com/images/I/51BkYo7G7jL._AC_SX522_.jpg">
-  <br />
-  <span>just a placeholder image to break up the content!</span>
-</p>
-
-Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given.
-
-A nice thing about registers is that processors have a few of them, each one being available for different purposes. Some of them are directly accessible by you for setting values and reading values through assembly instructions, but some are used internally and can’t be directly accessed.
-
-Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we need to hold onto for a bit while we calculate other things, we throw into memory. **(COMMENT 🐣: should we add an explaination of why we only have a limited number of registers? would also help with stack explaination later)**
-
-## Writing Code
+### Writing Code
 There are many different assembly languages, depending on the processor you want to talk to.
 
 - X86 is the most useful but the hardest to write. It's used for Intel processors, which have to process a lot of data.
 - 6502 is another popular assembly language, simpler than X86, and these processors are still used in many small devices today
 - Z80 is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
 - RISC-V
-
-### Registers
-
-_NOTE: fill this section out_
-
-Like we talked about in the [saving data](#saving-data) section, registers are available for short term data storage on the CPU.
-
-<p align="center">
-  <br />
-  <img height="300" src="https://i.stack.imgur.com/eaSf7.jpg">
-  <br />
-  <span>just a placeholder image to break up the content!</span>
-</p>
-
-#### The Stack
-Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes **(COMMENT 🐣: would using the term data be easier to understand? readers might not completely wrap their minds around bytes yet...)** for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
-
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
-
-So now that we know about the stack, the stack pointer is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
-
-Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
-
-**(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
 
 ### Instructions
 _Note: These examples are written in X86-64 Intel syntax assembly language_
@@ -292,8 +296,24 @@ The CPU has many specialized registers, which we don't access directly. One of t
 ## The Math Section
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
-### Binary
+### Hexadecimal
+_Note: fill this out_
 
+All numbers in assembly language are represented by hexadecimal
+Our usual numbers are base 10
+
+When you see 125 as a number, you can think of that as:
+- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
+- 100 + 20 + 5 = 125
+
+Hex is base 16, which means is 0-9, A-F for 10-15
+
+When you see 7D, you can think of that as:
+- D = 13
+- (7 * 16^1) + 13
+- 112 + 13 = 125
+- 
+### Binary
 <p align="center">
   <br>
   <img width="460" height="300" src="https://images.easytechjunkie.com/green-lit-numbers.jpg">
@@ -400,23 +420,6 @@ XNOR is always false unless the inputs are the same.
 Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever. That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you’d actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
-
-### Hexadecimal
-_Note: fill this out_
-
-All numbers in assembly language are represented by hexadecimal
-Our usual numbers are base 10
-
-When you see 125 as a number, you can think of that as:
-- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
-- 100 + 20 + 5 = 125
-
-Hex is base 16, which means is 0-9, A-F for 10-15
-
-When you see 7D, you can think of that as:
-- D = 13
-- (7 * 16^1) + 13
-- 112 + 13 = 125
 
 ## Resources
 
