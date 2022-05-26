@@ -10,10 +10,11 @@
 # https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 
 ## Saving numbers to registers
-# There's no way to directly store a value in a register
+# There's no way to directly store a value in a register 
 # So we add 0 to a number, and add it to a register
 # zero is another way to reference register x0, which
 # always stays as 0
+# (🐣 COMMENT: I don't completely understand this part... are you saying that we don't record the value itself in the register but where that value is (the memory address?)? if so, where is the value? another register? i thought registers can't store numbers?) 
 
 # I stands for immediate, meaning we are working with
 # a numerical value for one of the args, instead of
@@ -39,7 +40,7 @@ ADD x20, x18, x19
 # x21 = 1
 SUB x21, x20, x19
 
-# Memory addresses are in hexadecimal
+# Memory addresses are in hexadecimal (🐣 COMMENT: maybe we can add smth about referring to readme for explaination of hexadecimal?)
 # The RISC-V interpreter is showing the memory addresses in word increments
 # Words are 32 bits or 4 bytes
 
