@@ -292,8 +292,32 @@ The CPU has many specialized registers, which we don't access directly. One of t
 ## The Math Section
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. Now, I promise you it won't be too hard. You may get a little confused and your brain may hurt, but just stick with me here and we'll make it through to the assembly section.
 
-### Binary
+### Number Systems
+<p align="center">
+  <br>
+  <img width="460" height="300" src="https://cloud-ebbg83jzl-hack-club-bot.vercel.app/0diagram.png">
+  <br>
+</p>
 
+#### Hexadecimal
+_Note: fill this out_
+
+All numbers in assembly language are represented by hexadecimal
+Our usual numbers are base 10
+
+When you see 125 as a number, you can think of that as:
+- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
+- 100 + 20 + 5 = 125
+
+Hex is base 16, which means is 0-9, A-F for 10-15
+
+When you see 7D, you can think of that as:
+- D = 13
+- (7 * 16^1) + 13
+- 112 + 13 = 125
+
+
+#### Binary
 <p align="center">
   <br>
   <img width="460" height="300" src="https://images.easytechjunkie.com/green-lit-numbers.jpg">
@@ -302,9 +326,10 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 
 When people hear that I program for a living, they think that I stare at 0s and 1s all day. Luckily I do not, because that would give me a migraine. However, binary is important to talk about, because everything the computer is doing can be represented by these digits. These digits are referred to as binary, which is a number system that has 2 as its base.
 
-When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it.
+When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it (as seen in the graph above).
 
-_Note: Finish filling this in_
+With binary, there are only two digits represented: 0 and 1. Each digit is 2 times the value to the right multiplied by the value at position (refer to diagram).
+
 
 ### Boolean logic
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
@@ -401,28 +426,14 @@ Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every sin
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
-### Hexadecimal
-_Note: fill this out_
-
-All numbers in assembly language are represented by hexadecimal
-Our usual numbers are base 10
-
-When you see 125 as a number, you can think of that as:
-- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
-- 100 + 20 + 5 = 125
-
-Hex is base 16, which means is 0-9, A-F for 10-15
-
-When you see 7D, you can think of that as:
-- D = 13
-- (7 * 16^1) + 13
-- 112 + 13 = 125
-
 ## Resources
 
 Comp sci fundamentals
 - https://www.youtube.com/playlist?app=desktop&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
 - https://www.nand2tetris.org/
+
+Boolean Logic
+- https://www.youtube.com/watch?v=gI-qXk7XojA 
 
 X86
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
