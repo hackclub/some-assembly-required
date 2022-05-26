@@ -10,7 +10,7 @@
 # https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 
 
-# I (in ADDI) stands for immediate, meaning we are working with
+# I (like in ADDI) stands for immediate, meaning we are working with
 # a numerical value for one of the args, instead of
 # retrieving both from registers
 
