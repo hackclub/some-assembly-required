@@ -22,10 +22,10 @@ I wanted to write down my learnings and make an approachable guide for people wh
 
 1. RISC-V
    - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
-2. X86-64 Intel Syntax
+1. X86-64 Intel Syntax
    - [Hello World](/x86-intel/hello-world/hello-world.asm)
    - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
-3. C (For comparison purposes)
+1. C (For comparison purposes)
    - [Hello World](/c/hello-world/hello-world.c)
    - [Uppercaser](/c/uppercaser/uppercaser.c)
 
@@ -34,15 +34,14 @@ I wanted to write down my learnings and make an approachable guide for people wh
 ### Guide
 
 1. [The CPU](#the-cpu)
-2. [Electricity and the physical world](#electricity-and-the-physical-world)
-   - [Saving data](#saving-data)
-3. [Writing Code](#writing-code)
-4. [The Math Section](#the-math-section)
+1. [Communicating With The CPU](#communicating-with-the-cpu)
+2. [Writing Code](#writing-code)
+3. [The Math Section](#the-math-section)
    - [Binary](#binary)
    - [Boolean Logic](#boolean-logic)
    - [Hexadecimal](#hexadecimal)
-5. [Resources](#resources)
-6. [Contributors](#contributors)
+4. [Resources](#resources)
+5. [Contributors](#contributors)
 
 ---
 
@@ -100,7 +99,7 @@ NOTE: nowadays, instead of a cycle where each flow of instruction ends before th
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-#### Fetch
+### Fetch
 
 This is the phase where the CPU fetches data from the memory.
 
@@ -125,13 +124,13 @@ Depending on the processor, you may get around 16 general purpose registers to s
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in the RAM.
 
-#### Decode and Execute
+### Decode and Execute
 
 Each CPU has a set of instructions that is built into the chip which you can think of as an ordered list of actions that the CPU can do. Data from the fetch phase is encoded as binary numbers so based on the set instructions list, the CPU has to decode and figure out what the accompanying instruction is. You can find common RISC-V instructions [here](/riscv.s).
 
 After the data fetched is decoded, the CPU now has an instruction that it will execute. If the instruction is an arithmethic (adding, subtracting, etc.) or logical (comparing two digits to give a true or false etc.) instruction, it is sent to the ALU which is made from a series of [logic gates](#boolean-logic). The ALU would then return either a new value or true or false which will be stored in a register until an instruction (like SB, Store Byte, in [riscv.s](/riscv/riscv.s) that stores the value in the RAM).
 
-#### Electricity and the physical world
+## Electricity and the physical world
 
 Now we know how the CPU is able to interpret machine code, which is just numbers as instructions. And we know that these instructions can be represented with just 1s and 0s, also known as [binary](#binary).
 
@@ -148,7 +147,7 @@ Continuing with the warehouse metaphore, the warehouse is your CPU, and a box is
 
 As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: our data, or electrical signals, travel around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
 
-#### Processor clock
+### Processor clock
 
 In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any distruptions at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our **processor clock**.
 
@@ -156,7 +155,7 @@ It's not a clock that would be useful for you or me, but is made of material tha
 
 These are important for us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is billion of cycles per second!
 
-
+## Communicating with the CPU
 One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
 What do we mean by an abstraction? Well, an abstraction is a layer above something else that makes that thing easier to do.
@@ -204,7 +203,7 @@ I know this doesn’t look extremely friendly, especially compared to the high l
 
 All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.  Your CPU is able to read these numbers with the help of something called a decoder.
 
-#### Decoding our instructions
+### Decoding our instructions
 
 <p align="center">
   <br />
@@ -219,7 +218,7 @@ A CPU has a mapping from number to instruction, something like:
 
 
 | Number | Instruction |
-| -------- | ------------- |
+| ------ | ----------- |
 | 1      | `add`       |
 | 2      | `sub`       |
 | ...    | ...         |
@@ -471,7 +470,7 @@ And is always false unless both inputs are true.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 0   |
 | 10 | 0   |
 | 01 | 0   |
@@ -485,7 +484,7 @@ OR is always false unless one of the inputs is true.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 0   |
 | 10 | 1   |
 | 01 | 1   |
@@ -499,7 +498,7 @@ NOT only requires 1 input, and it flips the input.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 0  | 1   |
 | 1  | 0   |
 
@@ -511,7 +510,7 @@ NAND is always true unless both inputs are true.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 1   |
 | 10 | 1   |
 | 01 | 1   |
@@ -525,7 +524,7 @@ NOR is always false unless both inputs are false.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 1   |
 | 10 | 0   |
 | 01 | 0   |
@@ -539,7 +538,7 @@ XOR is always false unless the inputs are different.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 0   |
 | 10 | 1   |
 | 01 | 1   |
@@ -553,7 +552,7 @@ XNOR is always false unless the inputs are the same.
 
 
 | In | Out |
-| ---- | ----- |
+| -- | --- |
 | 00 | 1   |
 | 10 | 0   |
 | 01 | 0   |
