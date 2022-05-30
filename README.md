@@ -94,7 +94,7 @@ NOTE: nowadays, instead of a cycle where each flow of instruction ends before th
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cloud-4a69gbe8z-hack-club-bot.vercel.app/0v2__1_.png">
+  <img width="460" height="300" src="https://cloud-p921tgnwf-hack-club-bot.vercel.app/0v2__3_.png">
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
