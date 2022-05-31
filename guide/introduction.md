@@ -20,8 +20,8 @@ Now, I will say that communicating with your CPU directly is generally quite unn
   <span>
     <em>A screenshot of RollerCoaster Tycoon</em>
   </span>
-  <br />
 </p>
+<br />
 
 Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at this level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
 
