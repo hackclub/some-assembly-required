@@ -34,6 +34,11 @@ I wanted to write down my learnings and make an approachable guide for people wh
 ### Guide
 
 1. [The CPU](#the-cpu)
+   - [The Instruction Pipeline](#the-instruction-pipeline)
+    - [Fetch](#fetch)
+    - [Decode](#decode)
+    - [Execute](#execute)
+    - [Modern Day](#modern-day)
 1. [Communicating With The CPU](#communicating-with-the-cpu)
 2. [Writing Code](#writing-code)
 3. [The Math Section](#the-math-section)
@@ -72,34 +77,36 @@ Computers contain other processing units (like the graphics card!) that are resp
 
 You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
 
-### How a CPU works
+### The Instruction Pipeline
 
-Anything the CPU does includes a pipeline of instruction with 3 main stages: fetch, decode, and execute. Here's a simple flow of what that would look like. First, the CPU fetches the data from the memory. Then, the CPU decodes that data to gain instructions. The CPU follows that instruction and the flow ends.
+When we ask the CPU to do something, we do that by way of an **instruction**. We say something like, hey CPU - can you add these two numbers together? When the CPU sees that instruction, it sets off a pipeline with 3 main stages:
 
-You might have a few questions such as:
-
-* What is the memory?
-  * When we discuss memory here, we're referring to [RAM](#RAM) which stands for Random Access Memory. The RAM consists of two parts, the address and the data. A simplified diagram is shown below.
-* How does the CPU know what data to grab from the memory?
-  * The CPU has a special [register](#register) called a program counter which which contains the address of the instruction currently being executed. And unless a special instruction such as `JUMP` is included, after each instruction is executed, the program counter adds one to itself in order to grab the next one.
-* What does the data look like?
-  * Data stored in the CPU includes three broad categories. It could be instructions, numbers, or letters (displayed as [character codes](#bytes-&-ascii) in 0s and 1s). The CPU will distinguish what type of data it is when it [decodes](#decode-and-execute) the data.
-* What do instructions look like?
-  * As mentioned above, the instructions are stored as [binary](#binary) numbers. The first part of the binary number is the opcode (like ADD), a unique identifier for an action that the CPU can run. The second binary number is the argument to be executed. For example, an instruction `LOAD_A 3` has the opcode `LOAD_A` and , which in our hyptothetical example would mean add the number 3 to register A.
-* How does the CPU decode instructions?
-
-  * Each CPU comes with a set of instructions built in and their corresponding operation numbers (in binary).
-
-NOTE: nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPU's implement a pipeline method. Imagine a wherehouse where we are packing boxes. Here the CPU is the warehouse and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages). If it's a cycle method, one package would be fully packed and shipped before the next one is worked on. However, a pipeline method would instead use an assembly line where packages go through each station and once they move to the next station, a new package arrives at this station. Before that package is shipped, other packages are already starting to be filled and packed. What this means in terms of the CPU is that it can simultaneously fetch, decode, and execute different instructions. This cuts down the execution time which allows the CPU to operate much faster!
+1. [**Fetch**](#fetch) the data from memory
+1. [**Decode**](#decode) that data to understand the instruction
+1. [**Execute**](#execute) the instruction
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cloud-p921tgnwf-hack-club-bot.vercel.app/0v2__3_.png">
+  <img width="1000" src="https://cloud-p921tgnwf-hack-club-bot.vercel.app/0v2__3_.png">
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-### Fetch
+#### Fetch
+
+_NOTES:_
+
+* How does the CPU know what data to grab from the memory?
+  * The CPU has a special [register](#register) called a program counter which which contains the address of the instruction currently being executed. And unless a special instruction such as `JUMP` is included, after each instruction is executed, the program counter adds one to itself in order to grab the next one.
+
+* What does the data look like?
+  * Data stored in the CPU includes three broad categories. It could be instructions, numbers, or letters (displayed as [character codes](#bytes-&-ascii) in 0s and 1s). The CPU will distinguish what type of data it is when it [decodes](#decode-and-execute) the data.
+
+* What do instructions look like?
+  * As mentioned above, the instructions are stored as [binary](#binary) numbers. The first part of the binary number is the opcode (like ADD), a unique identifier for an action that the CPU can run. The second binary number is the argument to be executed. For example, an instruction `LOAD_A 3` has the opcode `LOAD_A` and , which in our hyptothetical example would mean add the number 3 to register A.
+
+* How does the CPU decode instructions?
+  * Each CPU comes with a set of instructions built in and their corresponding operation numbers (in binary).
 
 This is the phase where the CPU fetches data from the memory.
 
@@ -124,11 +131,17 @@ Depending on the processor, you may get around 16 general purpose registers to s
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in the RAM.
 
-### Decode and Execute
+#### Decode
 
 Each CPU has a set of instructions that is built into the chip which you can think of as an ordered list of actions that the CPU can do. Data from the fetch phase is encoded as binary numbers so based on the set instructions list, the CPU has to decode and figure out what the accompanying instruction is. You can find common RISC-V instructions [here](/riscv.s).
 
+#### Execute
+
 After the data fetched is decoded, the CPU now has an instruction that it will execute. If the instruction is an arithmethic (adding, subtracting, etc.) or logical (comparing two digits to give a true or false etc.) instruction, it is sent to the ALU which is made from a series of [logic gates](#boolean-logic). The ALU would then return either a new value or true or false which will be stored in a register until an instruction (like SB, Store Byte, in [riscv.s](/riscv/riscv.s) that stores the value in the RAM).
+
+#### Modern Day
+
+Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPU's implement a pipeline method. Imagine a warehouse where we are packing boxes. Here the CPU is the warehouse and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages). If it's a cycle method, one package would be fully packed and shipped before the next one is worked on. However, a pipeline method would instead use an assembly line where packages go through each station and once they move to the next station, a new package arrives at this station. Before that package is shipped, other packages are already starting to be filled and packed. What this means in terms of the CPU is that it can simultaneously fetch, decode, and execute different instructions. This cuts down the execution time which allows the CPU to operate much faster!
 
 ## Electricity and the physical world
 
