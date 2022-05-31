@@ -2,7 +2,7 @@
 
 If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. I will promise you that it won't be too hard!
 
-<br>
+<br />
 
 ---
 

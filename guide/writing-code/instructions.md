@@ -81,7 +81,7 @@ Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackover
 
 **(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
 
-<br>
+<br />
 
 ---
 

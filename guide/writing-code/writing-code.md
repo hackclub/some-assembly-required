@@ -4,8 +4,13 @@
   <br />
   <img width="460" height="300" src="https://cdn01.alison-static.net/courses/4411/alison_courseware_intro_4411.jpg">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 TODO: Fill this out more
 
@@ -19,7 +24,7 @@ There are many different assembly languages, depending on the processor you want
 
 Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using X86-64 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
 
-<br>
+<br />
 
 ---
 

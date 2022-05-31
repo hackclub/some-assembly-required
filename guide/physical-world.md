@@ -8,8 +8,13 @@ In the physical world, these binary numbers map to electrical circuits. To simpl
   <br />
   <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 Continuing with our warehouse metaphor, where the warehouse is our CPU, and a single box is a group of electrical circuits. A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as **buses**. Buses are effectively just groups of wires that allow electricity (and therefore information represented by 0s and 1s) to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
@@ -33,8 +38,13 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
   <br />
   <img width="460" height="300" src="https://www.familyhandyman.com/wp-content/uploads/2019/05/08.jpg">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
@@ -50,8 +60,13 @@ It’s like if you were an American and you were giving your Icelandic friend a 
   <br />
   <img width="460" height="300" src="https://www.wikihow.com/images/thumb/e/ec/Write-a-Recipe-Step-12.jpg/v4-460px-Write-a-Recipe-Step-12.jpg">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
 
@@ -78,8 +93,13 @@ All programming languages are some level of abstraction above machine code. But,
   <br />
   <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions.
 
@@ -129,7 +149,7 @@ The decoder then sees that the next piece of data has the value `12`, so it know
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
-<br>
+<br />
 
 ---
 

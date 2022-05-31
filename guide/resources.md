@@ -72,7 +72,7 @@
 - https://www.asciitable.com/
 - https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
 
-<br>
+<br />
 
 ---
 

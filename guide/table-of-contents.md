@@ -32,7 +32,7 @@
 - [@exu3](https://github.com/exu3)
 - [@jakeboxer](https://github.com/jakeboxer)
 
-<br>
+<br />
 
 ---
 

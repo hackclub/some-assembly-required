@@ -4,8 +4,13 @@
   <br />
   <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, also known as the CPU or the processor, which effectively acts as the brain of the computer.
 
@@ -25,8 +30,13 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
   <br />
   <img width="1000" src="https://cloud-p921tgnwf-hack-club-bot.vercel.app/0v2__3_.png">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 ### Fetch
 
@@ -36,8 +46,13 @@ In the first phase of the pipeline, the CPU must fetch data from memory. Memory,
   <br />
   <img width="460" height="300" src="https://img.freepik.com/free-photo/warehouse-with-cardboard-boxes-inside-pallets-racks-logistic-center-huge-large-modern-warehouse-warehouse-filled-with-cardboard-boxes-shelves-boxes-stand-pallets-3d-illustration_92790-1630.jpg?w=2000">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 Keeping with our warehouse metaphor, accessing your RAM is kind of like going to a storage rack with boxes. Each piece of data (boxes, in our metaphor) has an "address" (box location) where you can view the contents (what's inside the box!). You can also clear out the contents (take the box off of the spot on the rack), and then store new pieces of data (add new boxes to the rack).
 
@@ -100,7 +115,7 @@ Alternatively, pipelining would use an assembly line where a package could go th
 
 What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
 
-<br>
+<br />
 
 ---
 

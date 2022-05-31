@@ -3,8 +3,13 @@
 <p align="center">
   <br>
   <img width="460" height="300" src="https://cloud-lhlv3an57-hack-club-bot.vercel.app/0math.png">
-  <br>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 ## Base 10
 
@@ -49,7 +54,7 @@ Each digit is the value of the digit (0 or 1) times 2 to the power of the positi
 
 Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
-<br>
+<br />
 
 ---
 

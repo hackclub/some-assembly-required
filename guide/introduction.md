@@ -1,10 +1,14 @@
-## Computers aren't smart
+# Computers aren't smart
 
 <p align="center">
   <br />
   <img width="460" height="300" src="https://cdn.drawception.com/images/panels/2017/11-29/WLmOZxwqst-2.png">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
 <br />
 
@@ -19,7 +23,9 @@ Now, I will say that communicating with your CPU directly is generally quite unn
   <img width="460" height="300" src="https://cloud-ck0ojs3qv-hack-club-bot.vercel.app/0image.png">
   <br />
   <span>
-    <em>A screenshot of RollerCoaster Tycoon</em>
+    <em>
+      A screenshot of RollerCoaster Tycoon
+    </em>
   </span>
 </p>
 <br />

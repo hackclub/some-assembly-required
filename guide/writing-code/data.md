@@ -7,8 +7,13 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 <p align="center">
   <br />
   <img height="200" src="https://learnworthy.net/wp-content/uploads/2020/03/The-amazing-history-of-the-Data-Byte.png">
-  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 The smallest collection of bits is called a **byte**. Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
 
@@ -21,8 +26,13 @@ Why 8? Well, when we're representing a single character (like "a"), it takes 8 b
 <p align="center">
   <br />
   <img height="450" src="https://www.asciitable.com/asciifull.gif">
-  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
 </p>
+<br />
 
 _Note: For more information on number systems and converting to binary, see the [number systems](#number-systems) section, but for now it's fine to hand wave that part._
 
@@ -30,7 +40,7 @@ In order to represent those ASCII numbers in just `0`s and `1`s, we have to conv
 
 Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
 
-<br>
+<br />
 
 ---
 
