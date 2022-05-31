@@ -1,6 +1,4 @@
-# Some Assembly Required
-
-### A playful guide about talking to your computer.
+## The CPU
 
 <p align="center">
   <br />
@@ -8,8 +6,6 @@
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
-
-## The CPU
 
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, also known as the CPU or the processor, which effectively acts as the brain of the computer.
 

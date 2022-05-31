@@ -1,6 +1,13 @@
-## Computers are Dumb
+## Computers aren't smart
 
-This may sound counterintuitive, but computers are actually quite simple. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://cdn.drawception.com/images/panels/2017/11-29/WLmOZxwqst-2.png">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+This may sound counterintuitive, but computers aren't very smart. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
 Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at their core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over a long period of time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
