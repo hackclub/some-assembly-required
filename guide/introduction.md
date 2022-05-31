@@ -15,9 +15,11 @@ Now, I will say that communicating with your CPU directly is generally quite unn
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://preview.redd.it/072dsljh1n531.png?width=1556&format=png&auto=webp&s=39c765605a7c076a5ce65f544e1e3cda7dcb833c">
+  <img width="460" height="300" src="https://cloud-ck0ojs3qv-hack-club-bot.vercel.app/0image.png">
   <br />
-  <span>just a placeholder image to break up the content!</span>
+  <span>
+    <em>A screenshot of RollerCoaster Tycoon</em>
+  </span>
 </p>
 
 Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at this level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Sorry assembly, I still love you!
