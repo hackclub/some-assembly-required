@@ -38,6 +38,7 @@
 - https://dev.to/tomassirio/hello-world-in-asm-x8664-jg7
 - https://jameshfisher.com/2018/03/10/linux-assembly-hello-world/
 - https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
+- https://medium.com/reverse-engineering-for-dummies/a-crash-course-in-assembly-language-695b07995b4d
 
 ### Debugger
 
