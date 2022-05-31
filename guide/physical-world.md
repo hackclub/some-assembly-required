@@ -1,4 +1,4 @@
-## Electricity and the physical world
+# Electricity and the physical world
 
 Now we know how the CPU is able to interpret machine code, which is just numbers as instructions. And we know that these instructions can be represented with just 1s and 0s, also known as [binary](#binary).
 
@@ -24,6 +24,7 @@ It's not a clock that would be useful for you or me, but is made of material tha
 This is important to us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is approximately **one billion cycles per second**!
 
 ## Communicating with the CPU
+
 One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
 What do we mean by an abstraction? Well, an abstraction is a layer above something else that makes that thing easier to do.
@@ -128,7 +129,8 @@ The decoder then sees that the next piece of data has the value `12`, so it know
 
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
---
+---
+
 <a href="/guide/cpu.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>

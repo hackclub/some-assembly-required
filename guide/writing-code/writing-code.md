@@ -1,4 +1,13 @@
-## Writing Code
+# Writing Code
+
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://cdn01.alison-static.net/courses/4411/alison_courseware_intro_4411.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+TODO: Fill this out more
 
 There are many different assembly languages, depending on the processor you want to talk to.
 
@@ -10,7 +19,8 @@ There are many different assembly languages, depending on the processor you want
 
 Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using X86-64 assembly code to demonstrate assembly concepts. Yes, I know, my computer is old. Sorry.
 
---
+---
+
 <a href="/guide/physical-world.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>
@@ -19,7 +29,7 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
   <em>
     <b>
       <a href="/guide/writing-code/data.md">
-        Data →
+        Seize the data →
       </a>
     </b>
   </em>

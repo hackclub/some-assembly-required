@@ -100,7 +100,7 @@ Alternatively, pipelining would use an assembly line where a package could go th
 
 What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
 
---
+---
 
 <a href="/guide/introduction.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />

@@ -1,4 +1,4 @@
-## Number Systems
+# Number Systems
 
 <p align="center">
   <br>
@@ -6,7 +6,10 @@
   <br>
 </p>
 
-#### Hexadecimal
+## Base 10
+
+## Hexadecimal
+_Also known as base 8!_
 
 All numbers in assembly language are represented by hexadecimal.
 When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it (as seen in the graph above). And when we count in base 10 numbers, we count from 0 up to 9 and then start over again but add one to the left: 0, 1, ..., 10, 11, ..., 20, 21, etc.
@@ -24,7 +27,8 @@ Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15).
 - (7 * 16^1) + (13 * 16^0)
 - 112 + 13 = 125
 
-#### Binary
+## Binary
+_Also known as base 2!_
 
 <p align="center">
   <br>
@@ -45,7 +49,8 @@ Each digit is the value of the digit (0 or 1) times 2 to the power of the positi
 
 Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
---
+---
+
 <a href="/guide/math/math.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>

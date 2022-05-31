@@ -1,20 +1,20 @@
-## Resources
+# Resources
 
-Computer science fundamentals
+### Computer science fundamentals
 
 - https://store.steampowered.com/app/1444480/Turing_Complete/
 - https://www.youtube.com/playlist?app=desktop&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
 - https://www.nand2tetris.org/
 
-Boolean Logic
+### Boolean Logic
 
 - https://www.youtube.com/watch?v=gI-qXk7XojA
 
-Number Systems
+### Number Systems
 
 - https://www.mathsisfun.com/binary-number-system.html
 
-X86
+### X86
 
 - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
 - https://github.com/0xAX/asm
@@ -39,12 +39,12 @@ X86
 - https://jameshfisher.com/2018/03/10/linux-assembly-hello-world/
 - https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
 
-Debugger
+### Debugger
 
 - https://github.com/hugsy/gef
 - https://www.sourceware.org/gdb/download/
 
-6502
+### 6502
 
 - https://skilldrick.github.io/easy6502/
 - https://www.nesdev.com/6502guid.txt
@@ -54,25 +54,26 @@ Debugger
 - http://6502.org/tutorials/
 - https://www.jameco.com/z/KIT-BENEAT-6502-Jameco-KitPro-Eater-net-Build-a-6502-Computer-by-Ben-Eater_2295015.html
 
-Z80
+### Z80
 
 - https://tutorials.eeems.ca/Z80ASM/index.htm
 - http://www.z80.info/z80emu.htm
 
-RISC-V
+### RISC-V
 
 - https://medium.com/swlh/risc-v-assembly-for-beginners-387c6cd02c49
 - https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/
 - https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
 - https://github.com/riscv/riscv-isa-manual/releases/download/Ratified-IMAFDQC/riscv-spec-20191213.pdf
 
-Misc
+### Misc
 
 - https://godbolt.org/
 - https://www.asciitable.com/
 - https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
 
---
+---
+
 <a href="/guide/conclusion.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>

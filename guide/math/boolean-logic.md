@@ -1,4 +1,4 @@
-## Boolean logic
+# Boolean logic
 
 > After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [@pranav](https://github.com/pranavnt)
 
@@ -10,7 +10,7 @@ Why would we ever use this? Great question! Let me let you in on a secret - ever
 
 Let’s talk through these logical operations a bit.
 
-#### AND
+### AND
 
 ![Screen Shot 2022-05-17 at 10 53 15 AM](https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png)
 
@@ -24,7 +24,7 @@ And is always false unless both inputs are true.
 | 01 | 0   |
 | 11 | 1   |
 
-#### OR
+### OR
 
 ![Screen Shot 2022-05-17 at 10 53 20 AM](https://user-images.githubusercontent.com/621904/168842251-b04cdc4d-6c3e-458b-8968-c1eef1fc2b0c.png)
 
@@ -38,7 +38,7 @@ OR is always false unless one of the inputs is true.
 | 01 | 1   |
 | 11 | 1   |
 
-#### NOT
+### NOT
 
 ![Screen Shot 2022-05-17 at 10 53 29 AM](https://user-images.githubusercontent.com/621904/168842309-66cc8fe3-d4e5-41e0-9ea1-8bc4e2a9bd21.png)
 
@@ -50,7 +50,7 @@ NOT only requires 1 input, and it flips the input.
 | 0  | 1   |
 | 1  | 0   |
 
-#### NAND
+### NAND
 
 ![Screen Shot 2022-05-17 at 10 53 35 AM](https://user-images.githubusercontent.com/621904/168842382-d854d2f1-c20d-46fc-a302-4972343305ca.png)
 
@@ -64,7 +64,7 @@ NAND is always true unless both inputs are true.
 | 01 | 1   |
 | 11 | 0   |
 
-#### NOR
+### NOR
 
 ![Screen Shot 2022-05-17 at 10 53 25 AM](https://user-images.githubusercontent.com/621904/168842428-dd63a889-4774-4f7b-845e-3ae43c7c9b75.png)
 
@@ -78,7 +78,7 @@ NOR is always false unless both inputs are false.
 | 01 | 0   |
 | 11 | 0   |
 
-#### XOR
+### XOR
 
 ![Screen Shot 2022-05-17 at 10 53 38 AM](https://user-images.githubusercontent.com/621904/168842465-f8251a20-8962-4221-9146-93e4e6b01908.png)
 
@@ -92,7 +92,7 @@ XOR is always false unless the inputs are different.
 | 01 | 1   |
 | 11 | 0   |
 
-#### XNOR
+### XNOR
 
 ![xnor](https://user-images.githubusercontent.com/621904/168848632-9e62e088-3dbf-4007-a435-fe34e6fb4c8b.png)
 
@@ -110,7 +110,8 @@ Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every sin
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
---
+---
+
 <a href="/guide/math/number-systems.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>

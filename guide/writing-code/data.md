@@ -1,4 +1,4 @@
-### Data
+# Data
 
 We gotta talk about data before we continue. So far, we've been sidestepping around it, talking about it as 1s and 0s, or just _data_. But how data is stored is important for writing assembly.
 
@@ -14,13 +14,13 @@ The smallest collection of bits is called a **byte**. Have you heard of kilobyte
 
 A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - _everything_ ends up being divisible by 8.
 
-#### Bytes & ASCII
+## Bytes & ASCII
 
 Why 8? Well, when we're representing a single character (like "a"), it takes 8 bits to represent that character in data. That's because each letter is represented by a number, that we can then map to a character when we need to. Have you heard of the [ASCII table](https://www.asciitable.com/)? That table shows each character mapped to its coordinating number!
 
 <p align="center">
   <br />
-  <img height="300" src="https://www.asciitable.com/asciifull.gif">
+  <img height="450" src="https://www.asciitable.com/asciifull.gif">
   <br />
 </p>
 
@@ -30,7 +30,8 @@ In order to represent those ASCII numbers in just `0`s and `1`s, we have to conv
 
 Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
 
---
+---
+
 <a href="/guide/writing-code/writing-code.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>
