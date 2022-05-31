@@ -32,14 +32,10 @@
 
 ---
 
-<em>
-  <b>
-    <a href="/README.md">
-      ← Back
-    </a>
-  </b>
-</em>
-<p align="right" width="100">
+<a href="#">
+  <img align="left" width="100" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+<p align="right">
   <em>
     <b>
       <a href="/guide/introduction.md">
