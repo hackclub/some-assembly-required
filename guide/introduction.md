@@ -12,4 +12,4 @@ I hope this guide helps you to demystify some of the lowest layers, and hopefull
 
 Alright, let's get to the good stuff. Like, what even is a CPU?
 
-[_**Turn the page ->**_](guide/cpu.md)
+[_**Turn the page ->**_](cpu.md)
