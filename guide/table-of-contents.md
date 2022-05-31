@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 
 **TODO: Fix all these links!!!**
 
