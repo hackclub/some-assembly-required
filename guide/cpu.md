@@ -1,4 +1,4 @@
-## The CPU
+# The CPU
 
 <p align="center">
   <br />
@@ -13,7 +13,7 @@ Computers contain other processing units (like the graphics card!) that are resp
 
 You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
 
-### The Instruction Cycle
+## The Instruction Cycle
 
 When we ask the CPU to do something, we do that by way of an **instruction**. We say something like, hey CPU - can you add these two numbers together? When the CPU sees that instruction, it sets off a a cycle with 3 main stages:
 
@@ -28,7 +28,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-#### Fetch
+### Fetch
 
 In the first phase of the pipeline, the CPU must fetch data from memory. Memory, also known as random access memory or **RAM**, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
 
@@ -64,7 +64,7 @@ Now you may be asking yourself - why don’t we store everything in the register
 
 Memory can easily hold over _15 million times_ the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
 
-#### Decode
+### Decode
 
 Now that we've fetched the data, what does that data actually look like? Well, like we've said before, **everything is just numbers**. But what those numbers represent include five broad categories:
 
@@ -82,13 +82,13 @@ The first part of the data it fetches is the opcode, which is the unique identif
 
 The next numbers that are fetched are the arguments to be executed. For a very hypothetical example, let's take instruction `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
 
-#### Execute
+### Execute
 
 After the data fetched is decoded, the CPU now has an instruction that it will execute.
 
 If the instruction is an arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false) instruction, it has an extra step of being sent to something called the **arithmetic-logic unit**, or **ALU**, which is made from a series of [logic gates](#boolean-logic). The ALU would then return a value, which is stored in a register until an instruction needs it.
 
-#### Modern Day
+### Modern Day
 
 Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
 
