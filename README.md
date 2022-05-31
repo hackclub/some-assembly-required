@@ -23,7 +23,7 @@ I wanted to write down my learnings and make an approachable guide for people wh
   <em>
     <bold>
       <a href="guide/table-of-contents.md">
-        <h3>Turn the page -></h3>
+        Turn the page ->
       </a>
     </bold>
   </em>
