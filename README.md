@@ -34,7 +34,7 @@ I wanted to write down my learnings and make an approachable guide for people wh
 ### Guide
 
 1. [The CPU](#the-cpu)
-   - [The Instruction Pipeline](#the-instruction-pipeline)
+   - [The Instruction Cycle](#the-instruction-cycle)
      - [Fetch](#fetch)
      - [Decode](#decode)
      - [Execute](#execute)
@@ -77,9 +77,9 @@ Computers contain other processing units (like the graphics card!) that are resp
 
 You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
 
-### The Instruction Pipeline
+### The Instruction Cycle
 
-When we ask the CPU to do something, we do that by way of an **instruction**. We say something like, hey CPU - can you add these two numbers together? When the CPU sees that instruction, it sets off a pipeline with 3 main stages:
+When we ask the CPU to do something, we do that by way of an **instruction**. We say something like, hey CPU - can you add these two numbers together? When the CPU sees that instruction, it sets off a a cycle with 3 main stages:
 
 1. [**Fetch**](#fetch) the data from memory
 1. [**Decode**](#decode) that data to understand the instruction
@@ -126,27 +126,43 @@ The CPU keeps track of which instruction it's fetching data for with a special r
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
 
-Memory can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
-
-_NOTES:_
-
-* What does the data look like?
-  * Data stored in the CPU includes three broad categories. It could be instructions, numbers, or letters (displayed as [character codes](#bytes-&-ascii) in 0s and 1s). The CPU will distinguish what type of data it is when it [decodes](#decode-and-execute) the data.
-
-* What do instructions look like?
-  * As mentioned above, the instructions are stored as [binary](#binary) numbers. The first part of the binary number is the opcode (like ADD), a unique identifier for an action that the CPU can run. The second binary number is the argument to be executed. For example, an instruction `LOAD_A 3` has the opcode `LOAD_A` and , which in our hyptothetical example would mean add the number 3 to register A.
+Memory can easily hold over _15 million times_ the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
 
 #### Decode
 
-Each CPU has a set of instructions that is built into the chip which you can think of as an ordered list of actions that the CPU can do. Data from the fetch phase is encoded as binary numbers so based on the set instructions list, the CPU has to decode and figure out what the accompanying instruction is. You can find common RISC-V instructions [here](/riscv.s).
+Now that we've fetched the data, what does that data actually look like? Well, like we've said before, **everything is just numbers**. But what those numbers represent include five broad categories:
+
+1. Instructions (like `ADD`)
+1. Numbers
+1. Letters (displayed as [ASCII](#bytes-&-ascii))
+1. Register addresses
+1. Memory addresses
+
+The CPU will distinguish what type of data it is when it gets to this decoding step.
+
+Each CPU has a set of instructions that is built _physically into the chip_, which you can think of as a list of actions that coordinate with numbers that the CPU can do. Since the data grabbed from the fetch phase is just numbers, the CPU can decode the instruction by comparing the number it sees to the set instructions list.
+
+The first part of the data it fetches is the opcode, which is the unique identifier for an action that the CPU can run (like `ADD`).
+
+The next numbers that are fetched are the arguments to be executed. For a very hypothetical example, let's take instruction `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
 
 #### Execute
 
-After the data fetched is decoded, the CPU now has an instruction that it will execute. If the instruction is an arithmethic (adding, subtracting, etc.) or logical (comparing two digits to give a true or false etc.) instruction, it is sent to the ALU which is made from a series of [logic gates](#boolean-logic). The ALU would then return either a new value or true or false which will be stored in a register until an instruction (like SB, Store Byte, in [riscv.s](/riscv/riscv.s) that stores the value in the RAM).
+After the data fetched is decoded, the CPU now has an instruction that it will execute.
+
+If the instruction is an arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false) instruction, it has an extra step of being sent to something called the **arithmetic-logic unit**, or **ALU**, which is made from a series of [logic gates](#boolean-logic). The ALU would then return either a new value, true, or false, which is stored in a register until an instruction needs it again.
 
 #### Modern Day
 
-Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPU's implement a pipeline method. Imagine a warehouse where we are packing boxes. Here the CPU is the warehouse and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages). If it's a cycle method, one package would be fully packed and shipped before the next one is worked on. However, a pipeline method would instead use an assembly line where packages go through each station and once they move to the next station, a new package arrives at this station. Before that package is shipped, other packages are already starting to be filled and packed. What this means in terms of the CPU is that it can simultaneously fetch, decode, and execute different instructions. This cuts down the execution time which allows the CPU to operate much faster!
+Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
+
+Imagine a warehouse where we are packing boxes. The CPU is the warehouse, and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages).
+
+In the simpler cycle method described above, one package would be fully packed and shipped before the next one is worked on.
+
+Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already starting to be filled and packed.
+
+What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
 
 ## Electricity and the physical world
 
