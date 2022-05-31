@@ -32,7 +32,7 @@
 
 ---
 
-<p align="left">
+<p align="left" width="100">
   <em>
     <b>
       <a href="/README.md">
@@ -41,7 +41,7 @@
     </b>
   </em>
 </p>
-<p align="right">
+<p align="right" width="100">
   <em>
     <b>
       <a href="/guide/introduction.md">
