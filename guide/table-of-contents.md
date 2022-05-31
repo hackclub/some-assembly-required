@@ -13,7 +13,7 @@
 1. [Resources](#resources)
 1. [Contributors](#contributors)
 
-## Code
+## Working code examples
 
 1. RISC-V
    - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
