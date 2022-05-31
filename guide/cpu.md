@@ -1,11 +1,11 @@
-## The CPU
-
 <p align="center">
   <br />
   <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
+
+## The CPU
 
 Have you heard of the companies Intel or AMD? These are two popular companies that manufacture the CPUs that go into our computers. All of the computers we use contain something called a central processing unit, also known as the CPU or the processor, which effectively acts as the brain of the computer.
 
