@@ -10,7 +10,9 @@
   <br />
   <img width="460" height="300" src="https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/reading-dictionary-2144-589c2a14cd49b0f704f41cfd9ee51ba4@1x.jpg">
   <br />
-  <span>_placeholder until we get a real cover!_</span>
+  <span>
+    <em>placeholder until we get a real cover!</em>
+  </span>
 </p>
 
 Since forever ago, I’ve wanted to try writing assembly, even if just to understand why the [Rollercoaster Tycoon creator would write 99% of the game](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) in it.
