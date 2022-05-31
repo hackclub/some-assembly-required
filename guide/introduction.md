@@ -6,6 +6,7 @@
   <br />
   <span>just a placeholder image to break up the content!</span>
 </p>
+<br />
 
 This may sound counterintuitive, but computers aren't very smart. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
