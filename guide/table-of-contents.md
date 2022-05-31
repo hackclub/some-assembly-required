@@ -10,7 +10,7 @@
    - [Registers](/guide/writing-code/registers.md)
    - [Instructions](/guide/writing-code/instructions.md)
 1. [The Math Section](/math/number-system.md)
-   - [Number Systems](/guide/math/number-systems  .md)
+   - [Number Systems](/guide/math/number-systems.md)
    - [Boolean Logic](/guide/math/boolean-logic.md)
 1. [Resources](/guide/resources.md)
 
