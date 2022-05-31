@@ -33,7 +33,7 @@
 ---
 
 <a href="#">
-  <img align="left" width="100" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+  <img align="left" width="75" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>
 <p align="right">
   <em>
