@@ -10,28 +10,20 @@
   <em>Currently under construction. Read at your own risk!!</em>
 </p>
 
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/reading-dictionary-2144-589c2a14cd49b0f704f41cfd9ee51ba4@1x.jpg">
+  <br />
+  <span>placeholder until we get a real cover!</span>
+</p>
+
 Since forever ago, I’ve wanted to try writing assembly, even if just to understand why the [Rollercoaster Tycoon creator would write 99% of the game](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) in it.
 
 Embarking on this quest, I quickly found a lot of scattered and difficult to understand resources. It took compiling a bunch of different materials together to come to a high level understanding of what’s happening in my computer.
 
 I wanted to write down my learnings and make an approachable guide for people who are new to this part of their system (like me!), including working code examples. Enjoy!
 
----
-
-### Code
-
-1. RISC-V
-   - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
-1. X86-64 Intel Syntax
-   - [Hello World](/x86-intel/hello-world/hello-world.asm)
-   - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
-1. C (For comparison purposes)
-   - [Hello World](/c/hello-world/hello-world.c)
-   - [Uppercaser](/c/uppercaser/uppercaser.c)
-
----
-
-### Guide
+## Table of Contents
 
 1. [The CPU](#the-cpu)
    - [The Instruction Cycle](#the-instruction-cycle)
@@ -49,6 +41,28 @@ I wanted to write down my learnings and make an approachable guide for people wh
 5. [Contributors](#contributors)
 
 ---
+
+### Code
+
+1. RISC-V
+   - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
+1. X86-64 Intel Syntax
+   - [Hello World](/x86-intel/hello-world/hello-world.asm)
+   - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
+1. C (For comparison purposes)
+   - [Hello World](/c/hello-world/hello-world.c)
+   - [Uppercaser](/c/uppercaser/uppercaser.c)
+
+---
+
+### Contributors
+
+- [@jessicard](https://github.com/jessicard)
+- [@bellesea](https://github.com/bellesea)
+- [@TheOneKevin](https://github.com/theonekevin)
+- [@exu3](https://github.com/exu3)
+- [@jakeboxer](https://github.com/jakeboxer)
+
 
 This may sound counterintuitive, but computers are actually quite simple. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
@@ -150,7 +164,7 @@ The next numbers that are fetched are the arguments to be executed. For a very h
 
 After the data fetched is decoded, the CPU now has an instruction that it will execute.
 
-If the instruction is an arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false) instruction, it has an extra step of being sent to something called the **arithmetic-logic unit**, or **ALU**, which is made from a series of [logic gates](#boolean-logic). The ALU would then return either a new value, true, or false, which is stored in a register until an instruction needs it again.
+If the instruction is an arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false) instruction, it has an extra step of being sent to something called the **arithmetic-logic unit**, or **ALU**, which is made from a series of [logic gates](#boolean-logic). The ALU would then return a value, which is stored in a register until an instruction needs it.
 
 #### Modern Day
 
@@ -177,17 +191,17 @@ In the physical world, these binary numbers map to electrical circuits. To simpl
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-Continuing with the warehouse metaphore, the warehouse is your CPU, and a box is a grouping of electrical signals. A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as **buses**. Buses are effectively just groups of wires that allow electricity (and therefore information represented by 0s and 1s) to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
+Continuing with our warehouse metaphor, where the warehouse is our CPU, and a single box is a group of electrical circuits. A single box will travel through the warehouse on conveyor belts in order to make it from one working station to another. The conveyor belts, in the CPU world, are known as **buses**. Buses are effectively just groups of wires that allow electricity (and therefore information represented by 0s and 1s) to travel from one place to another, and there are different types of wires depending on what kind of data you want to send around.
 
 As a box travels around the warehouse on conveyor belts, it will be stopped at different working stations. Some stations may check inside the box and send it elsewhere based on what it finds. Other stations may add or remove stuff to or from the box. This is just like in a CPU: our data, or electrical signals, travel around the CPU on buses, and when it reaches different parts of the CPU, it may have its value checked or modified.
 
 ### Processor clock
 
-In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any distruptions at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our **processor clock**.
+In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any disruptions at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our **processor clock**.
 
-It's not a clock that would be useful for you or me, but is made of material that oscillates (moves back and forth) at a certain frequency, giving you a bunch of vibrations per second. We call each one of these vibrations a "clock tick". These vibrations helps keeps the CPU in sync as each "clock tick" signals the CPU starts a new instruction (fetch data from memory).
+It's not a clock that would be useful for you or me, but is made of material that oscillates, moving back and forth at a certain frequency, giving you a bunch of vibrations per second. We call each one of these vibrations a "clock tick". These vibrations helps keeps the CPU in sync as each "clock tick" signals the CPU starts a new instruction by fetching the instruction data from memory.
 
-These are important for us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is billion of cycles per second!
+This is important to us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is approximately **one billion cycles per second**!
 
 ## Communicating with the CPU
 One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
@@ -667,11 +681,3 @@ Misc
 - https://godbolt.org/
 - https://www.asciitable.com/
 - https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
-
-## Contributors
-
-- [@jessicard](https://github.com/jessicard)
-- [@TheOneKevin](https://github.com/theonekevin)
-- [@exu3](https://github.com/exu3)
-- [@bellesea](https://github.com/bellesea)
-- [@jakeboxer](https://github.com/jakeboxer)
