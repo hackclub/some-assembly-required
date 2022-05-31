@@ -5,8 +5,9 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 ## Number Systems
 
 <p align="center">
-  <br>
-  <img width="460" height="300" src="https://cloud-lhlv3an57-hack-club-bot.vercel.app/0math.png">
+  <br />
+  <img width="750" src="https://cloud-lhlv3an57-hack-club-bot.vercel.app/0math.png">
+  <br />
   <span>
     <em>
       just a placeholder image to break up the content!

@@ -1,6 +1,10 @@
 # Boolean logic
 
+<br />
+
 > After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [@pranav](https://github.com/pranavnt)
+
+<br />
 
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
 
