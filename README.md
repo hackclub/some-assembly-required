@@ -109,6 +109,13 @@ Here's something wild for you: in the CPU, our boxes are actually just _electric
 
 Our RAM, or box racks, has quite a bit of room to store our things - enough to hold large boxes. But, moving large boxes around the warehouse can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place smaller packages. Those are our **registers**.
 
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://img.directindustry.com/images_di/photo-mg/4846-14967817.jpg">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
 Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together.
 
 First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being.
@@ -119,7 +126,7 @@ How does the CPU keep track of which instruction it's fetching data for? Well, t
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
 
-RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in the RAM.
+Memory can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
 
 _NOTES:_
 
