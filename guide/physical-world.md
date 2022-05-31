@@ -129,8 +129,11 @@ The decoder then sees that the next piece of data has the value `12`, so it know
 The decoder knows that next comes the argument for the number to add. It sees `4`, then adds `4` to whatever is in `r12`, and saves that new value to `r12`. Voila, maths!
 
 --
+<a href="/guide/cpu.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
 
-<p align="center">
+<p align="right">
   <em>
     <b>
       <a href="/guide/writing-code/writing-code.md">

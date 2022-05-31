@@ -71,3 +71,18 @@ Misc
 - https://godbolt.org/
 - https://www.asciitable.com/
 - https://stackoverflow.com/questions/4552905/what-is-the-difference-between-a-32-bit-and-64-bit-processor
+
+--
+<a href="/guide/conclusion.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+
+<p align="right">
+  <em>
+    <b>
+      <a href="https://github.com/hackclub/some-assembly-required">
+        Back to the index →
+      </a>
+    </b>
+  </em>
+</p>

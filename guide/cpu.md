@@ -102,7 +102,11 @@ What this means in for us in CPU terms is that modern CPUs can simultaneously fe
 
 --
 
-<p align="center">
+<a href="/guide/introduction.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+
+<p align="right">
   <em>
     <b>
       <a href="/guide/physical-world.md">

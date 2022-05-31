@@ -80,3 +80,18 @@ So now that we know about the stack, the stack pointer is a special register the
 Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
 **(COMMENT 🐣: I found this section on the stack a little hard to wrap my head around... i think an explaination and example of when a stack is used could be useful. Also, do we need to discuss other parts of the RAM like the heap? I feel like this is a little too detailed for a general overview of how the CPU works haha cuz then we might need to explain memory allocation...)**
+
+--
+<a href="/guide/writing-code/registers.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+
+<p align="right">
+  <em>
+    <b>
+      <a href="/guide/math/math.md">
+        This next section definitely has absolutely nothing to do with math I promise →
+      </a>
+    </b>
+  </em>
+</p>

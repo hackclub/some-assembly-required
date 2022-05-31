@@ -44,3 +44,18 @@ Each digit is the value of the digit (0 or 1) times 2 to the power of the positi
 - 16 + 8 + 0 + 2 + 1 = 27
 
 Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
+
+--
+<a href="/guide/math/math.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+
+<p align="right">
+  <em>
+    <b>
+      <a href="/guide/math/boolean-logic.md">
+        Boolean logic →
+      </a>
+    </b>
+  </em>
+</p>

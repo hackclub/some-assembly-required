@@ -26,7 +26,11 @@ I hope this guide helps you to demystify some of the lowest layers, and hopefull
 
 ---
 
-<p align="center">
+<a href="/guide/table-of-contents.md">
+  <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
+</a>
+
+<p align="right">
   <em>
     <b>
       <a href="/guide/cpu.md">

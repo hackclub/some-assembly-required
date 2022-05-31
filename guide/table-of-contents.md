@@ -32,7 +32,7 @@
 
 ---
 
-<a href="/README.md">
+<a href="https://github.com/hackclub/some-assembly-required">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>
 
