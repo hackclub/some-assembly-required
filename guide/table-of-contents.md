@@ -30,4 +30,14 @@
 - [@exu3](https://github.com/exu3)
 - [@jakeboxer](https://github.com/jakeboxer)
 
-[_**Turn the page ->**_](introduction.md)
+---
+
+<p align="center">
+  <em>
+    <b>
+      <a href="/introduction.md">
+        Click to turn the page →
+      </a>
+    </b>
+  </em>
+</p>
