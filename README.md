@@ -21,10 +21,10 @@ I wanted to write down my learnings and make an approachable guide for people wh
 
 <p align="center">
   <em>
-    <bold>
+    <b>
       <a href="guide/table-of-contents.md">
         Turn the page ->
       </a>
-    </bold>
+    </b>
   </em>
 </p>
