@@ -32,13 +32,15 @@
 
 ---
 
-<em>
-  <b>
-    <a href="/README.md">
-      ← Back
-    </a>
-  </b>
-</em>
+<p align="left">
+  <em>
+    <b>
+      <a href="/README.md">
+        ← Back
+      </a>
+    </b>
+  </em>
+</p>
 <p align="right">
   <em>
     <b>
