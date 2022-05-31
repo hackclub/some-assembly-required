@@ -4,11 +4,11 @@
 
 ---
 
+<br />
+
 <p align="center">
   <em>Currently under construction. Read at your own risk!!</em>
 </p>
-
-<br />
 
 <p align="center">
   <br />
