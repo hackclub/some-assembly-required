@@ -49,6 +49,8 @@ Each digit is the value of the digit (0 or 1) times 2 to the power of the positi
 
 Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
+<br>
+
 ---
 
 <a href="/guide/math/math.md">

@@ -110,6 +110,8 @@ Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every sin
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
+<br>
+
 ---
 
 <a href="/guide/math/number-systems.md">

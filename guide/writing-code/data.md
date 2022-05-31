@@ -30,6 +30,8 @@ In order to represent those ASCII numbers in just `0`s and `1`s, we have to conv
 
 Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
 
+<br>
+
 ---
 
 <a href="/guide/writing-code/writing-code.md">
