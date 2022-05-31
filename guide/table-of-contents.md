@@ -30,4 +30,4 @@
 - [@exu3](https://github.com/exu3)
 - [@jakeboxer](https://github.com/jakeboxer)
 
-[_**Turn the page ->**_](/INTRO.md)
+[_**Turn the page ->**_](guide/introduction.md)
