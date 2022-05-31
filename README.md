@@ -28,8 +28,8 @@ I wanted to write down my learnings and make an approachable guide for people wh
 <p align="center">
   <em>
     <b>
-      <a href="guide/table-of-contents.md">
-        Click to turn the page →
+      <a href="/guide/table-of-contents.md">
+        What's inside? →
       </a>
     </b>
   </em>

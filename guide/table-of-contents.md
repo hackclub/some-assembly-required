@@ -35,8 +35,8 @@
 <p align="center">
   <em>
     <b>
-      <a href="/introduction.md">
-        Click to turn the page →
+      <a href="/guide/introduction.md">
+        Get to the good stuff →
       </a>
     </b>
   </em>

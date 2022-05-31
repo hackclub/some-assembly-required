@@ -24,6 +24,14 @@ Even though you or I may never _need_ to write assembly, I think that building a
 
 I hope this guide helps you to demystify some of the lowest layers, and hopefully turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, so I hope this helps you learn the things I’ve pieced together on my journey to understanding my computer better.
 
-Alright, let's get to the good stuff. Like, what even is a CPU?
+---
 
-[_**Turn the page ->**_](cpu.md)
+<p align="center">
+  <em>
+    <b>
+      <a href="/guide/cpu.md">
+        Alright, let's get to the good stuff. Like, what even is a CPU? →
+      </a>
+    </b>
+  </em>
+</p>
