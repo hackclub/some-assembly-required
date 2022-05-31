@@ -122,7 +122,7 @@ First, the CPU retrieves the first number it needs for the equation. Since the C
 
 Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given!
 
-How does the CPU keep track of which instruction it's fetching data for? Well, the CPU has a special register called the **program counter**. The program counter contains the address of the instruction currently being executed. And in most cases, after an instruction is executed, the program counter needs to increment itself by `1` to point to the next instruction address.
+The CPU keeps track of which instruction it's fetching data for with a special register called the **program counter**. The program counter contains the address of the instruction currently being executed. And in most cases, after an instruction is executed, the program counter needs to increment itself by `1` to point to the next instruction address.
 
 Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
 
