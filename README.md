@@ -94,42 +94,40 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
 
 #### Fetch
 
-_NOTES:_
+In the first phase of the pipeline, the CPU must fetch data from memory. Memory, also known as random access memory or **RAM**, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
 
-* How does the CPU know what data to grab from the memory?
-  * The CPU has a special [register](#register) called a program counter which which contains the address of the instruction currently being executed. And unless a special instruction such as `JUMP` is included, after each instruction is executed, the program counter adds one to itself in order to grab the next one.
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://img.freepik.com/free-photo/warehouse-with-cardboard-boxes-inside-pallets-racks-logistic-center-huge-large-modern-warehouse-warehouse-filled-with-cardboard-boxes-shelves-boxes-stand-pallets-3d-illustration_92790-1630.jpg?w=2000">
+  <br />
+  <span>just a placeholder image to break up the content!</span>
+</p>
+
+Keeping with our warehouse metaphor, accessing your RAM is kind of like going to a storage rack with boxes. Each piece of data (boxes, in our metaphor) has an "address" (box location) where you can view the contents (what's inside the box!). You can also clear out the contents (take the box off of the spot on the rack), and then store new pieces of data (add new boxes to the rack).
+
+Here's something wild for you: in the CPU, our boxes are actually just _electrical currents_. And because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when the warehouse closed, all of the packages are got thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
+
+Our RAM, or box racks, has quite a bit of room to store our things - enough to hold large boxes. But, moving large boxes around the warehouse can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place smaller packages. Those are our **registers**.
+
+Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together.
+
+First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being.
+
+Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given!
+
+How does the CPU keep track of which instruction it's fetching data for? Well, the CPU has a special register called the **program counter**. The program counter contains the address of the instruction currently being executed. And in most cases, after an instruction is executed, the program counter needs to increment itself by `1` to point to the next instruction address.
+
+Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
+
+RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in the RAM.
+
+_NOTES:_
 
 * What does the data look like?
   * Data stored in the CPU includes three broad categories. It could be instructions, numbers, or letters (displayed as [character codes](#bytes-&-ascii) in 0s and 1s). The CPU will distinguish what type of data it is when it [decodes](#decode-and-execute) the data.
 
 * What do instructions look like?
   * As mentioned above, the instructions are stored as [binary](#binary) numbers. The first part of the binary number is the opcode (like ADD), a unique identifier for an action that the CPU can run. The second binary number is the argument to be executed. For example, an instruction `LOAD_A 3` has the opcode `LOAD_A` and , which in our hyptothetical example would mean add the number 3 to register A.
-
-* How does the CPU decode instructions?
-  * Each CPU comes with a set of instructions built in and their corresponding operation numbers (in binary).
-
-This is the phase where the CPU fetches data from the memory.
-
-When we say that the CPU fetches data from memory, we’re referring to random access memory, or **RAM**, which is a type of short term storage your computer has.
-
-<p align="center">
-  <br />
-  <img width="460" height="300" src="https://i.pinimg.com/originals/31/03/a1/3103a18819a867fbe8b4808b4c197692.jpg">
-  <br />
-  <span>just a placeholder image to break up the content!</span>
-</p>
-
-Keeping with the same warehouse metaphor, accessing your RAM is kind of like going to the huge rack with packages. Each piece of data (packages, in our metaphor) has an "address" (package location) where you can view the contents (package). You can also clear out the contents (take the package out of the spot on the rack), and then store new pieces of data (add new packages to the rack).
-
-In the CPU, our packages are actually just electrical currents. Because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when your warehouse closes, all of the packages are removed to an even larger warehouse (an external storage device). That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
-
-Our RAM, or packages rack, has quite a bit of room to store our things - enough to hold entire packages. But, visiting the post office and carrying mail around can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place the packages. Those are our **registers**.
-
-Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together. First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being. Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given. The original 16-bit intel CPU had a small number of registers known by their letters
-
-Depending on the processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
-
-Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware, but RAM can easily hold over 15 million times the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in the RAM.
 
 #### Decode
 
