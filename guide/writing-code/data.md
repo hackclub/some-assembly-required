@@ -7,6 +7,7 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 <p align="center">
   <br />
   <img height="200" src="https://learnworthy.net/wp-content/uploads/2020/03/The-amazing-history-of-the-Data-Byte.png">
+  <br />
   <span>
     <em>
       just a placeholder image to break up the content!
@@ -26,6 +27,7 @@ Why 8? Well, when we're representing a single character (like "a"), it takes 8 b
 <p align="center">
   <br />
   <img height="450" src="https://www.asciitable.com/asciifull.gif">
+  <br />
   <span>
     <em>
       just a placeholder image to break up the content!
