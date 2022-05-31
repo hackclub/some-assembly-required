@@ -2,6 +2,8 @@
 
 ### A playful guide about talking to your computer.
 
+---
+
 <p align="center">
   <em>Currently under construction. Read at your own risk!!</em>
 </p>
