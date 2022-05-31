@@ -99,3 +99,15 @@ In the simpler cycle method described above, one package would be fully packed a
 Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already starting to be filled and packed.
 
 What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
+
+--
+
+<p align="center">
+  <em>
+    <b>
+      <a href="/guide/physical-world.md">
+        Translating this to the physical world →
+      </a>
+    </b>
+  </em>
+</p>

@@ -1,3 +1,11 @@
+<em>
+  <b>
+    <a href="/README.md">
+      ← Back
+    </a>
+  </b>
+</em>
+
 ## Table of Contents
 
 1. [Introduction](#computers-are-dumb)
@@ -36,7 +44,7 @@
   <em>
     <b>
       <a href="/guide/introduction.md">
-        Get to the good stuff →
+        Gimme some content →
       </a>
     </b>
   </em>
