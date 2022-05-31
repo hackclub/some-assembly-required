@@ -11,7 +11,7 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 <p align="right">
   <em>
     <b>
-      <a href="/guide/math/math.md">
+      <a href="/guide/math/number-systems.md">
         I bet you remember number systems from some class once →
       </a>
     </b>
