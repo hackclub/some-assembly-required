@@ -33,7 +33,7 @@
 ---
 
 <p>
-  <em float="left">
+  <em align="left">
     <b>
       <a href="/README.md">
         ← Back
@@ -41,7 +41,7 @@
     </b>
   </em>
 
-  <em float="right">
+  <em align="right">
     <b>
       <a href="/guide/introduction.md">
         Gimme some content →
