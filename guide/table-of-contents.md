@@ -1,7 +1,5 @@
 # Table of Contents
 
-**TODO: Fix all these links!!!**
-
 1. [Introduction](/guide/introduction.md)
 1. [The CPU](/guide/cpu.md)
 1. [Electricity and the Physical World](/guide/physical-world.md)
