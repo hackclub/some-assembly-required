@@ -2,27 +2,28 @@
 
 **TODO: Fix all these links!!!**
 
-1. [Introduction](#computers-are-dumb)
-1. [The CPU](#the-cpu)
-1. [Communicating With The CPU](#communicating-with-the-cpu)
-1. [Writing Code](#writing-code)
-1. [The Math Section](#the-math-section)
-   - [Binary](#binary)
-   - [Boolean Logic](#boolean-logic)
-   - [Hexadecimal](#hexadecimal)
-1. [Resources](#resources)
-1. [Contributors](#contributors)
+1. [Introduction](/guide/introduction.md)
+1. [The CPU](/guide/cpu.md)
+1. [Electricity and the Physical World](/guide/physical-world.md)
+1. [Writing Code](/guide/writing-code/writing-code.md)
+   - [Data](/guide/writing-code/guide.md)
+   - [Registers](/guide/writing-code/registers.md)
+   - [Instructions](/guide/writing-code/instructions.md)
+1. [The Math Section](/math/number-system.md)
+   - [Number Systems](/guide/math/number-systems  .md)
+   - [Boolean Logic](/guide/math/boolean-logic.md)
+1. [Resources](/guide/resources.md)
 
 ## Working code examples
 
 1. RISC-V
-   - [Examples of basic RISC-V instructions being used](/riscv/riscv.s)
+   - [Examples of basic RISC-V instructions being used](/code/riscv/riscv.s)
 1. X86-64 Intel Syntax
-   - [Hello World](/x86-intel/hello-world/hello-world.asm)
-   - [Uppercaser](/x86-intel/uppercaser/uppercaser.asm)
+   - [Hello World](/code/x86-intel/hello-world/hello-world.asm)
+   - [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm)
 1. C (For comparison purposes)
-   - [Hello World](/c/hello-world/hello-world.c)
-   - [Uppercaser](/c/uppercaser/uppercaser.c)
+   - [Hello World](/code/c/hello-world/hello-world.c)
+   - [Uppercaser](/code/c/uppercaser/uppercaser.c)
 
 ## Contributors
 
