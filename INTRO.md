@@ -1,8 +1,4 @@
-# Some Assembly Required
-
-### A playful guide about talking to your computer.
-
-## Introduction
+## Computers are Dumb
 
 This may sound counterintuitive, but computers are actually quite simple. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
@@ -16,4 +12,4 @@ I hope this guide helps you to demystify some of the lowest layers, and hopefull
 
 Alright, let's get to the good stuff. Like, what even is a CPU?
 
-[Next section ->](/CPU.md)
+[_**Turn the page ->**_](/CPU.md)
