@@ -1,4 +1,8 @@
-# Number Systems
+# The Math Section
+
+If you thought you'd get through this without doing any math, well, I'm sorry. We have to do a little bit so that we can understand what the computer is doing, because like I said, it's all just basic math underneath. I will promise you that it won't be too hard!
+
+## Number Systems
 
 <p align="center">
   <br>
@@ -11,9 +15,9 @@
 </p>
 <br />
 
-## Base 10
+### Base 10
 
-## Hexadecimal
+### Hexadecimal
 _Also known as base 8!_
 
 All numbers in assembly language are represented by hexadecimal.
@@ -32,7 +36,7 @@ Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15).
 - (7 * 16^1) + (13 * 16^0)
 - 112 + 13 = 125
 
-## Binary
+### Binary
 _Also known as base 2!_
 
 <p align="center">
@@ -58,7 +62,7 @@ Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.
 
 ---
 
-<a href="/guide/math/math.md">
+<a href="/guide/writing-code/instructions.md">
   <img align="left" width="70" src="https://cloud-cirb9mt0l-hack-club-bot.vercel.app/0screen_shot_2022-05-31_at_2.40.40_pm.png" />
 </a>
 

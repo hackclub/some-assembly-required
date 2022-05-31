@@ -92,7 +92,7 @@ Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackover
 <p align="right">
   <em>
     <b>
-      <a href="/guide/math/math.md">
+      <a href="/guide/math/number-systems.md">
         This next section definitely has absolutely nothing to do with math I promise →
       </a>
     </b>
