@@ -1,5 +1,7 @@
 ## Table of Contents
 
+**TODO: Fix all these links!!!**
+
 1. [Introduction](#computers-are-dumb)
 1. [The CPU](#the-cpu)
 1. [Communicating With The CPU](#communicating-with-the-cpu)
