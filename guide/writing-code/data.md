@@ -24,7 +24,13 @@ A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - 
 
 ## Bytes & ASCII
 
-Why 8? Well, when we're representing a single character (like "a"), it takes 8 bits to represent that character in data. That's because each letter is represented by a number, that we can then map to a character when we need to. Have you heard of the [ASCII table](https://www.asciitable.com/)? That table shows each character mapped to its coordinating number!
+Why is the magic number 8?
+
+Well, when we're representing a single character (like `a`), it takes **8 bits** to represent that character in data.
+
+This has to due with the fact that each letter is represented by a number. Because each character is represented by a number, we have to have a table mapping which number represents which letter. We can use that mapping to then see which characters correspond with which numbers.
+
+This is done with the [ASCII table](https://www.asciitable.com/)!
 
 <p align="center">
   <br />
@@ -38,11 +44,11 @@ Why 8? Well, when we're representing a single character (like "a"), it takes 8 b
 </p>
 <br />
 
-_Note: For more information on number systems and converting to binary, see the [number systems](#number-systems) section, but for now it's fine to hand wave that part._
-
 In order to represent those ASCII numbers in just `0`s and `1`s, we have to convert our base 10 number (let's say we're working with `A`, which maps to `65` on the ASCII table) into a base 2 number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by electrical signals being on or off, which maps directly to `1`s and `0`s.
 
 Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
+
+_Note: For more information on number systems and converting to binary, see the [number systems](#number-systems) section, but for now it's totally fine to hand wave this part!_
 
 <br />
 
@@ -59,7 +65,7 @@ Our ASCII table goes up to the number 127, which, in binary, is represented by `
   <em>
     <b>
       <a href="/guide/writing-code/registers.md">
-        Registers →
+        Let's store this data →
       </a>
     </b>
   </em>
