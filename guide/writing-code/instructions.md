@@ -16,13 +16,16 @@ To see more common instructions, check out the [Stanford CS107 list](https://web
 </p>
 <br />
 
-#### Comments
+## Instructions
+
+#### Comment
+
+Ok, I will admit. I'm starting out the "Instructions" section with something that's not an instruction. I'm sorry. However, although it's not an instruction, knowing how to comment is very helpful!
 
 Anything that comes after a semicolon is considered a comment. A comment in code means that the compiler will ignore it, so you have a place to jot down notes, TODOs, etc.
 
 ```asm
   ; Here's a comment! This will not be called.
-
   mov rdx, rax ; A comment can even come after an instruction.
 ```
 
@@ -37,7 +40,7 @@ Move the contents of register `rax` into register `rdx`.
 
 ## Basic math
 
-#### add
+#### Add
 _Arguments: src, dst_
 
 Add `3` to the contents of `rdi`, and save that new value to `rdi`.
@@ -46,7 +49,7 @@ Add `3` to the contents of `rdi`, and save that new value to `rdi`.
   add rdi, 3
 ```
 
-#### sub
+#### Subtract
 _Arguments: src, dst_
 
 Subtract `2` from the contents of `rdx`, and save that new value to `rdx`.
