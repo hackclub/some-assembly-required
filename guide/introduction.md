@@ -48,7 +48,7 @@ I hope this guide helps you to demystify some of the lowest layers, and hopefull
 <p align="right">
   <em>
     <b>
-      <a href="/guide/cpu.md">
+      <a href="/guide/cpu/cpu.md">
         Alright, let's get to the good stuff. Like, what even is a CPU? →
       </a>
     </b>
