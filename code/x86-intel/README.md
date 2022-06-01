@@ -13,7 +13,7 @@ x86 is one of the most useful assembly languages, but is also one of the more co
 
 The `86` is pulled from the model names of the Intel chips that use this assembly language, which all end in `86` (like the `8086` chip).
 
-The `64` is referring to the number of [bits](/) that the processor registers hold. The original x86 processors were 32 bit, so we specify `-64` to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
+The `64` is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify `-64` to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
 
 ## Registers
 
