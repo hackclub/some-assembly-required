@@ -14,36 +14,43 @@
 
 - https://www.mathsisfun.com/binary-number-system.html
 
-### X86
+### X86-64
 
-- https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
-- https://github.com/0xAX/asm
-- https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html
-- https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
-- The "Getting Started Writing Assembly Language" series
+#### The "Getting Started Writing Assembly Language" series
   - https://blog.devgenius.io/getting-started-writing-assembly-language-8ecc116f3627
   - https://blog.devgenius.io/finding-an-efficient-development-cycle-for-writing-assembly-language-be2092e6db6a
   - https://blog.devgenius.io/writing-an-x86-64-assembly-language-program-648b6005e8e (ESPECIALLY this one, since it had a lot of the command line arg info, although some of it works differently on mac)
-- https://filippo.io/making-system-calls-from-assembly-in-mac-os-x/
-- http://dustin.schultz.io/mac-os-x-64-bit-assembly-system-calls.html
-- https://0xax.github.io/asm_1/
-- https://github.com/0xAX/asm
-- https://cs61.seas.harvard.edu/site/2018/Asm1/
-- https://www.dreamincode.net/forums/topic/285550-nasm-linux-getting-command-line-parameters/
-- https://stackoverflow.com/questions/53555298/how-to-get-arguments-from-the-command-lineassembly-nasm-ubuntu-32bit
-- https://cs.lmu.edu/~ray/notes/nasmtutorial/
-- https://www.figma.com/file/Uhd6Qe3lzmJ60bBQmkx7Ch/cpu
-- https://gist.github.com/FiloSottile/7125822
-- https://death-of-rats.github.io/posts/yasm-hello-world/
-- https://dev.to/tomassirio/hello-world-in-asm-x8664-jg7
-- https://jameshfisher.com/2018/03/10/linux-assembly-hello-world/
-- https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
-- https://medium.com/reverse-engineering-for-dummies/a-crash-course-in-assembly-language-695b07995b4d
+
+#### Guides
+  - https://cs61.seas.harvard.edu/site/2018/Asm1/
+  - https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
+  - https://github.com/0xAX/asm
+  - https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html
+
+#### Hello World
+  - https://gist.github.com/FiloSottile/7125822
+  - https://death-of-rats.github.io/posts/yasm-hello-world/
+  - https://dev.to/tomassirio/hello-world-in-asm-x8664-jg7
+  - https://jameshfisher.com/2018/03/10/linux-assembly-hello-world/
+  - https://cs.lmu.edu/~ray/notes/nasmtutorial/
+  - https://0xax.github.io/asm_1/
+  - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
+
+#### Command line params
+  - https://www.dreamincode.net/forums/topic/285550-nasm-linux-getting-command-line-parameters/
+  - https://stackoverflow.com/questions/53555298/how-to-get-arguments-from-the-command-lineassembly-nasm-ubuntu-32bit
+
+#### Syscalls
+  - https://filippo.io/making-system-calls-from-assembly-in-mac-os-x/
+  - http://dustin.schultz.io/mac-os-x-64-bit-assembly-system-calls.html
+
+#### Debugging
+  - https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
 
 ### Debugger
 
-- https://github.com/hugsy/gef
 - https://www.sourceware.org/gdb/download/
+- https://github.com/hugsy/gef
 
 ### 6502
 
