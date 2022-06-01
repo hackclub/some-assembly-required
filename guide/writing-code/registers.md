@@ -18,8 +18,8 @@ From [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222
 
 Some registers are designated for a certain purpose, such as `%rsp` being used as the stack pointer or `%rax` for the return value from a function.
 
-## The Program Counter
-The CPU has many specialized registers, which we don't access directly. One of them is the **program counter** (`%rip`), also known as the **instruction pointer**, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
+## The Instruction Pointer
+The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`%rip`), also known as the **program counter**, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
 However, besides just incrementing by one, the program counter itself can be changed with a JUMP instruction.
 
