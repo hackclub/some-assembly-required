@@ -16,7 +16,7 @@
 
 ## Working code examples
 
-1. RISC-V
+1. [RISC-V](/code/riscv/README.md)
    - [Examples of basic RISC-V instructions being used](/code/riscv/riscv.s)
 1. [X86-64 Intel Syntax](/code/x86-intel/README.md)
    - [Hello World](/code/x86-intel/hello-world/hello-world.asm)
