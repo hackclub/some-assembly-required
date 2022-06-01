@@ -6,7 +6,7 @@ This will be nowhere near an exhaustive list, but here's a list of some examples
 
 To see more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
 
-<div align="center">
+<center>
 | Instruction | Arguments | Explanation           |
 | ---         | ---       | ---                   |
 | **mov**     | src, dst  | dst = src             |
@@ -21,7 +21,7 @@ To see more common instructions, check out the [Stanford CS107 list](https://web
 | **pop**     | dst       | remove top from stack |
 | **call**    | fn        | push %rip, jmp to fn  |
 | **ret**     |           | pop %rip              |
-</div>
+</center>
 
 ## Instructions
 
