@@ -28,7 +28,11 @@ It's not a clock that would be useful for you or me, but is made of material tha
 
 This is important to us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is approximately **one billion cycles per second**!
 
-<a href="/guide/cpu/instruction-cycle.md">
+<br />
+
+---
+
+<a href="/guide/cpu/cpu.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
     <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
@@ -38,7 +42,7 @@ This is important to us because for every clock tick, the CPU reads one instruct
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/writing-code.md">
+      <a href="/guide/cpu/communicating.md">
         Let's communicate with the CPU →
       </a>
     </b>
