@@ -30,6 +30,11 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
   ;       a place to jot down notes, TODOs, etc.
 ```
 
+#### mov
+_Arguments: src, dst_
+
+Explain mov here
+
 ### Basic math
 
 #### add
@@ -46,18 +51,13 @@ _Arguments: src, dst_
   sub rdi, 2
 ```
 
-#### mov
-_Arguments: src, dst_
-
-Explain mov here
-
 ### Jumps and Conditionals
 
 A conditional is something that relies on a condition being met to execute it.
 
 _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel._
 
-### Label
+#### Label
 
 ```asm
   _main:
@@ -83,7 +83,7 @@ _Arguments: label_
   je .placeToJump
 ```
 
-### Jump if Not Equal
+#### Jump if Not Equal
 _Arguments: label_
 
 ```asm
