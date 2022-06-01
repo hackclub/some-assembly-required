@@ -31,7 +31,7 @@ In contrast, if the **callee** intends to use a **caller-owned** register, it mu
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cloud-1dple0n1y-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_10.49.40_am.png">
+  <img src="https://cloud-1dple0n1y-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_10.49.40_am.png">
   <br />
   <span>
     <em>
