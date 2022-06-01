@@ -9,11 +9,49 @@
 
 There are many different assembly languages, depending on the processor you want to talk to.
 
-x86 is one of the most useful assembly languages, but is also one of the more complicated ones to write. It's used for Intel processors, which have to process a lot of data!
+**x86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. It's used for Intel processors, which have to process a lot of data!
 
-The `86` is pulled from the model names of the Intel chips that use this assembly language, which all end in `86` (like the `8086` chip).
+The **86** is pulled from the model names of the Intel chips that use this assembly language, which all end in 86 (like the 8086 chip).
 
-The `64` is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify `-64` to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
+The **64** part is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify "-64" to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
+
+## Running programs
+
+The object files and executables have been pushed up to GitHub just for viewing purposes (like if you wanted to view them in a [hex editor](https://hexfiend.com/)). That being said, unless you're on the specific processor I compiled them on, the programs and object files won't work for you.
+
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program.
+
+For my computer, an Intel mac, these are the instructions to compile and run the code. We have 3 steps to run our program:
+1. Assemble it into an object file
+1. Generate our executable
+1. Run our executable
+
+### 1. Assemble our program into an object file
+```
+$ nasm -f macho64 hello-world.asm
+```
+
+This whole command creates an object file, which is machine code. You can view it in a [hex editor](https://hexfiend.com/). If you view it in a normal text editor, it tries to convert the machine code to ASCII, which makes it nonsensical.
+
+`nasm` is our assembler, `-f` flag is to specify our file format. `macho64` is our file format, used for Mac executables.
+
+
+### 2. Generate our executable
+```
+$ ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie
+```
+
+This generates our executable by linking our object file to any libraries it needs. It bundles everything together into machine code, `-o` lets us specify what we want our executable to be called.
+
+### 3. Run our executable
+```
+$ ./hello-world
+```
+
+### All together now!
+```
+$ nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
+```
 
 ## Anatomy of a program
 
@@ -46,7 +84,7 @@ section .text
   global _main
 ```
 
-We start our program in _main, where we [write "Hello World" out to the terminal]().
+We start our program in _main, where we [write "Hello World" out to the terminal](https://github.com/hackclub/some-assembly-required/blob/70ea2d8d882a58eebfb02a6ec516599f78e745c4/code/x86-intel/hello-world/hello-world.asm#L50-L55).
 
 ```asm
 _main:
@@ -57,7 +95,7 @@ _main:
     syscall ; invoke operating system to do the write
 ```
 
-We then [exit our program]().
+We then [exit our program](https://github.com/hackclub/some-assembly-required/blob/70ea2d8d882a58eebfb02a6ec516599f78e745c4/code/x86-intel/hello-world/hello-world.asm#L57-L59).
 ```asm
   mov     rax, 0x2000001 ; system call for exit. anything with 0x2 is mac specific
   mov     rdi, 0 ; exit code 0
