@@ -41,7 +41,7 @@ Move the contents of register `rax` into register `rdx`.
   mov rdx, rax
 ```
 
-### Basic math
+## Basic math
 
 #### add
 _Arguments: src, dst_
@@ -61,7 +61,7 @@ Subtract `2` from the contents of `rdx`, and save that new value to `rdx`.
   sub rdx, 2
 ```
 
-### Jumps and Conditionals
+## Jumps and Conditionals
 
 A conditional is something that relies on a condition being met to execute it.
 
@@ -107,7 +107,7 @@ _Arguments: label_
   jg .placeToJump
 ```
 
-### The Stack
+## The Stack
 
 #### push
 _Arguments: src_
