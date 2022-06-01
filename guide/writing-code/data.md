@@ -16,7 +16,9 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 </p>
 <br />
 
-The smallest collection of bits is called a **byte**. Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
+The smallest collection of bits is called a **byte**. Actually, that's not completely true - half of a byte is a **nibble**, which is adorable, but not commonly used.
+
+Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
 
 A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - _everything_ ends up being divisible by 8.
 
