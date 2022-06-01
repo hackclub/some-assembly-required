@@ -66,7 +66,7 @@ Now that we've fetched the data, what does that data actually look like? Well, l
 1. Instructions (like `ADD`)
 1. Numbers
 1. Letters (displayed as [ASCII](#bytes-&-ascii))
-1. Register addresses
+1. Registers
 1. Memory addresses
 
 The CPU will distinguish what type of data it is when it gets to this decoding step.
