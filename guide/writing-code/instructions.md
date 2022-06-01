@@ -2,11 +2,11 @@
 
 _Note: These examples are written in X86-64 Intel syntax assembly language_
 
-This is nowhere near an exhaustive list, but a list of some examples of instructions to
-demonstrate the kinds of things we can do in assembly.
+This will be nowhere near an exhaustive list, but here's a list of some examples of instructions to demonstrate the kinds of things we can do in assembly.
 
-For more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
+To see more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
 
+<div align="center">
 | Instruction | Arguments | Explanation           |
 | ---         | ---       | ---                   |
 | **mov**     | src, dst  | dst = src             |
@@ -21,6 +21,9 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
 | **pop**     | dst       | remove top from stack |
 | **call**    | fn        | push %rip, jmp to fn  |
 | **ret**     |           | pop %rip              |
+</div>
+
+## Instructions
 
 #### Comments
 
