@@ -1,27 +1,20 @@
 # Instructions
 
-_Note: These examples are written in X86-64 Intel syntax assembly language_
-
 This will be nowhere near an exhaustive list, but here's a list of some examples of instructions to demonstrate the kinds of things we can do in assembly.
 
 To see more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
 
-| Instruction | Arguments | Explanation           |
-| ---         | ---       | ---                   |
-| **mov**     | src, dst  | dst = src             |
-| **add**     | src, dst  | dst += src            |
-| **sub**     | src, dst  | dst -= src            |
-| **cmp**     | a, b      | b-a set flags         |
-| **jmp**     | label     | jump to label         |
-| **je**      | label     | jump if equal (ZF=1)  |
-| **jne**     | label     | jump not equal (ZF=0) |
-| **jg**      | label     | jump > (ZF=0)         |
-| **push**    | src       | add to top of stack   |
-| **pop**     | dst       | remove top from stack |
-| **call**    | fn        | push %rip, jmp to fn  |
-| **ret**     |           | pop %rip              |
-
----
+<p align="center">
+  <br />
+  <img src="https://cloud-qfs0iybrc-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_3.42.35_pm.png">
+  <br />
+  <span>
+    <em>
+      These examples are written in X86-64 Intel syntax assembly language
+    </em>
+  </span>
+</p>
+<br />
 
 #### Comments
 
