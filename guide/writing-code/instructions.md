@@ -24,21 +24,29 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
 
 #### Comments
 
+Anything that comes after a semicolon is considered a comment. A comment in code means that the compiler will ignore it, so you have a place to jot down notes, TODOs, etc.
+
 ```asm
-  ; Note: Anything that comes after a semicolon is considered a comment.
-  ;       A comment in code means that the compiler will ignore it, so you have
-  ;       a place to jot down notes, TODOs, etc.
+  ; Here's a comment! This will not be called.
+
+  mov rdx, rax ; A comment can even come after an instruction.
 ```
 
-#### mov
+#### Move
 _Arguments: src, dst_
 
-Explain mov here
+Move the contents of register `rax` into register `rdx`.
+
+```asm
+  mov rdx, rax
+```
 
 ### Basic math
 
 #### add
 _Arguments: src, dst_
+
+Add `3` to the contents of `rdi`, and save that new value to `rdi`.
 
 ```asm
   add rdi, 3
@@ -47,8 +55,10 @@ _Arguments: src, dst_
 #### sub
 _Arguments: src, dst_
 
+Subtract `2` from the contents of `rdx`, and save that new value to `rdx`.
+
 ```asm
-  sub rdi, 2
+  sub rdx, 2
 ```
 
 ### Jumps and Conditionals
