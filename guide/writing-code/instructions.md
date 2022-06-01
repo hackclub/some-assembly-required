@@ -2,7 +2,27 @@
 
 _Note: These examples are written in X86-64 Intel syntax assembly language_
 
-### Comments
+This is nowhere near an exhaustive list, but a list of some examples of instructions to
+demonstrate the kinds of things we can do in assembly.
+
+For more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
+
+| Instruction | Arguments | Explanation           |
+| ---         | ---       | ---                   |
+| **mov**     | src, dst  | dst = src             |
+| **add**     | src, dst  | dst += src            |
+| **sub**     | src, dst  | dst -= src            |
+| **cmp**     | a, b      | b-a set flags         |
+| **jmp**     | label     | jump to label         |
+| **je**      | label     | jump if equal (ZF=1)  |
+| **jne**     | label     | jump not equal (ZF=0) |
+| **jg**      | label     | jump > (ZF=0)         |
+| **push**    | src       | add to top of stack   |
+| **pop**     | dst       | remove top from stack |
+| **call**    | fn        | push %rip, jmp to fn  |
+| **ret**     |           | pop %rip              |
+
+#### Comments
 
 ```asm
   ; Note: Anything that comes after a semicolon is considered a comment.
@@ -12,40 +32,30 @@ _Note: These examples are written in X86-64 Intel syntax assembly language_
 
 ### Basic math
 
+#### add
+_Arguments: src, dst_
+
 ```asm
   add rdi, 3
 ```
+
+#### sub
+_Arguments: src, dst_
 
 ```asm
   sub rdi, 2
 ```
 
-## Jumps and Conditionals
+#### mov
+_Arguments: src, dst_
 
-This is not an exhaustive list, but a list of some examples of instructions to
-demonstrate the kinds of conditionals assembly provides us.
+Explain mov here
+
+### Jumps and Conditionals
 
 A conditional is something that relies on a condition being met to execute it.
 
 _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel._
-
-### Jump if Not Equal
-
-```asm
-  jne .placeToJump
-```
-
-### Jump if Greater
-
-```asm
-  jg .goHere
-```
-
-### Jump if Less
-
-```asm
-  jl .doSomeMath
-```
 
 ### Label
 
@@ -58,6 +68,62 @@ _Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of condit
     add rdi, 3
     ret ; returns back to where you left off in _main!
 ```
+
+#### Jump
+_Arguments: label_
+
+```asm
+  jump .placeToJump
+```
+
+#### Jump if Equal
+_Arguments: label_
+
+```asm
+  je .placeToJump
+```
+
+### Jump if Not Equal
+_Arguments: label_
+
+```asm
+  jne .placeToJump
+```
+
+#### jg
+_Arguments: label_
+
+```asm
+  jg .placeToJump
+```
+
+### The Stack
+
+#### push
+_Arguments: src_
+
+Explain push here
+
+#### pop
+_Arguments: dst_
+
+Explain pop here
+
+#### call
+_Arguments: fn_
+
+Explain call here
+
+#### ret
+
+Explain ret here
+
+### Flags
+
+#### cmp
+_Arguments: a, b_
+
+Explain cmp here
 
 <br />
 
