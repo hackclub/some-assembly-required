@@ -6,13 +6,7 @@ In the physical world, these binary numbers map to electrical circuits. To simpl
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://industrytoday.com/wp-content/uploads/2021/02/safe-business-conveyor-belt-operations.jpg">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="300" src="https://cloud-n9jywgkiy-hack-club-bot.vercel.app/0conveyer.png">
 </p>
 <br />
 
