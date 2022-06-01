@@ -15,6 +15,55 @@ The `86` is pulled from the model names of the Intel chips that use this assembl
 
 The `64` is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify `-64` to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
 
+## Anatomy of a program
+
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see a similar setup in the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program as well.
+
+First thing you'll see is a [section for read-only constants](https://github.com/hackclub/some-assembly-required/blob/3e47d24b7b2492faea8dc2c0efcfcddc7d87a342/code/x86-intel/hello-world/hello-world.asm#L33-L43).
+
+Our
+
+```asm
+; Section for read-only constants
+section .data
+    ; msg is a label
+    ; db = Data Bytes
+    ; saves the ASCII number equivalent of this msg into memory, retrievable later by its label
+    ; 10 is ASCII for a newline
+    msg: db "Hello, world!", 10
+
+    ; Define an assemble-time constant, which is calculated during compilation
+    ; Calculate len = string length.  subtract the address of the start of the string from the current position ($)
+    .len: equ $ - msg
+```
+
+Next you'll see that the code that we actually want to execute on program launch [goes in the .text section](https://github.com/hackclub/some-assembly-required/blob/3e47d24b7b2492faea8dc2c0efcfcddc7d87a342/code/x86-intel/hello-world/hello-world.asm#L45-L48).
+
+```asm
+; Executable code goes in the .text section
+section .text
+  ; The linker looks for this symbol to set the process entry point, so execution start here
+  global _main
+```
+
+We start our program in _main, where we [write "Hello World" out to the terminal]().
+
+```asm
+_main:
+    mov     rax, 0x2000004 ; system call for write. anything with 0x2 is mac specific
+    mov     rdi, 1 ; Set output to stdout. 1 = stdout, which is normally connected to the terminal.
+    mov     rsi, msg ; address of string to output
+    mov     rdx, msg.len ; rdx holds address of next byte to write. msg.len is the number of bytes to write
+    syscall ; invoke operating system to do the write
+```
+
+We then [exit our program]().
+```asm
+  mov     rax, 0x2000001 ; system call for exit. anything with 0x2 is mac specific
+  mov     rdi, 0 ; exit code 0
+  syscall ; invoke operating system to exit
+```
+
 ## Some common instructions explained
 
 For more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).

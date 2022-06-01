@@ -48,12 +48,12 @@ section .text
   global _main
 
 _main:
-    mov     rax, 0x2000004 ; system call for write
+    mov     rax, 0x2000004 ; system call for write. anything with 0x2 is mac specific
     mov     rdi, 1 ; Set output to stdout. 1 = stdout, which is normally connected to the terminal.
     mov     rsi, msg ; address of string to output
     mov     rdx, msg.len ; rdx holds address of next byte to write. msg.len is the number of bytes to write
     syscall ; invoke operating system to do the write
 
-    mov     rax, 0x2000001 ; system call for exit
+    mov     rax, 0x2000001 ; system call for exit. anything with 0x2 is mac specific
     mov     rdi, 0 ; exit code 0
     syscall ; invoke operating system to exit
