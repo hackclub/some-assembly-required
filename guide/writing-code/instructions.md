@@ -109,28 +109,38 @@ _Arguments: label_
 #### push
 _Arguments: src_
 
-Explain push here
+```asm
+  push r13
+```
 
 #### pop
 _Arguments: dst_
 
-Explain pop here
+```asm
+  pop r14
+```
 
 #### call
 _Arguments: fn_
 
-Explain call here
+```asm
+  call .
+```
 
 #### ret
 
-Explain ret here
+```asm
+  ret
+```
 
 ## Flags
 
 #### cmp
 _Arguments: a, b_
 
-Explain cmp here
+```asm
+  cmp r13, r14
+```
 
 <br />
 
