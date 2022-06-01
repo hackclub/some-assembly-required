@@ -2,13 +2,7 @@
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://www.pcworld.com/wp-content/uploads/2021/10/intel-cpu-rocket-lake-rear.jpg?quality=50&strip=all&w=1024">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="300" src="https://cloud-iprjhyjdt-hack-club-bot.vercel.app/0processor.png">
 </p>
 <br />
 
