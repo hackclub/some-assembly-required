@@ -12,8 +12,6 @@
 </p>
 <br />
 
-TODO: Fill this out more
-
 There are many different assembly languages, depending on the processor you want to talk to.
 
 - **X86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. It's used for Intel processors, which have to process a lot of data!
