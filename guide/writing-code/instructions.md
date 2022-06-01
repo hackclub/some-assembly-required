@@ -62,7 +62,7 @@ Subtract `2` from the contents of `rdx`, and save that new value to `rdx`.
 
 A conditional is something that relies on a condition being met to execute it.
 
-_Note: Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel._
+Check out http://unixwiz.net/techtips/x86-jumps.html for a list of conditional jumps for X86 Intel.
 
 #### Label
 
@@ -97,7 +97,7 @@ _Arguments: label_
   jne .placeToJump
 ```
 
-#### jg
+#### Jump if Greater
 _Arguments: label_
 
 ```asm
