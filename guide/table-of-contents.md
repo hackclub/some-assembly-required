@@ -1,16 +1,17 @@
 # Table of Contents
 
 1. [Introduction](/guide/introduction.md)
-1. [The CPU](/guide/cpu.md)
-1. [Electricity and the Physical World](/guide/physical-world.md)
-1. [Writing Code](/guide/writing-code/writing-code.md)
+1. [The CPU](/guide/cpu/cpu.md)
+   - [Electricity and the Physical World](/guide/cpu/physical-world.md)
+   - [Communicating](/guide/cpu/communicating.md)
+2. [Writing Code](/guide/writing-code/writing-code.md)
    - [Data](/guide/writing-code/guide.md)
    - [Registers](/guide/writing-code/registers.md)
    - [Instructions](/guide/writing-code/instructions.md)
-1. [The Math Section](/math/number-system.md)
+3. [The Math Section](/math/number-system.md)
    - [Number Systems](/guide/math/number-systems.md)
    - [Boolean Logic](/guide/math/boolean-logic.md)
-1. [Resources](/guide/resources.md)
+4. [Resources](/guide/resources.md)
 
 ## Working code examples
 
