@@ -27,7 +27,7 @@ However, besides just incrementing by one, the program counter itself can be cha
   jmp .placeToJump
 ```
 
-In this case, the program would change the program counter so that it points to the line `.placeToJump`, leading the next line of instruction run to be the line at `.placeToJump`. When compiled to machine code, `.placeToJump` would be a specific address in the RAM with the next instruction.
+In this case, the program would change the program counter so that it points to the line `.placeToJump`, leading the next line of instruction run to be the line at `.placeToJump`. When compiled to machine code, `.placeToJump` would be a specific address in the memory with the next instruction.
 
 ## The Stack Pointer
 
