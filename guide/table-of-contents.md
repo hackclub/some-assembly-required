@@ -19,6 +19,7 @@
 1. RISC-V
    - [Examples of basic RISC-V instructions being used](/code/riscv/riscv.s)
 1. X86-64 Intel Syntax
+   - [README.md](/code/x86-intel/README.md)
    - [Hello World](/code/x86-intel/hello-world/hello-world.asm)
    - [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm)
 1. C (For comparison purposes)
