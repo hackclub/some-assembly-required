@@ -15,6 +15,88 @@ The `86` is pulled from the model names of the Intel chips that use this assembl
 
 The `64` is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify `-64` to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
 
+## Some common instructions explained
+
+For more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
+
+| Instruction | Arguments | Explanation           |
+| ---         | ---       | ---                   |
+| **mov**     | src, dst  | dst = src             |
+| **add**     | src, dst  | dst += src            |
+| **sub**     | src, dst  | dst -= src            |
+| **cmp**     | a, b      | b-a set flags         |
+| **jmp**     | label     | jump to label         |
+| **je**      | label     | jump if equal (ZF=1)  |
+| **jne**     | label     | jump not equal (ZF=0) |
+| **jg**      | label     | jump > (ZF=0)         |
+| **push**    | src       | add to top of stack   |
+| **pop**     | dst       | remove top from stack |
+| **call**    | fn        | push %rip, jmp to fn  |
+| **ret**     |           | pop %rip              |
+
+### mov
+_Arguments: src, dst_
+
+Explain mov here
+
+### add
+_Arguments: src, dst_
+
+Explain add here
+
+### sub
+_Arguments: src, dst_
+
+Explain sub here
+
+### cmp
+_Arguments: a, b_
+
+Explain cmp here
+
+### jmp
+_Arguments: label_
+
+Explain jmp here
+
+### je
+_Arguments: label_
+
+Explain je here
+
+### jne
+_Arguments: label_
+
+Explain jne here
+
+### jg
+_Arguments: label_
+
+Explain jg here
+
+### push
+_Arguments: src_
+
+Explain push here
+
+### pop
+_Arguments: dst_
+
+Explain pop here
+
+### call
+_Arguments: fn_
+
+Explain call here
+
+### ret
+
+Explain ret here
+
+## Flags
+
+TODO: Fill this out
+
 ## Registers
 
 From [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html), the table below lists the commonly used registers. Each register is 64 bits.

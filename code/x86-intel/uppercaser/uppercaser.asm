@@ -349,7 +349,7 @@ _main:
     cmp byte [rsi + rax], 122
 
     ; jg stands for "Jump if Greater". The jg instruction checks the EFLAGS register we described above.
-    ; We want to return early if our current character is higjer than where the lower case
+    ; We want to return early if our current character is higher than where the lower case
     ; letters end, meaning it's not a character that's uppercase-able
     jg .return
 
