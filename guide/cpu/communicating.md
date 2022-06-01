@@ -1,4 +1,4 @@
-## Communicating with the CPU
+# Communicating with the CPU
 
 One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
