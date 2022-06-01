@@ -24,7 +24,7 @@ Since forever ago, I’ve wanted to try writing assembly, even if just to unders
 
 Embarking on this quest, I quickly found a lot of scattered and difficult to understand resources. It took compiling a bunch of different materials together to come to a high level understanding of what’s happening in my computer.
 
-I wanted to write down my learnings and make an approachable guide for people who are new to this part of their system (like me!), including working code examples. I hope you enjoy!
+I wanted to write down my learnings and make an approachable guide for people who are new to this part of their system (like me!), including [working code examples](/code). I hope you enjoy!
 
 <br />
 
