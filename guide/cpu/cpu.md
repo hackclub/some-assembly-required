@@ -129,7 +129,7 @@ What this means in for us in CPU terms is that modern CPUs can simultaneously fe
 <p align="right">
   <em>
     <b>
-      <a href="/guide/physical-world.md">
+      <a href="/guide/cpu/physical-world.md">
         Translating this to the physical world →
       </a>
     </b>
