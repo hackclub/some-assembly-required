@@ -128,7 +128,7 @@ Explain call here
 
 Explain ret here
 
-### Flags
+## Flags
 
 #### cmp
 _Arguments: a, b_
