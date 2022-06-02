@@ -26,7 +26,7 @@ A byte is made up of **8 bits**. Due to this, 8 is a magic number around here - 
 
 Why is the magic number 8?
 
-Well, when we're representing a single character (like `a`), it takes **8 bits** to represent that character in data.
+Well, when we're representing a single character (like `A`), it takes **8 bits** to represent that character in data.
 
 This has to due with the fact that each letter is represented by a number. Because each character is represented by a number, we have to have a table mapping which number represents which letter. We can use that mapping to then see which characters correspond with which numbers.
 
