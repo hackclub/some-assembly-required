@@ -40,9 +40,29 @@ Just like we have **bytes** to refer to groups of **bits**, we have **words** to
 
 So, another way to refer to the register size is as a quadruple word, or **qword**.
 
-## Register types
+## Return value
 
-Some registers are designated for a certain purpose, such as `%rsp` being used as [the stack pointer](#the-stack-pointer) or `%rax` being used for the return value from a function.
+TODO: explain return values
+
+## Arguments
+
+TODO: explain argument registers
+
+%rdi argc
+
+%rsi argv[][]
+
+## Caller-owned vs Callee-owned
+
+TODO: Make this friendlier
+
+Registers that are all-purpose have a conventions depending on whether **caller-owned** or **callee-owned**.
+
+For example, if the function `function1` calls `function2`, we refer to `function1` as the **caller** and `function2` as the **callee**. The registers used for the first 6 arguments and return value are all **callee-owned**.
+
+That means that the **callee** can freely use those registers, overwriting existing values without taking any precautions. If `%rax` holds a value the **caller** wants to retain, the caller must copy the value to a "safe" location before making a call. The **callee-owned** registers are ideal for _scratch/temporary_ use by the **callee**.
+
+In contrast, if the **callee** intends to use a **caller-owned** register, it must first _preserve its value_ and _restore it_ before exiting the call. The **caller-owned** registers are used for _local state_ of the **caller** that needs to preserved across further function calls.
 
 ## The Instruction Pointer
 
@@ -78,15 +98,9 @@ So now that we know about the stack, the **stack pointer** (`%rsp`) is a special
 
 Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
-## Caller-owned vs Callee-owned
+## Flags
 
-Other registers are all-purpose, but have a conventional use depending on whether **caller-owned** or **callee-owned**.
-
-For example, if the function `function1` calls `function2`, we refer to `function1` as the **caller** and `function2` as the **callee**. The registers used for the first 6 arguments and return value are all **callee-owned**.
-
-That means that the **callee** can freely use those registers, overwriting existing values without taking any precautions. If `%rax` holds a value the **caller** wants to retain, the caller must copy the value to a "safe" location before making a call. The **callee-owned** registers are ideal for _scratch/temporary_ use by the **callee**.
-
-In contrast, if the **callee** intends to use a **caller-owned** register, it must first _preserve its value_ and _restore it_ before exiting the call. The **caller-owned** registers are used for _local state_ of the **caller** that needs to preserved across further function calls.
+TODO: explain flags
 
 <br />
 
