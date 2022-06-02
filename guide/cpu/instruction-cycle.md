@@ -48,6 +48,18 @@ Memory can easily hold over _15 million times_ the amount that registers can! Si
 
 ### Decode
 
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
+  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
+</p>
+<br />
+
 Now that we've fetched the data, what does that data actually look like?
 
 Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read, which is as numbers.
@@ -64,38 +76,15 @@ The CPU will distinguish what type of data it's looking at when it gets to this 
 
 Each CPU has a set of instructions that is built _physically into the chip_, which you can think of as a list of actions that coordinate with numbers that the CPU can do. Since the data grabbed from the fetch phase is just numbers, the CPU can decode the instruction by comparing the number it sees to the set instructions list.
 
-The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `ADD`.
-
-The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
-
-#### Decoding our instructions
-
-<p align="center">
-  <br />
-  <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
-</p>
-<br />
-
-A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions.
-
-A CPU has a mapping from number to instruction, something like:
-
-
 | Number | Instruction |
 | ------ | ----------- |
 | 1      | `add`       |
 | 2      | `sub`       |
 | ...    | ...         |
 
-The decoder grabs the next instruction to execute, which looks like a bunch of numbers. It looks at the first number, and let's say it sees the number 2. The decoder is then able to map the number 2 to the subtraction instruction. So now the decoder can send the data along to the right places to do the subtraction.
+The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `ADD`.
 
-How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
+The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
 
 ### Execute
 
