@@ -20,7 +20,7 @@ For example, let's take a steering wheel. A steering wheel makes driving simple 
 
 In our case, assembly is the steering wheel, and the rods, levers, and other hidden stuff is our machine code.
 
-Here's the thing about computers. They can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
+As we've learned, computers can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
 
 Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
 

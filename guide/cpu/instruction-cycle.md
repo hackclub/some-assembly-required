@@ -48,7 +48,11 @@ Memory can easily hold over _15 million times_ the amount that registers can! Si
 
 ### Decode
 
-Now that we've fetched the data, what does that data actually look like? Well, like we've said before, **everything is just numbers**. But what those numbers represent include five broad categories:
+Now that we've fetched the data, what does that data actually look like?
+
+Well, it turns out **everything is just numbers**. Here's the thing about computers - they can actually only understand numbers, so all of the data we store has to be represented in a way that the computer can read!
+
+What those numbers represent include five broad categories:
 
 1. Instructions (like `ADD`)
 1. Numbers
@@ -56,19 +60,19 @@ Now that we've fetched the data, what does that data actually look like? Well, l
 1. Registers
 1. Memory addresses
 
-The CPU will distinguish what type of data it is when it gets to this decoding step.
+The CPU will distinguish what type of data it's looking at when it gets to this decoding step.
 
 Each CPU has a set of instructions that is built _physically into the chip_, which you can think of as a list of actions that coordinate with numbers that the CPU can do. Since the data grabbed from the fetch phase is just numbers, the CPU can decode the instruction by comparing the number it sees to the set instructions list.
 
-The first part of the data it fetches is the opcode, which is the unique identifier for an action that the CPU can run (like `ADD`).
+The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `ADD`.
 
-The next numbers that are fetched are the arguments to be executed. For a very hypothetical example, let's take instruction `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
+The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
 
 ### Execute
 
-After the data fetched is decoded, the CPU now has an instruction that it will execute.
+After the data fetched is decoded, the CPU now has an instruction that it can execute.
 
-If the instruction is an arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false) instruction, it has an extra step of being sent to something called the **arithmetic-logic unit**, or **ALU**, which is made from a series of [logic gates](#boolean-logic). The ALU would then return a value, which is stored in a register until an instruction needs it.
+If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished mathing, the ALU would then return a value, which is stored in a register until an instruction needs it.
 
 ### Modern Day
 
