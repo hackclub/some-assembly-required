@@ -10,7 +10,6 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
   <br />
   <img height="250" src="https://cloud-5lw2nkej5-hack-club-bot.vercel.app/0cycle.png">
 </p>
-<br />
 
 ### Fetch
 
