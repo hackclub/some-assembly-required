@@ -18,8 +18,12 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 
 ### Base 10
 
+TODO: Fill out base 10
+
 ### Hexadecimal
 _Also known as base 8!_
+
+TODO: Make this friendlier
 
 All numbers in assembly language are represented by hexadecimal.
 When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it (as seen in the graph above). And when we count in base 10 numbers, we count from 0 up to 9 and then start over again but add one to the left: 0, 1, ..., 10, 11, ..., 20, 21, etc.
@@ -39,6 +43,8 @@ Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15).
 
 ### Binary
 _Also known as base 2!_
+
+TODO: Make this friendlier
 
 <p align="center">
   <br>
