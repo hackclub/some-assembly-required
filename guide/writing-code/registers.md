@@ -32,11 +32,11 @@ Since a register holds **64 bits**, that can also be translated to **8 bytes** (
 
 Just like we have **bytes** to refer to groups of **bits**, we have **words** to refer to groups of **bytes**.
 
-- A **single word** is **2 bytes**, which is 16 bits (2 _(bytes) multiplied by 8 _(bits per byte)_).
+- A **single word** is **2 bytes**, which is 16 bits (2 _(bytes)_ multiplied by 8 _(bits per byte)_).
 
-- A **double word** is **4 bytes**, which is 32 bits (4 _(bytes) multiplied by 8 _(bits per byte)_).
+- A **double word** is **4 bytes**, which is 32 bits (4 _(bytes)_ multiplied by 8 _(bits per byte)_).
 
-- A **quadruple word** is **8 bytes**, which is 64 bits (8 _(bytes) multiplied by 8 _(bits per byte)_).
+- A **quadruple word** is **8 bytes**, which is 64 bits (8 _(bytes)_ multiplied by 8 _(bits per byte)_).
 
 So, another way to refer to the register size is as a quadruple word, or **qword**.
 
