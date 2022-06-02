@@ -86,7 +86,7 @@ The first part of the data it fetches is the **opcode**, which is the unique ide
 
 The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like:
 ```asm
-add 3 4
+add 3, 4;
 ```
 
 Our opcode is `add`, and our arguments are `3` and `4`!
