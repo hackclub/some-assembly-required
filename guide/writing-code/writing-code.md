@@ -26,7 +26,7 @@ There are many different assembly languages, depending on the processor you want
 
 Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using **X86-64** assembly code to demonstrate assembly concepts. Yes, I know, my computer is a little old. Sorry!
 
-That being said, these concepts should translate across different assembly languages, just with some changes.
+That being said, these concepts should translate across different assembly languages.
 
 <br />
 
