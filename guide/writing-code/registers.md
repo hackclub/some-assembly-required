@@ -40,7 +40,7 @@ Just like we have **bytes** to refer to groups of **bits**, we have **words** to
 
 So, another way to refer to the register size is as a quadruple word, or **qword**.
 
-## Return value
+## Return values
 
 TODO: explain return values
 
