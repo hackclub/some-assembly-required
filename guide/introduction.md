@@ -3,7 +3,6 @@
 <p align="center">
   <br />
   <img height="300" src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
-  <br />
 </p>
 <br />
 
