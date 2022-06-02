@@ -8,13 +8,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
 
 <p align="center">
   <br />
-  <img width="1000" src="https://cloud-p921tgnwf-hack-club-bot.vercel.app/0v2__3_.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="300" src="https://cloud-5lw2nkej5-hack-club-bot.vercel.app/0cycle.png">
 </p>
 <br />
 
