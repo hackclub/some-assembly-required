@@ -2,13 +2,8 @@
 
 <p align="center">
   <br />
-  <img src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
+  <img height="400" src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
   <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
 </p>
 <br />
 
