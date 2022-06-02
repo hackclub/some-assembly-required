@@ -58,7 +58,19 @@ In this case, the program would change the program counter so that it points to 
 
 ## The Stack Pointer
 
-Computers allocate a chunk of memory in the RAM to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: push values onto it, which go on top of the previous values, and pop values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+Computers allocate a chunk of memory to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: **push** values onto it, which go on top of the previous values, and **pop** values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
+
+<p align="center">
+  <br />
+  <img height="200" src="https://holycoders.com/content/images/wordpress/2020/04/Stack-data-structure.png">
+  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
+</p>
+<br />
 
 The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
 
