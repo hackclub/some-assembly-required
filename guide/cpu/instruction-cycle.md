@@ -93,7 +93,7 @@ Our opcode is `add`, and our arguments are `3` and `4`!
 
 ### Execute
 
-After the data fetched is decoded, the CPU now has an instruction that it can execute.
+After the fetched data is decoded, the CPU now has an instruction that it can do.
 
 If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished mathing, the ALU would then return a value, which is stored in a register until an instruction needs it.
 
