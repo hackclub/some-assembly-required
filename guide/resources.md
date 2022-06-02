@@ -19,7 +19,7 @@
 ### The "Getting Started Writing Assembly Language" series
   - https://blog.devgenius.io/getting-started-writing-assembly-language-8ecc116f3627
   - https://blog.devgenius.io/finding-an-efficient-development-cycle-for-writing-assembly-language-be2092e6db6a
-  - https://blog.devgenius.io/writing-an-x86-64-assembly-language-program-648b6005e8e (ESPECIALLY this one, since it had a lot of the command line arg info, although some of it works differently on mac)
+  - https://blog.devgenius.io/writing-an-x86-64-assembly-language-program-648b6005e8e
 
 ### Guides
   - https://cs61.seas.harvard.edu/site/2018/Asm1/
