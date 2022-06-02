@@ -99,9 +99,9 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 ## Putting it all together
 
-You may be wondering what this might look like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
+You may be wondering what this might look like. If you are, you’re in luck! Let’s map an instruction to machine code.
 
-In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily.
+Remember our registers from above? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store numbers temporarily.
 
 ```asm
 add r12, 4; Add the number 4 to the number saved in register 12
