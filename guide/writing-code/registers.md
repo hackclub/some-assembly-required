@@ -10,13 +10,11 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
   <br />
   <span>
     <em>
-      Commonly used x86-64 registers
+      Commonly used registers from [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html)
     </em>
   </span>
 </p>
 <br />
-
-From [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html), the table above lists the commonly used registers.
 
 ## Register data
 
