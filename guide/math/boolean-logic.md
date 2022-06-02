@@ -122,7 +122,11 @@ XNOR is always false unless the inputs are the same.
 | 01 | 0   |
 | 11 | 1   |
 
-Fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever. That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you’d actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
+## NAND is special
+
+Here's a fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever.
+
+That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you’d actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
 
 In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
 
