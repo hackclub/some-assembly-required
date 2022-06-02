@@ -37,7 +37,7 @@ This is important to us because for every clock tick, the CPU reads one instruct
   <em>
     <b>
       <a href="/guide/cpu/communicating.md">
-        Let's communicate with the CPU →
+        Let's write some code →
       </a>
     </b>
   </em>

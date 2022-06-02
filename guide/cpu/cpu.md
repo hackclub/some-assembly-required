@@ -27,7 +27,7 @@ You hand it numbers, and it’s put to work crunching the data however you’d l
   <em>
     <b>
       <a href="/guide/cpu/communicating.md">
-        There has to be more to it than that →
+        Let's communicate with the CPU →
       </a>
     </b>
   </em>

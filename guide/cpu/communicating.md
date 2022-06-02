@@ -72,7 +72,7 @@ All programming languages are some level of abstraction above machine code. But,
   <em>
     <b>
       <a href="/guide/cpu/instruction-cycle.md">
-        Let's write some code →
+        How does that work →
       </a>
     </b>
   </em>
