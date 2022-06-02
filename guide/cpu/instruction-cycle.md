@@ -13,7 +13,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
 
 ### Fetch
 
-In the first phase, the CPU must fetch data from memory. Memory, also known as random access memory or **RAM**, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
+In the first phase, the CPU must fetch the instruction data from **memory**, so it can see what you're asking it to do. Memory, also known as random access memory or RAM, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
 
 <p align="center">
   <br />
@@ -21,11 +21,11 @@ In the first phase, the CPU must fetch data from memory. Memory, also known as r
 </p>
 <br />
 
-Keeping with our warehouse metaphor, accessing your RAM is kind of like going to a storage rack with boxes. Each piece of data (boxes, in our metaphor) has an "address" (box location) where you can view the contents (what's inside the box!). You can also clear out the contents (take the box off of the spot on the rack), and then store new pieces of data (add new boxes to the rack).
+Let's say our CPU is a warehouse. Accessing your memory is kind of like going to a storage rack with boxes. Each box _(data)_ has a location _(memory address)_ where you can see what's inside the box _(read the data at that memory address)_. You can also take the box off of the rack _(clear the contents at that memory address)_, and add new boxes to the rack _(store new pieces of data at that memory address)_.
 
-Here's something wild for you: in the CPU, our boxes are actually just _electrical currents_. And because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when the warehouse closed, all of the packages are got thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
+Here's something wild for you: in the CPU, all data is stored in the form of _electricity_. And because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when the warehouse closed, all of the packages got thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
 
-Our RAM, or box racks, has quite a bit of room to store our things - enough to hold large boxes. But, moving large boxes around the warehouse can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place smaller packages. Those are our **registers**.
+Our box racks _(memory)_ has quite a bit of room to store our things - enough to hold large boxes. But, moving large boxes around the warehouse can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place smaller packages. Those are our CPU's **registers**.
 
 <p align="center">
   <br />
