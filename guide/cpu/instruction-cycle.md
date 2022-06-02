@@ -11,7 +11,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
   <img height="250" src="https://cloud-5lw2nkej5-hack-club-bot.vercel.app/0cycle.png">
 </p>
 
-### Fetch
+## Fetch
 
 In the first phase, the CPU must fetch the instruction data from **memory**, so it can see what you're asking it to do. Memory, also known as random access memory or RAM, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
 
@@ -46,7 +46,7 @@ Now you may be asking yourself - why don’t we store everything in the register
 
 Memory can easily hold over _15 million times_ the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
 
-### Decode
+## Decode
 
 <p align="center">
   <br />
@@ -91,13 +91,13 @@ add 3, 4;
 
 Our opcode is `add`, and our arguments are `3` and `4`!
 
-### Execute
+## Execute
 
 After the fetched data is decoded, the CPU now has an instruction that it can do.
 
 If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished mathing, the ALU would then return a value, which is stored in a register until an instruction needs it.
 
-##### Putting it all together
+## Putting it all together
 
 You may be wondering what this might look like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
 
@@ -132,7 +132,7 @@ The decoder knows that next comes the argument for the number to add, which is `
 
 Then this all gets executed. The CPU sends the number `4` and the number stored in register 12 (`r12`) to the ALU, and then it saves that new value to register 12 (`r12`). We did it!
 
-### Modern Day
+## Modern Day
 
 Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
 
