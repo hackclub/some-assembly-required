@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cdn.drawception.com/images/panels/2017/11-29/WLmOZxwqst-2.png">
+  <img src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
   <br />
   <span>
     <em>
