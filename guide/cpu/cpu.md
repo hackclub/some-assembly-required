@@ -26,7 +26,7 @@ You hand it numbers, and it’s put to work crunching the data however you’d l
 <p align="right">
   <em>
     <b>
-      <a href="/guide/cpu/instruction-cycle.md">
+      <a href="/guide/cpu/communicating.md">
         There has to be more to it than that →
       </a>
     </b>

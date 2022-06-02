@@ -55,13 +55,13 @@ add r12, 4
 
 I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
 
-All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.  Your CPU is able to read these numbers with the help of something called a decoder.
+All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.
 
 <br />
 
 ---
 
-<a href="/guide/cpu/physical-world.md">
+<a href="/guide/cpu/instruction-cycle.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
     <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
@@ -71,7 +71,7 @@ All programming languages are some level of abstraction above machine code. But,
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/writing-code.md">
+      <a href="/guide/writing-code/cpu.md">
         Let's write some code →
       </a>
     </b>
