@@ -124,7 +124,7 @@ _Arguments: dst_
 _Arguments: fn_
 
 ```asm
-  call .
+  call .someCode
 ```
 
 #### ret
