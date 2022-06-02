@@ -2,9 +2,9 @@
 
 1. [Introduction](/guide/introduction.md)
 1. [The CPU](/guide/cpu/cpu.md)
+   - [Communicating with the CPU](/guide/cpu/communicating.md)
    - [The Instruction Cycle](/guide/cpu/instruction-cycle.md)
    - [Electricity and the Physical World](/guide/cpu/physical-world.md)
-   - [Communicating with the CPU](/guide/cpu/communicating.md)
 2. [Writing Code](/guide/writing-code/writing-code.md)
    - [Data](/guide/writing-code/guide.md)
    - [Registers](/guide/writing-code/registers.md)
