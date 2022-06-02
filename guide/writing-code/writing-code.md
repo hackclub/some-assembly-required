@@ -15,9 +15,13 @@
 There are many different assembly languages, depending on the processor you want to talk to.
 
 - **X86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. Most modern desktop computers and game consoles use it. It's used for Intel processors, which have to process a lot of data!
+
 - **ARM** is also very useful and complicated. It's the language used by most smartphones, tablets, and even Raspberry Pis. Recently, it's being used for things like the new Apple M1 processors.
+
 - **6502** was used for many influential older systems, such as the NES, Apple II, or Commodore 64, and is still used in some small devices today. It was designed with human programmers instead of a compiler in mind, so the syntax is easier than most other assembly languages.
+
 - **Z80** is another one you might know - remember those TI-8X calculators you may have used in school? Well, to program those, you'd use the Z80 assembly language!
+
 - **RISC-V** is a simpler assembly language, made for educational and research purposes. RISC stands for "Reduced Instruction Set Compiler". Its goal is to use a smaller instruction set than most other assembly languages.
 
 Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using **X86-64** assembly code to demonstrate assembly concepts. Yes, I know, my computer is a little old. Sorry!
