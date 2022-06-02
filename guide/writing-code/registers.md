@@ -44,6 +44,8 @@ So, another way to refer to the register size is as a quadruple word, or **qword
 
 TODO: explain return values
 
+%rax
+
 ## Arguments
 
 TODO: explain argument registers
