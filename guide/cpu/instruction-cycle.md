@@ -1,6 +1,6 @@
 # The Instruction Cycle
 
-When we ask the CPU to do something, we do that by way of an **instruction**. We say something like, hey CPU - can you add these two numbers together? When the CPU sees that instruction, it sets off a a cycle with 3 main stages:
+When we ask the CPU to do something, we do that by way of an **instruction**. We give an instruction like, hey CPU - can you add these two numbers together? When the CPU is ready to work on that instruction, it sets off a cycle with 3 main stages:
 
 1. [**Fetch**](#fetch) the data from memory
 1. [**Decode**](#decode) that data to understand the instruction
