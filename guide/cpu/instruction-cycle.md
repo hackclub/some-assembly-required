@@ -13,7 +13,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
 
 ### Fetch
 
-In the first phase of the pipeline, the CPU must fetch data from memory. Memory, also known as random access memory or **RAM**, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
+In the first phase, the CPU must fetch data from memory. Memory, also known as random access memory or **RAM**, is a type of short term storage your computer has. There are longer term storage places, like your hard drive, but we use memory when we need to keep something around temporarily.
 
 <p align="center">
   <br />
