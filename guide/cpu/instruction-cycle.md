@@ -66,7 +66,7 @@ Well, as we've learned, the computer can only read numbers. So all of the data w
 
 What those numbers represent include five broad categories:
 
-1. Instructions (like `ADD`)
+1. Instructions (like `add`)
 1. Numbers
 1. Letters (displayed as [ASCII](#bytes-&-ascii))
 1. Registers
@@ -82,9 +82,9 @@ Each CPU has a set of instructions that is built _physically into the chip_, whi
 | 2      | `sub`       |
 | ...    | ...         |
 
-The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `ADD`.
+The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `add`.
 
-The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
+The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `add 3 4`. Our opcode is `add`, and our arguments are `3` and `4`!
 
 ### Execute
 
