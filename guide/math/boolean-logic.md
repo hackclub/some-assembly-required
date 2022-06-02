@@ -26,6 +26,8 @@ TODO fill out this section
 
 ## Logical Operations
 
+TODO: Make each section friendlier
+
 ### AND
 
 ![Screen Shot 2022-05-17 at 10 53 15 AM](https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png)
