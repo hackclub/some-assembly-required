@@ -61,7 +61,7 @@ All programming languages are some level of abstraction above machine code. But,
 
 ---
 
-<a href="/guide/cpu/instruction-cycle.md">
+<a href="/guide/cpu/cpu.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
     <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
@@ -71,7 +71,7 @@ All programming languages are some level of abstraction above machine code. But,
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/cpu.md">
+      <a href="/guide/cpu/instruction-cycle.md">
         Let's write some code →
       </a>
     </b>
