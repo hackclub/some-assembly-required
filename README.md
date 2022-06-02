@@ -12,11 +12,7 @@
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/reading-dictionary-2144-589c2a14cd49b0f704f41cfd9ee51ba4@1x.jpg">
-  <br />
-  <span>
-    <em>placeholder until we get a real cover!</em>
-  </span>
+  <img height="300" src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
 </p>
 <br />
 
