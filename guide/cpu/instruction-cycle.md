@@ -24,13 +24,7 @@ In the first phase of the pipeline, the CPU must fetch data from memory. Memory,
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://img.freepik.com/free-photo/warehouse-with-cardboard-boxes-inside-pallets-racks-logistic-center-huge-large-modern-warehouse-warehouse-filled-with-cardboard-boxes-shelves-boxes-stand-pallets-3d-illustration_92790-1630.jpg?w=2000">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="300" src="hhttps://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
 </p>
 <br />
 
