@@ -68,11 +68,76 @@ The first part of the data it fetches is the **opcode**, which is the unique ide
 
 The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like `ADD 3 4`. Our opcode is `ADD`, and our arguments are `3` and `4`!
 
+#### Decoding our instructions
+
+<p align="center">
+  <br />
+  <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
+  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
+</p>
+<br />
+
+A decoder is a specialized device on the CPU that takes input and decodes what it’s trying to do. These tasks are represented as our assembly instructions.
+
+A CPU has a mapping from number to instruction, something like:
+
+
+| Number | Instruction |
+| ------ | ----------- |
+| 1      | `add`       |
+| 2      | `sub`       |
+| ...    | ...         |
+
+The decoder grabs the next instruction to execute, which looks like a bunch of numbers. It looks at the first number, and let's say it sees the number 2. The decoder is then able to map the number 2 to the subtraction instruction. So now the decoder can send the data along to the right places to do the subtraction.
+
+How does the decoder know how to decode these things? It’s actually built physically into the chip itself, where the circuitry determines the instruction set.
+
 ### Execute
 
 After the data fetched is decoded, the CPU now has an instruction that it can execute.
 
 If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished mathing, the ALU would then return a value, which is stored in a register until an instruction needs it.
+
+##### Putting it all together
+
+You may be wondering what this might look like. If you are, you’re in luck! Let’s map our last `add` line to machine code. This is a completely fictional example, but it's a demonstration of how the computer decodes the numbers.
+
+In order to explain this, let's briefly talk about registers. We will get into this [more later](#saving-data), but for this example, they're places where you can store numbers temporarily.
+
+```asm
+add r12, 4; Add the number 4 to the number saved in register 12
+```
+
+
+First, the CPU goes and fetches the data for the instruction. In machine code, this may end up looking like this in [binary](#binary) (we will cover what binary is later), or base 2:
+
+```
+00000001 00001100 00001100 00000100
+```
+
+Which, in [base 10](#number-systems) (how we normally talk about numbers!), is:
+
+```
+1 12 4
+```
+
+The decoder would see the first `1`, and it would know that the first number it receives should map to an instruction. Let's say instruction 1 is `add`.
+
+The decoder knows that the `add` instruction's first argument is both:
+
+- the save destination
+- and the location of the first number to add
+
+The decoder then sees that the next piece of data has the value `12`, so it knows that its save destination is register 12 (`r12`). It can then grab the number stored in `r12` for the math part.
+
+The decoder knows that next comes the argument for the number to add, which is `4`.
+
+Then this all gets executed. The CPU sends the number `4` and the number stored in register 12 (`r12`) to the ALU, and then it saves that new value to register 12 (`r12`). We did it!
 
 ### Modern Day
 
