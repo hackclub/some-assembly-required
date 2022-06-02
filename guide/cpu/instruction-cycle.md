@@ -50,7 +50,7 @@ Memory can easily hold over _15 million times_ the amount that registers can! Si
 
 Now that we've fetched the data, what does that data actually look like?
 
-Well, it turns out **everything is just numbers**. Here's the thing about computers - they can actually only understand numbers, so all of the data we store has to be represented in a way that the computer can read!
+Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read, which is as numbers.
 
 What those numbers represent include five broad categories:
 

@@ -20,9 +20,11 @@ For example, let's take a steering wheel. A steering wheel makes driving simple 
 
 In our case, assembly is the steering wheel, and the rods, levers, and other hidden stuff is our machine code.
 
-As we've learned, computers can actually only understand numbers. So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
+Machine code is just a bunch of numbers that the computer can read. In fact, it turns out that **everything is just numbers** underneath. Here's the thing about computers - they can actually only understand numbers, so everything we do has to be translated down to numbers eventually.
 
-Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the assembler, into the numbers that the computer can then read.
+So, machine code is just a bunch of numbers that the CPU reads to figure out what instructions to execute and on what data. It's the computer-readable code.
+
+Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the **assembler**, into the numbers that the computer can then read.
 
 It’s like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in imperial measurements (eg cups, tablespoons, etc.), and Icelandic people write recipes in metric measurements (grams, liters, etc.).
 
@@ -38,9 +40,9 @@ It’s like if you were an American and you were giving your Icelandic friend a 
 </p>
 <br />
 
-Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (assembly language), convert it to grams (the assembler), and then write the converted recipe to use 68 grams of flour (machine code). Look at you go - you’re the assembler here!
+Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 68 grams of flour (**machine code**). Look at you go - you’re the assembler here!
 
-You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like this in binary (we will talk about [what binary is](#binary) a little bit later):
+You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
 
 ```
 01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
