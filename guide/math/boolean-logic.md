@@ -8,11 +8,23 @@
 
 Boolean is a very cute word for a very simple concept! A boolean is something that can only have one of two values - true or false. True or false can also be represented as 1 for true, 0 for false.
 
-Since we represent data in the physical world with the inclusion or absence of electrical signals, we can use something called boolean logic to determine whether a “statement” is true or false. A statement here is just boolean values, and we pass them to operations we can use depending on our use case.
+Since we represent data in the physical world with the inclusion or absence of electrical signals, we can use something called boolean logic to determine whether a “statement” is **true** or **false**. A statement here is just boolean values, and we pass them to operations we can use depending on our use case.
 
-Why would we ever use this? Great question! Let me let you in on a secret - everything your computer is doing is actually just composed of these logical operations. Everything. All the math your processor can do, it’s done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these “logic gates”, in the form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer!
+Why would we ever use this? Great question! Let me let you in on another secret.
+
+Remember earlier, how we learned that all code has to end up as numbers for the computer to understand it?
+
+Well that's because your computer is running those numbers through these logical operations. **Every single one.**
+
+All the math your processor can do, it’s done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these “logic gates”, in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer!
 
 Let’s talk through these logical operations a bit.
+
+## Boolean math
+
+TODO fill out this section
+
+## Logical Operations
 
 ### AND
 
