@@ -17,7 +17,7 @@ In the first phase of the pipeline, the CPU must fetch data from memory. Memory,
 
 <p align="center">
   <br />
-  <img height="350" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
+  <img height="325" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
 </p>
 <br />
 
