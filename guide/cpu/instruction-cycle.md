@@ -132,9 +132,9 @@ The decoder knows that next comes the argument for the number to add, which is `
 
 Then this all gets executed. The CPU sends the number `4` and the number stored in register 12 (`r12`) to the ALU, which sends the sum of these two numbers back to the CPU. The CPU takes this sum from the ALU and saves it to register 12 (`r12`). We did it!
 
----
+<br />
 
-> ### Modern day sidenote
+> #### Modern day sidenote
 >
 > Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
 >
