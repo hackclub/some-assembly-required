@@ -79,7 +79,7 @@ In contrast, if the **callee** intends to use a **caller-owned** register, it mu
 
 ## The Instruction Pointer
 
-The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`%rip`), also known as the **program counter**, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let’s say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
+The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`%rip`), also known as the **program counter**, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let's say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
 
 However, besides just incrementing by one, the program counter itself can be changed with a JUMP instruction.
 
@@ -105,11 +105,11 @@ Computers allocate a chunk of memory to be the “stack”, a place where you ca
 </p>
 <br />
 
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you’d be correct! However, we have a limited number of registers. Let’s say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we’re done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you'd be correct! However, we have a limited number of registers. Let's say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we're done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
 
 So now that we know about the stack, the **stack pointer** (`%rsp`) is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
 
-Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It’s named after this stack right here! You don’t need to know this for the purposes of this guide, but while we’re here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It's named after this stack right here! You don't need to know this for the purposes of this guide, but while we're here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
 
 ## Flags
 

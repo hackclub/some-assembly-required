@@ -26,7 +26,7 @@ Now, I will say that communicating with your CPU directly is generally quite unn
 
 Even though you or I may never _need_ to write assembly, I think that building an understanding of how your computer works at this level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was _so_ happy it wasn't assembly. Writing programs in assembly, as you'll come to learn, is very manual - you have to account for _every single thing_ yourself. Sorry assembly, I still love you!
 
-I hope this guide helps you to demystify some of the lowest layers, and turn it from something that feels like magic to something that feels graspable. I personally didn’t know how these things worked before I started writing this guide, and I wanted to turn the things I pieced together during my learnings into something that can help others on their journey.
+I hope this guide helps you to demystify some of the lowest layers, and turn it from something that feels like magic to something that feels graspable. I personally didn't know how these things worked before I started writing this guide, and I wanted to turn the things I pieced together during my learnings into something that can help others on their journey.
 
 <br />
 

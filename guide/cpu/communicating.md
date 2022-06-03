@@ -18,7 +18,7 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 </p>
 <br />
 
-For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what’s happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
+For example, let's take a steering wheel. A steering wheel makes driving simple - you just turn left and right, and the amount you turn maps to how much your tires turn. But, what's happening underneath? The steering wheel is an abstraction layer on top of rods, levers, and whatever else is happening inside that car, simplifying the act of turning for you. Or something like that. I clearly don't know anything about cars.
 
 In our case, assembly is the steering wheel, and the rods, levers, and other hidden stuff is our machine code.
 
@@ -28,7 +28,7 @@ So, machine code is just a bunch of numbers that the CPU reads to figure out wha
 
 Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the **assembler**, into the numbers that the computer can then read.
 
-It’s like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in imperial measurements (eg cups, tablespoons, etc.), and Icelandic people write recipes in metric measurements (grams, liters, etc.).
+It's like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in imperial measurements (eg cups, tablespoons, etc.), and Icelandic people write recipes in metric measurements (grams, liters, etc.).
 
 <p align="center">
   <br />
@@ -42,7 +42,7 @@ It’s like if you were an American and you were giving your Icelandic friend a 
 </p>
 <br />
 
-Line by line you’d translate the recipe until you have a new recipe for your friend to use. You’d take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 68 grams of flour (**machine code**). Look at you go - you’re the assembler here!
+Line by line you'd translate the recipe until you have a new recipe for your friend to use. You'd take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 68 grams of flour (**machine code**). Look at you go - you're the assembler here!
 
 You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
 
@@ -58,7 +58,7 @@ mov r12, r13
 add r12, 4
 ```
 
-I know this doesn’t look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
+I know this doesn't look extremely friendly, especially compared to the high level programming languages we have today. However, I promise you it is far friendlier than just writing a bunch of numbers!
 
 All programming languages are some level of abstraction above machine code. But, in the end, all human written code has to be converted into numbers for your CPU to be able to read.
 

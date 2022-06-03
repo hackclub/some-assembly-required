@@ -16,9 +16,9 @@ Remember earlier, how we learned that all code has to end up as numbers for the 
 
 Well that's because your computer is running those numbers through these logical operations. **Every single one.**
 
-All the math your processor can do, it’s done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these “logic gates”, in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer!
+All the math your processor can do, it's done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these “logic gates”, in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer!
 
-Let’s talk through these logical operations a bit.
+Let's talk through these logical operations a bit.
 
 ## Boolean math
 
@@ -128,9 +128,9 @@ XNOR is always false unless the inputs are the same.
 
 Here's a fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever.
 
-That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you’d actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
+That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you'd actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
 
-In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It’s like stacking lego bricks, but each brick is a logical operation.
+In real circuits, you would even see amalgamations of gates (like AND+OR+NOT+OR+AND) as a single "standard cell". It's like stacking lego bricks, but each brick is a logical operation.
 
 <br />
 

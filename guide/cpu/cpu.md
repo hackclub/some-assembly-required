@@ -14,7 +14,7 @@ Computers contain other processing units (like the graphics card!) that are resp
 1. Set values
 1. Perform simple math calculations like addition and subtraction
 
-You hand it numbers, and it’s put to work crunching the data however you’d like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
+You hand it numbers, and it's put to work crunching the data however you'd like. That's it. Everything your computer doing is made up of just that. Isn't that wild?
 
 <br />
 

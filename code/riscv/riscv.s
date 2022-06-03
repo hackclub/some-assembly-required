@@ -48,7 +48,7 @@ SUB x21, x20, x19
 # Store byte from register 20 into memory address 0, specifying no offset
 # 0x00000000 = 4
 SB x20, 0(zero)
-# The argument that’s in the parenthesis is the offset, saying how many bytes we’ll
+# The argument that's in the parenthesis is the offset, saying how many bytes we'll
 # be saving together
 
 ## Load byte
@@ -125,7 +125,7 @@ SLLI x23, x19, 1
 
 ## Immediate values passed to ADDI can only go up to 12 bits
 # We use ADDI to load registers with numbers
-# If we want a number that’s higher than 2^12 (4,095)
+# If we want a number that's higher than 2^12 (4,095)
 # We would use LUI to load the upper 20 bits that are left
 # x24 = 5000
 ADDI x24, zero, 4095
@@ -162,7 +162,7 @@ loop:
 	# Branch less than
 	BLT x18, x19, loop
 
-# Prove we’ve left the loop
+# Prove we've left the loop
 # x21 = 66
 ADDI x21, zero, 66
 

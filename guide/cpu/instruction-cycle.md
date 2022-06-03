@@ -23,7 +23,7 @@ In the first phase, the CPU must fetch the instruction data from **memory**, so 
 
 Let's imagine our CPU is a warehouse. Accessing your memory is kind of like going to a storage rack with boxes. Each box _(data)_ has a location _(memory address)_ where you can see what's inside the box _(read the data at that memory address)_. You can also take everything out of the box _(clear the contents at that memory address)_, and put new stuff in the box _(store new pieces of data at that memory address)_.
 
-Here's something wild for you: in memory, all data is stored in the form of electricity. And because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It’s kind of like if every night when the warehouse closed, all of the packages got thrown out. That’s why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
+Here's something wild for you: in memory, all data is stored in the form of electricity. And because we store data as electricity, when your computer turns off and no more electricity is traveling to it, all of the things you have stored get cleared out! It's kind of like if every night when the warehouse closed, all of the packages got thrown out. That's why we refer to it as short term memory - we want to make sure to store important things in the hard drive, which is our longer term storage, lest it be thrown away.
 
 Our box racks _(memory)_ has quite a bit of room to store our things - enough to hold large boxes. But, moving large boxes around the warehouse can be slow and cumbersome. So, for faster, smaller, and temporary storage, we have a set of numbered cubbyholes along the floor of the warehouse where we can place smaller packages. Those are our CPU's **registers**.
 
@@ -34,15 +34,15 @@ Our box racks _(memory)_ has quite a bit of room to store our things - enough to
   <span>just a placeholder image to break up the content!</span>
 </p>
 
-Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let’s say we need to add two numbers together.
+Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let's say we need to add two numbers together.
 
 First, the CPU retrieves the first number it needs for the equation. Since the CPU can really only do one thing at a time, it needs to put this number down in order to grab the next number. So it stores this first number into a register for the time being.
 
-Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it’s given!
+Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it's given!
 
 The CPU keeps track of which instruction it's fetching data for with a special register called the **instruction pointer**. The program counter contains the memory address of the instruction currently being executed. And in most cases, after an instruction is executed, the program counter needs to increment itself by `1` to point to the next instruction address.
 
-Now you may be asking yourself - why don’t we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computers hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can’t be directly accessed.
+Now you may be asking yourself - why don't we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computer's hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can't be directly accessed.
 
 Memory can easily hold over _15 million times_ the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
 
@@ -99,7 +99,7 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 ## Putting it all together
 
-You may be wondering what this might look like. If you are, you’re in luck! Let’s map an instruction to machine code.
+You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
 
 Remember our registers from above? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store numbers temporarily.
 
