@@ -18,7 +18,7 @@ As a box travels around the warehouse on conveyor belts, it will be stopped at d
 
 In our warehouse, we want to make sure everything happens at an organized pace, and there aren't any disruptions at stations. One way we can accomplish this is by setting everything to a timer. Let's say our boxes move forward at the pace of 1 station per second, and each station takes 1 second to perform its task. Back in CPU land, this would be our **processor clock**.
 
-It's not a clock that would be useful for you or me, but is made of material that oscillates, moving back and forth at a certain frequency, giving you a bunch of vibrations per second. We call each one of these vibrations a "clock tick". These vibrations helps keeps the CPU in sync as each "clock tick" signals the CPU starts a new instruction by fetching the instruction data from memory.
+It's _called_ a processor clock, but it's really more like a metronome. It's made of material that oscillates, moving back and forth at a certain frequency, giving you a bunch of vibrations per second. We call each one of these vibrations a "clock tick". These vibrations helps keeps the CPU in sync as each "clock tick" signals the CPU starts a new instruction by fetching the instruction data from memory.
 
 This is important to us because for every clock tick, the CPU reads one instruction. This clock goes _really fast_. Today's CPUs are measured in gigahertz (GHz) which is approximately **one billion cycles per second**!
 

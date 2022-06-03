@@ -24,10 +24,10 @@ There are a few registers to choose from, and each one of them has a convention 
 
 As we learned earlier, the only things we can store in our registers are numbers, since a computer can only understand numbers.
 
-Those numbers usually represent one of the following:
-1. Numbers
-1. Letters (displayed as [ASCII](#bytes-&-ascii))
-1. Memory addresses
+The data saved in registers are:
+1. Numbers (`10`)
+1. Letters (`c`)
+1. Memory addresses (`0x12345678`)
 
 The computer stores those numbers as [bits](/guide/writing-code/data.md), and the amount of bits a register can hold depends on the processor.
 
@@ -37,7 +37,13 @@ Have you heard of **32-bit** or **64-bit**? That's referring to the size of the 
 0000101011111000011000110101000100001010111110000110001101010001
 ```
 
-The original x86 processors were 32-bit, so we specify the "-64" in "x86-64" to know we're talking about the 64-bit version. You'll see some examples online that use the 32-bit version, and the registers they refer to are different. Usually 32-bit registers start with the letter `E`, whereas 64-bit registers usually start with the letter `R`.
+Whereas 32 bit would be:
+
+```
+000010101111100001100011010100
+```
+
+There are x86 processors that are 16-bit, 32-bit, and 64-bit, so we specify the "-64" in "x86-64" to know we're talking about the 64-bit version. You'll see some examples online that use the 32-bit version, and the registers they refer to are different. Usually 32-bit registers start with the letter `E`, whereas 64-bit registers usually start with the letter.
 
 Since a register holds **64 bits**, that can also be translated to **8 bytes** (64 _(bits)_ divided by 8 _(bits in a byte)_).
 

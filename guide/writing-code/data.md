@@ -16,7 +16,7 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 </p>
 <br />
 
-The smallest collection of bits is called a **byte**. Actually, that's not completely true - half of a byte is a **nibble**, which is adorable, but not commonly used.
+The smallest collection of bits is called a **byte**. Actually, that's not completely true - half of a byte is a **nybble**, which is adorable, but not commonly used.
 
 Have you heard of kilobytes (KB) or megabytes (MB)? Or the ever popular gigabyte (GB)? Same bytes we're talking about here, just more of them!
 
@@ -46,7 +46,7 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
 
 In order to represent those ASCII numbers in just `0`s and `1`s, we have to convert our base 10 number (let's say we're working with `A`, which maps to `65` on the ASCII table) into a base 2 number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by electrical signals being on or off, which maps directly to `1`s and `0`s.
 
-Our ASCII table goes up to the number 127, which, in binary, is represented by `10000000`. So that's why we need 8 digits!
+Our ASCII table goes up to the number 127. In binary, `10000000` is 128. So 8 bits covers all of the ASCII characters!
 
 _Note: For more information on number systems and converting to binary, see the [number systems](#number-systems) section, but for now it's totally fine to hand wave this part!_
 

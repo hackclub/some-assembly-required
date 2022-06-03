@@ -24,9 +24,7 @@ There are many different assembly languages, depending on the processor you want
 
 - **RISC-V** is a simpler assembly language, made for educational and research purposes. RISC stands for "Reduced Instruction Set Compiler". Its goal is to use a smaller instruction set than most other assembly languages.
 
-Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using **X86-64** assembly code to demonstrate assembly concepts. Yes, I know, my computer is a little old. Sorry!
-
-That being said, these concepts should translate across different assembly languages.
+Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using **X86-64** assembly code to demonstrate assembly concepts. These concepts will translate across different assembly languages.
 
 <br />
 
