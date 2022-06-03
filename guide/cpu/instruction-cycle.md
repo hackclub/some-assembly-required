@@ -66,11 +66,11 @@ Well, as we've learned, the computer can only read numbers. So all of the data w
 
 What those numbers represent include five broad categories:
 
-1. Instructions (like `add`)
-1. Numbers
-1. Letters (displayed as [ASCII](#bytes-&-ascii))
-1. Registers
-1. Memory addresses
+1. Instruction opcodes (`ADD`)
+1. Numeric values (`10`)
+1. Letters (`c`)
+1. Registers (`rax`)
+1. Memory addresses (`0x12345678`)
 
 The CPU will distinguish what type of data it's looking at when it gets to this decoding step.
 
