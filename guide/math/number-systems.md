@@ -53,7 +53,9 @@ TODO: Make this friendlier
   <br>
 </p>
 
-When people hear that I program for a living, they think that I stare at 0s and 1s all day. Luckily I do not, because that would give me a migraine. However, binary is important to talk about, because everything the computer is doing can be represented by these digits. These digits are referred to as binary, which is a number system that has 2 as its base.
+When people hear that I program for a living, they think that I stare at 0s and 1s all day. Luckily I do not, because that would give me a migraine.
+
+These digits are referred to as binary, which is a number system that has 2 as its base. Binary is important to talk about because the computer does everything in base 2, like how you and I do everything in base 10.
 
 With binary, there are only two digits represented: 0 and 1. When we count in base 2 numbers, we count from 0 up to 1 and then start over again but add one to the left: 0, 1, 10, 11, 100, 101, 110, etc.With binary, since it's only 0 and 1, when adding to digit 0, you change it to digit 1 and when adding digit 1, you change the digit to 0 and add 1 to the left of that digit.
 

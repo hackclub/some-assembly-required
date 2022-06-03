@@ -60,7 +60,7 @@ OR is always false unless one of the inputs is true.
 
 ![Screen Shot 2022-05-17 at 10 53 29 AM](https://user-images.githubusercontent.com/621904/168842309-66cc8fe3-d4e5-41e0-9ea1-8bc4e2a9bd21.png)
 
-NOT only requires 1 input, and it flips the input.
+NOT only requires a single input, and it flips the input.
 
 
 | In | Out |
