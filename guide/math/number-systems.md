@@ -17,11 +17,12 @@ If you thought you'd get through this without doing any math, well, I'm sorry. W
 <br />
 
 ### Base 10
+_What we use every day!_
 
 TODO: Fill out base 10
 
 ### Hexadecimal
-_Also known as base 8!_
+  _Also known as base 16!_
 
 TODO: Make this friendlier
 
