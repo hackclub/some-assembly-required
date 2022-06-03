@@ -1,6 +1,8 @@
 # Communicating with the CPU
 
-One way we can communicate with the CPU is by writing instructions for it in a format called assembly language. Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
+We're used to communicating with the CPU in a high-level language like JavaScript or C, but the code you'd write in these languages doesn't directly represent the things you're telling the CPU to do. They're more like a high-level summary. If you want to communicate directly with the CPU, you'll need to write the instructions for it in a format called assembly language.
+
+Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
 What do we mean by an abstraction? Well, an abstraction is a layer above something else that makes that thing easier to do.
 
@@ -45,7 +47,8 @@ Line by line you’d translate the recipe until you have a new recipe for your f
 You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
 
 ```
-01000111 00000000 11110010 10101110 11110010 00000001 11000011 11100010 00001011
+73 137 252 73 137 245 65  85
+65  84 232 52   0   0  0 232
 ```
 
 Assembly, on the other hand, looks something like:
