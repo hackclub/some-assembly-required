@@ -64,7 +64,7 @@ Now that we've fetched the data, what does that data actually look like?
 
 Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read, which is as numbers.
 
-What those numbers represent include five broad categories:
+What those numbers represent include five broad categories, shown here with examples of what they look like:
 
 1. Instruction opcodes (`ADD`)
 1. Numeric values (`10`)
