@@ -66,7 +66,7 @@ Well, as we've learned, the computer can only read numbers. So all of the data w
 
 What those numbers represent include five broad categories, shown here with examples of what they look like:
 
-1. Instruction opcodes (`ADD`)
+1. Instruction opcodes (`add`)
 1. Numeric values (`10`)
 1. Letters (`c`)
 1. Registers (`rax`)
