@@ -1,6 +1,8 @@
 # Registers
 
-Now that we know about data, we should talk about storing data. In our brief mention of registers previously, we learned that registers are available for short term data storage on the CPU.
+Now that we know about data, we should talk about storing data. In our brief mention of registers previously, we learned that registers are for storing data temporarily for later use.
+
+In programming, you'd use a variable to store data for later use. You can think of registers as the variables of assembly language.
 
 We'll be talking about the **x86-64** registers here, but the concepts apply to other processors as well.
 
@@ -15,6 +17,8 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
   </span>
 </p>
 <br />
+
+There are a few registers to choose from, and each one of them has a convention set up for how to use it. Some of the registers are general purpose, meaning you can store whatever you need to there while your program is executing. But there are also some specialized registers that are used for specific data, like [the instruction pointer](#the-instruction-pointer) or [the stack pointer](#the-stack-pointer), which we will talk about below.
 
 ## Register data
 
