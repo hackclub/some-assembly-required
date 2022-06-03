@@ -7,13 +7,17 @@
 
 ---
 
-There are many different assembly languages, depending on the processor you want to talk to.
+There are many different assembly languages, depending on the processor you want to talk to. These code examples specifically are written in x86-64 Intel syntax.
 
-**x86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. It's used for Intel processors, which have to process a lot of data!
+**X86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. Most modern desktop computers and game consoles use it. It's used for Intel processors, which have to process a lot of data!
 
 The **86** is pulled from the model names of the Intel chips that use this assembly language, which all end in 86 (like the 8086 chip).
 
 The **64** part is referring to the number of [bits](/guide/writing-code/data.md) that the processor registers hold. The original x86 processors were 32 bit, so we specify "-64" to know we're talking about the 64 bit version. You'll see some examples online that use the 32 bit version, and the registers they refer to are different. Usually 32 bit registers start with the letter `E`, whereas 64 bit registers usually start with the letter `R`.
+
+## Pre-requisites
+
+By default, macOS doesn't ship with developer tools, since most computer users aren't writing code. In order to compile these examples, you'll need to [download Xcode](https://developer.apple.com/xcode/) and their [command line tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 
 ## Running programs
 
