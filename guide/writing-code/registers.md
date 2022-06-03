@@ -22,7 +22,14 @@ There are a few registers to choose from, and each one of them has a convention 
 
 ## Register data
 
-The amount of [bits](/guide/writing-code/data.md) a register can hold depends on the processor.
+As we learned earlier, the only things we can store in our registers are numbers, since a computer can only understand numbers.
+
+Those numbers usually represent one of the following:
+1. Numbers
+1. Letters (displayed as [ASCII](#bytes-&-ascii))
+1. Memory addresses
+
+The computer stores those numbers as [bits](/guide/writing-code/data.md), and the amount of bits a register can hold depends on the processor.
 
 Have you heard of **32-bit** or **64-bit**? That's referring to the size of the registers in the processor! So a 64-bit processor has twice the room in a single register as 32-bit processors, which looks like:
 
