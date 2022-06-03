@@ -12,7 +12,7 @@
 </p>
 <br />
 
-There are many different assembly languages, depending on the processor you want to talk to.
+There are many different assembly languages, depending on the processor you want to talk to. Some of the popular ones are:
 
 - **X86** is one of the most useful assembly languages, but is also one of the more complicated ones to write. Most modern desktop computers and game consoles use it. It's used for Intel processors, which have to process a lot of data!
 
