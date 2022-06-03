@@ -130,19 +130,19 @@ The decoder then sees that the next piece of data has the value `12`, so it know
 
 The decoder knows that next comes the argument for the number to add, which is `4`.
 
-Then this all gets executed. The CPU sends the number `4` and the number stored in register 12 (`r12`) to the ALU, and then it saves that new value to register 12 (`r12`). We did it!
+Then this all gets executed. The CPU sends the number `4` and the number stored in register 12 (`r12`) to the ALU, which sends the sum of these two numbers back to the CPU. The CPU takes this sum from the ALU and saves it to register 12 (`r12`). We did it!
 
-## Modern Day
-
-Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
-
-Imagine a warehouse where we are packing boxes. The CPU is the warehouse, and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages).
-
-In the simpler cycle method described above, one package would be fully packed and shipped before the next one is worked on.
-
-Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already starting to be filled and packed.
-
-What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
+> Modern day fun fact!
+>
+> Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
+>
+> Imagine a warehouse where we are packing boxes. The CPU is the warehouse, and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages).
+>
+> In the simpler cycle method described above, one package would be fully packed and shipped before the next one is worked on.
+>
+> Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already starting to be filled and packed.
+>
+> What this means in for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
 
 <br />
 
