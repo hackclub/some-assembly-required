@@ -64,7 +64,33 @@ sub rax, rbx;
 ```
 _In assembly, we're minusing the contents of `rbx` from the contents of `rax`. At the end of this, `rax` will contain the value `2`._
 
-`sub` subtracts the value on the right side (`1`) _from_ the contents (`3`) of the register (`rax`) on the left side.
+The `sub` instruction subtracts the contents of the register (`rbx`, which contains `1`) on the right side to the contents of the register on the left side (`rax`, which contains `3`). It then takes the difference of these two numbers and stores the value _into_ the register on the left side (`rax`).
+
+---
+
+Not all assembly languages have multiplication or division, but x86-64 does! Yay for us!
+
+```js
+// JavaScript
+let a = 2;
+let b = 3;
+
+a = a * b;
+```
+_In JavaScript, we're multiplying the contents of `b` with the contents of `a`. At the end of this, `a` will contain the value `6`._
+
+```asm
+; X86-64 Assembly
+mov rax, 2;
+mov rbx, 3;
+
+mul rax, rbx;
+```
+_In assembly, we're multiplying the contents of `rbx` with the contents of `rax`. At the end of this, `rax` will contain the value `6`._
+
+The `mul` instruction multiplies the contents of the register (`rbx`, which contains `3`) on the right side to the contents of the register on the left side (`rax`, which contains `2`). It then takes the product of these two numbers and stores the value _into_ the register on the left side (`rax`).
+
+---
 
 <br />
 
