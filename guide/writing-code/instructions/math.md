@@ -42,7 +42,7 @@ add rax, rbx;
 ```
 _In assembly, we're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`._
 
----
+## Subtraction
 
 Subtraction works the same way as addition!
 
@@ -66,7 +66,7 @@ _In assembly, we're minusing the contents of `rbx` from the contents of `rax`. A
 
 The `sub` instruction subtracts the contents of the register (`rbx`, which contains `1`) on the right side to the contents of the register on the left side (`rax`, which contains `3`). It then takes the difference of these two numbers and stores the value _into_ the register on the left side (`rax`).
 
----
+## Multiplication
 
 Not all assembly languages have multiplication or division, but x86-64 does! Yay for us!
 
