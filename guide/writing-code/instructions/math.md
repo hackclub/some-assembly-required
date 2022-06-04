@@ -22,7 +22,7 @@ The `add` instruction adds the value on the right side (`1`) to the contents of 
 
 ---
 
-What else can we do with `add`? Well...
+Just like our `mov` instruction, we can use the contents of a register to operate on the first register.
 
 ```js
 // JavaScript
@@ -41,8 +41,6 @@ mov rbx, 1;
 add rax, rbx;
 ```
 _In assembly, we're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`._
-
-Just like our `mov` instruction, we can use the contents of a register to operate on the first register.
 
 ---
 
