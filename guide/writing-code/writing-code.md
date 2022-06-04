@@ -33,7 +33,11 @@ We're using a **mov** instruction here (short for "Move"). This moves the value 
 
 ---
 
-Now, variables and registers are quite similar in this regard, but there are some key differences to remember. You can create an unlimited amount of variables and name them whatever you'd like. Registers, on the other hand, are limited to a set determined by the processor. You also can't name them, they're like already set up variables that you can change the contents of.
+Now, variables and registers are quite similar in this regard, but there are some key differences to remember.
+
+With **variables**, you can create an _unlimited amount_ of them and _name them whatever you'd like_.
+
+**Registers**, on the other hand, are _limited_ to a set determined by the processor. You also _can't name them_, they're like already set up variables that you can change the contents of.
 
 ```js
 // JavaScript
