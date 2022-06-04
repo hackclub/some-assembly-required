@@ -18,7 +18,7 @@ add rax, 1;
 ```
 _In assembly, we're adding `1` to the contents of the register `rax`. At the end of this, `rax` will contain the value `4`._
 
-The `add` instruction adds the value on the right side (`1`) to the contents of the register on the left side (`rax`, which contains `3`). It then takes the sum of these two numbers and, like our `mov` instruction, stores the value _into_ the contents of the register on the left side (`rax`).
+The `add` instruction adds the value on the right side (`1`) to the contents of the register on the left side (`rax`, which contains `3`). It then takes the sum of these two numbers and, like our `mov` instruction, stores the value _into_ the register on the left side (`rax`).
 
 ---
 
