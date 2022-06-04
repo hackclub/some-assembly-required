@@ -46,9 +46,7 @@ let anotherVar = myVar;
 ```
 
 - In JavaScript, we're setting the value of variable `myVar` to 3.
-
 - Then we're setting the value of variable `anotherVar` to the contents of `myVar`.
-
 - At the end of this, both `myVar` and `anotherVar` will contain the value `3`.
 
 ```asm
@@ -58,9 +56,7 @@ mov rbx, rax;
 ```
 
 - In assembly, we're setting the value of a register, `rax` to 3.
-
 - Then we're setting the value of register `rbx`, to the contents of the register `rax`.
-
 - At the end of this, both `rax` and `rbx` will contain the value `3`.
 
 ---
@@ -77,11 +73,8 @@ let anotherVar = newVar;
 ```
 
 - In JavaScript, we're setting the value of variable `myVar` to 3.
-
 - Then we're setting the value of variable `anotherVar` to the contents of `myVar`.
-
 - Then, we set the value of `newVar` to 5, and set the value of `anotherVar` to the contents of `newVar`.
-
 - At the end of this, both `newVar` and `anotherVar` will contain the value `5`, and `myVar` will still be `3`.
 
 ```asm
@@ -94,11 +87,8 @@ mov rbx, rcx;
 ```
 
 - In assembly, we're setting the value of a register, `rax` to 3.
-
 - Then we're setting the value of register `rbx`, to the contents of the register `rax`.
-
 - Then, we assign `rcx` to 5, and set the value of `rbx` to the contents of `rcx`.
-
 - At the end of this, both `rbx` and `rcx` will contain the value `5`, and `rax` will still be `3`.
 
 
