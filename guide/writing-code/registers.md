@@ -2,7 +2,7 @@
 
 Now that we know about data, we should talk about storing data. In our brief mention of registers previously, we learned that registers are for storing data temporarily for later use.
 
-In programming, you'd use a variable to store data for later use. You can think of registers as the variables of assembly language.
+In higher level programming, you'd use a variable to store data for later use. You can think of registers as the variables of assembly language.
 
 We'll be talking about the **x86-64** registers here, but the concepts apply to other processors as well.
 
@@ -71,7 +71,7 @@ So, another way to refer to the register size is as a quadruple word, or **qword
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/writing-code.md">
+      <a href="/guide/writing-code/instructions/mov.md">
         Let's boss this computer around →
       </a>
     </b>

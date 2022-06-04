@@ -73,7 +73,6 @@ mov rax, rbx;
 ```
 _Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`._
 
-
 <br />
 
 ---
@@ -88,8 +87,8 @@ _Even though we set `rax` to `3` in the beginning, at the end of this example, `
 <p align="right">
   <em>
     <b>
-      <a href="/guide/math/number-systems.md">
-        This next section definitely has absolutely nothing to do with math I promise →
+      <a href="/guide/writing-code/instructions/math.md">
+        What else can we do? →
       </a>
     </b>
   </em>
