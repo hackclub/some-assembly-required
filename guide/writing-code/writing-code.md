@@ -4,7 +4,7 @@ It's the moment you've been waiting for, folks. We're going to write some code.
 
 ```js
 // JavaScript
-let x = 5;
+let a = 5;
 ```
 
 #### Wait. Is that JavaScript? I thought this was about assembly.
@@ -15,10 +15,10 @@ As we talked about earlier, in higher level programming, you'd use a variable to
 
 ```js
 // JavaScript
-let myVar = 5;
+let a = 5;
 ```
 
-- In JavaScript, we're setting the value of a variable, `myVar`, to the number `5`.
+- In JavaScript, we're setting the value of a variable, `a`, to the number `5`.
 
 ```asm
 ; X86-64 Assembly
@@ -41,23 +41,17 @@ With **variables**, you can create an _unlimited amount_ of them and _name them 
 
 ```js
 // JavaScript
-let myVar = 3;
-let anotherVar = myVar;
+let a = 3;
+let b = a;
 ```
-
-- In JavaScript, we're setting the value of variable `myVar` to 3.
-- Then we're setting the value of variable `anotherVar` to the contents of `myVar`.
-- At the end of this, both `myVar` and `anotherVar` will contain the value `3`.
+_At the end of this, `b` will contain the value `3`._
 
 ```asm
 ; X86-64 Assembly
 mov rax, 3;
 mov rbx, rax;
 ```
-
-- In assembly, we're setting the value of a register, `rax` to 3.
-- Then we're setting the value of register `rbx`, to the contents of the register `rax`.
-- At the end of this, both `rax` and `rbx` will contain the value `3`.
+_In our previous assembly example, we set the value of the `rax` register to a number. In this example, we set the value one register to the value of another register. At the end of this, `rbx` will contain the value `3`._
 
 ---
 
@@ -65,31 +59,23 @@ One last `mov` example for you, just to drive the point home.
 
 ```js
 // JavaScript
-let myVar = 3;
-let anotherVar = myVar;
+let a = 3;
+let b = 5;
 
-let newVar = 5;
-let anotherVar = newVar;
+a = b;
 ```
 
-- In JavaScript, we're setting the value of variable `myVar` to 3.
-- Then we're setting the value of variable `anotherVar` to the contents of `myVar`.
-- Then, we set the value of `newVar` to 5, and set the value of `anotherVar` to the contents of `newVar`.
-- At the end of this, both `newVar` and `anotherVar` will contain the value `5`, and `myVar` will still be `3`.
+- Even though we set `a` to `3` in the beginning, at the end of this example, `a` is `5` since we set `a` to the contents of `b`.
 
 ```asm
 ; X86-64 Assembly
 mov rax, 3;
-mov rbx, rax;
+mov rbx, 5;
 
-mov rcx, 5;
-mov rbx, rcx;
+mov rax, rbx;
 ```
 
-- In assembly, we're setting the value of a register, `rax` to 3.
-- Then we're setting the value of register `rbx`, to the contents of the register `rax`.
-- Then, we assign `rcx` to 5, and set the value of `rbx` to the contents of `rcx`.
-- At the end of this, both `rbx` and `rcx` will contain the value `5`, and `rax` will still be `3`.
+- Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`.
 
 
 <br />
