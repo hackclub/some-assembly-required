@@ -17,15 +17,13 @@ As we talked about earlier, in higher level programming, you'd use a variable to
 // JavaScript
 let a = 5;
 ```
-
-- In JavaScript, we're setting the value of a variable, `a`, to the number `5`.
+_In JavaScript, we're setting the value of a variable, `a`, to the number `5`._
 
 ```asm
 ; X86-64 Assembly
 mov rax, 5;
 ```
-
-- In assembly, we're setting the value of a register, `rax`, to the number `5`.
+_In assembly, we're setting the value of a register, `rax`, to the number `5`._
 
 We're using a **mov** instruction here (short for "Move"). This moves the value on the right side (`5`) _into_ the register on the left side (`rax`).
 
@@ -64,8 +62,7 @@ let b = 5;
 
 a = b;
 ```
-
-- Even though we set `a` to `3` in the beginning, at the end of this example, `a` is `5` since we set `a` to the contents of `b`.
+_Even though we set `a` to `3` in the beginning, at the end of this example, `a` is `5` since we set `a` to the contents of `b`._
 
 ```asm
 ; X86-64 Assembly
@@ -74,8 +71,7 @@ mov rbx, 5;
 
 mov rax, rbx;
 ```
-
-- Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`.
+_Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`._
 
 
 <br />
