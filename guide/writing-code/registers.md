@@ -57,70 +57,6 @@ Just like we have **bytes** to refer to groups of **bits**, we have **words** to
 
 So, another way to refer to the register size is as a quadruple word, or **qword**.
 
-## Return values
-
-TODO: explain return values
-
-%rax
-
-## Arguments
-
-TODO: explain argument registers
-
-%rdi argc
-
-%rsi argv[][]
-
-## Caller-owned vs Callee-owned
-
-TODO: Make this friendlier
-
-Registers that are all-purpose have a conventions depending on whether **caller-owned** or **callee-owned**.
-
-For example, if the function `function1` calls `function2`, we refer to `function1` as the **caller** and `function2` as the **callee**. The registers used for the first 6 arguments and return value are all **callee-owned**.
-
-That means that the **callee** can freely use those registers, overwriting existing values without taking any precautions. If `%rax` holds a value the **caller** wants to retain, the caller must copy the value to a "safe" location before making a call. The **callee-owned** registers are ideal for _scratch/temporary_ use by the **callee**.
-
-In contrast, if the **callee** intends to use a **caller-owned** register, it must first _preserve its value_ and _restore it_ before exiting the call. The **caller-owned** registers are used for _local state_ of the **caller** that needs to preserved across further function calls.
-
-## The Instruction Pointer
-
-The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`%rip`), also known as the **program counter**, which keeps track of what code it's executing. This register stores the memory address of the current line of the current program it's executing, and updates itself automatically. For example, let's say we are running an assembly program. There's an instruction for adding two numbers together. Once that instruction finishes running, the program counter increments to the memory address of the next instruction of the program.
-
-However, besides just incrementing by one, the program counter itself can be changed with a JUMP instruction.
-
-```asm
-  jmp .placeToJump
-```
-
-In this case, the program would change the program counter so that it points to the line `.placeToJump`, leading the next line of instruction run to be the line at `.placeToJump`. When compiled to machine code, `.placeToJump` would be a specific address in the memory with the next instruction.
-
-## The Stack Pointer
-
-Computers allocate a chunk of memory to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack: **push** values onto it, which go on top of the previous values, and **pop** values off of it, which grabs from the top of the stack. Need something at the bottom? Too bad! You gotta go through the top.
-
-<p align="center">
-  <br />
-  <img height="200" src="https://holycoders.com/content/images/wordpress/2020/04/Stack-data-structure.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
-</p>
-<br />
-
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you'd be correct! However, we have a limited number of registers. Let's say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we're done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
-
-So now that we know about the stack, the **stack pointer** (`%rsp`) is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
-
-Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It's named after this stack right here! You don't need to know this for the purposes of this guide, but while we're here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
-
-## Flags
-
-TODO: explain flags
-
 <br />
 
 ---
@@ -135,7 +71,7 @@ TODO: explain flags
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/instructions.md">
+      <a href="/guide/writing-code/writing-code.md">
         Let's boss this computer around →
       </a>
     </b>

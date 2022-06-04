@@ -36,7 +36,7 @@ This is important to us because for every clock tick, the CPU reads one instruct
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/writing-code.md">
+      <a href="/guide/writing-code/multitude.md">
         Let's write some code →
       </a>
     </b>
