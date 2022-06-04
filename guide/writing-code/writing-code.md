@@ -29,7 +29,7 @@ mov rax, 5;
 
 We're using a **mov** instruction here (short for "Move"). This moves the value on the right side (`5`) _into_ the register on the left side (`rax`).
 
-<<INSERT ILLUSTRATION OF THIS HERE>>
+**INSERT ILLUSTRATION OF THIS HERE**
 
 ---
 
