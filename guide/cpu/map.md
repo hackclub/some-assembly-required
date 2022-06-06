@@ -3,6 +3,7 @@
 <p align="center">
   <br />
   <img height="250" src="https://cloud-eznqj6kl0-hack-club-bot.vercel.app/0communicate.png">
+  <br />
 </p>
 
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
