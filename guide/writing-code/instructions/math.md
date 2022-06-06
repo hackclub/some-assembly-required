@@ -152,8 +152,8 @@ add rax, rcx; mx + b, store in rax. rax now contains y!
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/instructions/.md">
-         →
+      <a href="/guide/writing-code/instructions/jumps.md">
+        Jumping for joy →
       </a>
     </b>
   </em>
