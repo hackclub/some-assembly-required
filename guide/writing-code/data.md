@@ -28,7 +28,8 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
 
 <p align="center">
   <br />
-  <img height="450" src="https://cloud-m6tqomah2-hack-club-bot.vercel.app/0ascii.png">
+  <img height="500" src="https://cloud-m6tqomah2-hack-club-bot.vercel.app/0ascii.png">
+  <br />
   <br />
   <span>
     <em>
