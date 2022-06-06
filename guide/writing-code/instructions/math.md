@@ -119,12 +119,6 @@ TODO: Fill in more about this equation
 <p align="center">
   <br />
   <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
 </p>
 <br />
 
