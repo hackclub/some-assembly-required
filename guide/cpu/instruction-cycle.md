@@ -87,8 +87,6 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 ---
 
-<br />
-
 ## Putting it all together
 
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
