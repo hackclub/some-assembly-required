@@ -17,7 +17,7 @@ In the first phase, the CPU must fetch the instruction data from **memory**, so 
 
 <p align="center">
   <br />
-  <img height="350" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
+  <img height="400" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
 </p>
 <br />
 
