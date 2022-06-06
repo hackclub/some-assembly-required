@@ -26,7 +26,7 @@ It's like if you were an American and you were giving your Icelandic friend a ca
 
 <p align="center">
   <br />
-  <img height="350" src="https://cloud-5a43qzpws-hack-club-bot.vercel.app/0recipe.png">
+  <img height="400" src="https://cloud-5a43qzpws-hack-club-bot.vercel.app/0recipe.png">
 </p>
 <br />
 
