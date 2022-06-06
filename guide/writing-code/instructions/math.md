@@ -72,7 +72,7 @@ sub rax, rbx;
 <summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-_We're minusing the contents of `rbx` from the contents of `rax`. At the end of this, `rax` will contain the value `2`._
+<i>We're minusing the contents of `rbx` from the contents of `rax`. At the end of this, `rax` will contain the value `2`.</i>
 
 </details>
 
