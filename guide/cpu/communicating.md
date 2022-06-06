@@ -8,13 +8,7 @@ What do we mean by an abstraction? Well, an abstraction is a layer above somethi
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://www.familyhandyman.com/wp-content/uploads/2019/05/08.jpg">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="300" src="https://cloud-lrwvwyim3-hack-club-bot.vercel.app/0wheel.png">
 </p>
 <br />
 
