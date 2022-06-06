@@ -26,7 +26,7 @@ It's like if you were an American and you were giving your Icelandic friend a ca
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://www.wikihow.com/images/thumb/e/ec/Write-a-Recipe-Step-12.jpg/v4-460px-Write-a-Recipe-Step-12.jpg">
+  <img height="300" src="https://cloud-5a43qzpws-hack-club-bot.vercel.app/0recipe.png">
   <br />
   <span>
     <em>
@@ -36,7 +36,7 @@ It's like if you were an American and you were giving your Icelandic friend a ca
 </p>
 <br />
 
-Line by line you'd translate the recipe until you have a new recipe for your friend to use. You'd take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 68 grams of flour (**machine code**). Look at you go - you're the assembler here!
+Line by line you'd translate the recipe until you have a new recipe for your friend to use. You'd take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 136 grams of flour (**machine code**). Look at you go - you're the assembler here!
 
 You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
 
