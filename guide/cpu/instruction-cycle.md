@@ -29,7 +29,7 @@ Our box racks _(memory)_ has quite a bit of room to store our things - enough to
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-9dq9biuyn-hack-club-bot.vercel.app/0cubbies.png">
+  <img height="250" src="https://cloud-9dq9biuyn-hack-club-bot.vercel.app/0cubbies.png">
 </p>
 
 Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let's say we need to add two numbers together.
