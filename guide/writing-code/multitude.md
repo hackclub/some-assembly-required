@@ -2,13 +2,7 @@
 
 <p align="center">
   <br />
-  <img height="300" src="https://cloud-3k6wp5zbz-hack-club-bot.vercel.app/0assem.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
+  <img height="250" src="https://cloud-3k6wp5zbz-hack-club-bot.vercel.app/0assem.png">
 </p>
 <br />
 
