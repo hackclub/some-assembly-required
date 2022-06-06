@@ -29,10 +29,10 @@ entry ;this is a label named 'entry' which can be referred to later on if needed
 
 character_loop ; this is also a label
 
-    lda hello,y             ; load character number y of the string in label hello (hello world!) eg. when y is 12, load character "!"
-    sta $0400,y             ; save data in register a to memory location $0400,y (= $0400 + y). Eg. when y is 12 (and register a has the character "!"), $0400,12(d)= $040, we'll load character "!" to memory location $040d
-    dey                     ; decrement y by 1 (if y was 12, it is now 11)
-    bpl character_loop      ; is y positive? if yes, then repeat by jumping back to label character_loop. as y decrements with each cycle (due to instruction in line 56), the cycle wil end when y is less than 0 and it will run the next line
+    lda hello,y             ; load character number y of the string in label hello (hello world!) eg. when y is 2, load character "e"
+    sta $0400,y             ; save data in register a to memory location $0400,y (= $0400 + y). Eg. when y is 2 (register a has the character "e"), $0400,2 = $0402, we'll load character "e" to memory location $0402
+    dey                     ; decrement y by 1 (if y was 2, it is now 1)
+    bpl character_loop      ; is y positive? if yes, then repeat by jumping back to label character_loop. as y decrements with each cycle (due to instruction in line 35), the cycle wil end when y is less than 0 and it will run the next line
     rts                     ; exit the program
 
-hello      !scr "hello world!"     ; the label "hello" which contains the string we want to print
+hello      !scr "hello world!"     ; the label named "hello" contains the string we want to print
