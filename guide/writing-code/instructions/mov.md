@@ -2,14 +2,14 @@
 
 It's the moment you've been waiting for, folks. We're going to write some code.
 
+I know you came here to write assembly - don't worry! We're just going to be giving examples of higher-level equivalents to help explain assembly language. In this case, we'll be using JavaScript.
+
 ```js
 // JavaScript
 let a = 5;
 ```
 
 _In JavaScript, we're setting the value of a variable, `a`, to the number `5`._
-
-I know you came here to write assembly. Don't worry! We're just going to be giving examples of higher-level equivalents to help explain assembly language. Ok, back to our example.
 
 As we talked about earlier, in higher level programming, you'd use a variable to store data for later use. You can think of registers as the variables of assembly language.
 
