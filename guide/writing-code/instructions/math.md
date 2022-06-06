@@ -110,9 +110,9 @@ mul rax, rbx;
 
 Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may remember the slope-intercept equation from school. If you're anything like me and don't remember it, it looks like:
 
-> $y = mx + b$
+$y = mx + b$
 
-We don't need to get into great detail about this equation, but this is the formula to find the equation of a straight line.
+We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line.
 
 TODO: Fill in more about this equation
 
