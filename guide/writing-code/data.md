@@ -28,11 +28,11 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
 
 <p align="center">
   <br />
-  <img height="450" src="https://www.asciitable.com/asciifull.gif">
+  <img height="450" src="https://cloud-m6tqomah2-hack-club-bot.vercel.app/0ascii.png">
   <br />
   <span>
     <em>
-      just a placeholder image to break up the content!
+      Check out [asciitable.com](https://www.asciitable.com/) for the full table.
     </em>
   </span>
 </p>
