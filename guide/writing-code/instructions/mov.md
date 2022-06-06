@@ -21,8 +21,6 @@ _In assembly, we're setting the value of a register, `rax`, to the number `5`._
 
 We're using a **mov** instruction here (short for "Move"). This moves the value on the right side (`5`) _into_ the register on the left side (`rax`).
 
-**INSERT ILLUSTRATION OF THIS HERE**
-
 ---
 
 Now, variables and registers are quite similar in this regard, but there are some key differences to remember.
