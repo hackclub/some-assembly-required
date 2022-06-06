@@ -41,7 +41,7 @@ mov rbx, 1;
 add rax, rbx;
 ```
 <details>
-<summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
+<summary><i>In this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
 <i>We're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`.</i>
@@ -69,7 +69,7 @@ mov rbx, 1;
 sub rax, rbx;
 ```
 <details>
-<summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
+<summary><i>In this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
 <i>We're minusing the contents of `rbx` from the contents of `rax`. At the end of this, `rax` will contain the value `2`.</i>
