@@ -1,8 +1,8 @@
 # I Like The Way You Mov
 
-It's the moment you've been waiting for, folks. We're going to write some code.
+It's the moment you've been waiting for, folks. We're going to write some code!
 
-I know you came here to write assembly - don't worry! We're just going to be giving examples of higher-level equivalents to help explain assembly language. In this case, we'll be using JavaScript.
+First, let's give an example in JavaScript to help explain what we're doing.
 
 ```js
 // JavaScript
