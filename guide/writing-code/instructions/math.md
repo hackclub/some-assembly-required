@@ -44,7 +44,7 @@ add rax, rbx;
 <summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-_We're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`._
+<i>We're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`.</i>
 
 </details>
 
