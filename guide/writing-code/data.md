@@ -6,7 +6,7 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-1csdtyu7d-hack-club-bot.vercel.app/0bit.png">
+  <img height="150" src="https://cloud-1csdtyu7d-hack-club-bot.vercel.app/0bit.png">
 </p>
 <br />
 
