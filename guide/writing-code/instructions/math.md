@@ -102,7 +102,7 @@ mul rax, rbx;
 <summary><i>In assembly, we're multiplying the contents of <code>rbx</code> with the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>6</code>. Can you guess how the <code>mul</code> instruction works?</i></summary>
 
 <br />
-The `mul` instruction multiplies the contents of the register (`rbx`, which contains `3`) on the right side to the contents of the register on the left side (`rax`, which contains `2`). It then takes the product of these two numbers and stores the value _into_ the register on the left side (`rax`).
+<i>The `mul` instruction multiplies the contents of the register (`rbx`, which contains `3`) on the right side to the contents of the register on the left side (`rax`, which contains `2`). It then takes the product of these two numbers and stores the value _into_ the register on the left side (`rax`).</i>
 
 </details>
 
