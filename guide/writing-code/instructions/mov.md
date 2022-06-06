@@ -47,7 +47,7 @@ mov rbx, rax;
 <summary><i>At the end of this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-_In our previous assembly example, we set the value of the `rax` register to a number. In this example, we set the value one register to the value of another register. At the end of this, `rbx` will contain the value `3`._
+<i>In our previous assembly example, we set the value of the `rax` register to a number. In this example, we set the value one register to the value of another register. At the end of this, `rbx` will contain the value `3`.</i>
 
 </details>
 
