@@ -90,7 +90,37 @@ _In assembly, we're multiplying the contents of `rbx` with the contents of `rax`
 
 The `mul` instruction multiplies the contents of the register (`rbx`, which contains `3`) on the right side to the contents of the register on the left side (`rax`, which contains `2`). It then takes the product of these two numbers and stores the value _into_ the register on the left side (`rax`).
 
----
+## Putting it together
+
+Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may remember the slope-intercept equation from school. If you're anything like me and don't remember it, it looks like:
+
+> $y = mx + b$
+
+We don't need to get into great detail about this equation, but this is the formula to find the equation of a straight line.
+
+TODO: Fill in more about this equation
+
+<p align="center">
+  <br />
+  <img height="200" src="http://s1.thingpic.com/images/4K/87e1QxMnPXDwCpZEz51zdMoy.jpeg">
+  <br />
+  <span>
+    <em>
+      just a placeholder image to break up the content!
+    </em>
+  </span>
+</p>
+<br />
+
+```asm
+; X86-64 Assembly
+mov rax, 2; rax will contain m
+mov rbx, 3; rbx will contain x
+mov rcx, 4; rcx will contain b
+
+mul rax, rbx; m*x, store in rax
+add rax, rcx; mx + b, store in rax. rax now contains y!
+```
 
 <br />
 
