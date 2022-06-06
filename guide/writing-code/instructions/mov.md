@@ -76,7 +76,7 @@ mov rax, rbx;
 <summary><i>At the end of this example, what do you think the value of rax will be?</i></summary>
 
 <br />
-_Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`._
+<i>Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`.</i>
 
 </details>
 
