@@ -112,15 +112,15 @@ Now that we have some basic math under our belt, let's try to map a real equatio
 
 $y = mx + b$
 
-We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line.
-
-TODO: Fill in more about this equation
-
 <p align="center">
   <br />
   <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
 </p>
 <br />
+
+We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line.
+
+TODO: Fill in more about this equation
 
 ```asm
 ; X86-64 Assembly
