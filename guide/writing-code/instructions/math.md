@@ -44,7 +44,7 @@ add rax, rbx;
 <summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-<i>We're adding the contents of `rbx` to the contents of `rax`. At the end of this, `rax` will contain the value `4`.</i>
+<i>We're adding the contents of <code>rbx</code> to the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>4</code>.</i>
 
 </details>
 
@@ -72,7 +72,7 @@ sub rax, rbx;
 <summary><i>In assembly, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-<i>We're minusing the contents of `rbx` from the contents of `rax`. At the end of this, `rax` will contain the value `2`.</i>
+<i>We're minusing the contents of <code>rbx</code> from the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>2</code>.</i>
 
 </details>
 
@@ -102,7 +102,7 @@ mul rax, rbx;
 <summary><i>In assembly, we're multiplying the contents of <code>rbx</code> with the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>6</code>. Can you guess how the <code>mul</code> instruction works?</i></summary>
 
 <br />
-<i>The `mul` instruction multiplies the contents of the register (`rbx`, which contains `3`) on the right side to the contents of the register on the left side (`rax`, which contains `2`). It then takes the product of these two numbers and stores the value _into_ the register on the left side (`rax`).</i>
+<i>The <code>mul</code> instruction multiplies the contents of the register (<code>rbx</code>, which contains <code>3</code>) on the right side to the contents of the register on the left side (<code>rax</code>, which contains <code>2</code>). It then takes the product of these two numbers and stores the value _into_ the register on the left side (<code>rax</code>).</i>
 
 </details>
 
