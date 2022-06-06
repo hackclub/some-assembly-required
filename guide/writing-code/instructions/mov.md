@@ -73,7 +73,7 @@ mov rax, rbx;
 ```
 
 <details>
-<summary><i>At the end of this example, what do you think the value of rax will be?</i></summary>
+<summary><i>At the end of this example, what do you think the value of `rax` will be?</i></summary>
 
 <br />
 <i>Even though we set <code>rax</code> to <code>3</code> in the beginning, at the end of this example, <code>rax</code> is <code>5</code> since we set <code>rax</code> to the contents of <code>rbx</code>.</i>
