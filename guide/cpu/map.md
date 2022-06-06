@@ -1,5 +1,10 @@
 # Mapping an Instruction to Machine Code
 
+<p align="center">
+  <br />
+  <img height="300" src="https://cloud-eznqj6kl0-hack-club-bot.vercel.app/0communicate.png">
+</p>
+
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
 
 Remember our registers, or cubbies? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store things temporarily.
