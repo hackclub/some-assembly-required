@@ -106,7 +106,7 @@ We then [exit our program](https://github.com/hackclub/some-assembly-required/bl
   syscall ; invoke operating system to exit
 ```
 
-## Some common instructions explained
+## Common Instructions
 
 For more common instructions, check out the [Stanford CS107 list](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html#common-instructions).
 
@@ -124,69 +124,6 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
 | **pop**     | dst       | remove top from stack |
 | **call**    | fn        | push %rip, jmp to fn  |
 | **ret**     |           | pop %rip              |
-
-### mov
-_Arguments: src, dst_
-
-Explain mov here
-
-### add
-_Arguments: src, dst_
-
-Explain add here
-
-### sub
-_Arguments: src, dst_
-
-Explain sub here
-
-### cmp
-_Arguments: a, b_
-
-Explain cmp here
-
-### jmp
-_Arguments: label_
-
-Explain jmp here
-
-### je
-_Arguments: label_
-
-Explain je here
-
-### jne
-_Arguments: label_
-
-Explain jne here
-
-### jg
-_Arguments: label_
-
-Explain jg here
-
-### push
-_Arguments: src_
-
-Explain push here
-
-### pop
-_Arguments: dst_
-
-Explain pop here
-
-### call
-_Arguments: fn_
-
-Explain call here
-
-### ret
-
-Explain ret here
-
-## Flags
-
-TODO: Fill this out
 
 ## Registers
 
