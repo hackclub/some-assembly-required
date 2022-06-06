@@ -2,7 +2,7 @@
 
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
 
-Remember our registers from above? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store numbers temporarily.
+Remember our registers, or cubbies? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store things temporarily.
 
 ```asm
 add r12, 4; Add the number 4 to the number saved in register 12
