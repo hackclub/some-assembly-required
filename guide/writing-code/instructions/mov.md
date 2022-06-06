@@ -43,7 +43,13 @@ _At the end of this, `b` will contain the value `3`._
 mov rax, 3;
 mov rbx, rax;
 ```
-_In our previous assembly example, we set the value of the `rax` register to a number. In this example, we set the value one register to the value of another register. At the end of this, `rbx` will contain the value `3`._
+<details>
+<summary><i>At the end of this example, what do you think the value of <code>rax</code> will be?</i></summary>
+
+<br />
+<i>In our previous assembly example, we set the value of the `rax` register to a number. In this example, we set the value one register to the value of another register. At the end of this, `rbx` will contain the value `3`.</i>
+
+</details>
 
 ---
 
@@ -65,7 +71,14 @@ mov rbx, 5;
 
 mov rax, rbx;
 ```
-_Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`._
+
+<details>
+<summary><i>At the end of this example, what do you think the value of rax will be?</i></summary>
+
+<br />
+<i>Even though we set `rax` to `3` in the beginning, at the end of this example, `rax` is `5` since we set `rax` to the contents of `rbx`.</i>
+
+</details>
 
 <br />
 
