@@ -1,6 +1,6 @@
 # In Addition
 
-Let's do a little bit of math. I swear it won't be bad!!
+Let's do a little bit of math. I swear it won't be bad!
 
 First, we'll talk about the `add` instruction.
 
