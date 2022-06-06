@@ -87,6 +87,8 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 ---
 
+<br />
+
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
 
 Remember our registers from above? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store numbers temporarily.
@@ -126,7 +128,7 @@ Then this all gets executed. The CPU sends the number `4` and the number stored 
 
 <br />
 
-> #### Optimization sidenote
+> #### Sidenote
 >
 > Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
 >
