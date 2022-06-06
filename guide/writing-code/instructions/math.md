@@ -118,7 +118,7 @@ TODO: Fill in more about this equation
 
 <p align="center">
   <br />
-  <img height="200" src="http://www.mathscore.com/math/practice/Graphs%20to%20Linear%20Equations/img_664.gif">
+  <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
   <br />
   <span>
     <em>
