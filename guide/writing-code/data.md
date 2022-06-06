@@ -33,7 +33,7 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
   <br />
   <span>
     <em>
-      Check out [asciitable.com](https://www.asciitable.com/) for the full table.
+      Check out <a href="https://www.asciitable.com/>asciitable.com</a> for the full table.
     </em>
   </span>
 </p>
