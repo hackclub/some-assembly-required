@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img height="300" src="https://cloud-eznqj6kl0-hack-club-bot.vercel.app/0communicate.png">
+  <img height="200" src="https://cloud-eznqj6kl0-hack-club-bot.vercel.app/0communicate.png">
 </p>
 
 You may be wondering what this might look like. If you are, you're in luck! Let's map an instruction to machine code.
