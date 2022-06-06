@@ -46,18 +46,6 @@ Memory can easily hold over _15 million times_ the amount that registers can! Si
 
 ## Decode
 
-<p align="center">
-  <br />
-  <img width="460" height="300" src="https://cloud-cr3teqva6-hack-club-bot.vercel.app/0screen_shot_2022-05-26_at_1.07.48_pm.png">
-  <br />
-  <span>
-    <em>
-      just a placeholder image to break up the content!
-    </em>
-  </span>
-</p>
-<br />
-
 Now that we've fetched the data, what does that data actually look like?
 
 Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read, which is as numbers.
