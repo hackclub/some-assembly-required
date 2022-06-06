@@ -11,7 +11,7 @@ let a = 5;
 
 _In JavaScript, we're setting the value of a variable, `a`, to the number `5`._
 
-As we talked about earlier, in higher level programming, you'd use a variable to store data for later use. You can think of registers as the variables of assembly language.
+As we talked about earlier, in higher level programming, you'd use a **variable** to store data for later use. You can think of **registers as the variables of assembly language**.
 
 ```asm
 ; X86-64 Assembly
