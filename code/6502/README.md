@@ -21,9 +21,9 @@ Most assembly languages are unique to each kind of cpu as they are only one laye
 
 ### Registers and RAM
 
-The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch) (memory locations in the processor itself), three for general programming use (Register A, X, and Y) and three with specific purposes (program counter, stack pointer, and processor status). You (programmer) only have access to registers A, X, and Y and they can each only store one 8-bit number. (TODO ✅: Make PR to add explaination about stack and processor status/flags in guide)
+The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch) (memory locations in the processor itself), three for general programming use (Register A, X, and Y) and three with specific purposes (program counter, stack pointer, and processor status). You (programmer) only have access to registers A, X, and Y and they can each only store one 8-bit number.
 
-Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. Note that since the 6502 processor is an 8-bit processor but addresses are 16-bit numbers which means that they are stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
+Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. The 6502 processor is an 8-bit processor which means that all data is stored in 8-bits. However, the addresses are 16-bit numbers which means that when we need to store data that points to another memory address, it is stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
 
 ```
 Address     Data
