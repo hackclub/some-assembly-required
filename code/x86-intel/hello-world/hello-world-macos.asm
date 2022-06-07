@@ -1,6 +1,6 @@
 ;; Hello World in x86 Intel syntax
 
-;; Intel mac assembly instructions
+;; Intel MacOS assembly instructions
 
 ; We have 3 steps to run our program.
 ; 1. assemble it into an object file
