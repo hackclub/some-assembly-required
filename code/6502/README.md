@@ -23,7 +23,13 @@ Most assembly languages are unique to each kind of cpu as they are only one laye
 
 The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch) (memory locations in the processor itself), three for general programming use (Register A, X, and Y) and three with specific purposes (program counter, stack pointer, and processor status). You (programmer) only have access to registers A, X, and Y and they can each only store one 8-bit number.
 
-Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. The 6502 processor is an 8-bit processor which means that all data is stored in 8-bits. However, the addresses are 16-bit numbers which means that when we need to store data that points to another memory address, it is stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
+Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. The 6502 processor is an 8-bit processor which means that all data is stored in 8-bits. You can imagine that both the RAM and Register only have two slots for a hexadecimal number (although in real life this would look more like 8 wires that can turn on and off with electricity, representing [binary digits](/guide/math/number-systems.md#binary)). 
+
+Hence, if the RAM or Register wants to store anything above 8-bits (represented up to a 2 digit hexadecimal number), it needs to use multiple memory locations. For example, memory addresses are 16-bit numbers which means that if we need to store data that points to a memory address, it is stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). Although there's an exception: program counters store up to 16-bit numbers (or 4 digit hexademical numbers).
+
+![Diagram of RAM and Register of a 6502 processor](https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg)
+
+For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
 
 ```
 Address     Data
@@ -31,14 +37,13 @@ $1000       #$10 ;since #$10 is smaller than #$11
 $1001       #$11
 ```
 
-(TODO ✅: Figure out how to explain this part w/o being confusing)
-
 Before we get into the nitty gritty of 6502, here's a few things you should know:
 
 1. When coding in 6502 (and other assembly languages), what we're doing is one of two things, adding data or modifying it. So with each instruction you write (like `lda #$00`) you are just changing the data stored.
-2. An instruction has two parts (operation and argument) which you can think of as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as opcode, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) a. So when executed, this instruction will load `#$00` (which is also just 0) in register a.
-3. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
-4. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
+1. An instruction has two parts (operation and argument) which you can think of as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as opcode, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) a. So when executed, this instruction will load `#$00` (which is also just 0) in register a.
+1. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
+1. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
+
 
 ## Common Instructions Explained
 
@@ -55,18 +60,273 @@ The 6502 processor has over 50 instructions that are either arithmetic in nature
 | BEQ         | Branch on equal (zero flag is set at 1)                                           |
 | JMP *       | Jump to memory address * by setting program counter                               |
 
-     arguments can be a direct number or a memory address (in which case cpu would fetch data in that memory address until there's a direct number)
+   arguments can be a direct number or a memory address (in which case cpu would fetch data in that memory address until there's a direct number)
 
 Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)!
 
 Further, the processor status is a collection of flags, which you can think of as a special status register that tells the CPU something very specific about the current state. For example, when the Z-flag is set to one, it indicates that the operation produced zero, which is very important for comparison instructions such as `CMP`.Find out more about flags [here](https://www.nesdev.org/wiki/Status_flags).
 
 ## Writing programs
-(TODO ✅: Show loading data to register and adding to memory)
+_Before heading into this section, you might be interested in checking out the [guide on writing instructions](https://github.com/hackclub/some-assembly-required/blob/main/guide/writing-code/instructions/mov.md)_
 
-(TODO ✅: Talk about how addressing works + explain indirect, indexed indirect, and indirect indexed)
+In the section above, I wrote this:
+   When coding in 6502 (and other assembly languages), what we're doing is one of two things, adding data or modifying it. So with each instruction you write (like `lda #$00`) you are just changing the data stored.
 
-(TODO ✅: Talk about how loops work)
+### Retrieve Data
+
+To do the above, you need to employ [registers](/guide/cpu/instruction-cycle.md#fetch) which you can think of as variables. As mentioned, the 6502 processor only has 3 registers that you (and I) can access: Register A, X, and Y. To access these registers, we can use the instructions LDA, LDX, and LDY, respectively. For example:
+
+```
+LDA #$00
+```
+_Loads the number 0 into Register A_
+
+Here's another example,
+```
+LDY #$0f
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Loads the number $0f(=15) into Register Y</i>
+
+</details>
+
+### Use/Modify Data
+_A small note: Register A is also known as the accumulator so some instructions can only be done with Register A as it is its general purpose._
+Being able to load values to registers is no use if you cannot use that data later on (just like how setting a variable would be useless if you don't use that variable later on). A few basic actions include:
+
+**Addition**
+```
+ADC #$02
+```
+_Adds the number $02(=2) to the value at Register A. Note: This instruction can only be performed to data in Register A, not Register X or Y._
+
+**Subtraction**
+```
+SBC #$01
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Subtracts the number $01(=1) from value in Register A. Note: This instruction can only be performed to data in Register A, not Register X or Y.</i>
+
+</details>
+
+**Comparison**
+```
+CMP #$01
+```
+_Checks whether the value in Register A is equals to $01(=1). If it is, it sets the Z-flag to one (or true)._
+
+<details>
+<summary><i>The comparison instruction also works with Registers X and Y, can you guess how?</summary>
+
+<br />
+<code>CPX</code> and <code>CPY</code>
+</details>
+
+### Adding Data
+Once we're done with the data, we want to place it back in the RAM where there is A LOT more space (compared to only 3 registers). We can do this with the store instruction.
+```
+STA $00
+```
+_Loads value at Register A to memory location $00(=0)_
+
+An example with Register X:
+```
+STX $01
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Loads value at Register X to memory location $01(=1)</i>
+</details>
+
+   Note: Besides loading numbers into registers, you can also load characters (through [ASCII Numbers](https://github.com/hackclub/some-assembly-required/blob/main/guide/writing-code/data.md)) and pointers to other memory locations through only writing the hex (eg `$02`) without the `#` (which tells the processor it needs to be taken literally).
+
+### Addresses
+Speaking of pointing to other locations in memory, in 6502 assembly language, there are a few ways to accomplish this task.
+
+**Absolute Addresses**
+This is the most straight forward method: the memory location (which is a 16-bit number) is fully written
+```
+LDA $0001
+```
+_Load value at memory location 1 to Register A_
+
+Here's another example:
+```
+LDY $0010
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Load value at memory location $0010(=16) to Register Y</i>
+</details>
+
+**Zero Page Addresses**
+When using zero page addresses, the processor assumes that you only want to access the first 256 memory addresses by pre-fixing 00 to the memory address so
+
+```
+LDX $01 === LDX $0001
+```
+_Load value at memory location $0001(=1) to Register X_
+
+Here's another example:
+```
+LDA $04
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<code>LDA $04 === LDA $0004</code>
+<br />
+<i>Load value at memory location $0004(=4) to Register A</i>
+</details>
+
+**Indirect Addressing**
+Here, the addresses include a variable which can change. If this was written in Javascript, it migth look something like this:
+```
+let x = 1
+
+let a = 0 + x
+```
+_Here, we set variable x to 1 then set a to the value of 0 plus variable x. a = 1_
+(NOTE: NOT SUPER HAPPPY WITH JS EXAMPLE, ANY IDEAS?)
+
+In 6502:
+```
+LDX #$01
+
+LDA $0000,X
+```
+_In this instance, we first loaded $01(=1) to Register X then we loaded the value at memory address ($0000 + $01) $0001(=1) to Register A._
+
+In cases like these, we can easily change the value of X (at Register X) so you can also think of the memory address $0000 as the relative base and the value of X as referring to X memory address from the base. So where X = 3, we'll be discussing the location at 3 memory addresses after $0000.
+
+Here's another example,
+```
+LDX #$04
+
+LDA $0000,X
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Load number $04(=4) to Register X then load value at memory address $0004 ($0000 + $04) to Register A.</i>
+</details>
+
+**Indirect Addressing**
+Indirect addressing is when you use an absolute address to look up another absolute address. **Whatever number is retrieved at the first address becomes the absolute address used**. Here's an example:
+
+At memory location `$0010` there is the value `#$01` and at memory location `$0011`there is the value `#$02`.
+```
+STA ($0010)
+```
+_At the end of the example, we are storing the value at Register A to memory location $0102_
+
+In this instance, we do 2 things:
+1. Retrive the data at memory location $0010. However, instead of only retrieving data at memory location $0010, we also want to retrieve data at memory location $0011 (as absolute addresses need 16-bit numbers). Remember the part under [Registers and Ram](#registers-and-ram) where we mentioned using multiple memory locations? So here, we retrieve the number `#$01` and `#$02` to make `#$0102`. (The first part of the address is also the smaller number $01 < $02.)
+2. Store value in Register A at this retrieved absolute location, `$0102`
+
+Here's another example:
+At memory location `$0040` there is the value `#$03` and at memory location `$0041`there is the value `#$02`.
+```
+STY ($0040)
+```
+<details>
+<summary><i>What do you think this does?</i></summary>
+
+<br />
+<i>Load number value at Register Y to memory address <code>$0203</code>.</i>
+<br />
+Here, we:
+<ul>
+<li>Retrieved the values at memory location <code>$0040</code> and <code>$0041</code> to get the values <code>$03</code> and <code>$02</code></li>
+<li>Since <code>$02</code> is smaller than <code>$03</code>, we get the number/next memory adddress <code>$0203</code></li>
+<li>Load number value at Register Y to memory address <code>$0203</code></li>
+</ul>
+</details>
+
+**Loops**
+_A quick note: a flag, as mentioned above, is a special status register that tells the CPU something very specific about the current state. The z-flag is set by comparison instructions and tells us whether two things are equal (0 = not equal, 1 = equal)_
+The ability to set conditions and loops is essential in being able to write programs and in assembly, here's how we can do this in assembly. First, we need to add something that tells us what needs to be looped. This can be indicated by a label.
+```
+label:
+  ...
+```
+_This is a label. We can think of it similarly as a function._
+
+Next, we need something that can tell us whether to loop the section of the program. This is done in two parts:
+1. An instruction that tests a condition and sets a flag. This could be an instruction that compares such as `CPX` mentioned above.
+2. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
+
+In Javascript, a while loop that addings to variable x until it reaches 3 would look like this:
+```
+let x = 1
+
+while(x < 3) {
+  x = x + 1
+}
+```
+_At the end of this program, the value of x is 3_
+```
+LDX #$01
+
+equalthree:
+  INX
+  CPX #$03
+  BNE equalthree
+  BRK
+```
+_At the end of this program, the value at Register X is 3_
+
+Let's break this down:
+1. `LDX #$01`: We load the number $01(=1) to Register X
+1. `INX`: We increment value in Register X by 1 (here value at Register X is `#$02`)
+1. `CPX #$03`: We compare value in Register X to `#$03` and it fails so the z-flag is set at 0
+1. `BNE equalthree`: We check if the z-flag is 0 and since it is still 0, we execute the `equalthree` label (`BNE` = Branch on Not Equal, execute label if values not equal). The next line `BRK` (Break) is not called as we loop back to the label `equalthree`.
+1. `INX`: We increment value of Register X by 1 (here value at Register X is `#$03`)
+1. `CPX #$03`: We compare value in Register X to `#$03` and it is true so the z-flag is set at 1
+1. `BNE equalthree`: We check if the z-flag is 0 and since it is now one, we DO NOT execute the `equalthree` label
+1. `BRK`: the program ends
+
+Here's another example:
+```
+LDX #$04
+
+equaltwo:
+  DEX
+  CPX #$02
+  BNE equaltwo
+  BRK
+```
+<details>
+<summary><i>What will be the value at Register X after the program breaks? And can you walk through each step to show how you got there?</i></summary>
+
+<br />
+Here, we:
+<ul>
+<li><code>LDX #$04</code>: We load the number $04(=4) to Register X</li>
+<li><code>DEX</code>: We decrement value in Register X by 1 (here value at Register X is 3)</li>
+<li><code>CPX #$02</code>: We compare value in Register X to <code>#$02</code> and it fails so the z-flag is set at 0</li>
+<li><code>BNE equaltwo</code>: We check if the z-flag is 0 and since it is still 0, we execute the <code>equaltwo</code> label</li>
+<li><code>DEX</code>: We decrement value in Register X by 1 (here value at Register X is 2)</li>
+<li><code>CPX #$02</code>: We compare value in Register X to <code>#$02</code> and it is true so the z-flag is set at 1</li>
+<li><code>BNE equaltwo</code>: We check if the z-flag is 0 and since it is now 1, we DO NOT execute the <code>equaltwo</code> label and we move to the next line</li>
+<li><code>BRK</code>: The program ends</li>
+</ul>
+</details>
+
+Are you up for a challenge? Try writing your own loop [here](https://bellesea.github.io/6502js/).
+   Tip: Once you write your program, click Assemble and Run. Then, hit Reset, then check the Debugger checkbox to start the debugger. Click Step once and keep your eye on the Debugger box to see what changes as you run through the program.
 
 ## Setting Up Your Development Environment
 
@@ -107,8 +367,8 @@ Before we start assembling our program, we have one _extremely important_ step! 
 
 ```
 {
-            "label": "...",
-            ...
+  "label": "...",
+  ...
 }
 ```
 
@@ -116,31 +376,31 @@ Each of the code blocks above is one build task for an emulator (Vice has differ
 
 ```
 {
-            "label": "build -> C64 -> Pucrunch -> VICE",
-            "type": "shell",
-            "osx": {
-                "command": "bin/mac/acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin/mac/pucrunch build/main.prg build/main.prg && /Applications/Vice/x64.app/Contents/MacOS/x64 -moncommands build/labels build/main.prg 2> /dev/null",
-            },
-            "windows": {
-                "command": "bin\\win\\acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin\\win\\pucrunch build/main.prg build/main.prg && C:/tools/vice/x64.exe -moncommands build/labels build/main.prg",
-            },
-            "linux": {
-                "command": "bin/linux/acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin/linux/pucrunch build/main.prg build/main.prg && x64 -moncommands build/labels build/main.prg 2> /dev/null"
-            },
-            "group": "build",
-            "presentation": {
-                "clear": true
-            },
-            "problemMatcher": {
-                "owner": "acme",
-                "fileLocation": ["relative", "${workspaceFolder}"],
-                "pattern": {
-                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
-                    "file": 2,
-                    "location": 3,
-                    "message": 1
-                }
-            }
+  "label": "build -> C64 -> Pucrunch -> VICE",
+  "type": "shell",
+  "osx": {
+    "command": "bin/mac/acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin/mac/pucrunch build/main.prg build/main.prg && /Applications/Vice/x64.app/Contents/MacOS/x64 -moncommands build/labels build/main.prg 2> /dev/null",
+  },
+  "windows": {
+    "command": "bin\\win\\acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin\\win\\pucrunch build/main.prg build/main.prg && C:/tools/vice/x64.exe -moncommands build/labels build/main.prg",
+  },
+  "linux": {
+     "command": "bin/linux/acme -f cbm -l build/labels -o build/main.prg code/main.asm && bin/linux/pucrunch build/main.prg build/main.prg && x64 -moncommands build/labels build/main.prg 2> /dev/null"
+  },
+  "group": "build",
+    "presentation": {
+    "clear": true
+  },
+  "problemMatcher": {
+    "owner": "acme",
+    "fileLocation": ["relative", "${workspaceFolder}"],
+    "pattern": {
+      "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+      "file": 2,
+      "location": 3,
+      "message": 1
+    }
+  }
 },
 ```
 
@@ -166,9 +426,9 @@ When you're done, to assemble the code, _Press SHIFT + COMMAND + B (On Windows, 
 </p>
 <br />
 
-     Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cloud-411nkqhe8-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_6.38.19_pm.png), you can do this by opening the file in terminal and right click to select open with > x64sc. (TODO ✅: add how someone would do this in windows)
+   Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cloud-411nkqhe8-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_6.38.19_pm.png), you can do this by opening the file in terminal and right click to select open with > x64sc. (TODO ✅: add how someone would do this in windows)
 
-     On Errors: If you see a `failed to launch (exit code: 126)` in the terminal, you might have missed `/Contents/MacOS/x64sc` and if you see `failed to launch (exit code: 127)` in the terminal, you're not pointing to the correct file location where your VICE Emulator is.
+   On Errors: If you see a `failed to launch (exit code: 126)` in the terminal, you might have missed `/Contents/MacOS/x64sc` and if you see `failed to launch (exit code: 127)` in the terminal, you're not pointing to the correct file location where your VICE Emulator is.
 
 ###### Number Systems
 
