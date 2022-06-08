@@ -1,6 +1,6 @@
 # Some Assembly Required
 
-### A playful guide about talking to your computer.
+### A playful introduction to talking to your computer.
 
 ---
 
