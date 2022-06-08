@@ -67,7 +67,7 @@ The 6502 processor has over 50 instructions that are either arithmetic in nature
 Arguments can be a numerical number or a memory address.
 
 
-Further, the processor status is a collection of flags, which you can think of as a special status register that tells the CPU something very specific about the current state. For example, when the Z-flag is set to one, it indicates that the operation produced zero, which is very important for comparison instructions such as `CMP`.Find out more about flags [here](https://www.nesdev.org/wiki/Status_flags).
+The processor status register is a special register that tells the CPU something very specific about the current state. It does this by way of setting flags to either `1` or `0`. For example, when the Z-flag is set to `1`, it indicates that the operation that set the flag produced `0`, which is very important for comparison instructions such as `CMP`.Find out more about flags [here](https://www.nesdev.org/wiki/Status_flags).
 
 ## Writing programs
 _Before heading into this section, you might be interested in checking out the [guide on writing instructions](https://github.com/hackclub/some-assembly-required/blob/main/guide/writing-code/instructions/mov.md)_
