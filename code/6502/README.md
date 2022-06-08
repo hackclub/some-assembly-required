@@ -29,11 +29,15 @@ We also have access to memory, or [RAM](/guide/cpu/instruction-cycle.md#fetch). 
 
 Well first, when talking about register data, we must remember that computers only understand numbers, usually represented by [binary digits](/guide/math/number-systems.md#binary). When writing assembly language, we can also use [hex numbers](/guide/math/number-systems.md#hexadecimal), which can be a little easier to read.
 
-This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`. 
+This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`.
 
 So, if we want to store anything above 8 bits in a register or in memory, we need to use multiple locations. For example, memory addresses are 16-bits long. If we want to store a memory address, we would store it in two consecutive memory locations (eg. `$0102` and `$0103`). That being said, the program counter is an exception, as it can store 16-bit numbers.
 
-![Diagram of RAM and Register of a 6502 processor](https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg)
+<p align="center">
+  <br />
+  <img height="300" src="https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg">
+</p>
+<br />
 
 For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
 
@@ -241,7 +245,7 @@ _At the end of the example, we are storing the value at Register A to memory loc
 
 In this instance, we do 2 things:
 1. Retrive the data at memory location $0010. However, instead of only retrieving data at memory location $0010, we also want to retrieve data at memory location $0011 (as absolute addresses need 16-bit numbers). Remember the part under [Registers and Ram](#registers-and-ram) where we mentioned using multiple memory locations? So here, we retrieve the number `#$01` and `#$02` to make `#$0102`. (The first part of the address is also the smaller number $01 < $02.)
-2. Store value in Register A at this retrieved absolute location, `$0102`
+1. Store value in Register A at this retrieved absolute location, `$0102`
 
 Here's another example:
 At memory location `$0040` there is the value `#$03` and at memory location `$0041`there is the value `#$02`.
@@ -273,7 +277,7 @@ _This is a label. We can think of it similarly as a function._
 
 Next, we need something that can tell us whether to loop the section of the program. This is done in two parts:
 1. An instruction that tests a condition and sets a flag. This could be an instruction that compares such as `CPX` mentioned above.
-2. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
+1. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
 
 In Javascript, a while loop that addings to variable x until it reaches 3 would look like this:
 ```
