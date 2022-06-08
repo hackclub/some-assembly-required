@@ -2,7 +2,7 @@
 
 If you're new to assembly, it's worth going through the [guide](/guide/introduction.md) first before exploring this section. The 6502 was developed by MOS Technology and it powered a number of computers like the Apple 2 and Nintendo Entertainment System (NES). It was released significantly cheaper than its competitors (back in 1975) and has helped drive the computer evolution. Although you don't need to learn 6502 to code, it is pretty cool to see what happens "under the hood". If you want to, you can even write games for the [NES](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System)!
 
-  I highly recommend taking some time to go through the [Easy 6502 Guide](https://skilldrick.github.io/easy6502/) by [@Skilldrick](https://twitter.com/skilldrick). It took me about 6 hours to complete it as I tried all the exercises and spent time to make sure I was comfortable but you can definitely go through it in less time.
+I also highly recommend taking some time to go through the [Easy 6502 Guide](https://skilldrick.github.io/easy6502/) by [@skilldrick](https://twitter.com/skilldrick). It took me about 6 hours to complete all the exercises and understand the concepts, but you can definitely go through it in less time.
 
 ## Code Examples
 
