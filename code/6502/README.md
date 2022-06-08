@@ -129,7 +129,7 @@ CMP #$01
 _Checks whether the value in Register A is equals to $01(=1). If it is, it sets the Z-flag to one (or true)._
 
 <details>
-<summary><i>The comparison instruction also works with Registers X and Y, can you guess how?</summary>
+<summary><i>The comparison instruction also works with Registers X and Y, can you guess how?</i></summary>
 
 <br />
 <code>CPX</code> and <code>CPY</code>
