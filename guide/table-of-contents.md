@@ -8,8 +8,8 @@
 
 ## Working code examples
 
-1. [RISC-V](/code/riscv/README.md)
-1. [X86-64 Intel Syntax](/code/x86-intel/README.md)
+1. [RISC-V](/code/riscv/)
+1. [X86-64 Intel Syntax](/code/x86-intel/)
 1. [C (For comparison purposes)](/code/c/)
 
 ## Contributors
