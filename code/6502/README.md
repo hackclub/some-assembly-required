@@ -64,6 +64,8 @@ The 6502 processor has over 50 instructions that are either arithmetic in nature
 | BEQ         | Branch on equal (zero flag is set at 1)                                           |
 | JMP *       | Jump to memory address * by setting program counter                               |
 
+Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)!
+
 Arguments can be a numerical number or a memory address.
 
 
