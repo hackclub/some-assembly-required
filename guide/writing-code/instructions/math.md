@@ -110,11 +110,13 @@ mul rax, rbx;
 
 Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may remember the slope-intercept equation from school. If you're anything like me and don't remember it, it looks like:
 
-$y = mx + b$
-
 <p align="center">
   <br />
   <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
+  <br />
+  <span>
+    $y = mx + b$
+  </span>
 </p>
 <br />
 
