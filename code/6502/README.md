@@ -23,7 +23,11 @@ Most assembly languages are unique to each kind of cpu as they are only one laye
 
 The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch), three for general programming use (Register `A`, `X`, and `Y`) and three with specific purposes (program counter, stack pointer, and processor status). We as programmers only have access to registers `A`, `X`, and `Y`, and they can each store one 8-bit number.
 
-Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. The 6502 processor is an 8-bit processor which means that all data is stored in 8-bits. You can imagine that both the RAM and Register only have two slots for a hexadecimal number (although in real life this would look more like 8 wires that can turn on and off with electricity, representing [binary digits](/guide/math/number-systems.md#binary)). 
+We also have access to memory, or [RAM](/guide/cpu/instruction-cycle.md#fetch). Memory addresses are 16 bits long. But, as we mentioned previously, the 6502 processor is an 8-bit processor. Uh oh! What can we do?
+
+Well first, when talking about register data, we must remember that computers only understand numbers, usually represented by [binary digits](/guide/math/number-systems.md#binary). When writing assembly language, we can also use [hex numbers](/guide/math/number-systems.md#hexadecimal), which can be a little easier to read.
+
+This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`. 
 
 Hence, if the RAM or Register wants to store anything above 8-bits (represented up to a 2 digit hexadecimal number), it needs to use multiple memory locations. For example, memory addresses are 16-bit numbers which means that if we need to store data that points to a memory address, it is stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). Although there's an exception: program counters store up to 16-bit numbers (or 4 digit hexademical numbers).
 
