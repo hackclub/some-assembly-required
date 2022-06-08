@@ -29,11 +29,15 @@ We also have access to memory, or [RAM](/guide/cpu/instruction-cycle.md#fetch). 
 
 Well first, when talking about register data, we must remember that computers only understand numbers, usually represented by [binary digits](/guide/math/number-systems.md#binary). When writing assembly language, we can also use [hex numbers](/guide/math/number-systems.md#hexadecimal), which can be a little easier to read.
 
-This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`. 
+This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`.
 
 So, if we want to store anything above 8 bits in a register or in memory, we need to use multiple locations. For example, memory addresses are 16-bits long. If we want to store a memory address, we would store it in two consecutive memory locations (eg. `$0102` and `$0103`). That being said, the program counter is an exception, as it can store 16-bit numbers.
 
-![Diagram of RAM and Register of a 6502 processor](https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg)
+<p align="center">
+  <br />
+  <img height="300" src="https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg">
+</p>
+<br />
 
 For example, a 16-bit value `#$1011` at address `$1000` would be stored like this:
 
@@ -46,9 +50,9 @@ $1001       #$11
 Before we get into the nitty gritty of 6502, here's a few things you should know:
 
 1. When coding in 6502 (and other assembly languages), we're only doing two things: adding data or modifying it.
-1. An instruction has two parts: operation and argument. You can think of each as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as **opcode**, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) `A`. So when executed, this instruction will load `#$00` (which is also just 0) in register `A`.
-1. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
-1. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
+2. An instruction has two parts: operation and argument. You can think of each as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as **opcode**, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) `A`. So when executed, this instruction will load `#$00` (which is also just 0) in register `A`.
+3. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
+4. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
 
 
 ## Common Instructions Explained
