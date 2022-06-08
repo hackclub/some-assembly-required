@@ -28,7 +28,6 @@ entry ;this is a label named 'entry' which can be referred to later on if needed
     ldy #$0d                ; load $0b (as "hello world!" has 12 characters) into register y (register y will serve as index register, if you're not sure what this means, check out the README file in this folder)
 
 character_loop ; this is also a label
-
     lda hello,y             ; load character number y of the string in label hello (hello world!) eg. when y is 2, load character "e"
     sta $0400,y             ; save data in register a to memory location $0400,y (= $0400 + y). Eg. when y is 2 (register a has the character "e"), $0400,2 = $0402, we'll load character "e" to memory location $0402
     dey                     ; decrement y by 1 (if y was 2, it is now 1)
