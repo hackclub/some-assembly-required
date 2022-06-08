@@ -21,7 +21,7 @@ Most assembly languages are unique to each kind of cpu as they are only one laye
 
 ### Registers and RAM
 
-The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch) (memory locations in the processor itself), three for general programming use (Register A, X, and Y) and three with specific purposes (program counter, stack pointer, and processor status). You (programmer) only have access to registers A, X, and Y and they can each only store one 8-bit number.
+The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch), three for general programming use (Register `A`, `X`, and `Y`) and three with specific purposes (program counter, stack pointer, and processor status). We as programmers only have access to registers `A`, `X`, and `Y`, and they can each store one 8-bit number.
 
 Hence, we also have another source of memory: Random Access Memory (RAM). Data in the [RAM](/guide/cpu/instruction-cycle.md#fetch) can be accessed through 16-bit numbers called addresses. The 6502 processor is an 8-bit processor which means that all data is stored in 8-bits. You can imagine that both the RAM and Register only have two slots for a hexadecimal number (although in real life this would look more like 8 wires that can turn on and off with electricity, representing [binary digits](/guide/math/number-systems.md#binary)). 
 
