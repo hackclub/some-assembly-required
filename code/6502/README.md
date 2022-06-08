@@ -66,7 +66,6 @@ The 6502 processor has over 50 instructions that are either arithmetic in nature
 
 Arguments can be a numerical number or a memory address.
 
-Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)!
 
 Further, the processor status is a collection of flags, which you can think of as a special status register that tells the CPU something very specific about the current state. For example, when the Z-flag is set to one, it indicates that the operation produced zero, which is very important for comparison instructions such as `CMP`.Find out more about flags [here](https://www.nesdev.org/wiki/Status_flags).
 
