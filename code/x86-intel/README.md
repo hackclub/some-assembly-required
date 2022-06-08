@@ -21,8 +21,6 @@ By default, macOS doesn't ship with developer tools, since most computer users a
 
 ## Running programs
 
-The object files and executables have been pushed up to GitHub just for viewing purposes (like if you wanted to view them in a [hex editor](https://hexfiend.com/)). That being said, unless you're on the specific processor I compiled them on, the programs and object files won't work for you.
-
 We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program.
 
 For my computer, an Intel mac, these are the instructions to compile and run the code. We have 3 steps to run our program:
