@@ -32,6 +32,7 @@
 - [@TheOneKevin](https://github.com/theonekevin)
 - [@exu3](https://github.com/exu3)
 - [@jakeboxer](https://github.com/jakeboxer)
+- [@tejasag](https://github.com/tejasag)
 
 <br />
 
