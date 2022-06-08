@@ -2,6 +2,10 @@
 ; Base Code from https://github.com/Esshahn/acme-assembly-vscode-template, created 2019 by Ingo Hinterding // awsm of Mayday (http://www.awsm.de)
 ;==========================================================
 
+; Assembler used: ACME
+; Platform architecture: Commodore 64 VICE Emulator
+; OS architecture: C64
+
 ;==========================================================
 ; BASIC header
 ;==========================================================
