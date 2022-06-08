@@ -45,7 +45,7 @@ $1001       #$11
 
 Before we get into the nitty gritty of 6502, here's a few things you should know:
 
-1. When coding in 6502 (and other assembly languages), what we're doing is one of two things, adding data or modifying it. So with each instruction you write (like `lda #$00`) you are just changing the data stored.
+1. When coding in 6502 (and other assembly languages), we're only doing two things: adding data or modifying it.
 1. An instruction has two parts: operation and argument. You can think of each as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as **opcode**, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) `A`. So when executed, this instruction will load `#$00` (which is also just 0) in register `A`.
 1. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
 1. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
