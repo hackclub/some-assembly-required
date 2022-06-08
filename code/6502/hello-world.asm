@@ -35,4 +35,5 @@ character_loop ; this is also a label
     bpl character_loop      ; is y positive? if yes, then repeat by jumping back to label character_loop. as y decrements with each cycle (due to instruction in line 35), the cycle wil end when y is less than 0 and it will run the next line
     rts                     ; exit the program
 
-hello      !scr "hello world!"     ; the label named "hello" contains the string we want to print
+hello
+    !scr "hello world!" ; the label named "hello" contains the string we want to print
