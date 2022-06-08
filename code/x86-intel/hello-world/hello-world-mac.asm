@@ -1,5 +1,11 @@
 ;; Hello World in x86 Intel syntax
 
+; Assembler used: YASM
+; Assembly syntax: x86 Intel
+; CPU architecture: Intel x86-64
+; Platform architecture: Mac
+; OS architecture: MacOS
+
 ;; Intel MacOS assembly instructions
 
 ; We have 3 steps to run our program.
@@ -8,25 +14,25 @@
 ; 3. run our executable
 
 ;; 1. assemble it into an object file
-; nasm is our assembler, -f flag is to specify our file format
+; yasm is our assembler, -f flag is to specify our file format
 ; macho64 is our file format, used for mac executables
 ; this whole command creates an object file, which is machine code. view it in a hex editor like https://hexfiend.com/
 ; if you view it in a normal editor, it tries to convert the machine code to ascii, which makes it nonsensical
 ;
-; nasm -f macho64 hello-world-mac.asm
+; yasm -f macho64 hello-world-mac.asm
 
 ;; 2. generate our executable
 ; this generates our executable by linking our object file to any libraries it needs
 ; it bundles everything together into machine code
 ; -o lets us specify what we want our executable to be called
 ;
-; ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie
+; ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem
 
 ;; 3. run our executable
 ; ./hello-world-mac
 
 ; Run this line to run all the commands from above:
-; nasm -f macho64 hello-world-mac.asm && ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world-mac
+; yasm -f macho64 hello-world-mac.asm && ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world-mac
 
 ;; Assembly Code
 

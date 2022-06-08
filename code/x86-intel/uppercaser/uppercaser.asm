@@ -6,6 +6,12 @@
 ; Written as a working example of an x86 Intel syntax assembly language program
 ; ==================================================================================
 
+; Assembler used: NASM
+; Assembly syntax: x86 Intel
+; CPU architecture: Intel x86-64
+; Platform architecture: Mac
+; OS architecture: MacOS
+
 ;; x86-64 processor, Intel syntax
 ; yasm -f macho64 uppercaser.asm && ld uppercaser.o -o uppercaser -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser
 
