@@ -3,8 +3,15 @@
 ;==========================================================
 
 ;==========================================================
-; BASIC header ;COMMENT: ANYONE KNOW WHAT THIS DOES? I ASSUME ITS SOME SORT OF DEFAULT SETTING FOR THE PROCESSOR? IDK HAHA
+; BASIC header
 ;==========================================================
+
+; Since our code is ran in an emulator, this is emulator-specific code
+; The assembly is being ran inside of a BASIC terminal, and this is inserting
+; BASIC code to tell it where to start
+
+; * = $0801 drops us at memory location 0801, which on the C64 memory map
+; is the default BASIC area
 
 * = $0801
     !byte $0b, $08
@@ -14,7 +21,7 @@
     !byte '0' + entry %  1000 /  100
     !byte '0' + entry %   100 /   10
     !byte '0' + entry %    10
-    !byte $00, $00, $00
+    !byte $00, $00, $00 ; Indicates the end of the BASIC header
 
 ;==========================================================
 ; CODE
@@ -93,5 +100,6 @@ character_loop
 ; This label gets called by character_loop
 print_str
     ; !scr is an assembler directive, not an instruction
-    ; It converts ASCII text to ASCII codes
+    ; It converts text to PETSCII codes
+    ; PETSCII is like ASCII but before ASCII existed
     !scr "hello world!"
