@@ -17,7 +17,9 @@ I also highly recommend taking some time to go through the [Easy 6502 Guide](htt
 
 ## An Overview of the 6502 processor
 
-Most assembly languages are unique to each kind of cpu as they are only one layer above machine code (which computers can understand) so instructions that it gives are only understandable by certain types of CPU. Hence, 6502 assembly language is used to program the 6502 processor (can you guess where the assembly language it got its name from?). The 6502 processor is an 8-bit-processor which means that it deals with data that are 8-bit numbers (see the section on binary number [here](/guide/math/number-systems.md#binary)). It can still process larger numbers but just does it 8-bit at a time. Eventhough a computer only understands [binary digits](/guide/math/number-systems.md#binary), when writing assembly language, we can use [hex numbers](/guide/math/number-systems.md#hexadecimal) which are a little easier to read. This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`. Can you guess why it's only 2 digits? (hint: a binary number is base2 while a hexadecimal number is base16, answer [here](#number-systems))
+Assembly languages vary depending on the kind of CPU you're communicating with. Assembly is only one layer above machine code, the language that computers can understand, and that machine code changes depending on the CPU. So certain assembly instructions are only understandable by certain types of CPUs.
+
+The 6502 assembly language is used to program the 6502 processor (can you guess where the assembly language it got its name from?). The 6502 processor is an [8-bit](/guide/writing-code/data.md) processor which means that it deals with data 8 bits at a time. 
 
 ### Registers and RAM
 
