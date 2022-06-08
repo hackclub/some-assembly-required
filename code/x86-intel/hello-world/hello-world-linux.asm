@@ -20,13 +20,13 @@
 ; it bundles everything together into machine code
 ; -o lets us specify what we want our executable to be called
 ;
-; ld hello-world-linux.o -o hello-world
+; ld hello-world-linux.o -o hello-world-linux
 
 ;; 3. run our executable
-; ./hello-world
+; ./hello-world-linux
 
 ; Run this line to run all the commands from above:
-; nasm -f elf64 hello-world-linux.asm && ld hello-world-linux.o -o hello-world && ./hello-world
+; nasm -f elf64 hello-world-linux.asm && ld hello-world-linux.o -o hello-world-linux && ./hello-world-linux
 
 ;; System Call Codes used in this program are specific for Linux 64 bit architecture.
 ;; Find a list of them here: https://filippo.io/linux-syscall-table/

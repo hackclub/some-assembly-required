@@ -13,20 +13,20 @@
 ; this whole command creates an object file, which is machine code. view it in a hex editor like https://hexfiend.com/
 ; if you view it in a normal editor, it tries to convert the machine code to ascii, which makes it nonsensical
 ;
-; nasm -f macho64 hello-world.asm
+; nasm -f macho64 hello-world-mac.asm
 
 ;; 2. generate our executable
 ; this generates our executable by linking our object file to any libraries it needs
 ; it bundles everything together into machine code
 ; -o lets us specify what we want our executable to be called
 ;
-; ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie
+; ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie
 
 ;; 3. run our executable
-; ./hello-world
+; ./hello-world-mac
 
 ; Run this line to run all the commands from above:
-; nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
+; nasm -f macho64 hello-world-mac.asm && ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world-mac
 
 ;; Assembly Code
 
