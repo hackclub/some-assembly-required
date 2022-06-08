@@ -114,6 +114,8 @@ Now that we have some basic math under our belt, let's try to map a real equatio
   <br />
   <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
   <br />
+</p>
+<p>
   <span>
     $y = mx + b$
   </span>
