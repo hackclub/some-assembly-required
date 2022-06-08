@@ -50,9 +50,9 @@ $1001       #$11
 Before we get into the nitty gritty of 6502, here's a few things you should know:
 
 1. When coding in 6502 (and other assembly languages), we're only doing two things: adding data or modifying it.
-2. An instruction has two parts: operation and argument. You can think of each as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as **opcode**, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) `A`. So when executed, this instruction will load `#$00` (which is also just 0) in register `A`.
-3. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
-4. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
+1. An instruction has two parts: operation and argument. You can think of each as answering the questions "what to do" and "who to do it to". For example with `lda #$00`, `lda` is the operation (also known as **opcode**, remember this!) and `#$00` is the argument. In this case, `lda` means load whatever the argument is to [register](/guide/cpu/instruction-cycle.md#fetch) `A`. So when executed, this instruction will load `#$00` (which is also just 0) in register `A`.
+1. Anything starting with `$` like `$00` is in [hexadecimal](/guide/math/number-systems.md#hexadecimal) format
+1. Anything prefixed with `#` like `#$00` is a literal number value while others refer to a [memory location in RAM](/guide/cpu/instruction-cycle.md#fetch)
 
 
 ## Common Instructions Explained
@@ -245,7 +245,7 @@ _At the end of the example, we are storing the value at Register A to memory loc
 
 In this instance, we do 2 things:
 1. Retrive the data at memory location $0010. However, instead of only retrieving data at memory location $0010, we also want to retrieve data at memory location $0011 (as absolute addresses need 16-bit numbers). Remember the part under [Registers and Ram](#registers-and-ram) where we mentioned using multiple memory locations? So here, we retrieve the number `#$01` and `#$02` to make `#$0102`. (The first part of the address is also the smaller number $01 < $02.)
-2. Store value in Register A at this retrieved absolute location, `$0102`
+1. Store value in Register A at this retrieved absolute location, `$0102`
 
 Here's another example:
 At memory location `$0040` there is the value `#$03` and at memory location `$0041`there is the value `#$02`.
@@ -277,7 +277,7 @@ _This is a label. We can think of it similarly as a function._
 
 Next, we need something that can tell us whether to loop the section of the program. This is done in two parts:
 1. An instruction that tests a condition and sets a flag. This could be an instruction that compares such as `CPX` mentioned above.
-2. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
+1. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
 
 In Javascript, a while loop that addings to variable x until it reaches 3 would look like this:
 ```
