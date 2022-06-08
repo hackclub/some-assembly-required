@@ -31,7 +31,7 @@ Well first, when talking about register data, we must remember that computers on
 
 This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`. 
 
-Hence, if the RAM or Register wants to store anything above 8-bits (represented up to a 2 digit hexadecimal number), it needs to use multiple memory locations. For example, memory addresses are 16-bit numbers which means that if we need to store data that points to a memory address, it is stored in two consecutive memory locations (eg. `$0102` and `$0103`) with the lower byte value stored first (since data is represented by numbers, it can be ordered and compared in terms of size). Although there's an exception: program counters store up to 16-bit numbers (or 4 digit hexademical numbers).
+So, if we want to store anything above 8 bits in a register or in memory, we need to use multiple locations. For example, memory addresses are 16-bits long. If we want to store a memory address, we would store it in two consecutive memory locations (eg. `$0102` and `$0103`). That being said, the program counter is an exception, as it can store 16-bit numbers.
 
 ![Diagram of RAM and Register of a 6502 processor](https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg)
 
