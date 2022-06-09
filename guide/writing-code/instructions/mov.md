@@ -14,7 +14,7 @@ _In JavaScript, we're setting the value of a variable, `a`, to the number `5`._
 As we talked about earlier, in higher level programming, you'd use a **variable** to store data for later use. You can think of **registers as the variables of assembly language**.
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 5;
 ```
 _In assembly, we're setting the value of a register, `rax`, to the number `5`._
@@ -37,7 +37,7 @@ let b = a;
 _At the end of this, `b` will contain the value `3`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 3;
 mov rbx, rax;
 ```
@@ -63,7 +63,7 @@ a = b;
 _Even though we set `a` to `3` in the beginning, at the end of this example, `a` is `5` since we set `a` to the contents of `b`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 3;
 mov rbx, 5;
 

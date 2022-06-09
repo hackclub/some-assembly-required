@@ -12,7 +12,7 @@ a = a + 1;
 _In JavaScript, we're adding `1` to the contents of the variable `a`. At the end of this, `a` will contain the value `4`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 3;
 add rax, 1;
 ```
@@ -34,7 +34,7 @@ a = a + b;
 _In JavaScript, we're adding the contents of `b` to the contents of `a`. At the end of this, `a` will contain the value `4`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 3;
 mov rbx, 1;
 
@@ -62,7 +62,7 @@ a = a - b;
 _In JavaScript, we're minusing the contents of `b` from the contents of `a`. At the end of this, `a` will contain the value `2`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 3;
 mov rbx, 1;
 
@@ -92,7 +92,7 @@ a = a * b;
 _In JavaScript, we're multiplying the contents of `b` with the contents of `a`. At the end of this, `a` will contain the value `6`._
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 2;
 mov rbx, 3;
 
@@ -127,7 +127,7 @@ We don't need to get into great detail about this equation, but this is the form
 TODO: Fill in more about this equation
 
 ```asm
-; X86-64 Assembly
+; X86-64 Intel Syntax Assembly
 mov rax, 2; rax will contain m
 mov rbx, 3; rbx will contain x
 mov rcx, 4; rcx will contain b
