@@ -16,8 +16,8 @@ mov rax, 3
 mov rbx, 1
 
 cmp rax, rbx
-jl .jumpToHere ; Jump if rax < rbx
-add rbx, 1 ; We only get to this line if rax >= rbx
+jl .jumpToHere
+add rbx, 1 ; We only get to this line if the jump is not executed
 ```
 
 Here, we check if the contents of `rax` are less than the contents of `rbx`.
@@ -46,8 +46,6 @@ add rbx, 1
 
 </details>
 
-<br />
-
 For another example:
 
 ```asm
@@ -65,8 +63,6 @@ add rbx, 1
 <i>The jump <strong>will</strong> be executed, because the value of `rax` (`1`) is less than the value of `rbx` (`3`).</i>
 
 </details>
-
-<br />
 
 ### Flags
 
