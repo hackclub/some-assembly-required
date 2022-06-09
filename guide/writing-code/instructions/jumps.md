@@ -32,9 +32,10 @@ sub rcx, 11 ; This line will be skipped since we are jumping to .addNumbers
 .addNumbers
   mov rax, 3
   mov rbx, 1
-
   add rax, rbx
 ```
+
+<br />
 
 `.addNumbers` is a **label**. When assembled to machine code, labels assemble to memory addresses that point to the first instruction after the label.
 
@@ -44,6 +45,9 @@ _Insert drawn diagram of a jmp, its memory address next to it, and showing the i
 
 ## Conditionals
 
+
+
+### Flags
 
 
 
