@@ -12,6 +12,7 @@ if (a < b) {
 In JavaScript and other high level languages, we'd traditionally use an `if` statement to conditionally execute some code. In assembly, we'd use conditional jumps.
 
 ```asm
+; X86-64 Intel Syntax Assembly
 mov rax, 3
 mov rbx, 1
 
