@@ -52,6 +52,8 @@ This generates our executable by linking our object file to any libraries it nee
 $ ./hello-world
 ```
 
+   Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program, you'll have to add an input (eg. `word`) so your command might look like `./uppercaser word`
+
 ### All together now!
 ```
 $ nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
