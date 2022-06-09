@@ -98,7 +98,7 @@ _In assembly, we're adding `1` to the contents of the register `rax`. At the end
 </details>
 <br />
 
-And in the other case:
+Another case:
 
 ```asm
 ; X86-64 Intel Syntax Assembly
