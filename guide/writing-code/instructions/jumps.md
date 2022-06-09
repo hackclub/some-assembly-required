@@ -52,7 +52,6 @@ if (a == 0) {
   // do some code
 }
 ```
-_In JavaScript, we're checking the value of `a`. If it's equal to `0`, execute some code._
 
 In JavaScript and other high level languages, we'd traditionally use an `if` statement to conditionally execute some code. In assembly, we'd use conditional jumps.
 
