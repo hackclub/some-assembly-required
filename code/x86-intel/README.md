@@ -25,7 +25,7 @@ If you have [homebrew](https://brew.sh/) installed, you can also download the [n
 
 We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program.
 
-For a mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
+For a Mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
 1. Assemble it into an object file
 1. Generate our executable
 1. Run our executable
