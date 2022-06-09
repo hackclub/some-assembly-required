@@ -20,11 +20,10 @@ _Insert drawn diagram of a program, its memory address next to it, and showing t
 
 ---
 
-Remember how I said we don't access the instruction pointer directly? That stands true, however we can change where the instruction pointer is pointing with a jump instruction.
+Remember how I said we don't access the instruction pointer directly? That stands true, however we can change where the instruction pointer is pointing with a jump instruction. Jumps are a way to move to another area of your assembly code.
 
 ```asm
 ; X86-64 Intel Syntax Assembly
-
 mov rcx, 10
 jmp .addNumbers
 sub rcx, 11 ; This line will be skipped since we are jumping to .addNumbers
@@ -45,11 +44,39 @@ _Insert drawn diagram of a jmp, its memory address next to it, and showing the i
 
 ## Conditionals
 
+Let's say you're writing some code, and you want some code to execute _only_ if something else is true.
 
+```js
+// JavaScript
+if (a == 0) {
+  // do some code
+}
+```
+_In JavaScript, we're checking the value of `a`. If it's equal to `0`, execute some code._
+
+In JavaScript and other high level languages, we'd traditionally use an `if` statement to conditionally execute some code. In assembly, we'd use conditional jumps.
 
 ### Flags
 
+In order to talk about conditional jumps, we have to talk about flags. Flags are another special register that we don't access directly, but get set automatically for us. Flags get set for many reasons, one of them being when instructions perform arithmetic and logical operations.
 
+There are 5 flags on an x86-64 processor, but we'll be talking about the zero flag, or `ZF`.
+
+For example, lets take the following instruction:
+
+```asm
+; X86-64 Intel Syntax Assembly
+mov rax, 3;
+add rax, 1;
+```
+_In assembly, we're adding `1` to the contents of the register `rax`. At the end of this, `rax` will contain the value `4`._
+
+<details>
+<summary><i>In this example, what do you think the value of the <code>ZF</code> flag will be?</i></summary>
+
+<br />
+<i>Since the result of the proceeding arithmetic operation was `4`, `ZF` is `0`.</i>
+</details>
 
 <br />
 
