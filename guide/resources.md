@@ -51,9 +51,6 @@ Intel's CPU architecture videos:
   - http://dustin.schultz.io/mac-os-x-64-bit-assembly-system-calls.html
   - https://filippo.io/linux-syscall-table/
 
-### Debugging
-  - https://stackoverflow.com/questions/52830484/nasm-cant-link-object-file-with-ld-on-macos-mojave
-
 ## Debugger
 
 - https://www.sourceware.org/gdb/download/
