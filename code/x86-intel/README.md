@@ -52,7 +52,7 @@ This generates our executable by linking our object file to any libraries it nee
 $ ./hello-world
 ```
 
-   Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program, you'll have to add an input (eg. `word`) so your command might look like `./uppercaser word`
+> Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program, you'll have to pass command line arguments (eg. `words to uppercase`) so your command might look like `./uppercaser words to uppercase`
 
 ### All together now!
 ```
