@@ -4,7 +4,7 @@ Assembly code executes sequentially, meaning that after executing an instruction
 
 ## The Instruction Pointer
 
-The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`rip`), also known as the **program counter**.
+The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (referenced as `rip`), also known as the **program counter**.
 
 When an assembly program is ran, each instruction is stored into memory next to each other.
 
