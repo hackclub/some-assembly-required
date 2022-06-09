@@ -1,6 +1,12 @@
 # Resources
 
-## Computer science fundamentals
+## CPU Architecture
+
+Intel's CPU architecture videos:
+- Part 1: https://www.youtube.com/watch?v=vgPFzblBh7w
+- Part 2: https://www.youtube.com/watch?v=o_WXTRS2qTY
+
+## Computer Science
 
 - https://store.steampowered.com/app/1444480/Turing_Complete/
 - https://www.youtube.com/playlist?app=desktop&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
