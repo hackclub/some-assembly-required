@@ -113,9 +113,6 @@ _In assembly, we're subtracting `1` to the contents of the register `rax`. At th
 <br />
 <i>Since the result of the proceeding arithmetic operation was <code>0</code>, <code>ZF</code> is <code>1</code>.</i>
 </details>
-<br />
-
----
 
 <br />
 
@@ -131,8 +128,8 @@ _In assembly, we're subtracting `1` to the contents of the register `rax`. At th
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/instructions/.md">
-         →
+      <a href="/guide/writing-code/instructions/loops.md">
+        Loop de loop →
       </a>
     </b>
   </em>
