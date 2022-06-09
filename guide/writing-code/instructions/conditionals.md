@@ -44,7 +44,7 @@ add rbx, 1 ; We only get to this line if the jump is not executed
 <summary><i>In this example, will the jump be executed?</i></summary>
 
 <br />
-<i>The jump <strong>will not</strong> be executed, because the value of `rax` (`3`) is greater than the value of `rbx` (`1`).</i>
+<i>The jump <strong>will not</strong> be executed, because the value of <code>rax</code> (<code>3</code>) is greater than the value of <code>rbx</code> (<code>1</code>).</i>
 
 </details>
 
@@ -63,7 +63,7 @@ add rbx, 1 ; We only get to this line if the jump is not executed
 <summary><i>In this example, will the jump be executed?</i></summary>
 
 <br />
-<i>The jump <strong>will</strong> be executed, because the value of `rax` (`1`) is less than the value of `rbx` (`3`).</i>
+<i>The jump <strong>will</strong> be executed, because the value of <code>rax</code> (<code>1</code>) is less than the value of <code>rbx</code> (<code>3</code>).</i>
 
 </details>
 
