@@ -48,7 +48,7 @@ Let's say you're writing some code, and you want some code to execute _only_ if 
 
 ```js
 // JavaScript
-if (a == 10) {
+if (a == 0) {
   // do some code
 }
 ```
