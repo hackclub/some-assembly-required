@@ -32,6 +32,7 @@ For our conditional jump, we are using `jl`, which stands for "Jump if Less Than
 Back to our example:
 
 ```asm
+; X86-64 Intel Syntax Assembly
 mov rax, 3
 mov rbx, 1
 
@@ -50,6 +51,7 @@ add rbx, 1
 For another example:
 
 ```asm
+; X86-64 Intel Syntax Assembly
 mov rax, 1
 mov rbx, 3
 
