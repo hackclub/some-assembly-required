@@ -2,7 +2,7 @@
 
 Assembly code executes sequentially, meaning that after executing an instruction, the computer moves to the next instruction to execute. The computer is able to keep track of which line of code it's executing with something called **the instruction pointer**.
 
-## The Instruction Pointer
+### The Instruction Pointer
 
 The CPU has many specialized registers, which we don't access directly. One of them is the **instruction pointer** (`rip`), also known as the **program counter**.
 
