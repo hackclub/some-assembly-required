@@ -19,11 +19,13 @@ The **64** part is referring to the number of [bits](/guide/writing-code/data.md
 
 By default, macOS doesn't ship with developer tools, since most computer users aren't writing code. In order to compile these examples, you'll need to [download Xcode](https://developer.apple.com/xcode/) and their [command line tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 
+If you have [Homebrew](https://brew.sh/) installed, you can also download the [nasm package](https://formulae.brew.sh/formula/nasm).
+
 ## Running programs
 
 We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program.
 
-For my computer, an Intel mac, these are the instructions to compile and run the code. We have 3 steps to run our program:
+For a Mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
 1. Assemble it into an object file
 1. Generate our executable
 1. Run our executable
@@ -49,6 +51,8 @@ This generates our executable by linking our object file to any libraries it nee
 ```
 $ ./hello-world
 ```
+
+> Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program, you'll have to pass command line arguments (eg. `words to uppercase`) so your command might look like `./uppercaser words to uppercase`
 
 ### All together now!
 ```
