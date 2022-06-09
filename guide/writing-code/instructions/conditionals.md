@@ -69,7 +69,7 @@ add rbx, 1 ; We only get to this line if the jump is not executed
 
 ## Flags
 
-In order to talk about conditional jumps, we should talk about flags. As we briefly mentioned, flags are stored in another special register, `eflags`, that we don't access directly. The flags get automatically set for us for many reasons, like when instructions perform arithmetic and logical operations, or when we use the `cmp` instruction.
+When talking about conditional jumps, we should talk about flags. As we briefly mentioned, flags are stored in another special register, `eflags`, that we don't access directly. The flags get automatically set for us for many reasons, like when instructions perform arithmetic and logical operations, or when we use the `cmp` instruction.
 
 There are 5 flags on an x86-64 processor, but let's talk about the zero flag, or `ZF`.
 
