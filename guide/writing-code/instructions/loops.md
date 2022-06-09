@@ -16,7 +16,7 @@ TODO: Loops section!
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/instructions/functional.md">
+      <a href="/guide/writing-code/instructions/functions.md">
          Let's get functional →
       </a>
     </b>
