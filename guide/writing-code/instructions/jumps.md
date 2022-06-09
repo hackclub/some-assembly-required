@@ -12,7 +12,9 @@ The instruction pointer register stores the **memory address** of the current li
 
 For example, let's say we're running an assembly program that has an instruction for adding two numbers together. Once that instruction finishes running, the instruction pointer increments to point at the next instruction of the program.
 
-For x86-64 machines that are 64-bit, that would mean that each time an instruction finishes, the instruction pointer adds 8. This is because, as you may remember, 64 bits is 8 bytes (64 bits / 8 bits per byte = 8 bytes). Each memory address represents a byte of data. Each instruction is stored as 8 bytes.
+Like everything in assembly, the actual process of incrementing the instruction pointer is a little complicated and depends on the processor, so we're going to fictionalize a high level example of how this works.
+
+Let's say for a  64-bit machine, each instruction ends up being 8 bytes (64 bits / 8 bits per byte = 8 bytes), and each memory address represents a byte of data. That would mean that each time an instruction finishes, the instruction pointer adds 8 to itself.
 
 So let's say our first instruction is at memory address `0x00000001`. If we incremented to `0x00000002`, that would be **1 byte** of data, or **8 bits**. If we want to increment by an instruction's amount of data (**8 bytes**), we'd increment to `0x00000009`, since that's 8 bytes after `0x00000001`.
 
@@ -46,7 +48,7 @@ _Insert drawn diagram of a jmp, its memory address next to it, and showing the i
 
 ---
 
-<a href="/guide/writing-code/math.md">
+<a href="/guide/writing-code/instructions/math.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
     <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
