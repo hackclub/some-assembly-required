@@ -1,5 +1,15 @@
 # Let's Get Functional
 
+```js
+// JavaScript
+
+addNumbers();
+
+function addNumbers() {
+  return (3 + 1);
+}
+```
+
 TODO: Ret/call section!
 
 <br />
