@@ -2,7 +2,7 @@
 
 ## CPU Architecture
 
-Intel's CPU architecture videos:
+### Intel's CPU architecture videos
 - Part 1: https://www.youtube.com/watch?v=vgPFzblBh7w
 - Part 2: https://www.youtube.com/watch?v=o_WXTRS2qTY
 
