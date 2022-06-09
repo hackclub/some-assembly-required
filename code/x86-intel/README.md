@@ -19,7 +19,7 @@ The **64** part is referring to the number of [bits](/guide/writing-code/data.md
 
 By default, macOS doesn't ship with developer tools, since most computer users aren't writing code. In order to compile these examples, you'll need to [download Xcode](https://developer.apple.com/xcode/) and their [command line tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 
-If you have [homebrew](https://brew.sh/) installed, you can also download the [nasm package](https://formulae.brew.sh/formula/nasm).
+If you have [Homebrew](https://brew.sh/) installed, you can also download the [nasm package](https://formulae.brew.sh/formula/nasm).
 
 ## Running programs
 
