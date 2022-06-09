@@ -82,8 +82,9 @@ _In assembly, we're adding `1` to the contents of the register `rax`. At the end
 <summary><i>In this example, what do you think the value of the <code>ZF</code> flag will be?</i></summary>
 
 <br />
-<i>Since the result of the proceeding arithmetic operation was `4`, `ZF` is `0`.</i>
+<i>Since the result of the proceeding arithmetic operation was <code>4</code>, <code>ZF</code> is <code>0</code>.</i>
 </details>
+<br />
 
 And in the other case:
 
@@ -98,8 +99,11 @@ _In assembly, we're subtracting `1` to the contents of the register `rax`. At th
 <summary><i>In this example, what do you think the value of the <code>ZF</code> flag will be?</i></summary>
 
 <br />
-<i>Since the result of the proceeding arithmetic operation was `0`, `ZF` is `1`.</i>
+<i>Since the result of the proceeding arithmetic operation was <code>0</code>, <code>ZF</code> is <code>1</code>.</i>
 </details>
+<br />
+
+---
 
 <br />
 
