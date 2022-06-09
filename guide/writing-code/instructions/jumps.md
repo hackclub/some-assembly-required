@@ -14,7 +14,7 @@ For example, let's say we're running an assembly program that has an instruction
 
 For x86-64 machines that are 64-bit, that would mean that each time an instruction finishes, the instruction pointer adds 8. This is because, as you may remember, 64 bits is 8 bytes (64 bits / 8 bits per byte = 8 bytes). Each memory address represents a byte of data. Each instruction is stored as 8 bytes.
 
-So let's say our first instruction is at memory address `0x00000001`. If we incremented to `0x00000002`, that would be **1 byte** of data, or **8 bits**. If we want to increment by an instruction's amount of data (**8 bytes**), we'd increment to `0x0000009`, since that's 8 bytes after `0x00000001`.
+So let's say our first instruction is at memory address `0x00000001`. If we incremented to `0x00000002`, that would be **1 byte** of data, or **8 bits**. If we want to increment by an instruction's amount of data (**8 bytes**), we'd increment to `0x00000009`, since that's 8 bytes after `0x00000001`.
 
 _Insert drawn diagram of a program, its memory address next to it, and showing the instruction pointer_
 
