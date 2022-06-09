@@ -1,4 +1,4 @@
-# Computers aren't smart
+# Computers aren't very smart
 
 <p align="center">
   <br />
