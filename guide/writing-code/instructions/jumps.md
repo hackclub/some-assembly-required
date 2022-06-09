@@ -58,7 +58,7 @@ In JavaScript and other high level languages, we'd traditionally use an `if` sta
 
 ### Flags
 
-In order to talk about conditional jumps, we have to talk about flags. Flags are another special register that we don't access directly, but get set automatically for us. Flags get set for many reasons, one of them being when instructions perform arithmetic and logical operations.
+In order to talk about conditional jumps, we have to talk about flags. Flags are another special register that we don't access directly, but gets automatically set for us. Flags get set for many reasons, one of them being when instructions perform arithmetic and logical operations.
 
 There are 5 flags on an x86-64 processor, but we'll be talking about the zero flag, or `ZF`.
 
