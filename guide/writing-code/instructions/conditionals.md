@@ -20,7 +20,7 @@ jl .jumpToHere
 add rbx, 1 ; We only get to this line if the jump is not executed
 ```
 
-Here, we check if the contents of `rax` are less than the contents of `rbx`.
+In this assembly code example, we check if the contents of `rax` are less than the contents of `rbx`.
 
 The `cmp` instruction compares two values, and records which one is greater (or if they're equal) in a special register called the `eflags` register. We'll get into the details of `eflags` soon, but for now, just remember that after running the `cmp` instruction, the result of the comparison is saved into `eflags`.
 
