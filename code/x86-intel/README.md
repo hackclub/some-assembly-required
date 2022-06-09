@@ -28,7 +28,7 @@ We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) progr
 For a mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
 1. Assemble it into an object file
 1. Generate our executable
-3. Run our executable
+1. Run our executable
 
 ### 1. Assemble our program into an object file
 ```
