@@ -4,16 +4,73 @@ Let's say you're writing some code, and you want some code to execute _only_ if 
 
 ```js
 // JavaScript
-if (a == 0) {
+if (a < b) {
   // do some code
 }
 ```
 
 In JavaScript and other high level languages, we'd traditionally use an `if` statement to conditionally execute some code. In assembly, we'd use conditional jumps.
 
+```asm
+mov rax, 3
+mov rbx, 1
+
+cmp rax, rbx
+jl .jumpToHere ; Jump if rax < rbx
+add rbx, 1 ; We only get to this line if rax >= rbx
+```
+
+Here, we check if the contents of `rax` are less than the contents of `rbx`.
+
+The `cmp` instruction compares two values, and records which one is greater (or if they're equal) in a special register called the `eflags` register. We'll get into the details of `eflags` soon, but for now, just remember that after running the `cmp` instruction, the result of the comparison is saved into `eflags`.
+
+In our example, we are comparing the value of `rax` with the value of `rbx`, and that gets saved into `eflags`.
+
+For our conditional jump, we are using `jl`, which stands for "Jump if Less Than". The `jl` instruction checks the `eflags` register. If `eflags` says that the first argument to `cmp` was less than the second (`rax < rdi`), it jumps to the specified label. If `rax >= rbx`, this instruction does nothing.
+
+Back to our example:
+
+```asm
+mov rax, 3
+mov rbx, 1
+
+cmp rax, rbx
+jl .jumpToHere
+add rbx, 1
+```
+<details>
+<summary><i>In this example, will the jump be executed?</i></summary>
+
+<br />
+<i>The jump <strong>will not</strong> be executed, because the value of `rax` (`3`) is greater than the value of `rbx` (`1`).</i>
+
+</details>
+
+<br />
+
+For another example:
+
+```asm
+mov rax, 1
+mov rbx, 3
+
+cmp rax, rbx
+jl .jumpToHere
+add rbx, 1
+```
+<details>
+<summary><i>In this example, will the jump be executed?</i></summary>
+
+<br />
+<i>The jump <strong>will</strong> be executed, because the value of `rax` (`1`) is less than the value of `rbx` (`3`).</i>
+
+</details>
+
+<br />
+
 ### Flags
 
-In order to talk about conditional jumps, we have to talk about flags. Flags are stored in another special register (`eflags`) that we don't access directly, but gets automatically set for us. Flags get set for many reasons, one of them being when instructions perform arithmetic and logical operations.
+In order to talk about conditional jumps, we should talk about flags. As we briefly mentioned, flags are stored in another special register, `eflags`, that we don't access directly. The flags get automatically set for us for many reasons, like when instructions perform arithmetic and logical operations, or when we use the `cmp` instruction.
 
 There are 5 flags on an x86-64 processor, but let's talk about the zero flag, or `ZF`.
 
