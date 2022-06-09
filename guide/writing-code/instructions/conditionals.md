@@ -38,7 +38,7 @@ mov rbx, 1
 
 cmp rax, rbx
 jl .jumpToHere
-add rbx, 1
+add rbx, 1 ; We only get to this line if the jump is not executed
 ```
 <details>
 <summary><i>In this example, will the jump be executed?</i></summary>
@@ -57,7 +57,7 @@ mov rbx, 3
 
 cmp rax, rbx
 jl .jumpToHere
-add rbx, 1
+add rbx, 1 ; We only get to this line if the jump is not executed
 ```
 <details>
 <summary><i>In this example, will the jump be executed?</i></summary>
