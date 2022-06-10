@@ -2,7 +2,7 @@
 
 Often in programming, we need to execute code in a loop, changing something each time the loop runs.
 
-Calculate power of $2^8$
+Calculate result of $2^8$
 
 $2^8$ is the number of possibilities you can store in a byte
 
@@ -10,10 +10,10 @@ $2^8$ is the number of possibilities you can store in a byte
 // JavaScript
 let base = 2;
 let exponent = 8;
-let power = 1;
+let result = 1;
 
 for (i = 0; i <= exponent; i++) {
-  power *= base
+  result *= base
 }
 ```
 
@@ -21,16 +21,17 @@ for (i = 0; i <= exponent; i++) {
 ; X86-64 Intel Syntax Assembly
 mov rax, 8 ; our exponent
 mov rbx, 2 ; our base
-mov rcx, 1 ; our power
-jmp .calculatePossibilities
+mov rcx, 1 ; our result
+mov rdx, 0 ; our counter
+jmp .calculatePower ; we can skip this instruction if we want since the loop starts on the next line
 
-.calculatePossibilities
-  mov rbx, rdx ; copy our base over so we don't lose it
-  mul rdx, rax ; multiply our base by our exponent, save into rdx
-  add rcx, rdx ; add the power of our multiplication to our power counter
-  dec rax ; decrement our exponent
-  jnz .calculatePossibilities; jump back to the beginning if our exponent is not 0
-  ret ; if our exponent is 0, return back to the original jump, outside of the loop
+.calculatePower
+  mul rcx, rax       ; multiply our result by our base, save into rcx
+  inc rax            ; increment counter
+  cmp rdx, rax       ; compare our counter with our exponent
+  jl .calculatePower ; jump to the beginning of the loop if rdx < rax, since we still have more iterations to go
+
+; once we've made it here, rcx contains our result (rbx^rax)!
 ```
 
 <br />
