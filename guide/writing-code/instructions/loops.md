@@ -15,7 +15,7 @@ So what would that look like in JavaScript?
 // JavaScript
 let base = 2;
 let exponent = 8;
-let result = 1;
+let result = 1; # since our index is starting at 0, we start our result at 2^0, which is 1
 
 for (i = 0; i < exponent; i++) {
   result *= base
@@ -34,25 +34,33 @@ Inside the loop, we take the result we're calculating, and we multiply it by our
 1. `result = 64 * 2`, `result` is now `128`
 1. `result = 128 * 2`, `result` is now `256`
 
-So, a byte can hold 256 unique values!
+So, a byte can hold 256 unique values! Neat! Now let's do this in assembly.
 
-
+Assembly doesn't have `for` loops, but it _does_ have conditional jumps, as we've learned. With a little setup, we can use a conditional jump in the exact same way we use a for loop.
 
 ```asm
 ; X86-64 Intel Syntax Assembly
 mov rax, 8 ; our exponent
 mov rbx, 2 ; our base
-mov rcx, 1 ; our result
-mov rdx, 0 ; our counter
+mov rcx, 1 ; our result. since our index is starting at 0, we start our result at 2^0, which is 1
+mov rdx, 0 ; our index
 
 .calculatePower
   mul rcx, rax       ; multiply our result by our base, save into rcx
-  inc rax            ; increment counter
-  cmp rdx, rax       ; compare our counter with our exponent
+  inc rax            ; increment index
+  cmp rdx, rax       ; compare our index with our exponent
   jl .calculatePower ; jump to the beginning of the loop if rdx < rax, since we still have more iterations to go
 
 ; once we've made it here, rcx contains our result (rbx^rax)!
 ```
+
+See what we did there?
+
+First we set up our "variables", just like in our JavaScript example. We have one extra variable, `index`. The JavaScript example also defines an `index`, but inside of the `for` loop.
+
+Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like the `for` loop. Then, we manually increment our `index`, which is happening in the JavaScript `for` loop with `i++`.
+
+Now we compare our index with our exponent, which in the JavaScript example is `i < exponent`. If the `index` is less than (`jl`) the `exponent`, we jump back to `.calculatePower`. Wooooo!
 
 <br />
 
