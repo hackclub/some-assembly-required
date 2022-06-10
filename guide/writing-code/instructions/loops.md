@@ -56,11 +56,11 @@ mov rdx, 0 ; our counter
 
 See what we did there?
 
-First we set up our "variables", just like in our JavaScript example. It appears that we have one extra variable, `counter`, but the JavaScript example also defines a `counter` inside the header of the `for` loop.
+First we set up our "variables", just like in our JavaScript example. It appears that we have one extra variable, `rdx` (our counter), but the JavaScript example also defines a `counter` inside the header of the `for` loop.
 
-Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like the `for` loop. Then, we manually increment our `counter`, which is happening in the JavaScript `for` loop with `i++`.
+Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like in the JavaScript `for` loop. Then, we manually increment our `rdx` counter, which is happening in the JavaScript `for` loop header with `i++`.
 
-Now we compare our counter with our exponent, which in the JavaScript example is `i < exponent`. If the `counter` is less than (`jl`) the `exponent`, we jump back to `.calculatePower`. Wooooo!
+Now we `cmp` compare our `rdx` counter with our `rax` exponent, which in the JavaScript example is `i < exponent`. As we recently learned, this sets our zero flag in the eflags register, which our conditional jumps then can look at. So if our `rdx` counter is less than (`jl`) the `rax` exponent, we jump back to `.calculatePower`. Wooooo!
 
 <br />
 
