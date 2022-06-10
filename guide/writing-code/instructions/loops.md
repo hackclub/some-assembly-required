@@ -13,16 +13,16 @@ So what would that look like in JavaScript?
 
 ```js
 // JavaScript
-let base = 2;
-let exponent = 8;
-let result = 1; # since our index is starting at 0, we start our result at 2^0, which is 1
+const base = 2;
+const exponent = 8;
+let result = 1; # since our counter is starting at 0, we start our result at 2^0, which is 1
 
-for (i = 0; i < exponent; i++) {
+for (let counter = 0; counter < exponent; counter++) {
   result *= base
 }
 ```
 
-We use a [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to make this work, which sets an index variable to `0`. While our index is less than our exponent (`8`), we continue looping. On each loop, we increment the index by `1`.
+We use a [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to make this work, which sets an counter variable to `0`. While our counter is less than our exponent (`8`), we continue looping. On each loop, we increment the counter by `1`.
 
 Inside the loop, we take the result we're calculating, and we multiply it by our base (`2`). That would look like, on each loop:
 
@@ -42,13 +42,13 @@ Assembly doesn't have `for` loops, but it _does_ have conditional jumps, as we'v
 ; X86-64 Intel Syntax Assembly
 mov rax, 8 ; our exponent
 mov rbx, 2 ; our base
-mov rcx, 1 ; our result. since our index is starting at 0, we start our result at 2^0, which is 1
-mov rdx, 0 ; our index
+mov rcx, 1 ; our result. since our counter is starting at 0, we start our result at 2^0, which is 1
+mov rdx, 0 ; our counter
 
 .calculatePower
   mul rcx, rax       ; multiply our result by our base, save into rcx
-  inc rax            ; increment index
-  cmp rdx, rax       ; compare our index with our exponent
+  inc rax            ; increment counter
+  cmp rdx, rax       ; compare our counter with our exponent
   jl .calculatePower ; jump to the beginning of the loop if rdx < rax, since we still have more iterations to go
 
 ; once we've made it here, rcx contains our result (rbx^rax)!
@@ -56,11 +56,11 @@ mov rdx, 0 ; our index
 
 See what we did there?
 
-First we set up our "variables", just like in our JavaScript example. We have one extra variable, `index`. The JavaScript example also defines an `index`, but inside of the `for` loop.
+First we set up our "variables", just like in our JavaScript example. We have one extra variable, `counter`. The JavaScript example also defines an `counter`, but inside of the `for` loop.
 
-Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like the `for` loop. Then, we manually increment our `index`, which is happening in the JavaScript `for` loop with `i++`.
+Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like the `for` loop. Then, we manually increment our `counter`, which is happening in the JavaScript `for` loop with `i++`.
 
-Now we compare our index with our exponent, which in the JavaScript example is `i < exponent`. If the `index` is less than (`jl`) the `exponent`, we jump back to `.calculatePower`. Wooooo!
+Now we compare our counter with our exponent, which in the JavaScript example is `i < exponent`. If the `counter` is less than (`jl`) the `exponent`, we jump back to `.calculatePower`. Wooooo!
 
 <br />
 
