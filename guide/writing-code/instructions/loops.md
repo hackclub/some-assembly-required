@@ -3,6 +3,7 @@
 Often in programming, we need to execute code in a loop, changing something each time the loop runs.
 
 Calculate power of $2^8$
+
 $2^8$ is the number of possibilities you can store in a byte
 
 ```js
