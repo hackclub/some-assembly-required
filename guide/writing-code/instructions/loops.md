@@ -56,7 +56,7 @@ mov rdx, 0 ; our counter
 
 See what we did there?
 
-First we set up our "variables", just like in our JavaScript example. We have one extra variable, `counter`. The JavaScript example also defines an `counter`, but inside of the `for` loop.
+First we set up our "variables", just like in our JavaScript example. It appears that we have one extra variable, `counter`, but the JavaScript example also defines a `counter` inside the header of the `for` loop.
 
 Next, we made a label, which we will be able to jump back to. We do our multiplication math, just like the `for` loop. Then, we manually increment our `counter`, which is happening in the JavaScript `for` loop with `i++`.
 
