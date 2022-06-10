@@ -5,8 +5,8 @@ Often in programming, we need to execute the same code over a set of values, or 
 This is best explained with an example. Like, what if we wanted to calculate the amount of possible numbers we could store in a **byte**?
 
 As a reminder:
-  - a byte is 8 bits
   - a bit has 2 possibilities, `1` or `0`
+  - a byte is 8 bits
   - given that, $2^8$ is the number of possibilities you can store in a byte
 
 So what would that look like in JavaScript?
