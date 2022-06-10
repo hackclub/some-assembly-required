@@ -23,7 +23,6 @@ mov rax, 8 ; our exponent
 mov rbx, 2 ; our base
 mov rcx, 1 ; our result
 mov rdx, 0 ; our counter
-jmp .calculatePower ; we can skip this instruction if we want since the loop starts on the next line
 
 .calculatePower
   mul rcx, rax       ; multiply our result by our base, save into rcx
