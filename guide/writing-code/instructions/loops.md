@@ -26,15 +26,17 @@ We use a [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Gu
 
 Inside the loop, we take the result we're calculating, and we multiply it by our base (`2`). That would look like, on each loop:
 
-1. `result = 1 * 2`, `result` is now 2
-1. `result = 2 * 2`, `result` is now 4
-1. `result = 4 * 2`, `result` is now 8
-1. `result = 16 * 2`, `result` is now 16
-1. `result = 32 * 2`, `result` is now 64
-1. `result = 64 * 2`, `result` is now 128
-1. `result = 128 * 2`, `result` is now 256
+1. `result = 1 * 2`, `result` is now `2`
+1. `result = 2 * 2`, `result` is now `4`
+1. `result = 4 * 2`, `result` is now `8`
+1. `result = 16 * 2`, `result` is now `16`
+1. `result = 32 * 2`, `result` is now `64`
+1. `result = 64 * 2`, `result` is now `128`
+1. `result = 128 * 2`, `result` is now `256`
 
 So, a byte can hold 256 unique values!
+
+
 
 ```asm
 ; X86-64 Intel Syntax Assembly
