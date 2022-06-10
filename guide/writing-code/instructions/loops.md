@@ -2,7 +2,7 @@
 
 Often in programming, we need to execute the same code over a set of values, or in a **loop**, changing something each time the loop runs.
 
-For example, what if we wanted to calculate the amount of possible numbers we could store in a **byte**?
+This is best explained with an example. Like, what if we wanted to calculate the amount of possible numbers we could store in a **byte**?
 
 As a reminder:
   - a byte is 8 bits
