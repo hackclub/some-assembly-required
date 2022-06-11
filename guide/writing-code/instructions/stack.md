@@ -125,7 +125,7 @@ function fizz() {
 
 For example, if the function `fizz` calls function `buzz``, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned* is our return value register, `rax`.
 
-That means that the **callee** (`fixx`) can freely use `rax`, overwriting existing values without taking any precautions.
+That means that the **callee** (`fizz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
 However, if `rax` holds a value the **caller** (`buzz`) wants to retain, the **caller** (`buzz`) must copy the value into another register before making a `call`.
 
