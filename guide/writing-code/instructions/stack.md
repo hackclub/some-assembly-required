@@ -64,6 +64,45 @@ pop rax
 
 ## Conventions
 
+When I was learning this, I was like wow - we have a lot of places we can save things! We have a bunch of general-purpose registers we can use, and we have access to the stack. How do I know what to choose and when?
+
+Every assembly language has its own set of **conventions** set up that dictate where a program expects things to be. Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
+
+```js
+const y = getSlopeIntercept(3, 5, 2);
+
+function getSlopeIntercept(m, x, b) {
+    return ( m * x ) + b;
+}
+```
+
+This code has a few things going on! We have three arguments, and we have a return value.
+
+So far, we've been throwing everything into random general purpose registers (usually `rax` - `rdx`).
+
+```asm
+; arguments are pushed from left to right
+push 3
+push 5
+push 2
+
+call .getSlopeIntercept ; after this call, rax will contain our return value (17)
+
+.getSlopeIntercept:
+  ; arguments are popped in reverse order, from right to left.
+  pop rdx ; b
+  pop rcx ; x
+  pop rbx ; m
+
+  mul rbx, rcx
+  add rbx, rdx
+
+  ; return values go into rax
+  mov rax, rbx
+
+  ret
+```
+
 ---
 
 <br />
