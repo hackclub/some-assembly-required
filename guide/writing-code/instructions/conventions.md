@@ -97,6 +97,8 @@ Let's take the **callee-owned** register `rax` for example, which is traditional
   ret
 ```
 
+In contrast,
+
 - If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
 
 - If a **callee** wants to use a **callee-owned register**, they are free to overwrite whatever value is stored in it. If a **caller** stores an important value in a callee-owned register, they're responsible for saving that value on the stack before calling any functions, and they should pop that value off the stack and back into the register after the function they called ends.
