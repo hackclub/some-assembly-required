@@ -37,7 +37,20 @@ call .doSomethingElse
 
 We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in functions, but we do have registers we can use! So here, we're using `rax` to hold our "return" value from each "function".
 
-TODO: talk about the instruction pointer, talk about "conventions" a little bit - that'll introduce the stack
+Our first instruction is the `call` instruction. We're calling the `.addNumbers` label, which jumps us down to the first instruction inside of the `.addNumbers` label, `move rax, 3`.
+
+Remember our **instruction pointer**? As a reminder, The CPU keeps track of which instruction it's fetching data for with a special register called the instruction pointer. The instruction pointer contains the memory address of the instruction currently being executed.
+
+When we use the `call` instruction, it's similar to a jump (`jmp`) instruction, but it's actually executing multiple instructions underneath:
+
+1. It executes an instruction called a `push` with what would be the next instruction onto something called the **stack**
+1. It then updates the instruction pointer to point at the memory address of the first instruction inside of the `.addNumbers` label
+
+Let's hand-wave the `push`ing onto stack for now, as we'll talk about that in the next section. What you need to know right now is that it's saving where we currently are in memory for later. That way, we can get back to `ret`.
+
+At the end of our "function", we call `ret`, short for return. If you haven't guessed already, this returns us back to the next instruction after our original `call`!
+
+It does this by `pop`ing our previous memory address off of the stack and into the instruction pointer.
 
 <br />
 
