@@ -29,7 +29,7 @@ Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackover
 
 ---
 
-<a href="/guide/writing-code/functions.md">
+<a href="/guide/writing-code/instructions/functions.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
     <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
