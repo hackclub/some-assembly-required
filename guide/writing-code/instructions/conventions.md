@@ -76,13 +76,11 @@ General purpose registers have a convention where they're marked as **caller-own
 
 Let's take this code for example, where the function `fizz` calls function `buzz`. In this case, we refer to `fizz` as the **caller** and `buzz` as the **callee**. With this in mind:
 
-- If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
+- If a **caller** wants to use a **caller-owned register**, it's able to do so freely!
 
-- If a **callee** wants to use a **callee-owned register**, they are free to overwrite whatever value is stored in it. If a **caller** stores an important value in a callee-owned register, they're responsible for saving that value on the stack before calling any functions, and they should pop that value off the stack and back into the register after the function they called ends.
+- If a **caller** wants to use a **callee-owned register**, they are responsible for saving its value by pushing it onto the stack before calling the callee. Otherwise, this register can be overridden by the callee, which will cause the caller to lose the value.
 
-One register that is **callee-owned** is our return value register, `rax`. That means that the **callee** (`buzz`) can freely use `rax`, overwriting existing values without taking any precautions.
-
-However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **caller** (`fizz`) must copy the value into another register before making a `call`.
+Let's take the **callee-owned** register `rax` for example, which is traditionally used for return values:
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -91,7 +89,7 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
   push rax ; Save rax value since it's callee-owned and .buzz can overwrite it
   call .buzz
   mov rbx, rax ; Save .buzz return value into new register
-  pop rax ; Retrieve our rax value that we pushed on the stack previously
+  pop rax ; Retrieve our rax value that we pushed on the stack previously to return
   ret
 
 .buzz ; callee
@@ -99,7 +97,11 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
   ret
 ```
 
-In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** register, it must first preserve its value, and then restore it at the end before exiting the `call`. Let's take the **caller-owned** register `rbx`, for example:
+- If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
+
+- If a **callee** wants to use a **callee-owned register**, they are free to overwrite whatever value is stored in it. If a **caller** stores an important value in a callee-owned register, they're responsible for saving that value on the stack before calling any functions, and they should pop that value off the stack and back into the register after the function they called ends.
+
+Let's take the **caller-owned** register `rbx`, for example:
 
 ```asm
 ; X86-64 Intel Syntax Assembly
