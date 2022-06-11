@@ -19,6 +19,22 @@ Need something at the bottom? Too bad! You gotta go through the top.
 </p>
 <br />
 
+In code, this looks like:
+
+```asm
+; X86-64 Intel Syntax Assembly
+push rax
+push rbx ; rbx is above rax
+push rcx ; rcx is above rbx and rax
+push rdx ; rdx is above rcx, rbx, and rax
+
+; Pop them off in reverse
+pop rdx ; rdx is at the top of the stack, pop it off first
+pop rcx
+pop rbx
+pop rax
+```
+
 The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you'd be correct! However, we have a limited number of registers. Let's say we are doing some complicated math, and we need to store a few values away for a while while we work through a problem that uses different values. We can just `push` those values to save on the stack, and then when we're done with that math, we can `pop` them off and continue like nothing ever happened. Very convenient!
 
 So now that we know what the stack is, let's talk about how it's working underneath. We have a special area of the memory sectioned off just for the values in the stack. The stack is accessed through a special register called the **stack pointer** (`%rsp`), which keeps track of the memory address that points to the top of the stack. So every time we `push` onto the stack, it automatically increments the pointer. Every time we `pop` off of the stack, it automatically decrements it.
