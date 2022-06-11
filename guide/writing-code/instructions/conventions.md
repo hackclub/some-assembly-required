@@ -91,7 +91,7 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
   pop rax ; Retrieve our rax value that we pushed on the stack previously
 
 .buzz ; callee
-  mov rax, 1 ; Use our callee-owned rax register to return a value
+  mov rax, 2 ; Use our callee-owned rax register to return a value
   ret
 ```
 
