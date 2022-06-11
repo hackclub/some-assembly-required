@@ -78,9 +78,6 @@ function fizz() { // caller
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
   call .buzz ; callee
-
-.buzz
-  ; insert code here
 ```
 
 Let's take this code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned** is our return value register, `rax`.
