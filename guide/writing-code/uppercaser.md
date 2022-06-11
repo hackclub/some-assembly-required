@@ -1,6 +1,8 @@
 # Uppercaser
 
-Welcome to the Uppercaser program, the first program I've written in assembly that actually does something (other than [hello world](/code/x86-intel/hello-world/hello-world-mac.asm)).
+WELCOME TO THE UPPERCASER PROGRAM!!!!!
+
+It's the first program I've written in assembly that actually does something (other than [hello world](/code/x86-intel/hello-world/hello-world-mac.asm)).
 
 Uppercaser takes command line arguments that you pass it, and uppercases them. Very nice!
 
