@@ -70,6 +70,8 @@ pop rax
 
 ---
 
+<br />
+
 ## Conventions
 
 When I was learning this, I was like wow - we have a lot of places we can save things! We have a bunch of general-purpose registers we can use, and we have access to the stack. How do I know what to choose and when?
