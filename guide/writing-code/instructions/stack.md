@@ -114,6 +114,23 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 
 If this is overwhelming, that's totally OK! I am still overwhelmed by it. That being said, you don't have to memorize or even know any of these conventions to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
 
+## Caller-owned vs Callee-owned
+General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**.
+
+```JavaScript
+function fizz() {
+  buzz();
+}
+```
+
+For example, if the function `fizz` calls function `buzz``, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned* is our return value register, `rax`.
+
+That means that the **callee** (`fixx`) can freely use `rax`, overwriting existing values without taking any precautions.
+
+However, if `rax` holds a value the **caller** (`buzz`) wants to retain, the **caller** (`buzz`) must copy the value into another register before making a `call`.
+
+In contrast, if the **callee** (`fizz`) intends to use a **caller-owned** register, it must first preserve its value, and then restore it at the end before exiting the `call`.
+
 ---
 
 <br />
