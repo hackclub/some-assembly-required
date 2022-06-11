@@ -6,7 +6,7 @@ Uppercaser takes command line arguments that you pass it, and uppercases them. V
 
 <p align="center">
   <br />
-  <img height="150" src="https://cloud-ildvdydh1-hack-club-bot.vercel.app/0screen_shot_2022-06-11_at_5.57.09_pm.png">
+  <img height="150" src="https://cloud-b8fumzsy2-hack-club-bot.vercel.app/0uppercaser.png">
 </p>
 
 <br />
