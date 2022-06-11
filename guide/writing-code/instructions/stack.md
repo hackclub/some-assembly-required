@@ -62,6 +62,16 @@ pop rcx ; we have to pop rcx first, since we pushed it last. Remember, the last 
 pop rax
 ```
 
+---
+
+<br />
+
+> #### Sidenote:
+>
+> Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It's named after this stack right here! You don't need to know this for the purposes of this guide, but while we're here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+
+<br />
+
 ## Conventions
 
 When I was learning this, I was like wow - we have a lot of places we can save things! We have a bunch of general-purpose registers we can use, and we have access to the stack. How do I know what to choose and when?
@@ -85,6 +95,8 @@ So far, we've been throwing everything into random general purpose registers (us
 1. Arguments get popped off the stack and into registers to access inside of our "function"
 1. "Return" values get saved in `rax`
 1. General purpose registers can be "callee-owned" or "caller-owned" (more on this later)
+
+<br />
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -131,15 +143,9 @@ In contrast, if the **callee** (`fizz`) intends to use a **caller-owned** regist
 
 ---
 
-If this is overwhelming, that's totally OK! I am still overwhelmed by it. That being said, you don't have to memorize or even know any of these conventions to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
-
----
-
 <br />
 
-> #### Sidenote:
->
-> Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It's named after this stack right here! You don't need to know this for the purposes of this guide, but while we're here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
+If this is overwhelming, that's totally OK! I am still overwhelmed by it. That being said, you don't have to memorize or even know any of these conventions to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
 
 <br />
 
