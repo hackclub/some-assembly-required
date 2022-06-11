@@ -35,7 +35,7 @@ call .doSomethingElse
   ret
 ```
 
-We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in functions, but we do have registers we can use! So here, we're using `rax` to hold our "return" value from each "function".
+We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in functions, but we do have registers we can use! So here, we're using `rax` to hold our ["return" value](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values) from each "function".
 
 Our first instruction is the `call` instruction. We're calling the `.addNumbers` label, which jumps us down to the first instruction inside of the `.addNumbers` label, `move rax, 3`.
 
