@@ -126,6 +126,12 @@ Let's take the **caller-owned** register `rbx`, for example:
 
 If this is overwhelming, that's totally OK! I am still overwhelmed by it. That being said, you don't have to memorize or even know any of these conventions to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
 
+It's important to note that **none of these conventions are actually enforced anywhere**. Nothing is stopping your assembly code from modifying any of the general purpose registers, and sometimes breaking these conventions can allow you to write faster programs that can do the same work in fewer instructions. It's one of the things that can make assembly even faster than C!
+
+The C compiler follows these conventions _all_ the time, even when it could safely skip them to make things faster. You're a human being, which means you're much smarter than any compiler, so you can identify places where it's safe to break these conventions in order to save unnecessary instructions, and end up writing code that's faster than anything a compiler could write. Isn't that cool?
+
+However, if you break these conventions too often, you'll end up overwriting values by mistake and causing bugs that are hard to track down. If you follow these conventions the majority of the time, your assembly code will have fewer bugs and will be much easier to follow.
+
 <br />
 
 ---
