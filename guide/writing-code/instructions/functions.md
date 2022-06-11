@@ -16,7 +16,7 @@ function doSomethingElse(arg) {
 }
 ```
 
-In Javascript, we could do something like we have here - call a function, and then once it's finished, go back to where that function finished and do other code.
+In Javascript, we could do something like we have here. We call a function, and then once it's finished, it automatically knows to go back to where that function was called, and continue executing the program.
 
 In assembly, we don't have actual functions, but we can simulate them pretty well - enter the `call` and `ret` instructions.
 
