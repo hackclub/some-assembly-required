@@ -19,7 +19,7 @@ Need something at the bottom? Too bad! You gotta go through the top.
 </p>
 <br />
 
-The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you'd be correct! However, we have a limited number of registers. Let's say we are doing some complicated math, and we need to store a few amounts away for a while while we work through a problem. We can just push those values to save on the stack, and then when we're done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
+The purpose of the stack is to store things for later. Now you might say, hey wait a minute, we use registers for that! And you'd be correct! However, we have a limited number of registers. Let's say we are doing some complicated math, and we need to store a few values away for a while while we work through a problem that uses different values. We can just push those values to save on the stack, and then when we're done with that math, we can pop them off and continue like nothing ever happened. Very convenient!
 
 So now that we know about the stack, the **stack pointer** (`%rsp`) is a special register the CPU has that keeps track of where the top of the stack is. So every time we push onto the stack, it automatically increments the pointer. Every time we pop off of the stack, it automatically decrements it. This pointer is actually pointing to the address of where this value lives in memory, since we have a special area of the memory sectioned off just for our stack.
 
