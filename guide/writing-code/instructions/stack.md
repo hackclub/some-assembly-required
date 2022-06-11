@@ -80,6 +80,18 @@ When I was learning this, I was like wow - we have a lot of places we can save t
 
 Every assembly language has its own set of conventions that dictate where a program expects things to be. Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
 
+<p align="center">
+  <br />
+  <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
+  <br />
+</p>
+<p align="center">
+  <span>
+    $y = mx + b$
+  </span>
+</p>
+<br />
+
 ```js
 // JavaScript
 const y = getSlopeIntercept(3, 5, 2);
