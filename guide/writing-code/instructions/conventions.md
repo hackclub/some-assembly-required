@@ -89,6 +89,7 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
   call .buzz
   mov rbx, rax ; Save .buzz return value into new register
   pop rax ; Retrieve our rax value that we pushed on the stack previously
+  ret
 
 .buzz ; callee
   mov rax, 2 ; Use our callee-owned rax register to return a value
@@ -103,6 +104,7 @@ In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** regist
   mov rbx, 1 ; Use a caller-owned register to store a value
   call .buzz
   add rbx, 3 ; We can expect our previous rbx value to be there and do whatever we want with it
+  ret
 
 .buzz ; callee
   push rbx ; Save caller-owned register value so we don't overwrite it
