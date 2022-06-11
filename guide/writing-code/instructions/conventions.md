@@ -69,8 +69,8 @@ General purpose registers have a convention where they're marked as **caller-own
 
 ```JavaScript
 // JavaScript
-function fizz() {
-  buzz();
+function fizz() { // caller
+  buzz(); // callee
 }
 ```
 
