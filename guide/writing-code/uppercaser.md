@@ -1,6 +1,8 @@
 # Uppercaser
 
-TODO: Explain command line arguments, argc & argv[][], syscalls, anatomy of a program
+Welcome to the Uppercaser program, the first program I've written in assembly that actually does something (other than [hello world](/code/x86-intel/hello-world/hello-world-mac.asm)). Seeing all of this code may make you want to close this page. Don't panic! I promise you that you have the tools to understand this program now. I also think it's ok to be a little confused while you're going through it - just stick with it, get out a pencil and paper if you need to, and read all of the comments!
+
+For more information about x86-64 programs, check out the [README.md](/code/x86-intel/).
 
 ```asm
 ; ==================================================================================
