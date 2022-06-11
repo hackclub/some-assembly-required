@@ -74,8 +74,6 @@ pop rax
 
 <br />
 
----
-
 <a href="/guide/writing-code/instructions/functions.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
