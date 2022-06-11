@@ -65,7 +65,7 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 ```
 
 ## Caller-owned vs Callee-owned
-General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**.
+General purpose registers have a convention where they're delegated as **caller-owned** or **callee-owned**.
 
 ```asm
 ; X86-64 Intel Syntax Assembly
