@@ -112,6 +112,8 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
   ret
 ```
 
+You don't have to memorize or even know any of this to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
+
 ---
 
 <br />
