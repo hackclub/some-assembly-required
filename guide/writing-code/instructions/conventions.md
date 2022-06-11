@@ -74,7 +74,7 @@ function fizz() {
 }
 ```
 
-Let's take this JavaScript code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned* is our return value register, `rax`.
+Let's take this JavaScript code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned** is our return value register, `rax`.
 
 That means that the **callee** (`fizz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
