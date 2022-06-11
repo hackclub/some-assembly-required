@@ -52,6 +52,8 @@ At the end of our "function", we call `ret`, short for return. If you haven't gu
 
 It does this by `pop`ing our previous memory address off of the stack and into the instruction pointer.
 
+Now, what the heck is a stack?
+
 <br />
 
 ---
