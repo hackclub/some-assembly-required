@@ -85,12 +85,13 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
   push rax ; Save rax value since it's callee-owned and .buzz can overwrite it
-  call .buzz ; callee
+  call .buzz
   mov rbx, rax ; Save .buzz return value into new register
   pop rax ; Retrieve our rax value that we pushed on the stack previously
 
-.buzz
+.buzz ; callee
   mov rax, 1 ; Use our callee-owned rax register to return a value
+  ret
 ```
 
 In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** register, it must first preserve its value, and then restore it at the end before exiting the `call`. Let's take the **caller-owned** register `rbx`, for example:
@@ -99,13 +100,14 @@ In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** regist
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
   mov rbx, 1 ; Use a caller-owned register to store a value
-  call .buzz ; callee
+  call .buzz
   add rbx, 2 ; We can expect our previous rbx value to be there and do whatever we want with it
 
-.buzz
+.buzz ; callee
   push rbx ; Save caller-owned register value so we don't overwrite it
   mov rbx, 1 ; Do whatever code we want to do with rbx, this example is contrived
   pop rbx ; Return caller-owned register value for caller to use
+  ret
 ```
 
 ---
