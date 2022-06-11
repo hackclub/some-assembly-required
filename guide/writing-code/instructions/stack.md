@@ -64,8 +64,6 @@ pop rax
 
 ---
 
-<br />
-
 > #### Sidenote:
 >
 > Ever heard of a stack overflow? Or perhaps [stackoverflow.com](https://stackoverflow.com/)? It's named after this stack right here! You don't need to know this for the purposes of this guide, but while we're here, an overflow can happen for many reasons. One reason could be caused by accidentally writing an infinite loop, where we have a loop somewhere that never gets exited, and let's say that loop adds things onto the stack. Eventually, our stack runs out of room, and bam! Stack overflow error.
