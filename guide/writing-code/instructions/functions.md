@@ -43,14 +43,14 @@ Remember our **instruction pointer**? As a reminder, it's a register that the CP
 
 When we use the `call` instruction, it's similar to a jump (`jmp`) instruction, but it's actually doing multiple things underneath:
 
-1. It `push`es what would have been the next instruction onto something called the **stack**.
+1. It **pushes** what would have been the next instruction onto something called the **stack**.
 1. It then updates the instruction pointer to point at the memory address of the first instruction inside of the `.addNumbers` label.
 
-Let's hand-wave the `push`ing onto the stack for now, as we'll talk about that in the next section. What you need to know right now is that it is saving where we currently are in memory for later.
+Let's hand-wave the pushing onto the stack for now, as we'll talk about that in the next section. What you need to know right now is that it is saving where we currently are in memory for later.
 
 At the end of our "function", we call `ret`, short for return. If you haven't guessed already, this returns us back to the next instruction after our original `call`!
 
-It does this by `pop`ing our previous memory address off of the stack and into the instruction pointer.
+It does this by **popping** our previous memory address off of the stack and into the instruction pointer.
 
 Now, what the heck is this pushing and popping on the stack?
 
