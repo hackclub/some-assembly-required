@@ -23,6 +23,48 @@ The purpose of the stack is to store things for later. Now you might say, hey wa
 
 So now that we know what the stack is, let's talk about how it's working underneath. We have a special area of the memory sectioned off just for the values in the stack. The stack is accessed through a special register called the **stack pointer** (`%rsp`), which keeps track of the memory address that points to the top of the stack. So every time we `push` onto the stack, it automatically increments the pointer. Every time we `pop` off of the stack, it automatically decrements it.
 
+```asm
+; X86-64 Intel Syntax Assembly
+
+mov rax, 1
+mov rbx, 2
+mov rcx, 3
+mov rdx, 4
+
+; we want to calculate the sum of rax and rbx, but we don't want to lose the
+; value that used to be stored in rax, so we push it onto the stack first.
+push rax
+add rax, rbx
+
+; similarly, we want to calculate the sum of rcx and rdx without losing the
+; value that used to be stored in rcx.
+push rcx
+add rcx, rdx
+
+; at this point, the values in our registers look like:
+;
+; rax: 3 (1+2)
+; rbx: 2
+; rcx: 7 (3+4)
+; rdx: 4
+;
+; and our stack looks like:
+;
+; 3 <--- the top of the stack
+; 1
+
+; ~~~
+; imagine we do some cool stuff with the newly-calculated values in rax and rcx here.
+; ~~~
+
+; now that we're done working with these sums, let's restore rax and rcx to their old
+; values, maybe so we can use them again for future calculations.
+pop rcx ; we have to pop rcx first, since we pushed it last. Remember, the last item added to a stack is the first item that gets removed!
+pop rax
+```
+
+## Conventions
+
 ---
 
 <br />
