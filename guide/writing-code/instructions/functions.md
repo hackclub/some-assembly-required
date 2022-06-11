@@ -35,9 +35,9 @@ call .doSomethingElse
   ret
 ```
 
-We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in functions, but we do have registers we can use! So here, we're using `rax` to hold our ["return" value](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values) from each "function".
+We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in JavaScript functions, but we do have registers we can use! So here, we're using `rax` to hold our ["return" value](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values) from each "function".
 
-Our first instruction is the `call` instruction. We're calling the `.addNumbers` label, which jumps us down to the first instruction inside of the `.addNumbers` label, `move rax, 3`.
+Our first instruction is the `call` instruction. We're calling the `.addNumbers` label, which jumps us down to the first instruction inside of the `.addNumbers` label, `mov rax, 3`.
 
 Remember our **instruction pointer**? As a reminder, it's a register that the CPU uses to keep track of which instruction it's fetching data for. The instruction pointer contains the memory address of the instruction currently being executed.
 
