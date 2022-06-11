@@ -67,14 +67,26 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 ## Caller-owned vs Callee-owned
 General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**.
 
-```JavaScript
+```asm
 // JavaScript
 function fizz() { // caller
   buzz(); // callee
 }
 ```
 
-Let's take this JavaScript code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned** is our return value register, `rax`.
+```asm
+; X86-64 Intel Syntax Assembly
+
+call .fizz
+
+.fizz ; caller
+  call .buzz ; callee
+
+.buzz
+  ; insert code here
+```
+
+Let's take this code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned** is our return value register, `rax`.
 
 That means that the **callee** (`fizz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
