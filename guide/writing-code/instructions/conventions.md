@@ -76,8 +76,6 @@ function fizz() { // caller
 
 ```asm
 ; X86-64 Intel Syntax Assembly
-call .fizz
-
 .fizz ; caller
   call .buzz ; callee
 
