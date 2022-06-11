@@ -4,7 +4,7 @@ When I was learning this, I was like wow - we have a lot of places we can save t
 
 Every assembly language has its own set of **conventions** that dictate where a program expects things to be.
 
-Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
+Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation that we used earlier.
 
 <p align="center">
   <br />
