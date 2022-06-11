@@ -87,8 +87,6 @@ In contrast, if the **callee** (`fizz`) intends to use a **caller-owned** regist
 
 If this is overwhelming, that's totally OK! I am still overwhelmed by it. That being said, you don't have to memorize or even know any of these conventions to write assembly. These are just good things to keep in mind if you're writing larger assembly programs, or you're collaborating with other people on writing assembly. When I was learning, I just used whatever registers I wanted, which is totally valid for you to do as well!
 
-<br />
-
 ---
 
 <a href="/guide/writing-code/instructions/stack.md">
