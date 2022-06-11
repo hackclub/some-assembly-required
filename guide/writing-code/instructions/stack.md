@@ -66,7 +66,7 @@ pop rax
 
 When I was learning this, I was like wow - we have a lot of places we can save things! We have a bunch of general-purpose registers we can use, and we have access to the stack. How do I know what to choose and when?
 
-Every assembly language has its own set of **conventions** set up that dictate where a program expects things to be. Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
+Every assembly language has its own set of conventions set up that dictate where a program expects things to be. Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
 
 ```js
 const y = getSlopeIntercept(3, 5, 2);
