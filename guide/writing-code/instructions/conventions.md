@@ -65,7 +65,8 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 ```
 
 ## Caller-owned vs Callee-owned
-General purpose registers have a convention where they're delegated as **caller-owned** or **callee-owned**.
+
+General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**. This refers to whether or not the caller is expected to overwrite the values in a given register.
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -73,11 +74,13 @@ General purpose registers have a convention where they're delegated as **caller-
   call .buzz ; callee
 ```
 
-Let's take this code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**.
+Let's take this code for example, where the function `fizz` calls function `buzz`. In this case, we refer to `fizz` as the **caller** and `buzz` as the **callee**. With this in mind:
 
-One register that is **callee-owned** is our return value register, `rax`.
+- If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
 
-That means that the **callee** (`buzz`) can freely use `rax`, overwriting existing values without taking any precautions.
+- If a **callee** wants to use a **callee-owned register**, they are free to overwrite whatever value is stored in it. If a **caller** stores an important value in a callee-owned register, they're responsible for saving that value on the stack before calling any functions, and they should pop that value off the stack and back into the register after the function they called ends.
+
+One register that is **callee-owned** is our return value register, `rax`. That means that the **callee** (`buzz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
 However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **caller** (`fizz`) must copy the value into another register before making a `call`.
 
