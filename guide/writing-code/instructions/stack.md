@@ -2,8 +2,8 @@
 
 Computers allocate a chunk of memory to be the “stack”, a place where you can store bytes for later use. You can do 2 things with a stack:
 
-1. **push** values onto it, which go on top of the previous values
-1. **pop** values off of it, which grabs from the top of the stack
+1. **push** a value onto it, which goes on top of the previous values
+1. **pop** a value off of it, which removes it from the top of the stack and puts it in a register
 
 Need something at the bottom? Too bad! You gotta go through the top.
 
