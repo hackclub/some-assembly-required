@@ -89,7 +89,7 @@ Let's take the **callee-owned** register `rax` for example, which is traditional
   push rax ; Save rax value since it's callee-owned and .buzz can overwrite it
   call .buzz
   mov rbx, rax ; Save .buzz return value into new register
-  pop rax ; Retrieve our rax value that we pushed on the stack previously to return
+  pop rax ; Retrieve our rax value that we pushed on the stack previously
   ret
 
 .buzz ; callee
