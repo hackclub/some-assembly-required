@@ -69,6 +69,7 @@ When I was learning this, I was like wow - we have a lot of places we can save t
 Every assembly language has its own set of conventions that dictate where a program expects things to be. Let's take this JavaScript code, for example, where we're doing our handy dandy slope-intercept equation like before.
 
 ```js
+// JavaScript
 const y = getSlopeIntercept(3, 5, 2);
 
 function getSlopeIntercept(m, x, b) {
@@ -81,15 +82,17 @@ This code has a few things going on! We have three arguments, and we have a retu
 So far, we've been throwing everything into random general purpose registers (usually `rax` - `rdx`).
 
 ```asm
-; arguments are pushed from left to right
-push 3
-push 5
-push 2
+; X86-64 Intel Syntax Assembly
+push 3 ; m
+push 5 ; x
+push 2 ; b
+
+; The stack is now (top) b, x, m (bottom)
 
 call .getSlopeIntercept ; after this call, rax will contain our return value (17)
 
 .getSlopeIntercept:
-  ; arguments are popped in reverse order, from right to left.
+  ; arguments are popped in reverse order they were pushed on
   pop rdx ; b
   pop rcx ; x
   pop rbx ; m
