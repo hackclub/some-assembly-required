@@ -102,7 +102,7 @@ In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** regist
 .fizz ; caller
   mov rbx, 1 ; Use a caller-owned register to store a value
   call .buzz
-  add rbx, 10 ; We can expect our previous rbx value to be there and do whatever we want with it
+  add rbx, 3 ; We can expect our previous rbx value to be there and do whatever we want with it
 
 .buzz ; callee
   push rbx ; Save caller-owned register value so we don't overwrite it
