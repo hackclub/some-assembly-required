@@ -77,11 +77,11 @@ Let's take this code for example. If the function `fizz` calls function `buzz`, 
 
 One register that is **callee-owned** is our return value register, `rax`.
 
-That means that the **callee** (`fizz`) can freely use `rax`, overwriting existing values without taking any precautions.
+That means that the **callee** (`buzz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
-However, if `rax` holds a value the **caller** (`buzz`) wants to retain, the **caller** (`buzz`) must copy the value into another register before making a `call`.
+However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **caller** (`fizz`) must copy the value into another register before making a `call`.
 
-In contrast, if the **callee** (`fizz`) intends to use a **caller-owned** register, it must first preserve its value, and then restore it at the end before exiting the `call`.
+In contrast, if the **callee** (`buzz`) intends to use a **caller-owned** register, it must first preserve its value, and then restore it at the end before exiting the `call`.
 
 ---
 
