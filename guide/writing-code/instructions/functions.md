@@ -41,7 +41,7 @@ Our first instruction is the `call` instruction. We're calling the `.addNumbers`
 
 Remember our **instruction pointer**? As a reminder, it's a register that the CPU uses to keep track of which instruction it's fetching data for. The instruction pointer contains the memory address of the instruction currently being executed.
 
-When we use the `call` instruction, it's similar to a jump (`jmp`) instruction, but it's actually executing multiple instructions underneath:
+When we use the `call` instruction, it's similar to a jump (`jmp`) instruction, but it's actually doing multiple things underneath:
 
 1. It executes an instruction called a `push` with what would be the next instruction onto something called the **stack**
 1. It then updates the instruction pointer to point at the memory address of the first instruction inside of the `.addNumbers` label
