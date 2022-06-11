@@ -25,7 +25,6 @@ So now that we know what the stack is, let's talk about how it's working underne
 
 ```asm
 ; X86-64 Intel Syntax Assembly
-
 mov rax, 1
 mov rbx, 2
 mov rcx, 3
