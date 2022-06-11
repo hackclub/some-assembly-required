@@ -101,7 +101,7 @@ function getSlopeIntercept(m, x, b) {
 }
 ```
 
-This code has a few things going on! We have three arguments, and we have a return value.
+This code has a few things going on! We have three **arguments**, and we have a **return value**.
 
 So far, we've been throwing everything into random general purpose registers (usually `rax` - `rdx`). Let's talk about some basic [conventions in x86-64](https://en.wikipedia.org/wiki/X86_calling_conventions#List_of_x86_calling_conventions):
 
