@@ -73,7 +73,9 @@ General purpose registers have a convention where they're marked as **caller-own
   call .buzz ; callee
 ```
 
-Let's take this code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**. One register that is **callee-owned** is our return value register, `rax`.
+Let's take this code for example. If the function `fizz` calls function `buzz`, we refer to `fizz` as the **caller** and `buzz` as the **callee**.
+
+One register that is **callee-owned** is our return value register, `rax`.
 
 That means that the **callee** (`fizz`) can freely use `rax`, overwriting existing values without taking any precautions.
 
