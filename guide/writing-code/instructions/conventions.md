@@ -130,7 +130,7 @@ It's important to note that **none of these conventions are actually enforced an
 
 The C compiler follows these conventions _all_ the time, even when it could safely skip them to make things faster. You're a human being, which means you're much smarter than any compiler, so you can identify places where it's safe to break these conventions in order to save unnecessary instructions, and end up writing code that's faster than anything a compiler could write. Isn't that cool?
 
-However, if you do end up breaking these conventions, you can end up overwriting values by mistake and causing bugs that are hard to track down. If you follow these conventions the majority of the time, your assembly code will have fewer bugs and will be much easier to follow.
+However, if you break these conventions too often, you'll end up overwriting values by mistake and causing bugs that are hard to track down. If you follow these conventions the majority of the time, your assembly code will have fewer bugs and will be much easier to follow.
 
 <br />
 
