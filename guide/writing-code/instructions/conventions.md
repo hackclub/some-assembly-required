@@ -68,13 +68,6 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**.
 
 ```asm
-// JavaScript
-function fizz() { // caller
-  buzz(); // callee
-}
-```
-
-```asm
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
   call .buzz ; callee
