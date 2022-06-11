@@ -101,7 +101,7 @@ In contrast,
 
 - If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
 
-- If a **callee** wants to use a **callee-owned register**, , it's able to do so freely!
+- If a **callee** wants to use a **callee-owned register**, it's able to do so freely!
 
 Let's take the **caller-owned** register `rbx`, for example:
 
