@@ -3,7 +3,6 @@
 TODO: Explain command line arguments, argc & argv[][], syscalls, anatomy of a program
 
 ```asm
-
 ; ==================================================================================
 ; UPPERCASER
 ;
