@@ -44,7 +44,6 @@ Remember our **instruction pointer**? As a reminder, it's a register that the CP
 When we use the `call` instruction, it's similar to a jump (`jmp`) instruction, but it's actually executing multiple instructions underneath:
 
 1. It executes an instruction called a `push` with what would be the next instruction onto something called the **stack**
-
 1. It then updates the instruction pointer to point at the memory address of the first instruction inside of the `.addNumbers` label
 
 Let's hand-wave the `push`ing onto the stack for now, as we'll talk about that in the next section. What you need to know right now is that it is saving where we currently are in memory for later.
