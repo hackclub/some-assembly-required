@@ -84,6 +84,7 @@ However, if `rax` holds a value the **caller** (`fizz`) wants to retain, the **c
 ```asm
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
+  mov rax, 1 ; We're using rax to save a value in .fizz
   push rax ; Save rax value since it's callee-owned and .buzz can overwrite it
   call .buzz
   mov rbx, rax ; Save .buzz return value into new register
