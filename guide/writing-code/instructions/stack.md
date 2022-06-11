@@ -79,7 +79,13 @@ function getSlopeIntercept(m, x, b) {
 
 This code has a few things going on! We have three arguments, and we have a return value.
 
-So far, we've been throwing everything into random general purpose registers (usually `rax` - `rdx`).
+So far, we've been throwing everything into random general purpose registers (usually `rax` - `rdx`). Let's talk about some basic [conventions in x86-64](https://en.wikipedia.org/wiki/X86_calling_conventions#List_of_x86_calling_conventions).
+
+Arguments get `push`ed on the stack before we `call` our label, which is effectively a "function".
+
+When we're in our "function", we `pop` those arguments off the stack and into general purpose registers. We're using `r8` - `r10` because these general purpose registers have a convention of being "callee-owned". Don't worry about this for now, we will explain it after.
+
+When we finish doing our math and we're ready to "return" a value from our "function", the convention is to place that value into register `rax`.
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -93,15 +99,15 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 
 .getSlopeIntercept:
   ; arguments are popped in reverse order they were pushed on
-  pop rdx ; b
-  pop rcx ; x
-  pop rbx ; m
+  pop r8 ; b
+  pop r9 ; x
+  pop r10 ; m
 
-  mul rbx, rcx
-  add rbx, rdx
+  mul r10, r9
+  add r10, r8
 
   ; return values go into rax
-  mov rax, rbx
+  mov rax, r10
 
   ret
 ```
