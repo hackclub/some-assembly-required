@@ -455,7 +455,7 @@ _main:
 <p align="right">
   <em>
     <b>
-      <a href="/guide/math/math.md">
+      <a href="/guide/math/number-systems.md">
         Math →
       </a>
     </b>
