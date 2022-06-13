@@ -22,7 +22,7 @@ Why 10? Well, it's because we have 10 fingers!
 
 ## Number Systems
 
-Base 10 is something called a number system. It's the most common way we refer to numbers, and it means that we have 10 digits to represent any number.
+Base 10 is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
 
 Those digits are 0 - 9. So, what happens when we run out of digits? We shift over to the left by 1 place, and we start all over again. For example:
 ```js
