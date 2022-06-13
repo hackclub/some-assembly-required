@@ -8,7 +8,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 
 <p align="center">
   <br />
-  <img height="150" src="https://img2.annthegran.com/stockdesign/xlarge/grand_slam_designs/tim215.jpg">
+  <img height="250" src="https://img2.annthegran.com/stockdesign/xlarge/grand_slam_designs/tim215.jpg">
   <br />
   <span>
     <em>
