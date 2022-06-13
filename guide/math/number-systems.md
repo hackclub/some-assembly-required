@@ -107,6 +107,8 @@ So `1011001` is 89 in base 10.
 </i>
 </details>
 
+Congratulations, you smartie you! You officially know how to read binary!
+
 ## Hexadecimal, or base 16
   _Also known as base 16!_
 
