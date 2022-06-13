@@ -71,20 +71,20 @@ As we already know with binary, there are only two digits represented: **0** and
 
 So if we follow this simple pattern, we can count up our numbers without too much hassle.
 
-But, let's say we need to read a random number in binary, like `11011`. We wouldn't want to have to count up to that number to figure out what it is. Let's talk about some rules that can help us figure out what that number adds up to in base 10.
+But, let's say we need to read a random number in binary, like `10011`. We wouldn't want to have to count up to that number to figure out what it is. Let's talk about some rules that can help us figure out what that number adds up to in base 10.
 
 Going from right to left, each digit is the value of the digit (`0` or `1`) times **2** to the power of the position of the digit. This is because, if you recall, we're working in **base 2**. That means 2 is the base of our equation!
 
-So let's try this out. `11011` would translate to, from right to left:
+So let's try this out. `10011` would translate to, from right to left:
 
 - $1 * 2^0 = 1$
-- $1 * 2^1 = 2$
+- $0 * 2^1 = 0$
 - $0 * 2^2 = 0$
 - $1 * 2^3 = 8$
 - $1 * 2^4 = 16$
-- $1 + 2 + 0 + 8 + 16 = 27$
+- $1 + 0 + 0 + 8 + 16 = 25$
 
-So `11011` equals **27** in base 10!
+So `10011` equals **25** in base 10!
 
 Now, for those extra credit readers, you could try calculating `1011001` into base 10 on your own if you're so inclined.
 
