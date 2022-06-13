@@ -36,9 +36,9 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
  7
  8
  9
-10
-...
-99
+ 10
+ ..
+ 99
 100
 101
 ...
