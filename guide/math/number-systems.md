@@ -4,7 +4,7 @@ So far with learning about CPUs and assembly, we haven't actually needed to dive
 
 Numbers are made up. There, I said it.
 
-But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that we have created in order to represent the things we see around us. We most commonly represent these numbers in something called **base 10**, meaning we have 10 symbols to represent our numbers:
+But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that we have created in order to represent the things we see around us. We most commonly represent these numbers in something called **base 10**, meaning we have 10 digits to represent our numbers.
 
 <p align="center">
   <br />
@@ -12,13 +12,11 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
   <br />
   <span>
     <em>
-      just a placeholder image to break up the content!
+      Why 10? Well, it's because we have 10 fingers!
     </em>
   </span>
 </p>
 <br />
-
-Why 10? Well, it's because we have 10 fingers!
 
 ## Base 10
 
