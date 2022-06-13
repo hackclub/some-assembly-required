@@ -50,7 +50,7 @@ This looks obvious to you, I know. We all do this without thinking about it. But
 
 ### Binary
 
-Binary is one reason why it's helpful to know about number systems. You and I know how to communicate in base 10, but binary is base 2, and that's how the computer communicates.
+It's helpful to be able to decode binary when we're talking at this low of a level. You and I know how to communicate in base 10, but binary is base 2, which is what the computer understands.
 
 As we already know with binary, there are only two digits represented: **0** and **1**. Now, what's nice about number bases is they all work the same way. Once we run out of digits, we shift over. So let's try it out:
 
