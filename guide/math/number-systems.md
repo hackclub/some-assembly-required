@@ -91,7 +91,7 @@ So `11011` equals **27** in base 10!
 Now, if you're inclined, you could try calculating `1011001` into base 10 on your own.
 
 <details>
-<summary><i>What is `1011001` in base 10?</i></summary>
+<summary><i>What is <code>1011001</code> in base 10?</i></summary>
 <br />
 <i>
 As a reminder, we're calculating from right to left.
