@@ -20,7 +20,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 
 Why 10? Well, it's because we have 10 fingers!
 
-## Number Systems
+## Base 10
 
 Base 10 is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
 
@@ -48,7 +48,7 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
 
-### Binary
+## Binary
 
 It's helpful to be able to decode binary when we're talking at this low of a level. You and I know how to communicate in base 10, but binary is base 2, which is what the computer understands.
 
@@ -109,7 +109,7 @@ So `1011001` is 89 in base 10.
 </i>
 </details>
 
-### Hexadecimal
+## Hexadecimal
   _Also known as base 16!_
 
 TODO: Make this friendlier
