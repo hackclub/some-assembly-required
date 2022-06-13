@@ -18,7 +18,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 </p>
 <br />
 
-## Base 10
+## Decimal (Base 10)
 
 Base 10 is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
 
@@ -46,7 +46,7 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
 
-## Binary, or base 2
+## Binary (Base 2)
 
 It's helpful to be able to decode binary when we're talking at this low of a level. You and I know how to communicate in base 10, but binary is base 2, which is what the computer understands.
 
@@ -109,18 +109,9 @@ So `1011001` is 89 in base 10.
 
 Congratulations, you smartie you! You officially know how to read binary!
 
-## Hexadecimal, or base 16
-  _Also known as base 16!_
+## Hexadecimal (Base 16)
 
-TODO: Make this friendlier
-
-All numbers in assembly language are represented by hexadecimal.
-When we think of numbers in the human world, we think of them in base 10. Base 10 means that each digit of a number can be represented with the digits 0-9. Each digit over we move (for example 1 vs 10 vs 100) is 10 times the value to the right of it (as seen in the graph above). And when we count in base 10 numbers, we count from 0 up to 9 and then start over again but add one to the left: 0, 1, ..., 10, 11, ..., 20, 21, etc.
-
-When you see 125 as a number, you can think of that as:
-
-- (10 * 10^2) + (2 * 10^1) + (5 * 10^0)
-- 100 + 20 + 5 = 125
+Base 16 is also known as hexadecimal and commonly shortened to hex.
 
 Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15).  When we count in base 16 numbers, we count from 0 up to F(15) and then start over again but add one to the left: 0, 1, 2, ..., E, F, 10, 11, ..., 1E, 1F, 20, 21, etc. Each digit is the value of the digit (0-15 where 10-15 are represented by A-F) times 16 to the power of the position of the digit (starting with 0 from the right).
 
