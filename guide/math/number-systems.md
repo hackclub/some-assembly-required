@@ -186,12 +186,12 @@ Let's calculate our binary to hex example from above into decimal. So far, our h
 
 This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our digits from above, `FD`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal:
 
+- Our number is $FD$
+
 - $D = 13$
-- $13 * 16^0 = 13$
-
+  - $13 * 16^0 = 13$
 - $7 = 7$
-- $7 * 16^1 = 112$
-
+  - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
 For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
