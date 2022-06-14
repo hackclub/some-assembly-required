@@ -77,7 +77,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ---
 
-> NAND is special
+> **NAND is special**
 >
 > Here's a fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever.
 >
