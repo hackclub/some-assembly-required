@@ -184,13 +184,13 @@ Let's calculate our binary to hex example from above into decimal. So far, our h
 81 13 00 FO A8 C7 7D 01
 ```
 
-This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our digits from above, `FD`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal:
+This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our bytes from above, `7D`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal:
 
-- Our number is $FD$
+- Our number is $7D$
 
-- $D = 13$
+- $D maps to 13$
   - $13 * 16^0 = 13$
-- $7 = 7$
+- $7 maps to 7$
   - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
