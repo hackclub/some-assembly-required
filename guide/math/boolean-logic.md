@@ -129,11 +129,15 @@ XOR is always false unless the inputs are different.
 | 01 | 0   |
 | 11 | 1   |
 
+<br />
+
 ---
 
 > After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [@pranav](https://github.com/pranavnt).
 
 ---
+
+<br />
 
 <a href="/guide/math/number-systems.md">
   <picture>
