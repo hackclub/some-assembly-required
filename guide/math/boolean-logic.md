@@ -17,7 +17,7 @@ Well that's because your computer is running those numbers through these logical
 
 All the math your processor can do, it's done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these "logic gates", in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer! This is how math ends up being done, and how data ends up getting stored.
 
-Let's talk through these logical operations a bit.
+Let's walk through these logical operations, they're actually quite simple!
 
 ## AND
 
