@@ -151,13 +151,13 @@ Now that you know about all the different boolean functions, check this out!
 
 This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that adds two integers together. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
 
-Now, this is a really complicated diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
+Now, this is a complicated diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
 
 <br />
 
 ---
 
-> After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [@pranav](https://github.com/pranavnt).
+> After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [Hack Clubber](https://hackclub.com/) [@pranav](https://github.com/pranavnt)!
 
 ---
 
