@@ -188,13 +188,16 @@ This part works the same as the binary part, but with 16 as our base instead of 
 
 - Our number is $7D$
 
-- $D maps to 13$
+- $D$ maps to $13$
   - $13 * 16^0 = 13$
-- $7 maps to 7$
+- $7$ maps to $7$
   - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
-For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
+---
+<br />
+
+> For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
 <br />
 
