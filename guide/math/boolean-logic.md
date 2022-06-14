@@ -5,9 +5,9 @@ If you've done a bit of programming, you've probably seen the word **boolean** b
 - true
 - false
 
-True or false can also be represented as 1 for true, 0 for false. We've dabbled in this concept a bit in previous sections, but it's a quite important foundational concept for what's happening physically inside the CPU.
+True or false can also be represented with numbers: **1** for true, **0** for false. We've dabbled in this concept a bit in previous sections, but it's an important foundational concept for what's happening physically inside the CPU.
 
-Since we represent data in the physical world with the **inclusion** or **absence** of electrical signals, we can use something called **boolean logic** to determine whether a "statement" is **true** or **false**. A statement would be similar to a function, supplying a boolean value (argument) to an operation (function) and getting a (return) value out of it.
+Since we represent data in the physical world with the **inclusion** or **absence** of electrical signals, we can use something called **boolean functions** to calculate the results of simple conditional statements like `b && c` or `!a`.
 
 Why would we ever use this? Great question! Let me let you in on another secret.
 
@@ -21,7 +21,17 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## AND
 
-![Screen Shot 2022-05-17 at 10 53 15 AM](https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png)
+<p align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png">
+  <br />
+  <span>
+    <em>
+      A representation of an <code>AND</code> logic gate, where the inputs are the wires on the left and the result is the wire coming out of the right.
+    </em>
+  </span>
+</p>
+<br />
 
 `AND` is always false unless both inputs are true.
 
@@ -37,7 +47,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ![Screen Shot 2022-05-17 at 10 53 20 AM](https://user-images.githubusercontent.com/621904/168842251-b04cdc4d-6c3e-458b-8968-c1eef1fc2b0c.png)
 
-`OR` is always false unless one of the inputs is true.
+`OR` is always true unless both of the inputs are false.
 
 
 | In | Out |
@@ -63,7 +73,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ![Screen Shot 2022-05-17 at 10 53 35 AM](https://user-images.githubusercontent.com/621904/168842382-d854d2f1-c20d-46fc-a302-4972343305ca.png)
 
-`NAND` is always true unless both inputs are true.
+`NAND` is always true unless both inputs are true. `NAND` is the opposite of `AND`.
 
 
 | In | Out |
@@ -91,7 +101,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ![Screen Shot 2022-05-17 at 10 53 25 AM](https://user-images.githubusercontent.com/621904/168842428-dd63a889-4774-4f7b-845e-3ae43c7c9b75.png)
 
-`NOR` is always false unless both inputs are false.
+`NOR` is always false unless both inputs are false. `NOR` is the opposite of `OR`.
 
 
 | In | Out |
@@ -105,7 +115,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ![Screen Shot 2022-05-17 at 10 53 38 AM](https://user-images.githubusercontent.com/621904/168842465-f8251a20-8962-4221-9146-93e4e6b01908.png)
 
-XOR is always false unless the inputs are different.
+`XOR` is true if the inputs are different, false if they're the same.
 
 
 | In | Out |
@@ -119,7 +129,7 @@ XOR is always false unless the inputs are different.
 
 ![xnor](https://user-images.githubusercontent.com/621904/168848632-9e62e088-3dbf-4007-a435-fe34e6fb4c8b.png)
 
-`XNOR` is always false unless the inputs are the same.
+`XNOR` is true if the inputs are the same, false if they're different. `XNOR` is the opposite of `XOR`.
 
 
 | In | Out |
