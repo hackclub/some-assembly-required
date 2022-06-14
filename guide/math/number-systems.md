@@ -20,7 +20,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 
 ## Decimal (Base 10)
 
-Base 10 is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
+Base 10, also known as decimal, is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
 
 Those digits are 0 - 9. So, what happens when we run out of digits? We shift over to the left by 1 place, and we start all over again. For example:
 ```js
@@ -111,16 +111,89 @@ Congratulations, you smartie you! You officially know how to read binary!
 
 ## Hexadecimal (Base 16)
 
-Base 16 is also known as hexadecimal and commonly shortened to hex.
+Here's a fun fact for you: any number can technically be a base. We'll only be talking about one more base, which is base 16. Base 16 is also known as hexadecimal and commonly shortened to hex.
 
-Hex is base 16, which means is the available digits are 0-9 and A-F (for 10-15).  When we count in base 16 numbers, we count from 0 up to F(15) and then start over again but add one to the left: 0, 1, 2, ..., E, F, 10, 11, ..., 1E, 1F, 20, 21, etc. Each digit is the value of the digit (0-15 where 10-15 are represented by A-F) times 16 to the power of the position of the digit (starting with 0 from the right).
+We're going to talk about hex because binary is often shortened to hex. This is because, when we're talking about the size of registers, we can easily substitute binary with hex to make everything shorter and easier to read. For example, on a 64-bit machine, a register might look like:
 
-7D would translate to:
+```
+10000001 00010011 00000000 11110000 10101000 11000111 01111101 00000001
+```
 
-- D = 13
-- (7 * 16^1) + (13 * 16^0)
-- 112 + 13 = 125
-Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
+The same numbers in hex would end up looking like:
+
+```
+81 13 00 FO A8 C7 7D 01
+```
+
+_Whoa whoa whoa. Now wait a minute. Why are there letters?_
+
+Well, we have to remember - our base is 16. That means we have 16 digits to represent our numbers. Those digits are:
+
+```js
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A # 10
+B # 11
+C # 12
+D # 13
+E # 14
+F # 15
+```
+
+So those letters map to numbers!
+
+So what would happen if we went past 15? We do the same thing we did before - shift over by 1 and start over. Let's try it out.
+
+```js
+...
+ F # 15
+10 # 16
+11 # 17
+12 # 18
+13 # 19
+14 # 20
+15 # 21
+16 # 22
+17 # 23
+18 # 24
+19 # 25
+1A # 26
+1B # 27
+1C # 28
+1D # 29
+1E # 30
+1F # 31
+20 # 32
+...
+```
+
+It's really weird, I know. Your brain _wants_ to parse it as decimal, or base 10. But since the math behind the base is completely different, numbers that look like something in base 10 mean completely different things in base 16!
+
+Let's calculate our binary to hex example from above into decimal. So far, our hex digits are:
+
+```
+81 13 00 FO A8 C7 7D 01
+```
+
+This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our digits from above, `FD`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal:
+
+- $D = 13$
+- $13 * 16^0 = 13$
+
+- $7 = 7$
+- $7 * 16^1 = 112$
+
+- $16 + 112 = 125$
+
+For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
 <br />
 
@@ -137,7 +210,7 @@ Confused? Check out [this site](https://www.mathsisfun.com/binary-number-system.
   <em>
     <b>
       <a href="/guide/math/boolean-logic.md">
-        Boolean logic →
+        Let's put our new boolean knowledge to the test →
       </a>
     </b>
   </em>
