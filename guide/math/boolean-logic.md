@@ -155,7 +155,7 @@ Now, this is a complicated diagram that I myself don't fully understand, but wha
 
 ---
 
-> After reading this section, if you want to play around with linking logic gates, check out [logiclights](https://logiclights.vercel.app/) by [Hack Clubber](https://hackclub.com/) [@pranav](https://github.com/pranavnt)!
+> After reading this section, if you want to play around with linking logic gates, check out [LogicLights](https://logiclights.vercel.app/) by [Hack Clubber](https://hackclub.com/) [@pranav](https://github.com/pranavnt)!
 
 ---
 
