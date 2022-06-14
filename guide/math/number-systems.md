@@ -140,12 +140,12 @@ Well, we have to remember - our base is 16. That means we have 16 digits to repr
 7
 8
 9
-A # 10
-B # 11
-C # 12
-D # 13
-E # 14
-F # 15
+A // 10
+B // 11
+C // 12
+D // 13
+E // 14
+F // 15
 ```
 
 So those letters map to numbers!
@@ -154,24 +154,25 @@ So what would happen if we went past 15? We do the same thing we did before - sh
 
 ```js
 ...
- F # 15
-10 # 16 - Note that we shifted over by 1 place
-11 # 17
-12 # 18
-13 # 19
-14 # 20
-15 # 21
-16 # 22
-17 # 23
-18 # 24
-19 # 25
-1A # 26
-1B # 27
-1C # 28
-1D # 29
-1E # 30
-1F # 31
-20 # 32
+ E // 14
+ F // 15
+10 // 16 - Note that we shifted over by 1 place
+11 // 17
+12 // 18
+13 // 19
+14 // 20
+15 // 21
+16 // 22
+17 // 23
+18 // 24
+19 // 25
+1A // 26
+1B // 27
+1C // 28
+1D // 29
+1E // 30
+1F // 31
+20 // 32
 ...
 ```
 
