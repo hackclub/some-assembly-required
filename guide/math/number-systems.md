@@ -216,7 +216,7 @@ You'll often see hex numbers associated with assembly, registers, and even in hi
   <em>
     <b>
       <a href="/guide/math/boolean-logic.md">
-        Let's put our new boolean knowledge to the test →
+        Let's put our new binary knowledge to the test →
       </a>
     </b>
   </em>
