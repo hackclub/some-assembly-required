@@ -73,11 +73,15 @@ Let's talk through these logical operations a bit.
 | 01 | 1   |
 | 11 | 0   |
 
+---
+
 > NAND is special
 >
 > Here's a fun fact: You only need the NAND gate (AND gate followed by NOT) to do every single possible logic operation ever.
 >
 > That means that every possible logic circuit can be made to use only NAND! In fact, a physical NAND transistor takes up less area than an AND transistor. To make an AND, you'd actually make a NAND and then invert the output. Check out the free course [From Nand2 to Tetris](https://www.nand2tetris.org/) to build an entire computer system using just these principles.
+
+---
 
 ## NOR
 
