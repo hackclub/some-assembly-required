@@ -194,6 +194,8 @@ This part works the same as the binary part, but with 16 as our base instead of 
   - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
+You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
+
 ---
 <br />
 
