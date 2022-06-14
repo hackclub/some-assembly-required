@@ -24,20 +24,20 @@ Base 10, also known as decimal, is something called a number system. The most co
 
 Those digits are 0 - 9. So, what happens when we run out of digits? We shift over to the left by 1 place, and we start all over again. For example:
 ```js
- 0
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
- 10
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10 # Note that we shifted over by 1 place
  ..
  99
-100
+100 # Note that we shifted over by 1 place
 101
 ...
 109
@@ -50,14 +50,14 @@ This looks obvious to you, I know. We all do this without thinking about it. But
 
 It's helpful to be able to decode binary when we're talking at this low of a level. You and I know how to communicate in base 10, but binary is base 2, which is what the computer understands.
 
-As we already know with binary, there are only two digits represented: **0** and **1**. Now, what's nice about number bases is they all work the same way. Once we run out of digits, we shift over. So let's try it out:
+As we already know with binary, there are only two digits represented: **0** and **1**. Now, what's nice about number bases is they all work the same way. Once we run out of digits, we shift over by one place. So let's try it out:
 
 ```js
   0 // 0
   1 // 1
- 10 // 2
+ 10 // 2 - Note that we shifted over by 1 place
  11 // 3
-100 // 4
+100 // 4 - Note that we shifted over by 1 place
 101 // 5
 110 // 6
 111 // 7
@@ -78,13 +78,13 @@ Going from right to left, each digit is the value of the digit (`0` or `1`) time
 So let's try this out. `10011` would translate to, from right to left:
 
 - $1 * 2^0 = 1$
-- $0 * 2^1 = 0$
+- $1 * 2^1 = 2$
 - $0 * 2^2 = 0$
-- $1 * 2^3 = 8$
+- $0 * 2^3 = 0$
 - $1 * 2^4 = 16$
-- $1 + 0 + 0 + 8 + 16 = 25$
+- $1 + 2 + 0 + 0 + 16 = 19$
 
-So `10011` equals **25** in base 10!
+So `10011` equals **19** in base 10!
 
 Now, for those extra credit readers, you could try calculating `1011001` into base 10 on your own if you're so inclined.
 
@@ -155,7 +155,7 @@ So what would happen if we went past 15? We do the same thing we did before - sh
 ```js
 ...
  F # 15
-10 # 16
+10 # 16 - Note that we shifted over by 1 place
 11 # 17
 12 # 18
 13 # 19
