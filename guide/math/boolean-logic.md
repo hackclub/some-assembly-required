@@ -13,9 +13,9 @@ Why would we ever use this? Great question! Let me let you in on another secret.
 
 Remember earlier, how we learned that all code has to end up as numbers for the computer to understand it?
 
-Well that's because your computer is running those numbers through these logical operations. **Every single one.**
+Well that's because your computer is running those numbers through these logical operations. **Every single one.** The numbers are represented by electrical signals, and those electrical signals are passed through physical pieces of hardware that perform these boolean functions and send out new electrical signals representing their results.
 
-All the math your processor can do, it's done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these "logic gates", in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer! This is how math ends up being done, and how data ends up getting stored.
+All the math your processor can do, it's done by combining a few of these operations together. So you send it some electrical signals, it goes through a few of these hardware "logic gates", in the physical form of transistors, and BAM! You have an answer at the end. You combine a bunch of these small answers through more transistors, and then you have a larger answer! This is how math ends up being done, and how data ends up getting stored.
 
 Let's walk through these logical operations, they're actually quite simple!
 
@@ -138,6 +138,20 @@ Let's walk through these logical operations, they're actually quite simple!
 | 10 | 0   |
 | 01 | 0   |
 | 11 | 1   |
+
+## Adding two integers
+
+Now that you know about all the different boolean functions, check this out!
+
+<p align="center">
+  <br />
+  <img src="https://theorycircuit.com/wp-content/uploads/2018/07/full-adder-circuit.png">
+</p>
+<br />
+
+This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that adds two integers together. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
+
+Now, this is a really complicated diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
 
 <br />
 
