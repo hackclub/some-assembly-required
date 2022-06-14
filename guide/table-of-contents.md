@@ -3,7 +3,7 @@
 1. [Introduction](/guide/introduction.md)
 1. [The CPU](/guide/cpu/cpu.md)
 2. [Writing Code](/guide/writing-code/multitude.md)
-3. [The Math Section](/guide/math/math.md)
+3. [The Math Section](/guide/math/number-systems.md)
 4. [Resources](/guide/resources.md)
 
 ## Working code examples
