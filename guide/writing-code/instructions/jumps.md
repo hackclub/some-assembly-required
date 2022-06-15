@@ -46,6 +46,8 @@ sub rcx, 11 ; This line will be skipped since we are jumping to .addNumbers
 
 In our example, when the program sees the `jmp` instruction, the instruction pointer would update so that it points to the line after `.addNumbers`, which is `mov rax, 3`.
 
+As a note, memory addresses are in <a href="/guide/math/number-systems.md">hexadecimal</a> format, so the `0x00000011` you see actually maps to `0x00000017` in decimal, which is how we usually talk about numbers. For now, it's totally OK to hand wave this - we'll explain hexadecimal a little bit later.
+
 <p align="center">
   <br />
   <img height="275" src="https://cloud-rofot9pi9-hack-club-bot.vercel.app/0jump.png">
