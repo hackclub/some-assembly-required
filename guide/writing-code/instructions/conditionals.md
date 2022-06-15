@@ -20,10 +20,8 @@ cmp rax, rbx
 jl .jumpToHere
 add rbx, 1 ; We only get to this line if the jump is not executed
 
-...
-
 .jumpToHere
-  ...
+  ; do some code
 ```
 
 In this assembly code example, we are ultimately checking if the contents of `rax` are less than the contents of `rbx`, and jumping if so. Here's how it's working.
@@ -45,10 +43,8 @@ cmp rax, rbx
 jl .jumpToHere
 add rbx, 1 ; We only get to this line if the jump is not executed
 
-...
-
 .jumpToHere
-  ...
+  ; do some code
 ```
 <details>
 <summary><i>In this example, will the jump be executed?</i></summary>
@@ -68,6 +64,9 @@ mov rbx, 3
 cmp rax, rbx
 jl .jumpToHere
 add rbx, 1 ; We only get to this line if the jump is not executed
+
+.jumpToHere
+  ; do some code
 ```
 <details>
 <summary><i>In this example, will the jump be executed?</i></summary>
