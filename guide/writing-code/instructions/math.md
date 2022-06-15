@@ -124,7 +124,7 @@ Now that we have some basic math under our belt, let's try to map a real equatio
 
 We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line. Here's how it works.
 
-$m$ is the slope. If it's a whole number, it means your line is going up faster. If it's a fraction, it's slower.
+$m$ is the slope. If it's above `1`, it means your line is going up faster. If it's between `0 - 1`, it's going up slower. If it's negative, it's sloping downwards.
 
 $b$ is the intercept. On every line, it will always eventually hit the $y$ axis, unless it's a line that's straight up and down. The $b$ intercept is where your line intersect the $y$ axis.
 
