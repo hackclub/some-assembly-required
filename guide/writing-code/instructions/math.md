@@ -132,7 +132,7 @@ If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. 
 
 To get any point on the straight line, you plug in $x$ into the equation and you get the $y$ coordinate!
 
-Thanks for sticking with me to re-learn a little math. I think it's important to show that we can write real life functions like this using just assembly. Here's how it would look:
+Let's assume we have a line represented by the slope-intercept equation $y = 2x + 4$. The assembly below will calculate the value of $y$ when you plug $3$ in for $x$. Here's how it would look:
 
 <br />
 
@@ -148,7 +148,7 @@ add rax, rcx ; m * x + b, store in rax. rax now contains y!
 
 <br />
 
-We just executed a real math equation using assembly! Soon, we will learn about how to _loop_ over code, which will enable us to use this code to get _all_ the points of a particular line.
+Thanks for sticking with me to re-learn a little math. I think it's important to show that we can write real life functions like this using just assembly. Soon, we will learn about how to _loop_ over code, which will enable us to use this code to get all the points of a particular line, not just one.
 
 <br />
 
