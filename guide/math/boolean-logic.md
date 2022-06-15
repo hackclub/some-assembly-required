@@ -21,17 +21,9 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## AND
 
-<p align="center">
-  <br />
-  <img src="https://cloud-6sy33924f-hack-club-bot.vercel.app/0and.png">
-  <br />
-  <span>
-    <em>
-      A representation of an <code>AND</code> logic gate, where the inputs are the wires on the left and the result is the wire coming out of the right.
-    </em>
-  </span>
-</p>
-<br />
+![AND gate](https://cloud-6sy33924f-hack-club-bot.vercel.app/0and.png)
+
+This image is a representation of an <code>AND</code> logic gate, where the inputs are the wires on the left and the result is the wire coming out of the right.
 
 `AND` is always false unless both inputs are true.
 
@@ -45,7 +37,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## OR
 
-![Screen Shot 2022-05-17 at 10 53 20 AM](https://cloud-m3gro1bsz-hack-club-bot.vercel.app/0or.png)
+![OR gate](https://cloud-m3gro1bsz-hack-club-bot.vercel.app/0or.png)
 
 `OR` is always true unless both of the inputs are false.
 
@@ -59,7 +51,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NOT
 
-![Screen Shot 2022-05-17 at 10 53 29 AM](https://cloud-gc5ntwfp3-hack-club-bot.vercel.app/0not.png)
+![NOT gate](https://cloud-gc5ntwfp3-hack-club-bot.vercel.app/0not.png)
 
 `NOT` only requires a single input, and it flips the input.
 
@@ -71,7 +63,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NAND
 
-![Screen Shot 2022-05-17 at 10 53 35 AM](https://cloud-6kz6e5s0t-hack-club-bot.vercel.app/0nand.png)
+![NAND gate](https://cloud-6kz6e5s0t-hack-club-bot.vercel.app/0nand.png)
 
 `NAND` is always true unless both inputs are true. `NAND` is the opposite of `AND`.
 
@@ -99,7 +91,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NOR
 
-![Screen Shot 2022-05-17 at 10 53 25 AM](https://cloud-j6qrpnbsy-hack-club-bot.vercel.app/0nor.png)
+![NOR gate](https://cloud-j6qrpnbsy-hack-club-bot.vercel.app/0nor.png)
 
 `NOR` is always false unless both inputs are false. `NOR` is the opposite of `OR`.
 
@@ -113,7 +105,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## XOR
 
-![Screen Shot 2022-05-17 at 10 53 38 AM](https://cloud-3wsvzk7wf-hack-club-bot.vercel.app/0xor.png)
+![XOR gate](https://cloud-3wsvzk7wf-hack-club-bot.vercel.app/0xor.png)
 
 `XOR` is true if the inputs are different, false if they're the same.
 
@@ -127,7 +119,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## XNOR
 
-![xnor](https://cloud-emvf8qkr5-hack-club-bot.vercel.app/0xnor.png)
+![XNOR gate](https://cloud-emvf8qkr5-hack-club-bot.vercel.app/0xnor.png)
 
 `XNOR` is true if the inputs are the same, false if they're different. `XNOR` is the opposite of `XOR`.
 
