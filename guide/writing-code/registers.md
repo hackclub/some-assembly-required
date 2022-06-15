@@ -24,7 +24,7 @@ As we learned earlier, the only things we can store in our registers are numbers
 
 The data saved in registers are:
 1. Numbers (`10`)
-1. Letters (`c`)
+1. Letters (`"M"`)
 1. Memory addresses (`0x12345678`)
 
 The computer stores those numbers as [bits](/guide/writing-code/data.md), and the amount of bits a register can hold depends on the processor.
