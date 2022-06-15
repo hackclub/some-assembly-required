@@ -12,7 +12,7 @@
 
 <p align="center">
   <br />
-  <img height="400" src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
+  <img src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
 </p>
 <br />
 
