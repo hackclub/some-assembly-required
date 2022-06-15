@@ -184,9 +184,9 @@ Let's calculate our binary to hex example from above into decimal. So far, our h
 81 13 00 FO A8 C7 7D 01
 ```
 
-This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our bytes from above, `7D`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal:
+This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our bytes from above, `7D`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal.
 
-- Our number is $7D$
+Our number is $7D$.
 
 - $D$ maps to $13$
   - $13 * 16^0 = 13$
@@ -194,28 +194,36 @@ This part works the same as the binary part, but with 16 as our base instead of 
   - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
-You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
+So $7D$ is **125** in base 10!
 
-<br />
+---
 
-If you want a challenge, try converting hexadecimal digit `B1` to base 10:
+Want a challenge? Try converting hexadecimal number `B1` to base 10!
 
 <details>
-<summary><i>Reveal <code>B1</code> in base 10</i></summary>
+<summary><i>What's <code>B1</code> in base 10?</i></summary>
 <br />
 <i>
 
 As a reminder, we're calculating from right to left.
 
-B = 11
+Our number is $B1$.
 
-- $1 * 16^0 = 1$
-- $11 * 16^1 = 176$
+- $1$ maps to $1$
+  - $1 * 16^0 = 1$
+- $B$ maps to $11$
+  - $11 * 16^1 = 176$
 - $1 + 176 = 177$
 
 So `B1` is 89 in base 10.
 </i>
 </details>
+
+---
+
+You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
+
+<br />
 
 ---
 
