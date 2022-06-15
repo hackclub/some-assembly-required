@@ -22,6 +22,7 @@
 - [@jakeboxer](https://github.com/jakeboxer)
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
+- [@japrozs](https://github.com/japrozs)
 
 <br />
 
