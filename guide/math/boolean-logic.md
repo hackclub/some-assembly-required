@@ -137,7 +137,7 @@ Now that you know about all the different boolean functions, check this out!
 
 <p align="center">
   <br />
-  <img src="https://cloud-9aw47i1e0-hack-club-bot.vercel.app/0eq.png">
+  <img height="375" src="https://cloud-9aw47i1e0-hack-club-bot.vercel.app/0eq.png">
 </p>
 <br />
 
