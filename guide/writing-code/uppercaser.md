@@ -25,8 +25,6 @@ For more information about x86-64 programs, check out the [README.md](/code/x86-
 
 _If you'd like to skip this section and keep reading about concepts, the next section can be found [here](/guide/math/number-systems.md)._
 
-<br />
-
 ---
 
 <br />
