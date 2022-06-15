@@ -126,7 +126,7 @@ We don't need to get into great detail about this equation, but this is the form
 
 $m$ is the slope. If it's above 1, it means your line is going up faster. If it's between 0 and 1, it's going up slower. If it's negative, it's going downwards.
 
-$b$ is the intercept. On every line, it will always eventually hit the $y$ axis, unless it's a line that's straight up and down. The $b$ intercept is where your line intersect the $y$ axis.
+$b$ is the intercept. Every line will always eventually hit the $y$ axis, unless it's a line that's straight up and down. The $b$ intercept is where your line intersect the $y$ axis.
 
 If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. Those $x$ and $y$ variables coordinate directly to the the $x$ and $y$ coordinates of the point on the graph.
 
