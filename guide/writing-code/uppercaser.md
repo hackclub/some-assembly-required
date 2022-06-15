@@ -21,8 +21,6 @@ I promise you that you have the tools to understand this program now. I also thi
 
 For more information about x86-64 programs, check out the [README.md](/code/x86-intel/).
 
-<br />
-
 ---
 
 <br />
