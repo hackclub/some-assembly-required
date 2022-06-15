@@ -52,7 +52,7 @@ In our example, when the program sees the `jmp` instruction, the instruction poi
   <br />
   <br />
   <span>
-    <em>Note: Memory addresses are in [hexadecimal](/guide/math/number-systems.md) format!</em>
+    <em>Note: Memory addresses are in <a href="/guide/math/number-systems.md">hexadecimal</a> format!</em>
   </span>
 </p>
 
