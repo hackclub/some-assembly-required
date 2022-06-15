@@ -131,17 +131,17 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 | 01 | 0   |
 | 11 | 1   |
 
-## Using these in an equation
+## Adding Numbers
 
 Now that you know about all the different boolean functions, check this out!
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-9aw47i1e0-hack-club-bot.vercel.app/0eq.png">
+  <img height="250" src="https://cloud-rfdol75q1-hack-club-bot.vercel.app/0adder.png">
 </p>
 <br />
 
-This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that represents an equation. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
+This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that adds two numbers together. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
 
 Now, this is a diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
 
