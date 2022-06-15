@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
+  <img width="375" src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
 </p>
 <br />
 
