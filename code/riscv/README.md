@@ -38,7 +38,7 @@ To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents i
   <br />
   <span>
     <em>
-      RISC-V registers pulled from [this RISC-V card](https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf)
+      RISC-V registers pulled from <a href="https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf">this RISC-V card</a>
     </em>
   </span>
 </p>
