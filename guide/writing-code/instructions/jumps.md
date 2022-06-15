@@ -54,13 +54,9 @@ As a note, memory addresses are in <a href="/guide/math/number-systems.md">hexad
   <br />
   <br />
   <span>
-    <em>Note: Memory addresses are in <a href="/guide/math/number-systems.md">hexadecimal</a> format!</em>
+    <em>After jumping, your instruction pointer register will contain the memory address of the first instruction below the label</em>
   </span>
 </p>
-
-<br />
-
-After jumping, your instruction pointer register will contain the memory address of the first instruction below the label.
 
 <br />
 
