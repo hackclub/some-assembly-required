@@ -108,7 +108,7 @@ mul rax, rbx;
 
 ## Putting it together
 
-Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may remember the slope-intercept equation from school. If you're anything like me and don't remember it, it looks like:
+Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may have learned the slope-intercept equation from school. If you're anything like me and don't recall, it looks like:
 
 <p align="center">
   <br />
@@ -122,9 +122,17 @@ Now that we have some basic math under our belt, let's try to map a real equatio
 </p>
 <br />
 
-We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line.
+We don't need to get into great detail about this equation, but this is the formula for finding the equation of a straight line. Here's how it works.
 
-TODO: Fill in more about this equation
+$m$ is the slope. If it's a whole number, it means your line is going up faster. If it's a fraction, it's slower.
+
+$b$ is the intercept. On every line, it will always eventually hit the $y$ axis, unless it's a line that's straight up and down. The $b$ intercept is where your line intersect the $y$ axis.
+
+If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. Those $x$ and $y$ variables coordinate directly to the the $x$ and $y$ coordinates of the point on the graph.
+
+To get any point on the straight line, you plug in $x$ into the equation and you get the $y$ coordinate!
+
+Thanks for bearing with me to teach a little math. I think it's important to show that, with assembly, you can write real life functions like $y = mx + b$. Here's how it would look:
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -135,6 +143,8 @@ mov rcx, 4; rcx will contain b
 mul rax, rbx; m*x, store in rax
 add rax, rcx; mx + b, store in rax. rax now contains y!
 ```
+
+Soon, we will learn about how to loop over the same code and execute it. That would enable us to use this code we just wrote to get all of the points of a particular line!
 
 <br />
 
