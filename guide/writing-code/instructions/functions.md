@@ -7,7 +7,7 @@ So now in assembly we can do a lot! We can save "variables", we can do math, we 
 ```js
 // JavaScript
 let result = addNumbers();
-doSomethingElse(result);
+result = doSomethingElse(result);
 
 function addNumbers() {
   return 3 + 1;
