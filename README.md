@@ -3,7 +3,7 @@
 ### An approachable introduction to assembly.
 
 <p align="center">
-  <img width="300" src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
+  <img width="350" src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
 </p>
 <br />
 
