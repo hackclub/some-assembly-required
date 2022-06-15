@@ -48,7 +48,7 @@ In our example, when the program sees the `jmp` instruction, the instruction poi
 
 <p align="center">
   <br />
-  <img height="375" src="https://cloud-jmw8d12wr-hack-club-bot.vercel.app/0jmp.png">
+  <img height="275" src="https://cloud-jmw8d12wr-hack-club-bot.vercel.app/0jmp.png">
 </p>
 
 <br />
