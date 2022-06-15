@@ -48,13 +48,15 @@ In our example, when the program sees the `jmp` instruction, the instruction poi
 
 <p align="center">
   <br />
-  <img height="275" src="https://cloud-kv6uvnuqg-hack-club-bot.vercel.app/0jump.png">
+  <img height="275" src="https://cloud-rofot9pi9-hack-club-bot.vercel.app/0jump.png">
   <br />
   <br />
   <span>
-    <em>After jumping, your instruction pointer register will contain the memory address of the first instruction below the label</em>
+    <em>Note: Memory addresses are in [hexadecimal](/guide/math/number-systems.md) format!</em>
   </span>
 </p>
+
+After jumping, your instruction pointer register will contain the memory address of the first instruction below the label
 
 <br />
 
