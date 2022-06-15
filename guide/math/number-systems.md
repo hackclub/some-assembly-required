@@ -216,6 +216,7 @@ B = 11
 So `B1` is 89 in base 10.
 </i>
 </details>
+
 ---
 
 > For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
