@@ -58,8 +58,8 @@ For another example:
 
 ```asm
 ; X86-64 Intel Syntax Assembly
-mov rax, 1
-mov rbx, 3
+mov rax, 2
+mov rbx, 4
 
 cmp rax, rbx
 jl .jumpToHere
