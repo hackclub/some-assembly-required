@@ -20,7 +20,7 @@ So let's say our first instruction is at memory address `0x00000001`. If we incr
 
 <p align="center">
   <br />
-  <img height="375" src="https://cloud-zqt1jjavr-hack-club-bot.vercel.app/0instructionpointer.png">
+  <img height="375" src="https://cloud-qhibd7tkn-hack-club-bot.vercel.app/0instructionpointer.png">
 </p>
 <br />
 
@@ -46,7 +46,10 @@ sub rcx, 11 ; This line will be skipped since we are jumping to .addNumbers
 
 In our example, when the program sees the `jmp` instruction, the instruction pointer would update so that it points to the line after `.addNumbers`, which is `mov rax, 3`.
 
-_Insert drawn diagram of a jmp, its memory address next to it, and showing the instruction pointer_
+<p align="center">
+  <br />
+  <img height="375" src="https://cloud-jmw8d12wr-hack-club-bot.vercel.app/0jmp.png">
+</p>
 
 <br />
 
