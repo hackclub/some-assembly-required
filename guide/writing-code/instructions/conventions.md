@@ -66,6 +66,8 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
   ret
 ```
 
+<br />
+
 ## Caller-owned vs Callee-owned
 
 General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**. This refers to whether or not the caller is expected to overwrite the values in a given register.
@@ -131,6 +133,8 @@ Let's take the **caller-owned** register `rbx`, for example:
   pop rbx ; Return caller-owned register value for caller to use
   ret
 ```
+
+<br />
 
 ---
 
