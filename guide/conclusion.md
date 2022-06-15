@@ -6,6 +6,13 @@ If you were anything like me, there used to be this impenetrable layer between t
 
 Here's a fun exercise for the next time you're writing JavaScript, Ruby, or whichever higher-level language you've chosen. Take a moment to think about the fact that everything you've written will all end up as machine code eventually, and think about the assembly instructions that the machine code would translate to, and then how those instructions will end up as _real life_ electrical signals running through the _physical_ metal in your CPU.
 
+For next steps, check out some working code examples, and maybe even write your own!
+
+1. [X86-64 Intel Syntax](/code/x86-intel/)
+1. [RISC-V](/code/riscv/)
+1. [6502](/code/6502/)
+1. [C (For comparison purposes)](/code/c/)
+
 Thanks for taking the time to read this. It was really fun to put together. I hope you enjoyed it. :)
 
 ## Authors
@@ -17,15 +24,6 @@ Thanks for taking the time to read this. It was really fun to put together. I ho
 - [@jakeboxer](https://github.com/jakeboxer)
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
-
-## Next Steps
-
-Check out some working code examples, and maybe even write your own!
-
-1. [X86-64 Intel Syntax](/code/x86-intel/)
-1. [RISC-V](/code/riscv/)
-1. [6502](/code/6502/)
-1. [C (For comparison purposes)](/code/c/)
 
 <br />
 
