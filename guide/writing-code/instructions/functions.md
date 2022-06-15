@@ -2,6 +2,8 @@
 
 So now in assembly we can do a lot! We can save "variables", we can do math, we can jump around the code. But we don't have anything that resembles our dear friend, the [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions). We can jump to a particular section of the code with `jmp` and other instructions like it, but when we're finished executing that area of code, we can't get back to where we were when we called that code!
 
+<br />
+
 ```js
 // JavaScript
 let result = addNumbers();
@@ -16,9 +18,13 @@ function doSomethingElse(arg) {
 }
 ```
 
+<br />
+
 In Javascript, we could do something like we have here. We call a function, and then once it's finished, it automatically knows to go back to where that function was called, and continue executing the program.
 
 In assembly, we don't have actual functions, but we can simulate them pretty well - enter the `call` and `ret` instructions.
+
+<br />
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -34,6 +40,8 @@ call .doSomethingElse
   add rax, 1
   ret
 ```
+
+<br />
 
 We can think of our labels as our function names. We don't have the ability to pass in arguments to our labels the same way that we can in JavaScript functions, but we do have registers we can use! So here, we're using `rax` to hold our ["return" value](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values) from each "function".
 
