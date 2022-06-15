@@ -18,6 +18,15 @@ Thanks for taking the time to read this. It was really fun to put together. I ho
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
 
+## Next Steps
+
+Check out some working code examples, and maybe even write your own!
+
+1. [X86-64 Intel Syntax](/code/x86-intel/)
+1. [RISC-V](/code/riscv/)
+1. [6502](/code/6502/)
+1. [C (For comparison purposes)](/code/c/)
+
 <br />
 
 ---
