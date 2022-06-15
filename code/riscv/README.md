@@ -2,13 +2,15 @@
 
 ### Code Examples
 
-- [Examples of basic RISC-V instructions being used](/code/riscv/riscv.s)
+- [RISC-V example](/code/riscv/riscv.s)
+
+<br />
 
 ---
 
 There are many different assembly languages, depending on the processor you want to talk to.
 
-**RISC-V** is a simpler assembly language, made for educational and research purposes.
+**RISC-V** is a simpler assembly language, made for educational and research purposes. RISC stands for "Reduced Instruction Set Compiler". Its goal is to use a smaller instruction set than most other assembly languages. RISC-V is 8-bit, meaning the registers hold 8 bits.
 
 ## Running programs
 
@@ -16,25 +18,19 @@ To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents i
 
 ## Instructions
 
-https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf
-
 <p align="center">
   <br />
   <img src="https://cloud-az5f0vqak-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_2.04.20_pm.png">
   <br />
   <span>
     <em>
-      RISC-V instructions pulled from [this RISC-V card](https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf)
+      RISC-V instructions pulled from <a href="https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf">this RISC-V card</a>
     </em>
   </span>
 </p>
 <br />
 
-TODO: Fill this out
-
 ## Registers
-
-TODO: Fill this out
 
 <p align="center">
   <br />
