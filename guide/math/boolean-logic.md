@@ -23,7 +23,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 <p align="center">
   <br />
-  <img src="https://user-images.githubusercontent.com/621904/168841849-865fc1ae-091c-4723-b0b0-cdba50ef22a6.png">
+  <img src="https://cloud-6sy33924f-hack-club-bot.vercel.app/0and.png">
   <br />
   <span>
     <em>
@@ -45,7 +45,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## OR
 
-![Screen Shot 2022-05-17 at 10 53 20 AM](https://user-images.githubusercontent.com/621904/168842251-b04cdc4d-6c3e-458b-8968-c1eef1fc2b0c.png)
+![Screen Shot 2022-05-17 at 10 53 20 AM](https://cloud-m3gro1bsz-hack-club-bot.vercel.app/0or.png)
 
 `OR` is always true unless both of the inputs are false.
 
@@ -59,7 +59,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NOT
 
-![Screen Shot 2022-05-17 at 10 53 29 AM](https://user-images.githubusercontent.com/621904/168842309-66cc8fe3-d4e5-41e0-9ea1-8bc4e2a9bd21.png)
+![Screen Shot 2022-05-17 at 10 53 29 AM](https://cloud-gc5ntwfp3-hack-club-bot.vercel.app/0not.png)
 
 `NOT` only requires a single input, and it flips the input.
 
@@ -71,7 +71,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NAND
 
-![Screen Shot 2022-05-17 at 10 53 35 AM](https://user-images.githubusercontent.com/621904/168842382-d854d2f1-c20d-46fc-a302-4972343305ca.png)
+![Screen Shot 2022-05-17 at 10 53 35 AM](https://cloud-6kz6e5s0t-hack-club-bot.vercel.app/0nand.png)
 
 `NAND` is always true unless both inputs are true. `NAND` is the opposite of `AND`.
 
@@ -99,7 +99,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## NOR
 
-![Screen Shot 2022-05-17 at 10 53 25 AM](https://user-images.githubusercontent.com/621904/168842428-dd63a889-4774-4f7b-845e-3ae43c7c9b75.png)
+![Screen Shot 2022-05-17 at 10 53 25 AM](https://cloud-j6qrpnbsy-hack-club-bot.vercel.app/0nor.png)
 
 `NOR` is always false unless both inputs are false. `NOR` is the opposite of `OR`.
 
@@ -113,7 +113,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## XOR
 
-![Screen Shot 2022-05-17 at 10 53 38 AM](https://user-images.githubusercontent.com/621904/168842465-f8251a20-8962-4221-9146-93e4e6b01908.png)
+![Screen Shot 2022-05-17 at 10 53 38 AM](https://cloud-3wsvzk7wf-hack-club-bot.vercel.app/0xor.png)
 
 `XOR` is true if the inputs are different, false if they're the same.
 
@@ -127,7 +127,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## XNOR
 
-![xnor](https://user-images.githubusercontent.com/621904/168848632-9e62e088-3dbf-4007-a435-fe34e6fb4c8b.png)
+![xnor](https://cloud-emvf8qkr5-hack-club-bot.vercel.app/0xnor.png)
 
 `XNOR` is true if the inputs are the same, false if they're different. `XNOR` is the opposite of `XOR`.
 
@@ -139,19 +139,19 @@ Let's walk through these logical operations, they're actually quite simple!
 | 01 | 0   |
 | 11 | 1   |
 
-## Adding two integers
+## Using these in an equation
 
 Now that you know about all the different boolean functions, check this out!
 
 <p align="center">
   <br />
-  <img src="https://theorycircuit.com/wp-content/uploads/2018/07/full-adder-circuit.png">
+  <img src="https://cloud-9aw47i1e0-hack-club-bot.vercel.app/0eq.png">
 </p>
 <br />
 
-This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that adds two integers together. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
+This diagram shows how all the boolean functions we learned about above can be combined together to form a circuit that represents an equation. There is an actual piece of physical hardware inside the CPU you're using right now that is structured just like this!
 
-Now, this is a complicated diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
+Now, this is a diagram that I myself don't fully understand, but what it represents is very important: your CPU isn't doing anything magical when it does "smart" things like adding numbers together, it's just chaining together really simple boolean functions to calculate more complicated results.
 
 ---
 

@@ -1,5 +1,11 @@
 # You did it!
 
+<p align="center">
+  <br />
+  <img height="375" src="https://cloud-6oyb9m7up-hack-club-bot.vercel.app/0yay.png">
+</p>
+<br />
+
 Congratulations! You now know more about assembly language than most other people on the planet. What an achievement!
 
 If you were anything like me, there used to be this impenetrable layer between the **code you were writing** and the **actions your computer was taking**. Hopefully now that layer is removed, or feels much smaller - you now understand the core concepts of what's happening underneath. There are, of course, a million more things to know about CPUs, assembly, and all of the other layers between, but they're all built out of the work you've done here.
