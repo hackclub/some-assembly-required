@@ -39,7 +39,7 @@ Line by line you'd translate the recipe until you have a new recipe for your fri
 You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
 
 ```
-73 137 252 73 137 245 65  85
+73 137 252 73 137 245 65 85
 65 84 232 52 0 0 0 232
 ```
 
