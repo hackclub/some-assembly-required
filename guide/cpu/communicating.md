@@ -40,7 +40,7 @@ You could skip all of this assembly shenanigans by writing the machine code dire
 
 ```
 73 137 252 73 137 245 65  85
-65  84 232 52   0   0  0 232
+65 84 232 52 0 0 0 232
 ```
 
 Assembly, on the other hand, looks something like:
