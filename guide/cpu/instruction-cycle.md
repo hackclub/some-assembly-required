@@ -54,7 +54,7 @@ What those numbers represent include five broad categories, shown here with exam
 
 1. Instruction opcodes (`add`)
 1. Numeric values (`10`)
-1. Letters (`c`)
+1. Letters (`"M"`)
 1. Registers (`rax`)
 1. Memory addresses (`0x12345678`)
 
