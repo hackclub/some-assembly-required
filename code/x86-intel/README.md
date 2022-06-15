@@ -137,7 +137,7 @@ Registers in x86-64 are 64 bits.
   <br />
   <span>
     <em>
-      Commonly used registers from [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html)
+      Commonly used registers from <a href="https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html">Stanford CS107</a>
     </em>
   </span>
 </p>
