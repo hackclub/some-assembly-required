@@ -44,8 +44,9 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
 101
 102
 ...
+208
 209
-210  // Since we ran out of digits, our
+210 // Again, since we ran out of digits, we increment the next digit and start over
 ```
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
