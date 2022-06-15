@@ -4,7 +4,6 @@
   <br />
   <img width="375" src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
 </p>
-<br />
 
 This may sound counterintuitive, but computers aren't very smart. I know you may be shaking your head, insisting that my statement can't possibly be true, but I promise you that literally everything your computer is doing can be represented with just two values: **0** and **1**.
 
