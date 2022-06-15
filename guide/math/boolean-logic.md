@@ -21,7 +21,7 @@ Let's walk through these logical operations, they're actually quite simple!
 
 ## AND
 
-![AND gate](https://cloud-6sy33924f-hack-club-bot.vercel.app/0and.png)
+![AND gate](https://cloud-6sy33924f-hack-club-bot.vercel.app/0and.png | height=100)
 
 This image is a representation of an <code>AND</code> logic gate, where the inputs are the wires on the left and the result is the wire coming out of the right.
 
@@ -37,7 +37,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## OR
 
-![OR gate](https://cloud-m3gro1bsz-hack-club-bot.vercel.app/0or.png)
+![OR gate](https://cloud-m3gro1bsz-hack-club-bot.vercel.app/0or.png | height=100)
 
 `OR` is always true unless both of the inputs are false.
 
@@ -51,7 +51,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## NOT
 
-![NOT gate](https://cloud-gc5ntwfp3-hack-club-bot.vercel.app/0not.png)
+![NOT gate](https://cloud-gc5ntwfp3-hack-club-bot.vercel.app/0not.png | height=100)
 
 `NOT` only requires a single input, and it flips the input.
 
@@ -63,7 +63,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## NAND
 
-![NAND gate](https://cloud-6kz6e5s0t-hack-club-bot.vercel.app/0nand.png)
+![NAND gate](https://cloud-6kz6e5s0t-hack-club-bot.vercel.app/0nand.png | height=100)
 
 `NAND` is always true unless both inputs are true. `NAND` is the opposite of `AND`.
 
@@ -91,7 +91,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## NOR
 
-![NOR gate](https://cloud-j6qrpnbsy-hack-club-bot.vercel.app/0nor.png)
+![NOR gate](https://cloud-j6qrpnbsy-hack-club-bot.vercel.app/0nor.png | height=100)
 
 `NOR` is always false unless both inputs are false. `NOR` is the opposite of `OR`.
 
@@ -105,7 +105,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## XOR
 
-![XOR gate](https://cloud-3wsvzk7wf-hack-club-bot.vercel.app/0xor.png)
+![XOR gate](https://cloud-3wsvzk7wf-hack-club-bot.vercel.app/0xor.png | height=100)
 
 `XOR` is true if the inputs are different, false if they're the same.
 
@@ -119,7 +119,7 @@ This image is a representation of an <code>AND</code> logic gate, where the inpu
 
 ## XNOR
 
-![XNOR gate](https://cloud-emvf8qkr5-hack-club-bot.vercel.app/0xnor.png)
+![XNOR gate](https://cloud-emvf8qkr5-hack-club-bot.vercel.app/0xnor.png | height=100)
 
 `XNOR` is true if the inputs are the same, false if they're different. `XNOR` is the opposite of `XOR`.
 
