@@ -128,7 +128,7 @@ $m$ is the slope. If it's above 1, it means your line is going up faster. If it'
 
 $b$ is the intercept. Every line will always eventually hit the $y$ axis, unless it's a line that's straight up and down. The $b$ intercept is where your line intersect the $y$ axis.
 
-If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. Those $x$ and $y$ variables coordinate directly to the the $x$ and $y$ coordinates of the point on the graph.
+If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. Those $x$ and $y$ variables map directly to the the $x$ and $y$ coordinates of the point on the graph.
 
 To get any point on the straight line, you plug in $x$ into the equation and you get the $y$ coordinate!
 
