@@ -35,13 +35,17 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
   8
   9
  10 // Note that we shifted over by 1 place
- ..
+ 11
+ 12
+...
+ 98
  99
 100 // Note that we shifted over by 1 place
 101
+102
 ...
-109
-110
+209
+210  // Since we ran out of digits, our
 ```
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
