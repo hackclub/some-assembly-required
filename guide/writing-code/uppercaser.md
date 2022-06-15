@@ -23,6 +23,10 @@ For more information about x86-64 programs, check out the [README.md](/code/x86-
 
 <br />
 
+---
+
+<br />
+
 ```asm
 ; ==================================================================================
 ; UPPERCASER
