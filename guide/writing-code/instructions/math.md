@@ -134,6 +134,8 @@ To get any point on the straight line, you plug in $x$ into the equation and you
 
 Thanks for bearing with me to teach a little math. I think it's important to show that, with assembly, you can write real life functions like $y = mx + b$. Here's how it would look:
 
+<br />
+
 ```asm
 ; X86-64 Intel Syntax Assembly
 mov rax, 2; rax will contain m
@@ -143,6 +145,8 @@ mov rcx, 4; rcx will contain b
 mul rax, rbx; m*x, store in rax
 add rax, rcx; mx + b, store in rax. rax now contains y!
 ```
+
+<br />
 
 Soon, we will learn about how to loop over the same code and execute it. That would enable us to use this code we just wrote to get all of the points of a particular line!
 
