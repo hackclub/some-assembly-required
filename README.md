@@ -2,8 +2,6 @@
 
 ### An approachable introduction to assembly.
 
-<br />
-
 <p align="center">
   <br />
   <img src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
