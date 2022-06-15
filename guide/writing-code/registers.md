@@ -8,7 +8,7 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-gdsf4ub24-hack-club-bot.vercel.app/0registers.png">
+  <img height="400" src="https://cloud-gdsf4ub24-hack-club-bot.vercel.app/0registers.png">
   <br />
   <span>
     <em>Commonly used registers</em>
