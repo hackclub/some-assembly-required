@@ -15,7 +15,7 @@ So what would that look like in JavaScript?
 // JavaScript
 const base = 2;
 const exponent = 8;
-let result = 1; # since our counter is starting at 0, we start our result at 2^0, which is 1
+let result = 1; // since our counter is starting at 0, we start our result at 2^0, which is 1
 
 for (let counter = 0; counter < exponent; counter++) {
   result *= base
