@@ -1,8 +1,7 @@
-# Some Assembly Required
-
-### An approachable introduction to assembly.
-
 <p align="center">
+  <h1>Some Assembly Required</h1>
+  <h3>An approachable introduction to assembly.</h3>
+
   <img src="https://cloud-1b2fvx8fc-hack-club-bot.vercel.app/0cover.png">
 </p>
 <br />
