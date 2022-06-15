@@ -13,7 +13,7 @@ You may be wondering what this might look like. If you are, you're in luck! Let'
 Remember our registers, or cubbies? We will talk about them [more later](/guide/writing-code/registers.md), but for this example, we just need to remember that they're places where you can store things temporarily.
 
 ```asm
-add r12, 4; Add the number 4 to the number saved in register 12
+add r12, 4 ; Add the number 4 to the number saved in register 12
 ```
 
 First, the CPU goes and fetches the data for the instruction. In machine code, this may end up looking like this in [binary](#binary) (we will cover what binary is later), or base 2:
