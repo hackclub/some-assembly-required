@@ -4,8 +4,6 @@
 
 - [RISC-V example](/code/riscv/riscv.s)
 
-<br />
-
 ---
 
 There are many different assembly languages, depending on the processor you want to talk to.
