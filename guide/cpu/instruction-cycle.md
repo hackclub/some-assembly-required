@@ -72,7 +72,7 @@ The first part of the data it fetches is the **opcode**, which is the unique ide
 
 The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like:
 ```asm
-add 3, 4;
+add 3, 4
 ```
 
 Our opcode is `add`, and our arguments are `3` and `4`!
@@ -81,7 +81,7 @@ Our opcode is `add`, and our arguments are `3` and `4`!
 
 After the fetched data is decoded, the CPU now has an instruction that it can do.
 
-If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished mathing, the ALU would then return a value, which is stored in a register until an instruction needs it.
+If the instruction is arithmetic (like adding or subtracting) or logical (like comparing two digits to give a true or false), there's an extra stop at the **arithmetic-logic unit**, or **ALU**. This unit is responsible for doing math. Once it's finished math-ing, the ALU would then return a value, which is stored in a register until an instruction needs it.
 
 <br />
 
