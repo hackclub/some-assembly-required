@@ -34,10 +34,10 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
   7
   8
   9
- 10 # Note that we shifted over by 1 place
+ 10 // Note that we shifted over by 1 place
  ..
  99
-100 # Note that we shifted over by 1 place
+100 // Note that we shifted over by 1 place
 101
 ...
 109
