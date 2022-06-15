@@ -2,8 +2,6 @@
 
 ### An approachable introduction to assembly.
 
----
-
 <br />
 
 <p align="center">
