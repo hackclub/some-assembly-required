@@ -47,6 +47,7 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
 108
 109
 110 // Since we ran out of digits in the "ones" place, we increment the "tens" place and start the "ones" place over
+111
 ```
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
