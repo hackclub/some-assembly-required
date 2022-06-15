@@ -17,9 +17,7 @@ It's the first program I've written in assembly that actually does something (ot
 
 <br />
 
-Seeing all of this code may make you want to close this page.
-
-**Don't panic!**
+Seeing all of this code may make you want to close this page. **Don't panic!**
 
 I promise you that you have the tools to understand this program now. I also think it's ok to be a little confused while you're going through it - just stick with it, get out a pencil and paper if you need to, and read all of the comments!
 
