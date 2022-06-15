@@ -20,7 +20,7 @@ So let's say our first instruction is at memory address `0x00000001`. If we incr
 
 <p align="center">
   <br />
-  <img height="375" src="https://cloud-qhibd7tkn-hack-club-bot.vercel.app/0instructionpointer.png">
+  <img src="https://cloud-qhibd7tkn-hack-club-bot.vercel.app/0instructionpointer.png">
 </p>
 <br />
 
