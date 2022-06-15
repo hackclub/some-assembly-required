@@ -197,11 +197,8 @@ This part works the same as the binary part, but with 16 as our base instead of 
 You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
 
 ---
-<br />
 
 > For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
-
-<br />
 
 ---
 
