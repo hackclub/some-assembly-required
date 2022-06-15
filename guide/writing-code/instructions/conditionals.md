@@ -1,6 +1,6 @@
 # Conditionals
 
-Let's say you're writing some code, and you want some code to execute _only_ if something else is true.
+Let's say you're writing some code, and you want something to happen _only_ if something else is true.
 
 ```js
 // JavaScript
