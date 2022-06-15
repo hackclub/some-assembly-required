@@ -129,7 +129,7 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
 
 ## Registers
 
-From [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html), the table below lists the commonly used registers. Each register is 64 bits.
+Registers in x86-64 are 64 bits.
 
 <p align="center">
   <br />
@@ -137,7 +137,7 @@ From [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222
   <br />
   <span>
     <em>
-      Commonly used x86-64 registers
+      Commonly used registers from [Stanford CS107](https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html)
     </em>
   </span>
 </p>
