@@ -12,6 +12,8 @@ There are many different assembly languages, depending on the processor you want
 
 **RISC-V** is a simpler assembly language, made for educational and research purposes. RISC stands for "Reduced Instruction Set Compiler". Its goal is to use a smaller instruction set than most other assembly languages. RISC-V is 8-bit, meaning the registers hold 8 bits.
 
+Check out https://medium.com/swlh/risc-v-assembly-for-beginners-387c6cd02c49 for a guide to writing RISC-V programs.
+
 ## Running programs
 
 To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents into a RISC-V interpreter, like https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/.
