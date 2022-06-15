@@ -223,13 +223,11 @@ So `B1` is 89 in base 10.
 
 You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
 
----
-
-> For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
-
----
+For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
 
 <br />
+
+---
 
 <a href="/guide/writing-code/uppercaser.md">
   <picture>
