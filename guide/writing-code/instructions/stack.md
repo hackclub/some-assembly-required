@@ -9,11 +9,11 @@ Need something at the bottom? Too bad! You gotta go through the top.
 
 <p align="center">
   <br />
-  <img height="200" src="https://holycoders.com/content/images/wordpress/2020/04/Stack-data-structure.png">
+  <img height="200" src="https://cloud-ded5b376v-hack-club-bot.vercel.app/0stack.png">
   <br />
   <span>
     <em>
-      just a placeholder image to break up the content!
+      Last in, first out!
     </em>
   </span>
 </p>
