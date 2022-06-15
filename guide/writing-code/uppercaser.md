@@ -8,7 +8,7 @@ Uppercaser takes command line arguments that you pass it, and prints them back o
 
 <p align="center">
   <br />
-  <img height="150" src="https://cloud-b8fumzsy2-hack-club-bot.vercel.app/0uppercaser.png">
+  <img src="https://cloud-b8fumzsy2-hack-club-bot.vercel.app/0uppercaser.png">
 </p>
 
 <br />
@@ -20,6 +20,8 @@ Seeing all of this code may make you want to close this page.
 I promise you that you have the tools to understand this program now. I also think it's ok to be a little confused while you're going through it - just stick with it, get out a pencil and paper if you need to, and read all of the comments!
 
 For more information about x86-64 programs, check out the [README.md](/code/x86-intel/).
+
+<br />
 
 ```asm
 ; ==================================================================================
