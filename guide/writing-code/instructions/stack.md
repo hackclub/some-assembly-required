@@ -9,7 +9,7 @@ Need something at the bottom? Too bad! You gotta go through the top.
 
 <p align="center">
   <br />
-  <img src="https://cloud-ded5b376v-hack-club-bot.vercel.app/0stack.png">
+  <img height="375" src="https://cloud-ded5b376v-hack-club-bot.vercel.app/0stack.png">
   <br />
   <span>
     <em>
