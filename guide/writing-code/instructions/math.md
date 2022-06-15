@@ -148,9 +148,7 @@ add rax, rcx ; m * x + b, store in rax. rax now contains y!
 
 <br />
 
-We just executed a real math equation using assembly!
-
-Soon, we will learn about how to _loop_ over code, which will enable us to use this code to get _all_ the points of a particular line!
+We just executed a real math equation using assembly! Soon, we will learn about how to _loop_ over code, which will enable us to use this code to get _all_ the points of a particular line.
 
 <br />
 
