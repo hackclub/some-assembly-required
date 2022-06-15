@@ -4,8 +4,7 @@ Congratulations! You now know more about assembly language than most other peopl
 
 If you were anything like me, there used to be this impenetrable layer between the **code you were writing** and the **actions your computer was taking**. Hopefully now that layer is removed, or feels much smaller - you now understand the core concepts of what's happening underneath. There are, of course, a million more things to know about CPUs, assembly, and all of the other layers between, but they're all built out of the work you've done here.
 
-
-Here's a fun exercise for the next time you're writing JavaScript, Ruby, or whichever higher-level language you've chosen. Take a moment to think about the instructions that this could be turning into, and then how those instructions will be represented as electrical signals running through the metal in your CPU. How magical is that?
+Here's a fun exercise for the next time you're writing JavaScript, Ruby, or whichever higher-level language you've chosen. Take a moment to think about the fact that everything you've written will all end up as machine code eventually, and think about the assembly instructions that the machine code would translate to, and then how those instructions will end up as _real life_ electrical signals running through the _physical_ metal in your CPU.
 
 Thanks for taking the time to read this. It was really fun to put together. I hope you enjoyed it. :)
 
