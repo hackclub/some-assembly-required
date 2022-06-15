@@ -18,7 +18,11 @@ Let's say for a  64-bit machine, each instruction ends up being 8 bytes (64 bits
 
 So let's say our first instruction is at memory address `0x00000001`. If we incremented to `0x00000002`, that would be **1 byte** of data, or **8 bits**. If we want to increment by an instruction's amount of data (**8 bytes**), we'd increment to `0x00000009`, since that's 8 bytes after `0x00000001`.
 
-_Insert drawn diagram of a program, its memory address next to it, and showing the instruction pointer_
+<p align="center">
+  <br />
+  <img src="https://cloud-zqt1jjavr-hack-club-bot.vercel.app/0instructionpointer.png">
+</p>
+<br />
 
 ---
 
