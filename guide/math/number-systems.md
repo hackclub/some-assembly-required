@@ -186,7 +186,7 @@ Let's calculate our binary to hex example from above into decimal. So far, our h
 
 This part works the same as the binary part, but with 16 as our base instead of 2. So let's take one of our bytes from above, `7D`, as an example. We're going to go from right to left, just like in our binary example. You can also think of it as least significant digit to most significant digit, just like in decimal.
 
-Our number is $7D$.
+Our number is **7D**.
 
 - $D$ maps to $13$
   - $13 * 16^0 = 13$
@@ -194,7 +194,7 @@ Our number is $7D$.
   - $7 * 16^1 = 112$
 - $16 + 112 = 125$
 
-So $7D$ is **125** in base 10!
+So **7D** is **125** in base 10!
 
 ---
 
@@ -220,6 +220,8 @@ So `B1` is 89 in base 10.
 </details>
 
 ---
+
+<br />
 
 You'll often see hex numbers associated with assembly, registers, and even in higher level concepts like [hex color codes](https://www.color-hex.com/). Now you have the tools you need to recognize these numbers and decode them!
 
