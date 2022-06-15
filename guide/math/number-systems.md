@@ -44,9 +44,9 @@ Those digits are 0 - 9. So, what happens when we run out of digits? We shift ove
 101
 102
 ...
-208
-209
-210 // Since we ran out of digits in the ones place, we increment the tens digit and start the ones place over
+108
+109
+110 // Since we ran out of digits in the "ones" place, we increment the "tens" place and start the "ones" place over
 ```
 
 This looks obvious to you, I know. We all do this without thinking about it. But how it works is important, because as I'm sure you've guessed, there's more than one number system. You've actually been hearing about one a lot throughout this guide. Remember all of our **1**s and **0**s we've been talking about?
@@ -64,7 +64,7 @@ As we already know with binary, there are only two digits represented: **0** and
  11 // 3
 100 // 4 - Note that we shifted over by 1 place
 101 // 5
-110 // 6
+110 // 6 - Since we ran out of digits in the "ones" place, we increment the "twos" place and start the "ones" place over
 111 // 7
 ```
 
