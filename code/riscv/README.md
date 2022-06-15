@@ -16,7 +16,7 @@ There are many different assembly languages, depending on the processor you want
 
 To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents into a RISC-V interpreter, like https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/.
 
-## Instructions
+<br />
 
 <p align="center">
   <br />
@@ -28,9 +28,8 @@ To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents i
     </em>
   </span>
 </p>
-<br />
 
-## Registers
+<br />
 
 <p align="center">
   <br />
