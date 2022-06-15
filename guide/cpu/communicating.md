@@ -1,6 +1,10 @@
 # Communicating with the CPU
 
-We're used to communicating with the CPU in a high-level language like JavaScript or C, but the code you'd write in these languages doesn't directly represent the things you're telling the CPU to do. Using a metaphor, if you decided to go to Greece (ask the CPU to do something), writing in a high-level language would be buying a travel package that handles everything for you (you don't have to actually book your own plane tickets, hotels, etc.). If you want to communicate directly with the CPU, you'll need to write the instructions for it in a format called assembly language.
+We're used to communicating with the CPU in a high-level language like JavaScript or C, but the code you'd write in these languages doesn't directly represent the things you're telling the CPU to do.
+
+It's like if you decided to travel to Greece. Writing in a high-level language would be like buying a travel package that handles everything for you, like booking your plane tickets, hotels, handling your food, car rental. If you wanted to handle those things manually, you'd have to buy each thing individually and organize it yourself.
+
+Similarly, with your computer, if you want to control each aspect of what you're asking the computer to do, you'll need to write the instructions for it in a format called assembly language.
 
 Assembly language is the lowest level of abstraction in computers where the code you write is still human readable. You may disagree about the human readable part when you first see it, but I promise you it's better than what the computer is looking at!
 
