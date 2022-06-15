@@ -150,7 +150,7 @@ add rax, rcx ; m * x + b, store in rax. rax now contains y!
 
 We just executed a real math equation using assembly!
 
-Soon, we will learn about how to loop over the same code and execute it. That would enable us to use this code we just wrote to get all of the points of a particular line!
+Soon, we will learn about how to _loop_ over code, which will enable us to use this code to get _all_ the points of a particular line!
 
 <br />
 
