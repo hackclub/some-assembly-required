@@ -68,11 +68,15 @@ call .getSlopeIntercept ; after this call, rax will contain our return value (17
 
 General purpose registers have a convention where they're marked as **caller-owned** or **callee-owned**. This refers to whether or not the caller is expected to overwrite the values in a given register.
 
+<br />
+
 ```asm
 ; X86-64 Intel Syntax Assembly
 .fizz ; caller
   call .buzz ; callee
 ```
+
+<br />
 
 Let's take this code for example, where the function `fizz` calls function `buzz`. In this case, we refer to `fizz` as the **caller** and `buzz` as the **callee**. With this in mind:
 
@@ -81,6 +85,8 @@ Let's take this code for example, where the function `fizz` calls function `buzz
 - If a **caller** wants to use a **callee-owned register**, they are responsible for saving its value by pushing it onto the stack before calling the callee. Otherwise, this register can be overridden by the callee, which will cause the caller to lose the value.
 
 Let's take the **callee-owned** register `rax` for example, which is traditionally used for return values:
+
+<br />
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -97,6 +103,8 @@ Let's take the **callee-owned** register `rax` for example, which is traditional
   ret
 ```
 
+<br />
+
 In contrast,
 
 - If a **callee** wants to use a **caller-owned register**, they must first save its value by pushing it onto the stack. Then, before the callee returns, they must restore the register to its original value by popping it off the stack and back into the register.
@@ -104,6 +112,8 @@ In contrast,
 - If a **callee** wants to use a **callee-owned register**, it's able to do so freely!
 
 Let's take the **caller-owned** register `rbx`, for example:
+
+<br />
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -119,6 +129,8 @@ Let's take the **caller-owned** register `rbx`, for example:
   pop rbx ; Return caller-owned register value for caller to use
   ret
 ```
+
+<br />
 
 ---
 
