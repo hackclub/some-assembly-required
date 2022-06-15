@@ -52,7 +52,7 @@ In our example, when the program sees the `jmp` instruction, the instruction poi
   <br />
   <br />
   <span>
-    <em>After jumping, your instruction pointer will be the memory address of the first instruction inside the label</em>
+    <em>After jumping, your instruction pointer register will contain the memory address of the first instruction inside the label</em>
   </span>
 </p>
 
