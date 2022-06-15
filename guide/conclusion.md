@@ -17,8 +17,6 @@ For next steps, check out some working code examples, and maybe even write your 
 
 **Thanks for taking the time to read this. It was really fun to put together. I hope you enjoyed it. :)**
 
-<br />
-
 ## Authors
 
 - [@jessicard](https://github.com/jessicard)
