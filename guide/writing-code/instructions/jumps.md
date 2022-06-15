@@ -50,6 +50,7 @@ In our example, when the program sees the `jmp` instruction, the instruction poi
   <br />
   <img height="275" src="https://cloud-kv6uvnuqg-hack-club-bot.vercel.app/0jump.png">
   <br />
+  <br />
   <span>
     <em>After using the <code>jmp</code> instruction, <code>rip</code> will be pointing to the memory address of the first instruction inside the label</em>
   </span>
