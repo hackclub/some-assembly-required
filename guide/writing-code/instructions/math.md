@@ -142,8 +142,8 @@ mov rax, 2; rax will contain m
 mov rbx, 3; rbx will contain x
 mov rcx, 4; rcx will contain b
 
-mul rax, rbx; m*x, store in rax
-add rax, rcx; mx + b, store in rax. rax now contains y!
+mul rax, rbx; m * x, store in rax
+add rax, rcx; m * x + b, store in rax. rax now contains y!
 ```
 
 <br />
