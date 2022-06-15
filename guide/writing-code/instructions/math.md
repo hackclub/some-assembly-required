@@ -132,7 +132,7 @@ If you fill in $m$ & $b$ in the equation, you're left with $x$ & $y$ variables. 
 
 To get any point on the straight line, you plug in $x$ into the equation and you get the $y$ coordinate!
 
-Thanks for bearing with me to teach a little math. I think it's important to show that, with assembly, you can write real life functions like $y = mx + b$. Here's how it would look:
+Thanks for sticking with me to re-learn a little math. I think it's important to show that we can write real life functions like this using just assembly. Here's how it would look:
 
 <br />
 
