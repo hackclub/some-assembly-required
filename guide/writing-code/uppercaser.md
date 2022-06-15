@@ -21,6 +21,8 @@ I promise you that you have the tools to understand this program now. I also thi
 
 For more information about x86-64 programs, check out the [README.md](/code/x86-intel/).
 
+If you'd like to skip this section and keep reading about concepts, the next section can be found [here](/guide/math/number-systems.md).
+
 <br />
 
 ---
@@ -462,7 +464,7 @@ _main:
   <em>
     <b>
       <a href="/guide/math/number-systems.md">
-        Math →
+        I promise the math section is small →
       </a>
     </b>
   </em>
