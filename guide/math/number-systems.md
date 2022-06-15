@@ -146,7 +146,7 @@ Well, we have to remember - our base is 16. That means we have 16 digits to repr
 7
 8
 9
-A // 10
+A // 10 - In base 10, we have to shift over by 1 here because we ran out of digits. In base 16, we have more digits to use!
 B // 11
 C // 12
 D // 13
