@@ -198,6 +198,24 @@ You'll often see hex numbers associated with assembly, registers, and even in hi
 
 <br />
 
+If you want a challenge, try converting hexadecimal digit `B1` to base 10:
+
+<details>
+<summary><i>Reveal <code>B1</code> in base 10</i></summary>
+<br />
+<i>
+
+As a reminder, we're calculating from right to left.
+
+B = 11
+
+- $1 * 16^0 = 1$
+- $11 * 16^1 = 176$
+- $1 + 176 = 177$
+
+So `B1` is 89 in base 10.
+</i>
+</details>
 ---
 
 > For more number system goodness, check out [this site](https://www.mathsisfun.com/binary-number-system.html) for more information and an animated explanation.
