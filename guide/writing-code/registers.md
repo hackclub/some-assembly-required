@@ -8,12 +8,10 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
 
 <p align="center">
   <br />
-  <img height="600" src="https://cloud-1dple0n1y-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_10.49.40_am.png">
+  <img src="https://cloud-gdsf4ub24-hack-club-bot.vercel.app/0registers.png">
   <br />
   <span>
-    <em>
-      Commonly used registers from <a href="https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html">Stanford CS107</a>
-    </em>
+    <em>Commonly used registers</em>
   </span>
 </p>
 <br />
