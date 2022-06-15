@@ -4,11 +4,15 @@ WELCOME TO THE UPPERCASER PROGRAM!!!!!
 
 It's the first program I've written in assembly that actually does something (other than [hello world](/code/x86-intel/hello-world/hello-world-mac.asm)). It's written in x86-64 assembly. For more information about x86-64 programs, check out the [README.md](/code/x86-intel/).
 
-Uppercaser takes command line arguments that you pass it, and prints them back out on new lines uppercased. Very nice!
-
 <p align="center">
   <br />
   <img src="https://cloud-b8fumzsy2-hack-club-bot.vercel.app/0uppercaser.png">
+  <br />
+  <span>
+    <em>
+      Uppercaser takes command line arguments that you pass it, and prints them back out on new lines uppercased. Very nice!
+    </em>
+  </span>
 </p>
 
 <br />
