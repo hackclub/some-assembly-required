@@ -190,7 +190,15 @@ So what would happen if we went past 15? We do the same thing we did before - sh
 
 It's really weird, I know. Your brain _wants_ to parse it as decimal, or base 10. But since the math behind the base is completely different, numbers that look like something in base 10 mean completely different things in base 16!
 
-Let's calculate our binary to hex example from above into decimal. So far, our hex digits are:
+---
+
+Let's calculate our binary to hex example from above into decimal. For a reminder, our binary was:
+
+```
+10000001 00010011 00000000 11110000 10101000 11000111 01111101 00000001
+```
+
+And our hex digits are:
 
 ```
 81 13 00 FO A8 C7 7D 01
