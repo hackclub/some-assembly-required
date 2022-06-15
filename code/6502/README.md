@@ -19,7 +19,7 @@ I also highly recommend taking some time to go through the [Easy 6502 Guide](htt
 
 Assembly languages vary depending on the kind of CPU you're communicating with. Assembly is only one layer above machine code, the language that computers can understand, and that machine code changes depending on the CPU. So certain assembly instructions are only understandable by certain types of CPUs.
 
-The 6502 assembly language is used to program the 6502 processor (can you guess where the assembly language it got its name from?). The 6502 processor is an [8-bit](/guide/writing-code/data.md) processor which means that it deals with data 8 bits at a time. 
+The 6502 assembly language is used to program the 6502 processor (can you guess where the assembly language it got its name from?). The 6502 processor is an [8-bit](/guide/writing-code/data.md) processor which means that it deals with data 8 bits at a time.
 
 ### Registers and RAM
 
@@ -419,7 +419,7 @@ Depending on which operating system you use, a different line of code applies to
 
 If you use a Mac, you need to swap out `/Applications/Vice/x64.app/Contents/MacOS/x64` with the actual file path to where you stored your Vice so in this case it was in the Applications folder. _DO NOT REMOVE `Contents/MacOS/x64`._ You want to use x64sc so if you did indeed store your file in the Applications folder, your path should be `/Applications/{folderName}/x64sc.app/Contents/MacOS/x64sc` where `{folderName}`is the name of your folder, eg. `vice-x86-64-gtk3-3.6.1`.
 
-If you use Windows, you need to swap out `C:/tools/vice/x64.exe` with the actual file path so if you stored it under tools, your file path should be `C:/tools/{foldername}/x64sc.exe`. (TODO ✅: Would someone with Window be willing to test this out and see if it works?)
+If you use Windows, you need to swap out `C:/tools/vice/x64.exe` with the actual file path so if you stored it under tools, your file path should be `C:/tools/{foldername}/x64sc.exe`.
 
 Finally the part where you code (yay!). You want to add your code to `code/main.asm`.
 
@@ -437,7 +437,7 @@ When you're done, to assemble the code, _Press SHIFT + COMMAND + B (On Windows, 
 </p>
 <br />
 
-   Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cloud-411nkqhe8-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_6.38.19_pm.png), you can do this by opening the file in terminal and right click to select open with > x64sc. (TODO ✅: add how someone would do this in windows)
+   Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cloud-411nkqhe8-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_6.38.19_pm.png), you can do this by opening the file in terminal and right click to select open with > x64sc.
 
    On Errors: If you see a `failed to launch (exit code: 126)` in the terminal, you might have missed `/Contents/MacOS/x64sc` and if you see `failed to launch (exit code: 127)` in the terminal, you're not pointing to the correct file location where your VICE Emulator is.
 
