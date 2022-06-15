@@ -12,8 +12,8 @@
 #include <stdio.h>
 
 /* function declarations */
-void printNumberOfArgs(int numberOfArgs);
-void printArgument(char *arg);
+void print_number_of_args(int num_args);
+void print_argument(char *arg);
 
 int main(int argc, char **argv) {
   // Uncomment this to print out number of arguments
@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
   // our first argument
   if (argc > 1) {
     for (int i = 1; i < argc; i++) {
-      printArgument(argv[i]);
+      print_argument(argv[i]);
     }
   } else {
     printf("No arguments passed!\n");
@@ -34,11 +34,11 @@ int main(int argc, char **argv) {
   return 0;
 }
 
-void printNumberOfArgs(int numberOfArgs) {
-  printf("%i\n", numberOfArgs);
+void print_number_of_args(int num_args) {
+  printf("%i\n", num_args);
 }
 
-void printArgument(char *arg) {
+void print_argument(char *arg) {
   for (int i = 0; i < strlen(arg); i++) {
     arg[i] = toupper(arg[i]);
   }
