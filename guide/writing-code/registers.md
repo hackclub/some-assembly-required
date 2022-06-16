@@ -43,7 +43,7 @@ Whereas 32 bit would be:
 
 64-bit registers can hold up to a whopping 9,223,372,036,854,775,807. 32-bit, on the other hand, can hold up to the number 2,147,483,647.
 
-Why isn't it just double? Well, the way binary works is that it grows exponential with how many bits you're allowed to use. So doubling the size of our registers was a huge invention for computers.
+Why isn't it just double? Well, the way binary works is that it grows exponential with how many bits you're allowed to use. So doubling the size of our registers was a huge improvement for computers.
 
 There are x86 processors that are 16-bit, 32-bit, and 64-bit, so we specify the "-64" in "x86-64" to know we're talking about the 64-bit version. You'll see some examples online that use the 32-bit version, and the registers they refer to are different. Usually 32-bit registers start with the letter `E`, whereas 64-bit registers usually start with the letter.
 
