@@ -235,7 +235,7 @@ Our number is $B1$.
   - $11 * 16^1 = 176$
 - $1 + 176 = 177$
 
-So `B1` is 89 in base 10.
+So `B1` is 177 in base 10.
 </i>
 </details>
 

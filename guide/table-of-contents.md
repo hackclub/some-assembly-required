@@ -23,6 +23,7 @@
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
 - [@japrozs](https://github.com/japrozs)
+- [@sporeball](https://github.com/sporeball)
 
 <br />
 
