@@ -6,7 +6,7 @@
 ; Written as a working example of an x86 Intel syntax assembly language program
 ; ==================================================================================
 
-; Assembler used: NASM
+; Assembler used: YASM
 ; Assembly syntax: x86 Intel
 ; CPU architecture: Intel x86-64
 ; Platform architecture: Mac
