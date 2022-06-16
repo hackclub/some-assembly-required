@@ -1,5 +1,11 @@
 ;; Hello World in x86 Intel syntax
 
+; Assembler used: NASM
+; Assembly syntax: x86 Intel
+; CPU architecture: Intel x86-64
+; Platform architecture: PC
+; OS architecture: Linux
+
 ;; Intel Linux assembly instructions
 
 ; We have 3 steps to run our program.
