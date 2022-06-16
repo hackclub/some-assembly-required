@@ -25,7 +25,11 @@ I promise you that you have the tools to understand this program now. I also thi
 
 _If you'd like to skip this section and keep reading about concepts, the next section can be found [here](/guide/math/number-systems.md)._
 
+<br />
+
 ---
+
+<br />
 
 This is a code snippet from [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm). For more information about how to run this program, check out [this section](/code/x86-intel).
 
