@@ -19,7 +19,7 @@ The **64** part is referring to the number of [bits](/guide/writing-code/data.md
 
 By default, macOS doesn't ship with developer tools, since most computer users aren't writing code. In order to compile these examples, you'll need to [download Xcode](https://developer.apple.com/xcode/) and their [command line tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 
-If you have [Homebrew](https://brew.sh/) installed, you can also download the [nasm package](https://formulae.brew.sh/formula/nasm).
+If you have [Homebrew](https://brew.sh/) installed, you can also download the [yasm package](https://formulae.brew.sh/formula/yasm).
 
 ## Running programs
 
@@ -32,12 +32,12 @@ For a Mac (both Intel and Apple Silicon), these are the instructions to compile 
 
 ### 1. Assemble our program into an object file
 ```
-$ nasm -f macho64 hello-world.asm
+$ yasm -f macho64 hello-world.asm
 ```
 
 This whole command creates an object file, which is machine code. You can view it in a [hex editor](https://hexfiend.com/). If you view it in a normal text editor, it tries to convert the machine code to ASCII, which makes it nonsensical.
 
-`nasm` is our assembler, `-f` flag is to specify our file format. `macho64` is our file format, used for Mac executables.
+`yasm` is our assembler, `-f` flag is to specify our file format. `macho64` is our file format, used for Mac executables.
 
 
 ### 2. Generate our executable
@@ -56,7 +56,7 @@ $ ./hello-world
 
 ### All together now!
 ```
-$ nasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
+$ yasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world
 ```
 
 ## Anatomy of a program
