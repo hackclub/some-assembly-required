@@ -31,7 +31,7 @@ _If you'd like to skip this section and keep reading about concepts, the next se
 
 <br />
 
-This is a snippet from the program, showing just the functioning code. To see the full program, check out [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm). For more information about how to run this program, check out [this section](/code/x86-intel).
+This is a snippet from the program, showing just the functioning code. To see the full program, check out [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm). For more information about how to run this program, check out the [x86-64 Intel Syntax section](/code/x86-intel).
 
 <br />
 
