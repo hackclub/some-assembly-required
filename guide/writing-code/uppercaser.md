@@ -27,7 +27,7 @@ _If you'd like to skip this section and keep reading about concepts, the next se
 
 ---
 
-[Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm)
+This is code from [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm). For more information about how to run this program, check out [this README.md](code/x86-intel).
 
 <br />
 
