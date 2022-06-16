@@ -84,9 +84,9 @@ There are 5 flags on an x86-64 processor, but let's talk about the zero flag, or
 
 After an operation, if the result **is** `0`, the `ZF` flag gets set to `1`. If the result **is not** `0`, the flag gets set to `0`.
 
-This might seem counter-intuitive, but we have to remember that when talking about the binary digits of `1` and `0`:
-- `1` stands for **true**
-- `0` stands for **false**
+This might seem counter-intuitive, but when talking about the binary digits of `1` and `0`:
+- `1` also stands for **true**
+- `0` also stands for **false**
 
 So if we're checking if the result of our operation is `0`, and that ends up being the case, that means that the `ZF` register being set to `1` is saying that it's **true** that our result is `0`.
 
