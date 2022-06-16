@@ -28,7 +28,15 @@ Which, in [base 10](#number-systems) (how we normally talk about numbers!), is:
 1 12 4
 ```
 
-When the decoder reads it's first value, it knows it's looking for a number to map to an opcode. Now, let's say the number `1` maps to the opcode `add`. When it sees the `1`, it knows it's reading an `add` instruction.
+When the decoder reads it's first value, it knows it's looking for a number to map to an opcode.
+
+| Number | Instruction |
+| ------ | ----------- |
+| 1      | `add`       |
+| 2      | `sub`       |
+| ...    | ...         |
+
+Now, let's say the number `1` maps to the opcode `add`. When it sees the `1`, it knows it's reading an `add` instruction.
 
 The decoder knows that the `add` instruction's first argument is both:
 
