@@ -38,8 +38,6 @@ First, the CPU retrieves the first number it needs for the equation. Since the C
 
 Next, the CPU grabs the second number in the equation. The CPU now has all the information it needs to add the two numbers together. It goes ahead and executes the adding instruction, passing that new number along, and then moves on to the next instruction it's given!
 
-The CPU keeps track of which instruction it's fetching data for with a special register called the **instruction pointer**. The instruction pointer contains the memory address of the instruction currently being executed. And in most cases, after an instruction is executed, the program counter needs to increment itself by one instruction to point to the next instruction memory address.
-
 Now you may be asking yourself - why don't we store everything in the registers, since memory is slower? Well, we only have a limited amount of space in our registers. The actual size depends on your computer's hardware. Depending on the particular processor, you may get around 16 general purpose registers to store your data in. There are more registers than that, but some registers are used internally and can't be directly accessed.
 
 Memory can easily hold over _15 million times_ the amount that registers can! Since computers have to process so much data, we can very quickly run out of space in our registers. So any data that we don't need to actively use for an instruction, we place in memory.
