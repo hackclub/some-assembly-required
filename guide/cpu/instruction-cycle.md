@@ -46,7 +46,7 @@ Memory can easily hold over _15 million times_ the amount that registers can! Si
 
 Now that we've fetched the data, what does that data actually look like?
 
-Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read, which is as numbers.
+Well, as we've learned, the computer can only read numbers. So all of the data we store has to be represented in a way that the computer can read.
 
 What those numbers represent include five broad categories, shown here with examples of what they look like:
 
