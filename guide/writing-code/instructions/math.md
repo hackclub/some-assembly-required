@@ -22,7 +22,7 @@ The `add` instruction adds the value on the right side (`1`) to the contents of 
 
 ---
 
-Just like our `mov` instruction, the `add` instruction can use the contents of second register to operate on the first register.
+Just like our `mov` instruction, the `add` instruction can use the contents of the second register to operate on the first register.
 
 ```js
 // JavaScript
