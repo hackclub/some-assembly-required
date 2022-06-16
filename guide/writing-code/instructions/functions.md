@@ -60,6 +60,8 @@ At the end of our "function", we call `ret`, short for return. If you haven't gu
 
 It does this by **popping** our previous memory address off of the stack and into the instruction pointer.
 
+Now we can simulate functions. This is actually what C functions end up compiling down to in assembly. If it's good enough for C, it's good enough for me!
+
 Now, what the heck is this pushing and popping on the stack?
 
 <br />
