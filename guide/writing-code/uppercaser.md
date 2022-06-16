@@ -27,8 +27,6 @@ _If you'd like to skip this section and keep reading about concepts, the next se
 
 ---
 
-<br />
-
 [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm)
 
 <br />
