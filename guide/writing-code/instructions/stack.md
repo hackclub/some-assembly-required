@@ -84,6 +84,12 @@ pop rax
 
 <br />
 
+Why do we use the stack instead of just throwing values into random spots in memory? Well, the operating system keeps track of what programs are using what memory, so if we wanted to pick a random spot in memory to throw a value into, we'd need to first ask the operating system for an unused block of memory to use. This would take a bunch of extra instructions, as our program communicates with the OS (and waits for the OS to run its own instructions before answering).
+
+Using the stack is much faster, because the memory in the stack was already sectioned off at the beginning of the program. Because of that, we know it's always safe to throw values into, so we can use it without all the extra OS work.
+
+<br />
+
 ---
 
 > #### Sidenote:
