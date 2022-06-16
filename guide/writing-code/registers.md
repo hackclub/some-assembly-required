@@ -16,7 +16,7 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
 </p>
 <br />
 
-There are a few registers to choose from, and each one of them has a convention set up for how to use it. Some of the registers are general purpose, meaning you can store whatever you need to there while your program is executing. But there are also some specialized registers that are used for specific data, like [the instruction pointer](#the-instruction-pointer) or [the stack pointer](#the-stack-pointer), which we will talk about below.
+There are a few registers to choose from, and each one of them has a convention set up for how to use it. Some of the registers are general purpose, meaning you can store whatever you need to there while your program is executing. But there are also some specialized registers that are used for specific data, like [the instruction pointer](#the-instruction-pointer) or [the stack pointer](#the-stack-pointer), which we will talk about soon.
 
 ## Register data
 
