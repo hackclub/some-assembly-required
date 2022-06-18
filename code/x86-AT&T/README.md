@@ -24,8 +24,8 @@ By default, most systems dont ship with the tools needed for compiling AT&T Asse
 ### For MacOS:
 
 [Homebrew](https://brew.sh/) can be used to download these packages:
-- Intel Mac: [binutils](https://formulae.brew.sh/formula/binutils).
-- Silicon Macs: [aarch64-elf-binutils](https://formulae.brew.sh/formula/aarch64-elf-binutils)
+- Intel based Mac: [binutils](https://formulae.brew.sh/formula/binutils).
+- Apple Silicon based Mac: [aarch64-elf-binutils](https://formulae.brew.sh/formula/aarch64-elf-binutils)
 
 
 ### For Linux:
