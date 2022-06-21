@@ -9,6 +9,7 @@
 ## Working code examples
 
 1. [X86-64 Intel Syntax](/code/x86-intel/)
+1. [X86-64 AT&T Syntax](/code/x86-AT&T/)
 1. [RISC-V](/code/riscv/)
 1. [6502](/code/6502/)
 1. [C (For comparison purposes)](/code/c/)

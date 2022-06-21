@@ -15,6 +15,7 @@ Here's a fun exercise for the next time you're writing JavaScript, Ruby, or whic
 For next steps, check out some working code examples, and maybe even write your own:
 
 1. [X86-64 Intel Syntax](/code/x86-intel/)
+1. [X86-64 AT&T Syntax](/code/x86-AT&T/)
 1. [RISC-V](/code/riscv/)
 1. [6502](/code/6502/)
 1. [C (For comparison purposes)](/code/c/)
