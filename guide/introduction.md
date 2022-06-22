@@ -27,7 +27,7 @@ Now, I will say that communicating with your CPU directly is generally quite unn
 
 Higher level languages make programming easier by automating many of the intricate details of assembly language so that you and I don't have to think about them. Because of this automation, computers often end up doing extra work that they don't really need to do. Now, computers are really fast, so this unnecessary work probably only takes a few extra milliseconds to do most of the time. A user will never notice that your web application took 203 milliseconds to load instead of 200, so the extra work doesn't matter in this case, or most other cases. However, there are a few cases where you really do need to squeeze every ounce of performance out of your CPU.
 
-The most obvious example is in game engine development. To create the illusion of movement, most games run at a minimum of 60 frames per second and many gamers play games at 144 frames per second. This means there's some area of a game engine's codebase (called the "game loop") that needs to be able to run in 1/144th of a second (7 milliseconds).
+The most obvious example is in game engine development. To create the illusion of movement, most games run at a minimum of 60 frames per second and many gamers play games at 144 frames per second. This means there's some area of a game engine's codebase (called the "game loop") that needs to be able to run in $1/144th$ of a second (7 milliseconds).
 
 If your game engine's code is written in a higher level language, it'll be doing all the extra work we talked about above, and that extra work might push your game loop's execution time over the 7 millisecond limit. This will slow your game's framerate down, leading to choppy gameplay and some unhappy players!
 
