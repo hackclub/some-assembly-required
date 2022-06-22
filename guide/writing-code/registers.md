@@ -41,7 +41,7 @@ Whereas 32 bit would be:
 000010101111100001100011010100
 ```
 
-64-bit registers can hold up to a whopping 9,223,372,036,854,775,807. 32-bit, on the other hand, can hold up to the number 2,147,483,647.
+64-bit registers can hold up to a whopping $9,223,372,036,854,775,807$. 32-bit, on the other hand, can hold up to the number $2,147,483,647$.
 
 Why isn't it just double? Well, the way binary works is that it grows exponential with how many bits you're allowed to use. So doubling the size of our registers was a huge improvement for computers.
 
