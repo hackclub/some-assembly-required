@@ -23,7 +23,7 @@ Now, I will say that communicating with your CPU directly is generally quite unn
 </p>
 <br />
 
-## Why do people still write assembly today?
+## Who writes assembly?
 
 Higher level languages make programming easier by automating many of the intricate details of assembly language so that you and I don't have to think about them. Because of this automation, computers often end up doing extra work that they don't really need to do. Now, computers are really fast, so this unnecessary work probably only takes a few extra milliseconds to do most of the time. A user will never notice that your web application took 203 milliseconds to load instead of 200, so the extra work doesn't matter in this case, or most other cases. However, there are a few cases where you really do need to squeeze every ounce of performance out of your CPU.
 
@@ -35,7 +35,7 @@ In this situation, if you're able to "drop down" into assembly language, you now
 
 Now, to be clear, assembly language is just one of the many tools available in your optimization toolbox, and most slow code can be optimized without any assembly. However, game engines and other highly efficiency-sensitive applications often need to make full use of that toolbox, which is why they're the main reason people still write assembly today.
 
-## Why should I learn assembly?
+## Why should I learn this stuff?
 
 Despite the reasons I've outlined above, you and I will probably never need to write assembly professionally. However, building an understanding of how your computer works at this super low level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was so happy it wasn't assembly. Sorry assembly, I still love you!
 
