@@ -10,6 +10,11 @@ In this situation, if you're able to "drop down" into assembly language, you now
 
 Now, to be clear, assembly language is just one of the many tools available in your optimization toolbox, and most slow code can be optimized without any assembly. However, game engines and other highly efficiency-sensitive applications often need to make full use of that toolbox, which is why they're the main reason people still write assembly today.
 
+<p align="center">
+  <br />
+  <img src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
+</p>
+
 ## Why should I learn this stuff?
 
 Despite the reasons I've outlined above, you and I will probably never need to write assembly professionally. However, building an understanding of how your computer works at this super low level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was so happy it wasn't assembly. Sorry assembly, I still love you!
