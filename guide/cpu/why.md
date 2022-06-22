@@ -12,7 +12,7 @@ Now, to be clear, assembly language is just one of the many tools available in y
 
 <p align="center">
   <br />
-  <img width="275" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
+  <img width="175" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
 </p>
 
 ## Why should I learn this stuff?
