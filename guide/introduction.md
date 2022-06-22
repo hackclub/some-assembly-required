@@ -36,7 +36,7 @@ Now, I will say that communicating with your CPU directly is generally quite unn
   <em>
     <b>
       <a href="/guide/cpu/why.md">
-        Now why would I do any of this? →
+        Tell me more →
       </a>
     </b>
   </em>
