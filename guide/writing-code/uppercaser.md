@@ -31,7 +31,7 @@ _If you'd like to skip this section and keep reading about concepts, the next se
 
 <br />
 
-This is a snippet from the program, showing just the functioning code. To see the full program, check out [Uppercaser.asm](/code/x86-intel/uppercaser/uppercaser.asm). For more information about how to run this program, check out the [x86-64 Intel Syntax section](/code/x86-intel).
+This is a snippet from the program, showing just the functioning code. To see the full program, check out [Uppercaser-mac.asm](/code/x86-intel/uppercaser/uppercaser-mac.asm). For more information about how to run this program, check out the [x86-64 Intel Syntax section](/code/x86-intel).
 
 <br />
 
@@ -112,7 +112,7 @@ _main:
   ; every time we print a command-line arg.
   ;
   ; We will start at 1 since we are skipping our first command line argument,
-  ; our program ("./uppercaser.asm").
+  ; our program ("./uppercaser-mac.asm").
   mov rax, 1
 
   ; This is where we loop over the command-line args args!
@@ -215,7 +215,7 @@ _main:
   ; the first thing you typed in after the program.
   ;
   ; If we didn't skip ahead, we'd also be printing out the program
-  ; ("./uppercaser.asm")
+  ; ("./uppercaser-mac.asm")
   mov rbx, qword [rcx + 8]
 
   ; Push the memory address of our command-line arg onto the stack twice.

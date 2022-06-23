@@ -3,7 +3,7 @@
 ### Code Examples
 
 - [Hello World](/code/x86-intel/hello-world/hello-world.asm)
-- [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm)
+- [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm)
 
 ---
 
@@ -23,7 +23,7 @@ If you have [Homebrew](https://brew.sh/) installed, you can also download the [y
 
 ## Running programs
 
-We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program.
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program.
 
 For a Mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
 1. Assemble it into an object file
@@ -52,7 +52,7 @@ This generates our executable by linking our object file to any libraries it nee
 $ ./hello-world
 ```
 
-> Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program, you'll have to pass command line arguments (eg. `words to uppercase`) so your command might look like `./uppercaser words to uppercase`
+> Note: For the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program, you'll have to pass command line arguments (eg. `words to uppercase`) so your command might look like `./uppercaser words to uppercase`
 
 ### All together now!
 ```
@@ -61,11 +61,11 @@ $ yasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_ver
 
 ## Anatomy of a program
 
-We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see a similar setup in the [Uppercaser](/code/x86-intel/uppercaser/uppercaser.asm) program as well.
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see a similar setup in the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program as well.
 
 First thing you'll see is a [section for read-only constants](https://github.com/hackclub/some-assembly-required/blob/3e47d24b7b2492faea8dc2c0efcfcddc7d87a342/code/x86-intel/hello-world/hello-world.asm#L33-L43).
 
-This is used in our Hello World program for setting up our string data, but if you look in the [Uppercaser](https://github.com/hackclub/some-assembly-required/blob/0b1c6f2d1e96c08960bbea816b7ff039c38238a6/code/x86-intel/uppercaser/uppercaser.asm#L12) program, that section is empty because we don't need to set up any constants for it.
+This is used in our Hello World program for setting up our string data, but if you look in the [Uppercaser](https://github.com/hackclub/some-assembly-required/blob/0b1c6f2d1e96c08960bbea816b7ff039c38238a6/code/x86-intel/uppercaser/uppercaser-mac.asm#L12) program, that section is empty because we don't need to set up any constants for it.
 
 ```asm
 ; Section for read-only constants

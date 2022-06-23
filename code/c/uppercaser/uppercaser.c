@@ -2,7 +2,7 @@
 // UPPERCASER
 //
 // Uppercases your command line arguments and prints them out!
-// Written as a working example of a C program to compare to uppercaser.asm
+// Written as a working example of a C program to compare to uppercaser-mac.asm
 // ==================================================================================
 
 // gcc -o uppercaser uppercaser.c && ./uppercaser

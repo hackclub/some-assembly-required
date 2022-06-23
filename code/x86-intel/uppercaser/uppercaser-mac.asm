@@ -13,7 +13,7 @@
 ; OS architecture: MacOS
 
 ;; To run on x86-64 processor, Intel syntax:
-; yasm -f macho64 uppercaser.asm && ld uppercaser.o -o uppercaser -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser
+; yasm -f macho64 uppercaser-mac.asm && ld uppercaser-mac.o -o uppercaser-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem && ./uppercaser-mac
 
 section .data
 
@@ -138,7 +138,7 @@ _main:
   ; every time we print a command-line arg.
   ;
   ; We will start at 1 since we are skipping our first command line argument,
-  ; our program ("./uppercaser.asm").
+  ; our program ("./uppercaser-mac.asm").
   mov rax, 1
 
   ; This is where we loop over the command-line args args!
@@ -241,7 +241,7 @@ _main:
   ; the first thing you typed in after the program.
   ;
   ; If we didn't skip ahead, we'd also be printing out the program
-  ; ("./uppercaser.asm")
+  ; ("./uppercaser-mac.asm")
   mov rbx, qword [rcx + 8]
 
   ; Push the memory address of our command-line arg onto the stack twice.

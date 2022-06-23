@@ -25,6 +25,8 @@
 - [@HenryBass](https://github.com/HenryBass)
 - [@japrozs](https://github.com/japrozs)
 - [@sporeball](https://github.com/sporeball)
+- [@christinaasquith](https://github.com/christinaasquith)
+- [@quackduck](https://github.com/quackduck)
 
 <br />
 
