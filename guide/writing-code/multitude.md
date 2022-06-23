@@ -22,6 +22,13 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <br />
 
+<p align="center">
+  <br />
+  <img width="250" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
+</p>
+
+<br />
+
 ---
 
 <br />
@@ -37,15 +44,6 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 > In this situation, if you're able to "drop down" into assembly language, you now have total control over what your program is telling your CPU to do. If you identify a few places where your high level language is doing unnecessary work and replace them with human-optimized assembly language, you may be able to get that game loop back under 7 milliseconds and make your players happy again!
 >
 > Now, to be clear, assembly language is just one of the many tools available in your optimization toolbox, and most slow code can be optimized without any assembly. However, game engines and other highly efficiency-sensitive applications often need to make full use of that toolbox, which is why they're the main reason people still write assembly today.
-
-<br />
-
----
-
-<p align="center">
-  <br />
-  <img width="250" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
-</p>
 
 <br />
 
