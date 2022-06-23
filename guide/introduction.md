@@ -17,9 +17,9 @@ Not only that, but if you're:
 - writing game engines
 - doing cryptography
 - making drivers
-- working on other low level systems
+- a hacker making a virus (eep!)
 
-You're often [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be **lightning fast**. And, if you're a hacker, you can even use assembly to _write viruses_. Eep!
+Then you're often [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need access to the lowest levels of your computer, and you need things to be **lightning fast**.
 
 <p align="center">
   <br />
