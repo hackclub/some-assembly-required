@@ -9,7 +9,7 @@ This may sound counterintuitive, but computers aren't very smart. I know you may
 
 Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at their core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over a long period of time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
-Now, I will say that communicating with your CPU directly is generally quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems, doing game engine development, or working on other low level systems, you're sometimes [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be lightning fast.
+Now, I will say that communicating with your CPU directly is generally quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.). Not only that, but if you're writing operating systems, writing game engines, doing cryptography, making drivers, or working on other low level systems, you're often [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be **lightning fast**. And, if you're a hacker, you can even use assembly to write viruses. Eep!
 
 <p align="center">
   <br />
@@ -21,6 +21,18 @@ Now, I will say that communicating with your CPU directly is generally quite unn
     </em>
   </span>
 </p>
+<br />
+
+Chances are, you and I will probably never _need_ to write assembly. However, building an understanding of how your computer works at this super low level can be pretty dang empowering, and can help you appreciate all of the other stuff you do on your computer. In fact, the minute I wrote another program after writing in assembly, I was so happy it wasn't assembly. Sorry assembly, I still love you!
+
+Writing programs in assembly, as you'll come to learn, is very manual - you have to account for every single thing yourself. However, knowing the inner workings of our computers can help us understand why programming works the way it does. Learning assembly shows us the first building blocks of programming languages, and shows how programming languages formed over time.
+
+It's kind of like being a race car driver. Race car drivers don't technically need to understand what their car is doing under the hood; they can just use the steering wheel, brake pedal, and other high-level abstractions to do their job. However, if they have a lower-level understanding of what their engine, brakes, wheels, and other mechanical things are doing, they can use that knowledge to be even better at their job. For example, they could be in a race and hear a noise or notice a smell. Someone who hadn't learned about their car may ignore that sign, but those indicators could mean that something is happening at a lower level in their car that they should address - maybe the engine is under strain, or the brakes need a lighter touch at that moment.
+
+Additionally, knowing assembly may not directly change the code you write, but it will give you an increased confidence that may have an impact on your day-to-day programming. The more knowledge I have about the system I'm using, the more enjoyable programming can be for me.
+
+I hope this guide helps you to demystify some of the computer's lowest layers, and turn them from something that feels like magic to something that feels graspable. I personally didn't know how these things worked before I started writing this guide, and I wanted to turn the things I pieced together during my learnings into something that can help others on their journey.
+
 <br />
 
 ---
@@ -35,8 +47,8 @@ Now, I will say that communicating with your CPU directly is generally quite unn
 <p align="right">
   <em>
     <b>
-      <a href="/guide/cpu/why.md">
-        Tell me more →
+      <a href="/guide/cpu/cpu.md">
+        Alright, let's get to the good stuff. Like, what even is a CPU? →
       </a>
     </b>
   </em>
