@@ -40,6 +40,10 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <br />
 
+---
+
+<br />
+
 <p align="center">
   <br />
   <img width="250" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
