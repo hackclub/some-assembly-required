@@ -9,7 +9,7 @@ This may sound counterintuitive, but computers aren't very smart. I know you may
 
 Now here's the catch - I said they're fundamentally simple, but I didn't say they're always easy to understand. Even though computers are, at their core, doing fairly simple tasks, they can be seriously confusing to learn about! We have to remember that computers have been built up layer by layer over a long period of time. These layers have produced the amazing, efficient, incredible machines that we use today. But, these layers also make learning about computers feel like a serious nightmare sometimes, because there's just *so much* to learn about.
 
-Now, I will say that communicating with your CPU directly is generally quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.).
+I will say that communicating with your CPU directly is generally quite unnecessary, as we now have higher level languages that are fast enough for most of our needs. That being said, the game [RollerCoaster Tycoon is written 99% in assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.).
 
 Not only that, but if you're:
 
@@ -19,9 +19,7 @@ Not only that, but if you're:
 - making drivers
 - working on other low level systems
 
-Then you're often [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be **lightning fast**.
-
-And, if you're a hacker, you can even use assembly to _write viruses_. Eep!
+You're often [writing assembly directly](https://www.youtube.com/watch?v=rX0ItVEVjHc) because you need things to be **lightning fast**. And, if you're a hacker, you can even use assembly to _write viruses_. Eep!
 
 <p align="center">
   <br />
