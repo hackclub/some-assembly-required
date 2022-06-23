@@ -20,6 +20,8 @@ There are many different assembly languages, depending on the processor you want
 
 Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I will be using **X86-64** assembly code to demonstrate assembly concepts. These concepts will translate across different assembly languages.
 
+<br />
+
 ---
 
 <br />
@@ -36,11 +38,14 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 >
 > Now, to be clear, assembly language is just one of the many tools available in your optimization toolbox, and most slow code can be optimized without any assembly. However, game engines and other highly efficiency-sensitive applications often need to make full use of that toolbox, which is why they're the main reason people still write assembly today.
 
+<br />
+
+---
+
 <p align="center">
   <br />
   <img width="250" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
 </p>
-
 
 <br />
 
