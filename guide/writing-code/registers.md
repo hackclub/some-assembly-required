@@ -49,7 +49,7 @@ That's **18 quintillion** vs. **4 billion**. Quite a difference, eh?
 
 Well why isn't it just double? The way binary works is that it grows exponential with how many bits you're allowed to use. So doubling the size of our registers was a huge improvement for computers.
 
-There are x86 processors that are 16-bit, 32-bit, and 64-bit, so we specify the "-64" in "x86-64" to know we're talking about the 64-bit version. You'll see some examples online that use the 32-bit version, and the registers they refer to are different. Usually 32-bit registers start with the letter `E`, whereas 64-bit registers usually start with the letter.
+There are x86 processors that are 16-bit, 32-bit, and 64-bit, so we specify the "-64" in "x86-64" to know we're talking about the 64-bit version. You'll see some examples online that use the 32-bit version, and the registers they refer to are different. Usually 32-bit registers start with the letter `E`, whereas 64-bit registers usually start with the letter `R`.
 
 Since a register holds **64 bits**, that can also be translated to **8 bytes** (64 _(bits)_ divided by 8 _(bits in a byte)_).
 
