@@ -38,6 +38,7 @@ For next steps, check out some working code examples, and maybe even write your 
 - [@sampoder](https://github.com/sampoder)
 - [@christinaasquith](https://github.com/christinaasquith)
 - [@quackduck](https://github.com/quackduck)
+- [@maxwofford](https://github.com/maxwofford)
 
 <br />
 
