@@ -28,6 +28,7 @@
 - [@sampoder](https://github.com/sampoder)
 - [@christinaasquith](https://github.com/christinaasquith)
 - [@quackduck](https://github.com/quackduck)
+- [@maxwofford](https://github.com/maxwofford)
 
 <br />
 
