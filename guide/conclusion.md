@@ -35,6 +35,7 @@ For next steps, check out some working code examples, and maybe even write your 
 - [@HenryBass](https://github.com/HenryBass)
 - [@japrozs](https://github.com/japrozs)
 - [@sporeball](https://github.com/sporeball)
+- [@sampoder](https://github.com/sampoder)
 - [@christinaasquith](https://github.com/christinaasquith)
 - [@quackduck](https://github.com/quackduck)
 
