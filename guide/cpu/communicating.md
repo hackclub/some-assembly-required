@@ -26,7 +26,7 @@ So, machine code is just a bunch of numbers that the CPU reads to figure out wha
 
 Since we humans like to read text, assembly is a text based language, consisting of acronyms that represent instructions to the computer. Alas, since they are text, they are not directly readable by the CPU. So that text file gets translated, through something called the **assembler**, into the numbers that the computer can then read.
 
-It's like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in imperial measurements (eg cups, tablespoons, etc.), and Icelandic people write recipes in metric measurements (grams, liters, etc.).
+It's like if you were an American and you were giving your Icelandic friend a cake recipe. Americans write recipes in [United States customary units](https://en.wikipedia.org/wiki/United_States_customary_units) (eg cups, tablespoons, etc.), and Icelandic people write recipes in the [International System of Units](https://en.wikipedia.org/wiki/International_System_of_Units) measurements (grams, liters, etc.).
 
 <p align="center">
   <br />
