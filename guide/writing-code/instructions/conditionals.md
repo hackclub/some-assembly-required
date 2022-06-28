@@ -30,7 +30,7 @@ The `cmp` instruction compares two values, and records which one is greater (or 
 
 In our example, we are comparing the value of `rax` with the value of `rbx`, and that gets saved into `eflags`.
 
-For our conditional jump, we are using `jl`, which stands for "Jump if Less Than". The `jl` instruction checks the `eflags` register. If `eflags` says that the first argument to `cmp` was less than the second (`rax < rdi`), it jumps to the specified label. If `rax >= rbx`, this instruction does nothing.
+For our conditional jump, we are using `jl`, which stands for "Jump if Less Than". The `jl` instruction checks the `eflags` register. If `eflags` says that the first argument to `cmp` was less than the second (`rax < rbx`), it jumps to the specified label. If `rax >= rbx`, this instruction does nothing.
 
 Back to our example:
 
