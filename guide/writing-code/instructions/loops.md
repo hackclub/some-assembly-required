@@ -29,7 +29,8 @@ Inside the loop, we take the result we're calculating, and we multiply it by our
 1. `result = 1 * 2`, `result` is now `2`
 1. `result = 2 * 2`, `result` is now `4`
 1. `result = 4 * 2`, `result` is now `8`
-1. `result = 16 * 2`, `result` is now `16`
+1. `result = 8 * 2`, `result` is now `16`
+1. `result = 16 * 2`, `result` is now `32`
 1. `result = 32 * 2`, `result` is now `64`
 1. `result = 64 * 2`, `result` is now `128`
 1. `result = 128 * 2`, `result` is now `256`
