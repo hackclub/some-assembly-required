@@ -22,7 +22,7 @@ for (let counter = 0; counter < exponent; counter++) {
 }
 ```
 
-We use a [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to make this work, which sets an counter variable to `0`. While our counter is less than our exponent (`8`), we continue looping. On each loop, we increment the counter by `1`.
+We use a [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) to make this work, which sets a counter variable to `0`. While our counter is less than our exponent (`8`), we continue looping. On each loop, we increment the counter by `1`.
 
 Inside the loop, we take the result we're calculating, and we multiply it by our base (`2`). That would look like, on each loop:
 
