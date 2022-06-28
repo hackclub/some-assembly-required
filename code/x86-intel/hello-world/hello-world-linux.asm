@@ -60,7 +60,7 @@ _start:
     mov     rax, 1          ; system call for write. **linux specific** 
     mov     rdi, 1          ; Set output to stdout. 1 = stdout, which is normally connected to the terminal.
     mov     rsi, msg        ; address of string to output
-    mov     rdx, msg.len    ; rdx holds address of next byte to write. msg.len is the number of bytes to write
+    mov     rdx, msg.len    ; rdx holds the number of bytes to write. msg.len is the length of msg
     syscall                 ; invoke operating system to do the write
 
     mov     rax, 60         ; system call for exit. anything with 0x2 is mac specific
