@@ -3,11 +3,11 @@
 ## AT&T Linux assembly instructions
 
 # We have 3 steps to run our program.
-# 1. assemblt iut into an obeject file
+# 1. assemble it into an object file
 # 2. generate our executable
 # 3. run our executable
 
-## 1. assemblt it into an object file
+## 1. assemble it into an object file
 # GNU Assembler is our assembler. It is available with the `binutils` package
 # It can be called with `as`
 # this whole command creates an object file, which is our machine code. view it in a hex editor like https://hexfiend.com/
@@ -17,7 +17,7 @@
 # as hello-world.s
 
 ## 2. generate our executable
-# this generates out executable by linking our object file to any libraries it needs
+# this generates our executable by linking our object file to any libraries it needs
 # it bundles everything together into machine code
 # Again, -o lets us specify what we want our executable to be called
 #
@@ -27,11 +27,11 @@
 ## 2. run our executable
 # ./hello-world
 
-# RUn this line to run all the commands from above:
-# as helplo-world.s -o hello-world && ld hello-world.o -o hello-world && ./hello-world
+# Run this line to run all the commands from above:
+# as hello-world.s -o hello-world && ld hello-world.o -o hello-world && ./hello-world
 
-## System Call COdes used in this program are specific for Linux 64 bit architecture.
-## FInd a list of them here: https://filippo.io/linux-syscall-table/
+## System Call Codes used in this program are specific for Linux 64 bit architecture.
+## Find a list of them here: https://filippo.io/linux-syscall-table/
 
 ## Assembly Code
 
