@@ -47,7 +47,7 @@ mov rdx, 0 ; our counter
 
 .calculatePower
   mul rcx, rax       ; multiply our result by our base, save into rcx
-  inc rax            ; increment counter
+  inc rdx            ; increment counter
   cmp rdx, rax       ; compare our counter with our exponent
   jl .calculatePower ; jump to the beginning of the loop if rdx < rax, since we still have more iterations to go
 
