@@ -41,7 +41,7 @@ This is a snippet from the program, showing just the functioning code. To see th
 ; rdi - Contains the number of command-line arguments that were passed.
 ;       We'll refer to it as `argc`, which is its name in C.
 ;
-; rdi - Contains the array of command-line arguments that you typed in when you ran the program.
+; rsi - Contains the array of command-line arguments that you typed in when you ran the program.
 ;       We'll refer to it as `argv[][]`, which is its name in C.
 ;       This will be explained more below.
 ;
