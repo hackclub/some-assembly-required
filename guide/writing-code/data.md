@@ -39,7 +39,7 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
 </p>
 <br />
 
-In order to represent those ASCII numbers in just `0`s and `1`s, we have to convert our base 10 number (let's say we're working with `A`, which maps to `65` on the ASCII table) into a base 2 number (`00100001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by electrical signals being on or off, which maps directly to `1`s and `0`s.
+In order to represent those ASCII numbers in just `0`s and `1`s, we have to convert our base 10 number (let's say we're working with `A`, which maps to `65` on the ASCII table) into a base 2 number (`01000001`). We have to represent this number in binary because, as we learned earlier, computer data is represented physically by electrical signals being on or off, which maps directly to `1`s and `0`s.
 
 Our ASCII table goes up to the number 255. In binary, `11111111` is 255. So 8 bits covers all of the ASCII characters!
 
