@@ -11,4 +11,4 @@ A copy of the MIT and Creative Commons licenses can be found here: [MIT_LICENSE]
 An online version of the Creative Commons license is available at
 <https://creativecommons.org/licenses/by-sa/4.0/>.
 
-   TLDR: You can share and remix for any purposes if you provide attribution to this repository.
+   TLDR: You can share and remix content in this guide for any purposes if you provide attribution to this repository.
