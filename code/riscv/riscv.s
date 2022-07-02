@@ -1,7 +1,8 @@
 ## Examples of basic RISC-V instructions being used
 
 # To run this, paste the file contents into a RISC-V interpreter, like:
-# https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/
+# https://venus.cs61c.org/
+# To use the interpretor above, click on the "Editor" tab paste the code then go to the "Simulator" tab and click "Assemble & Simulate from Editor"
 
 # Basic RISC-V tutorial:
 # https://medium.com/swlh/risc-v-assembly-for-beginners-387c6cd02c49
@@ -39,7 +40,7 @@ ADD x20, x18, x19
 # x21 = 1
 SUB x21, x20, x19
 
-# Memory addresses are in hexadecimal 
+# Memory addresses are in hexadecimal
 # https://github.com/hackclub/some-assembly-required#hexadecimal
 # The RISC-V interpreter is showing the memory addresses in word increments
 # Words are 32 bits or 4 bytes
