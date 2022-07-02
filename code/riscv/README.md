@@ -20,7 +20,7 @@ To run [our RISC-V code](/code/riscv/riscv.s), you can paste the file contents i
 
 <p align="center">
   <br />
-  <img src="https://cloud-az5f0vqak-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_2.04.20_pm.png">
+  <img src="https://cloud-b9zmt6j4g-hack-club-bot.vercel.app/0frame_20.png">
   <br />
   <span>
     <em>
