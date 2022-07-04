@@ -59,7 +59,7 @@ let b = 1;
 
 a = a - b;
 ```
-_In JavaScript, we're minusing the contents of `b` from the contents of `a`. At the end of this, `a` will contain the value `2`._
+_In JavaScript, we're subtracting the contents of `b` from the contents of `a`. At the end of this, `a` will contain the value `2`._
 
 ```asm
 ; X86-64 Intel Syntax Assembly
@@ -72,7 +72,7 @@ sub rax, rbx;
 <summary><i>In this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
 <br />
-<i>We're minusing the contents of <code>rbx</code> from the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>2</code>.</i>
+<i>We're subtracting the contents of <code>rbx</code> from the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>2</code>.</i>
 
 </details>
 
