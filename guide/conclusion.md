@@ -24,21 +24,8 @@ For next steps, check out some working code examples, and maybe even write your 
 
 **Thanks for taking the time to read this. It was really fun to put together. I hope you enjoyed it. :)**
 
-## Authors
-
-- [@jessicard](https://github.com/jessicard)
-- [@bellesea](https://github.com/bellesea)
-- [@TheOneKevin](https://github.com/theonekevin)
-- [@exu3](https://github.com/exu3)
-- [@jakeboxer](https://github.com/jakeboxer)
-- [@tejasag](https://github.com/tejasag)
-- [@HenryBass](https://github.com/HenryBass)
-- [@japrozs](https://github.com/japrozs)
-- [@sporeball](https://github.com/sporeball)
-- [@sampoder](https://github.com/sampoder)
-- [@christinaasquith](https://github.com/christinaasquith)
-- [@quackduck](https://github.com/quackduck)
-- [@maxwofford](https://github.com/maxwofford)
+Regards,
+[Some Assembly Required contributors](contributors.md)
 
 <br />
 
