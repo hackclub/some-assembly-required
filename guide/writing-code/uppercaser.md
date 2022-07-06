@@ -202,7 +202,7 @@ _main:
   ;
   ; Finally, the qword part is necessary because, when we're following addresses into memory, we need to tell the
   ; computer what the size of the data we want back is. Since we're on a 64-bit system, our registers are 64 bits, so
-  ; we need to ask for a qword (a 64-bit word) back. If we only wanted ot grab 32 bits out of memory, we'd write
+  ; we need to ask for a qword (a 64-bit word) back. If we only wanted to grab 32 bits out of memory, we'd write
   ; dword [rcx] instead, and if we just wanted to grab a single byte, we'd write byte [rcx] (we'll actually see this
   ; later).
   ;
