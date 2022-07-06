@@ -198,7 +198,7 @@ _main:
   ;
   ; How do we follow an address into memory? In assembly, you surround it with []s. Below, when we write [rcx], we're
   ; saying "we don't want the value stored in the rcx register, we want a value stored in MEMORY, and the rcx register
-  ; contains the memory address we want you to go grab that value."
+  ; contains the memory address of the value we want fetched."
   ;
   ; Finally, the qword part is necessary because, when we're following addresses into memory, we need to tell the
   ; computer what the size of the data we want back is. Since we're on a 64-bit system, our registers are 64 bits, so
