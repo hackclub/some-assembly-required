@@ -163,6 +163,7 @@ STX $01
 Speaking of pointing to other locations in memory, in 6502 assembly language, there are a few ways to accomplish this task.
 
 **Absolute Addresses**
+
 This is the most straight forward method: the memory location (which is a 16-bit number) is fully written
 ```
 LDA $0001
@@ -181,6 +182,7 @@ LDY $0010
 </details>
 
 **Zero Page Addresses**
+
 When using zero page addresses, the processor assumes that you only want to access the first 256 memory addresses by pre-fixing 00 to the memory address so
 
 ```
@@ -201,7 +203,8 @@ LDA $04
 <i>Load value at memory location $0004(=4) to Register A</i>
 </details>
 
-**Indirect Addressing**
+**Variables**
+
 Here, the addresses include a variable which can change. If this was written in Javascript, it migth look something like this:
 ```
 let x = 1
@@ -235,38 +238,40 @@ LDA $0000,X
 </details>
 
 **Indirect Addressing**
-Indirect addressing is when you use an absolute address to look up another absolute address. **Whatever number is retrieved at the first address becomes the absolute address used**. Here's an example:
+
+Indirect addressing is when you use an absolute address to look up another absolute address. `JMP` in the only instruction that uses this addressing mode. **Whatever number is retrieved becomes the absolute address used**. Here's an example:
 
 At memory location `$0010` there is the value `#$01` and at memory location `$0011`there is the value `#$02`.
 ```
-STA ($0010)
+JMP ($0010)
 ```
-_At the end of the example, we are storing the value at Register A to memory location $0102_
+_At the end of the example, we are jumping to memory location $0102_
 
 In this instance, we do 2 things:
-1. Retrive the data at memory location $0010. However, instead of only retrieving data at memory location $0010, we also want to retrieve data at memory location $0011 (as absolute addresses need 16-bit numbers). Remember the part under [Registers and Ram](#registers-and-ram) where we mentioned using multiple memory locations? So here, we retrieve the number `#$01` and `#$02` to make `#$0102`. (The first part of the address is also the smaller number $01 < $02.)
-1. Store value in Register A at this retrieved absolute location, `$0102`
+1. Retrive the data at memory location $0010. However, instead of only retrieving data at memory location $0010, we also want to retrieve data at memory location $0011 (as absolute addresses need 16-bit numbers). Remember the part under [Registers and Ram](#registers-and-ram) where we mentioned using multiple memory locations? So here, we retrieve the number #$01 and #$02 from memory location $0010 and $0011 respectively. As 6502 is a little-endian processor, it stores the least significant byte (lower value) first. This means two byte data (like memory locations) store the least significant byte in the first memory address ($0010) and the most significant byte in the second address ($0011) . For example, the following hexadecimal number #$0201, the 01 is the least significant byte and 02 is the most significant byte. (Using a decimal example, 1030, the 30 which refers to thirty is smaller than the 10 which refers to one thousand.)
+2. Jump to this retrieved absolute location: `$0201`
 
 Here's another example:
 At memory location `$0040` there is the value `#$03` and at memory location `$0041`there is the value `#$02`.
 ```
-STY ($0040)
+JMP ($0040)
 ```
 <details>
 <summary><i>What do you think this does?</i></summary>
 
 <br />
-<i>Load number value at Register Y to memory address <code>$0203</code>.</i>
+<i>Changes stack pointer and jumps to memory address <code>$0203</code>.</i>
 <br />
 Here, we:
 <ul>
 <li>Retrieved the values at memory location <code>$0040</code> and <code>$0041</code> to get the values <code>$03</code> and <code>$02</code></li>
-<li>Since <code>$02</code> is smaller than <code>$03</code>, we get the number/next memory adddress <code>$0203</code></li>
-<li>Load number value at Register Y to memory address <code>$0203</code></li>
+<li>Since 6502 is a little-endia processor, the least significant byte (`$03`) is stored first and the most significant byte (`$02`) is stored lastso the retrieved memory adddress <code>$0203</code></li>
+<li>Change stack pointer and jump to memory address <code>$0203</code></li>
 </ul>
 </details>
 
-**Loops**
+### Loops
+
 _A quick note: a flag, as mentioned above, is a special status register that tells the CPU something very specific about the current state. The z-flag is set by comparison instructions and tells us whether two things are equal (0 = not equal, 1 = equal)_
 The ability to set conditions and loops is essential in being able to write programs and in assembly, here's how we can do this in assembly. First, we need to add something that tells us what needs to be looped. This can be indicated by a label.
 ```
@@ -277,7 +282,7 @@ _This is a label. We can think of it similarly as a function._
 
 Next, we need something that can tell us whether to loop the section of the program. This is done in two parts:
 1. An instruction that tests a condition and sets a flag. This could be an instruction that compares such as `CPX` mentioned above.
-1. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
+2. An instruction that checks the status of a flag and calls the label. Check out the [full instruction set](https://www.masswerk.at/6502/6502_instruction_set.html#BVC)
 
 In Javascript, a while loop that addings to variable x until it reaches 3 would look like this:
 ```
