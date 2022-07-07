@@ -14,21 +14,7 @@
 1. [6502](/code/6502/)
 1. [C (For comparison purposes)](/code/c/)
 
-## Contributors
-
-- [@jessicard](https://github.com/jessicard)
-- [@bellesea](https://github.com/bellesea)
-- [@TheOneKevin](https://github.com/theonekevin)
-- [@exu3](https://github.com/exu3)
-- [@jakeboxer](https://github.com/jakeboxer)
-- [@tejasag](https://github.com/tejasag)
-- [@HenryBass](https://github.com/HenryBass)
-- [@japrozs](https://github.com/japrozs)
-- [@sporeball](https://github.com/sporeball)
-- [@sampoder](https://github.com/sampoder)
-- [@christinaasquith](https://github.com/christinaasquith)
-- [@quackduck](https://github.com/quackduck)
-- [@maxwofford](https://github.com/maxwofford)
+Shoutout to the [contributors](contributors.md) of this guide!
 
 <br />
 
