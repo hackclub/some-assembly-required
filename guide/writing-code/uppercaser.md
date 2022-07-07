@@ -218,7 +218,10 @@ _main:
   ; ("./uppercaser-mac.asm")
   mov rbx, qword [rcx + 8]
 
-  ; Push the memory address of our command-line arg onto the stack twice.
+  ; Push the value of our command-line arg onto the stack twice.
+  ; argv[][] is an array of arrays, so in this case, the value happens
+  ; to be another memory address.  The memory address points to
+  ; the first character of whichever command-line argument we are printing.
   ; The first one is to keep the value safe, because we need it after our function call.
   ; The second one is to pass it as an argument to .strLen.
   push rbx
