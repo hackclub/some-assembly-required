@@ -209,7 +209,7 @@ _main:
   ; So, with all that in mind, we follow rcx into memory and move the value (which is our command-line arg) into rcx so
   ; that the sys_write syscall can write it when we call .print below.
   ;
-  ; We are adding 8 to [rcx] so that we can skip 1 word, 8 bytes ahead.
+  ; We are adding 8 to [rcx] so that we can skip 4 words (quadruple word), 8 bytes ahead.
   ;
   ; This brings us to our second command line argument in memory, which is
   ; the first thing you typed in after the program.
