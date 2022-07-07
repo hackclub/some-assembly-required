@@ -30,4 +30,4 @@
 - [@darkgray1981](https://github.com/darkgray1981)
 - [@Welding-Torch](https://github.com/Welding-Torch)
 - [@ospilos](https://github.com/ospilos)
-- [@yancyribbens](https://github.com/yancyribbens)
+- [@JulianGindi](https://github.com/JulianGindi)
