@@ -14,7 +14,9 @@
 1. [6502](/code/6502/)
 1. [C (For comparison purposes)](/code/c/)
 
-Shoutout to the [contributors](contributors.md) of this guide!
+<br />
+
+**Shoutout to all of the [contributors](contributors.md) of this guide!**
 
 <br />
 
