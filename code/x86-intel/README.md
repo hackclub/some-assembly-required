@@ -2,7 +2,7 @@
 
 ### Code Examples
 
-- [Hello World](/code/x86-intel/hello-world/hello-world.asm)
+- [Hello World](/code/x86-intel/hello-world/hello-world-mac.asm)
 - [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm)
 
 ---
@@ -23,7 +23,7 @@ If you have [Homebrew](https://brew.sh/) installed, you can download the [yasm p
 
 ## Running programs
 
-We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program.
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world-mac.asm) program as our example for this, but you will see the same steps for the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program.
 
 For a Mac (both Intel and Apple Silicon), these are the instructions to compile and run the code. We have 3 steps to run our program:
 1. Assemble it into an object file
@@ -61,7 +61,7 @@ $ yasm -f macho64 hello-world.asm && ld hello-world.o -o hello-world -macosx_ver
 
 ## Anatomy of a program
 
-We will use the [Hello World](/code/x86-intel/hello-world/hello-world.asm) program as our example for this, but you will see a similar setup in the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program as well.
+We will use the [Hello World](/code/x86-intel/hello-world/hello-world-mac.asm) program as our example for this, but you will see a similar setup in the [Uppercaser](/code/x86-intel/uppercaser/uppercaser-mac.asm) program as well.
 
 First thing you'll see is a [section for read-only constants](https://github.com/hackclub/some-assembly-required/blob/3e47d24b7b2492faea8dc2c0efcfcddc7d87a342/code/x86-intel/hello-world/hello-world.asm#L33-L43).
 
