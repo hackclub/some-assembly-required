@@ -27,3 +27,33 @@ It has following configuration :-
 ### Program Counter
 <p align="justify">It is a 16-bit register used to store the memory address location of the next instruction to be executed. Microprocessor increments the program whenever an instruction is being executed, so that the program counter points to the memory address of the next instruction that is going to be executed.</p>
 
+### Stack Pointer
+<p align="justify">It is a 16-bit special register. Stack pointer works in a continuous and contiguous part of the memory. whereas Program Counter(PC) works in random memory locations. The content of the register is stored that is later used in the program.</p>
+
+### Temporary Register
+<p align="justify">It is an 8-bit register that holds data values during arithmetic and logical operations.</p>
+
+### Flag Register
+<p align="justify">It is an 8-bit register having five 1-bit flip-flops, which holds either 0 or 1 depending upon the result stored in the accumulator.</p>
+<table>
+    <tr>
+        <th>D7</th>
+        <th>D6</th>
+        <th>D5</th>
+        <th>D4</th>
+        <th>D3</th>
+        <th>D2</th>
+        <th>D1</th>
+        <th>D0</th>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>Z</td>
+        <td>-</td>
+        <td>AC</td>
+        <td>-</td>
+        <td>P</td>
+        <td>-</td>
+        <td>CY</td>
+    </tr>
+</table>
