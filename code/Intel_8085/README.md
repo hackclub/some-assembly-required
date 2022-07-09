@@ -10,3 +10,4 @@ It has following configuration :-
 </ul>
 
 <br>
+It has a 40-pin dual in line package. The Address and Data bus are multiplexed in this processor which helps in providing more control signals. It has 1 non-maskable interrupt and 3 maskable interrupts. it provides serial interfacing w9ith Serial Input Data (SID) and Serial Output Data(SOD).<br><br>
