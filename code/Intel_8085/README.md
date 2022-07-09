@@ -34,7 +34,15 @@ It has following configuration :-
 <p align="justify">It is an 8-bit register that holds data values during arithmetic and logical operations.</p>
 
 ### Flag Register
-<p align="justify">It is an 8-bit register having five 1-bit flip-flops, which holds either 0 or 1 depending upon the result stored in the accumulator.</p>
+<p align="justify">It is an 8-bit register having five 1-bit flip-flops, which holds either 0 or 1 depending upon the result stored in the accumulator. There are 5-set of flip-flops :-<br>
+<ul>
+    <li>Sign(S)</li>
+    <li>Zero(Z)</li>
+    <li>Auxillary Carry(AC)</li>
+    <li>Parity(P)</li>
+    <li>Carry(C)</li>
+</ul>
+<br> It's bit position is shown in the following table :-
 <table>
     <tr>
         <th>D7</th>
@@ -57,3 +65,4 @@ It has following configuration :-
         <td>CY</td>
     </tr>
 </table>
+</p>
