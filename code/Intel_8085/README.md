@@ -16,7 +16,7 @@ It has following configuration :-
 
 ## Table of Contents
 <ol>
-    <li>[Functional Units of Intel-8085](#Functional-Units-of-Intel-8085)</li>
+    <li>[Functional Units of Intel-8085](#functional-units-of-intel-8085)</li>
 </ol>
 
 ## Functional Units of Intel-8085
