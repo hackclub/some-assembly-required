@@ -63,6 +63,6 @@ _start:
     mov     rdx, msg.len    ; rdx holds the number of bytes to write. msg.len is the length of msg
     syscall                 ; invoke operating system to do the write
 
-    mov     rax, 60         ; system call for exit. anything with 0x2 is mac specific
+    mov     rax, 60         ; system call for exit. **linux specific**
     mov     rdi, 0          ; exit code 0
     syscall                 ; invoke operating system to exit
