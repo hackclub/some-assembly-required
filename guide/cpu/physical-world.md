@@ -1,6 +1,6 @@
 # Electricity and the physical world
 
-Now we know how the CPU is able to interpret machine code, which is just numbers as instructions. And we know that these instructions can be represented with just 1s and 0s, also known as [binary](#binary).
+Now we know how the CPU is able to interpret machine code, which is just numbers as instructions. And we know that these instructions can be represented with just 1s and 0s, also known as [binary](/guide/math/number-systems.md#binary-base-2).
 
 In the physical world, these binary numbers map to electrical circuits. To simplify a bit, if a circuit contains electrical current, it can be considered "on", or **1**. If it doesn't have electrical current, it can be considered "off", or **0**. Using this principle, multiple circuits can be arranged in a group to represent binary numbers.
 

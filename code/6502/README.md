@@ -27,9 +27,9 @@ The 6502 processor has 6 [registers](/guide/cpu/instruction-cycle.md#fetch), thr
 
 We also have access to memory, or [RAM](/guide/cpu/instruction-cycle.md#fetch). Memory addresses are 16 bits long. But, as we mentioned previously, the 6502 processor is an 8-bit processor. Uh oh! What can we do?
 
-Well first, when talking about register data, we must remember that computers only understand numbers, usually represented by [binary digits](/guide/math/number-systems.md#binary). When writing assembly language, we can also use [hex numbers](/guide/math/number-systems.md#hexadecimal), which can be a little easier to read.
+Well first, when talking about register data, we must remember that computers only understand numbers, usually represented by [binary digits](/guide/math/number-systems.md#binary-base-2). When writing assembly language, we can also use [hex numbers](/guide/math/number-systems.md#hexadecimal), which can be a little easier to read.
 
-This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md#hexadecimal) like `$02`.
+This is important because later when you look at code examples, you'll see that data is written with only 2 digit [hex numbers](/guide/math/number-systems.md##hexadecimal-base-16) like `$02`.
 
 So, if we want to store anything above 8 bits in a register or in memory, we need to use multiple locations. For example, memory addresses are 16-bits long. If we want to store a memory address, we would store it in two consecutive memory locations (eg. `$0102` and `$0103`). That being said, the program counter is an exception, as it can store 16-bit numbers.
 
