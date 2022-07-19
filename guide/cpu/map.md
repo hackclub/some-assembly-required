@@ -16,7 +16,7 @@ Remember our registers, or cubbies? We will talk about them [more later](/guide/
 add r12, 4 ; Add the number 4 to the number saved in register 12
 ```
 
-First, the CPU goes and fetches the instruction. In machine code, this could end up looking like this (we will cover what [binary](#binary) is later):
+First, the CPU goes and fetches the instruction. In machine code, this could end up looking like this (we will cover what [binary](/guide/math/number-systems.md#binary-base-2) is later):
 
 ```
 00000001 00001100 00000100
