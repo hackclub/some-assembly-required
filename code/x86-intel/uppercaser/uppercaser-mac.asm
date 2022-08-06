@@ -36,6 +36,13 @@ _main:
   mov r12, rdi ; argc
   mov r13, rsi ; argv[][]
 
+  ; Before we proceed however, it doesn't make sense to uppercase a word if there is no word!  Therefore let's call
+  ; the .exit label if no words where passed as arguments to our program (argc is equal to one).  The first argument
+  ; is our program name, so there should always be _at least one_.  Please note that the cmp and je (jump if) instruction
+  ; is discussed more later.
+  cmp rdi, 1
+  je .exit
+
   ; Uncomment the next two lines to print the argument count
   ; call .printNumberOfArgs
   ; call .printNewline
