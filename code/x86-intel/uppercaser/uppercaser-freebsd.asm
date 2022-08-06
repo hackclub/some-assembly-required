@@ -29,6 +29,13 @@ main:
   ; https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/guide/x86-64.html, these registers are "callee-owned",
   ; which means any functions we call may mess with their values and not clean them up.
   ;
+  ; Before we proceed however, it doesn't make sense to uppercase a word if there is no word!  Therefore let's call
+  ; the .exit label if no words where passed as arguments to our program (argc is equal to one).  The first argument
+  ; is our program name, so there should always be _at least one_.  Please note that the cmp and je (jump if) instruction
+  ; is discussed more later.
+  cmp rdi, 1
+  je .exit
+
   ; Let's keep their values safe by copying them into r12 and r13, which are caller-owned registers (also described in
   ; the link above). If assembly language etiquette is followed, if a function wants to use one of these registers, it
   ; must first push its value onto the stack, and then pop it back off into the register before returning. Of course,
