@@ -55,8 +55,8 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <a href="/guide/cpu/physical-world.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-5aq8uo1rv-hack-club-bot.vercel.app/0backd.png">
-    <img align="left" width="60" src="https://cloud-5v3nvbscw-hack-club-bot.vercel.app/0backl.png" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
+    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
   </picture>
 </a>
 
