@@ -32,3 +32,4 @@
 - [@ospilos](https://github.com/ospilos)
 - [@JulianGindi](https://github.com/JulianGindi)
 - [@el10savio](https://github.com/el10savio)
+- [@javierzaleta](https://github.com/javierzaleta)
