@@ -16,7 +16,7 @@
 
 <br />
 
-**¡Un agradecimiento a todos los [colaboradores](contributors.md) de esta guía!**
+**¡Un agradecimiento a todos los [colaboradores](guide/contributors.md) de esta guía!**
 
 <br />
 
