@@ -6,7 +6,7 @@
 * Written as a working example of an x86 AT&T syntax assembly language program
 * ==================================================================================
 
-* Assembler used: YASM
+* Assembler used: GNU assembler
 * Assembly syntax: x86 AT&T
 * CPU architecture: Intel x86-64
 * Platform architecture: Linux
