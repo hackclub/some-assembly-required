@@ -33,3 +33,4 @@
 - [@JulianGindi](https://github.com/JulianGindi)
 - [@el10savio](https://github.com/el10savio)
 - [@javierzaleta](https://github.com/javierzaleta)
+- [@Domssson](https://github.com/Domssson)
