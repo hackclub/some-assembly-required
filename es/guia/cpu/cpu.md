@@ -10,7 +10,7 @@
 
 Los ordenadores contienen otras unidades de procesamiento (como la tarjeta gráfica) que se encargan de procesar otras cosas más específicas, pero la CPU es el motor general de todas las tareas informáticas. Dicho esto, la CPU puede hacer sorprendentemente poco. Puede:
 
-1. 1. Leer valores
+1. Leer valores
 1. Establecer valores
 1. Realizar cálculos matemáticos sencillos, como sumas, restas y comparaciones.
 
@@ -20,7 +20,7 @@ Le das los números y se pone a trabajar para procesar los datos como tú quiera
 
 ---
 
-<a href="/guia/programar/introduction.md">
+<a href="/guia/programar/introduccion.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
     <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
@@ -30,7 +30,7 @@ Le das los números y se pone a trabajar para procesar los datos como tú quiera
 <p align="right">
   <em>
     <b>
-      <a href="/guia/cpu/communicating.md">
+      <a href="/guia/cpu/comunicando.md">
         Comuniquémonos con la CPU →
       </a>
     </b>
@@ -42,6 +42,6 @@ Le das los números y se pone a trabajar para procesar los datos como tú quiera
 <p align="center">
   <a href="https://hackclub.com/">
     <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
-    Made with love by Hack Club
+    Hecho con amor por Hack Club
   </a>
 </p>
