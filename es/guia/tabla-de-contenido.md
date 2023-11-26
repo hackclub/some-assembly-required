@@ -16,7 +16,7 @@
 
 <br />
 
-**¡Un agradecimiento a todos los [colaboradores](https://github.com/hackclub/some-assembly-required/blob/main/guide/contributors.md) de esta guia!**
+**¡Un agradecimiento a todos los [colaboradores](https://github.com/hackclub/some-assembly-required/blob/main/guide/contributors.md) de esta guía!**
 
 <br />
 
