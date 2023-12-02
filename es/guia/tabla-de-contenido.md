@@ -1,10 +1,10 @@
 # Tabla de Contenido
 
-1. [Introducción](/es/guía/introducción.md)
-1. [La CPU](/es/guía/cpu/cpu.md)
-2. [Writing Code](/guide/writing-code/multitude.md)
-3. [The Math Section](/guide/math/number-systems.md)
-4. [Resources](/guide/resources.md)
+1. [Introducción](/es/guia/programar/introduccion.md)
+1. [La CPU](/es/guia/cpu/cpu.md)
+2. [Programar](/guide/writing-code/multitude.md)
+3. [La Seccion de Matématicas](/guide/math/number-systems.md)
+4. [Fuentes](/guide/resources.md)
 
 ## Ejemplos funcionales de código
 

@@ -8,6 +8,7 @@
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
 - [@japrozs](https://github.com/japrozs)
+- [@khalidbelk](https://github.com/khalidbelk)
 - [@sporeball](https://github.com/sporeball)
 - [@sampoder](https://github.com/sampoder)
 - [@christinaasquith](https://github.com/christinaasquith)
