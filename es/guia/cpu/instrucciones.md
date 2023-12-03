@@ -94,7 +94,7 @@ Si la instrucción es aritmética (como sumar o restar) o lógica (como comparar
 <p align="right">
   <em>
     <b>
-      <a href="mapa.md">
+      <a href="convirtiendo.md">
         Veamos esto en la práctica →
       </a>
     </b>

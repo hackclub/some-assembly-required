@@ -45,7 +45,7 @@ Espero que esta guía te ayude a desmitificar algunas de las capas más bajas, y
 
 ---
 
-<a href="/guia/tabla-de-contenido.md">
+<a href="/es/guia/tabla-de-contenido.md">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
     <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
@@ -55,7 +55,7 @@ Espero que esta guía te ayude a desmitificar algunas de las capas más bajas, y
 <p align="right">
   <em>
     <b>
-      <a href="/guia/cpu/cpu.md">
+      <a href="/es/guia/cpu/cpu.md">
         Bien, vayamos a lo bueno. Por ejemplo, ¿qué es una CPU? →
       </a>
     </b>
