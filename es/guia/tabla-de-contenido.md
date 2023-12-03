@@ -32,7 +32,7 @@
 <p align="right">
   <em>
     <b>
-      <a href="/es/guía/introducción.md">
+      <a href="/es/guia/introduccion.md">
         Dame algo de contenido →
       </a>
     </b>
