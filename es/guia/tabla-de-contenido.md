@@ -3,7 +3,7 @@
 1. [Introducción](/es/guia/programar/introduccion.md)
 1. [La CPU](/es/guia/cpu/cpu.md)
 2. [Programar](/guide/writing-code/multitude.md)
-3. [La Seccion de Matématicas](/guide/math/number-systems.md)
+3. [La Seccion de Matématicas](/es/guia/mates/sistema-numerico.md)
 4. [Fuentes](/guide/resources.md)
 
 ## Ejemplos funcionales de código
