@@ -12,7 +12,7 @@ Pero en realidad, los números en los que tú y yo pensamos (1, 2, 3, etc.) son 
   <br />
   <span>
     <em>
-      Why 10? Well, it's because we have 10 fingers!
+      ¿Por qué 10? Bueno, ¡porque tenemos 10 dedos!
     </em>
   </span>
 </p>
