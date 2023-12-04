@@ -17,13 +17,13 @@ Puede que te estés preguntando qué aspecto puede tener esto. Si es así, ¡est
 add r12, 4 ; Añade el número 4 al número guardado en el registro 12
 ```
 
-Primero, la CPU va y obtiene la instrucción. En código máquina, esto podría terminar pareciéndose a esto (veremos lo que es [binario](/es/mates/systema-de-numeros#binario-base-2) más tarde):
+Primero, la CPU va y obtiene la instrucción. En código máquina, esto podría terminar pareciéndose a esto (veremos lo que es [binario](/es/mates/sistema-de-numeros#binario-base-2) más tarde):
 
 ```
 00000001 00001100 00000100
 ```
 
-Lo que, en [base 10](#systema-de-numeros) (¡como normalmente hablamos de números!), es:
+Lo que, en [base 10](#sistema-de-numeros) (¡como normalmente hablamos de números!), es:
 
 ```
 1 12 4
