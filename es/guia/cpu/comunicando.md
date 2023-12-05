@@ -34,10 +34,6 @@ Es como si fueras estadounidense y le dieras a tu amigo islandés una receta de 
 </p>
 <br />
 
-Line by line you'd translate the recipe until you have a new recipe for your friend to use. You'd take the first measurement, 2 cups of flour (**assembly language**), convert it to grams (**the assembler**), and then write the converted recipe to use 136 grams of flour (**machine code**). Look at you go - you're the assembler here!
-
-You could skip all of this assembly shenanigans by writing the machine code directly, but machine code looks something like:
-
 Línea por línea, traducirías la receta hasta que tuvieras una nueva receta para tu amigo. Tomarías la primera medida, 2 tazas de harina (**lenguaje assembly**), la convertirías a gramos (**el ensamblador**), y luego escribirías la receta convertida para utilizar 136 gramos de harina (**código máquina**). Mírate, ¡tú eres el ensamblador!
 
 Podrías saltarte todas estas travesuras del ensamblador escribiendo el código máquina directamente, pero el código máquina se parece a algo así:
