@@ -12,7 +12,6 @@
 #include <stdio.h>
 
 /* function declarations */
-void print_number_of_args(int num_args);
 void print_argument(char *arg);
 
 int main(int argc, char **argv) {
@@ -32,10 +31,6 @@ int main(int argc, char **argv) {
   }
 
   return 0;
-}
-
-void print_number_of_args(int num_args) {
-  printf("%i\n", num_args);
 }
 
 void print_argument(char *arg) {
