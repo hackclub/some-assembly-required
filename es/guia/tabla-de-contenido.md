@@ -1,6 +1,6 @@
 # Tabla de Contenido
 
-1. [Introducción](/es/guia/programar/introduccion.md)
+1. [Introducción](/es/guia/introduccion.md)
 1. [La CPU](/es/guia/cpu/cpu.md)
 2. [Programar](/guide/writing-code/multitude.md)
 3. [La Seccion de Matématicas](/es/guia/mates/sistema-numerico.md)
