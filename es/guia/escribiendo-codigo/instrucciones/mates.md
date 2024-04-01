@@ -108,9 +108,9 @@ mul rax, rbx;
 
 </details>
 
-## Ponerlo todo junto
+## Poniéndolo todo junto
 
-Now that we have some basic math under our belt, let's try to map a real equation to assembly! You may have learned the slope-intercept equation from school. If you're anything like me and don't recall, it looks like:
+Ahora que ya sabemos algo de matemáticas básicas, ¡intentemos representar una ecuación real en assembly! Es posible que hayas aprendido la ecuación pendiente-intersección en la escuela. Si eres como yo y no la recuerdas, es así:
 
 <p align="center">
   <br />
