@@ -59,7 +59,7 @@ _Nota: Para más información sobre los sistemas numéricos y la conversión a b
 <p align="right">
   <em>
     <b>
-      <a href="/guide/writing-code/registers.md">
+      <a href="/es/guia/escribiendo-codigo/registros.md">
         Almacenemos estos datos →
       </a>
     </b>
