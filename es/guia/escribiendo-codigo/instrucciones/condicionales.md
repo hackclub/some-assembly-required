@@ -137,7 +137,7 @@ _En assembly, estamos restando `1` al contenido del registro `rax`. Al final de 
 <p align="right">
   <em>
     <b>
-      <a href="/es/guia/escribiendo-codigo/instrucciones/bucle.md">
+      <a href="/es/guia/escribiendo-codigo/instrucciones/bucles.md">
         Bucle de bucle →
       </a>
     </b>
