@@ -78,7 +78,7 @@ Volvamos a la pila (stack). ¿Qué diablos es esto de empujar y sacar?
 <p align="right">
   <em>
     <b>
-      <a href="/es/guia/escribiendo-codigo/instrucciones/stack.md">
+      <a href="/es/guia/escribiendo-codigo/instrucciones/pila.md">
          Cómo se apila todo →
       </a>
     </b>
