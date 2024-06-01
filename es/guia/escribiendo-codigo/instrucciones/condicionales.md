@@ -120,7 +120,7 @@ _En assembly, estamos restando `1` al contenido del registro `rax`. Al final de 
 <summary><i>En este ejemplo, ¿cuál crees que será el valor del flag <code>ZF</code> ?</i></summary>
 
 <br />
-<i>Como el resultado de la operación aritmética anterior era <code>0</code>, <code>ZF</code> es <code>1</code>.</i>
+<i>Como el resultado de la operación aritmética anterior era <code>0</code>, el valor de <code>ZF</code> es <code>1</code>.</i>
 </details>
 
 <br />
