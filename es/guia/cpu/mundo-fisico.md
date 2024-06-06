@@ -36,7 +36,7 @@ Esto es importante para nosotros porque por cada tic del reloj, la CPU lee una i
 <p align="right">
   <em>
     <b>
-      <a href="/es/guia/programar/multitud.md">
+      <a href="/es/guia/escribiendo-codigo/multitud.md">
         Escribamos algo de código →
       </a>
     </b>
