@@ -57,13 +57,13 @@ Then this all gets executed. The CPU sends the number `4` and the number stored 
 
 > #### Sidenote:
 >
-> Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement a something called **pipelining**.
+> Nowadays, instead of a cycle where each flow of instruction ends before the next one starts, CPUs implement something called **pipelining**.
 >
 > Imagine a warehouse where we are packing boxes. The CPU is the warehouse, and each station (the adding of items, packaging, and loading into vans) is a step in processing instructions (the packages).
 >
 > In the simpler cycle method described above, one package would be fully packed and shipped before the next one is worked on.
 >
-> Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already starting to be filled and packed.
+> Alternatively, pipelining would use an assembly line where a package could go through a single station. Once it finishes and moves to the next station, a new package arrives at this station! Before our first package is shipped, other packages have already started to be filled and packed.
 >
 > What this means for us in CPU terms is that modern CPUs can simultaneously fetch, decode, and execute different instructions _at the same time_. This dramatically cuts down on execution time, which allows the CPU to operate much faster! Yay for us!
 
