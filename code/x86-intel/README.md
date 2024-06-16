@@ -114,9 +114,9 @@ For more common instructions, check out the [Stanford CS107 list](https://web.st
 
 | Instruction | Arguments | Explanation           |
 | ---         | ---       | ---                   |
-| **mov**     | src, dst  | dst = src             |
-| **add**     | src, dst  | dst += src            |
-| **sub**     | src, dst  | dst -= src            |
+| **mov**     | dst, src  | dst = src             |
+| **add**     | dst, src  | dst += src            |
+| **sub**     | dst, src  | dst -= src            |
 | **cmp**     | a, b      | b-a set flags         |
 | **jmp**     | label     | jump to label         |
 | **je**      | label     | jump if equal (ZF=1)  |
@@ -165,6 +165,7 @@ _Here are some resources I ended up using while writing the programs in this sec
   - https://cs.lmu.edu/~ray/notes/nasmtutorial/
   - https://0xax.github.io/asm_1/
   - https://rderik.com/blog/let-s-write-some-assembly-code-in-macos-for-intel-x86-64/
+
 
 #### Command line params
   - https://www.dreamincode.net/forums/topic/285550-nasm-linux-getting-command-line-parameters/
