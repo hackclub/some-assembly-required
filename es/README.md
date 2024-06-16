@@ -7,13 +7,13 @@
 </p>
 <br />
 
-Desde siempre, he querido intentar escribir assembly, aunque sea solo para entender por qué el [creador de Rollercoaster Tycoon escribiría el 99% del juego](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) en él. Honestamente, incluso después de todo esto, todavía no entiendo por qué hicieron eso.
+Desde siempre, he querido intentar escribir assembly, aunque sea solo para entender por qué el [creador de Rollercoaster Tycoon escribiría el 99% del juego](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) en él. Honestamente, incluso después de todo esto, todavía no entiendo por qué hizo eso.
 
 Al embarcarme en esta búsqueda, rápidamente encontré muchos recursos dispersos y difíciles de entender. Fue necesario compilar un montón de materiales diferentes para llegar a un alto nivel de comprensión de lo que está sucediendo en mi computadora.
 
-Quería escribir mis aprendizajes para todos aquellos que son nuevos en esta parte de su computadora (¡como yo!), incluyendo [ejemplos funcionales de código](/code). De ninguna manera esto es una guía exhaustiva, sino que en su lugar sirve como una introducción accesible al lenguaje ensamblador (assembly).
+Quería escribir mis aprendizajes para todos aquellos que son nuevos en esta parte de su computadora (¡como yo!), incluyendo [ejemplos funcionales de código](/code). De ninguna manera es esto una guía exhaustiva, sino que en su lugar sirve como una introducción accesible al lenguaje ensamblador (assembly).
 
-Finalizar esta guía toma tan solo **30 minutos**, pero también puedes llegar a tardar unas cuantas horas en completarla si deseas profundizar en los ejemplos de código.
+Finalizar esta guía toma tan solo **30 minutos**, pero también puedes llegar a tardar unas cuantas horas en completarla si deseas adentrarte en los ejemplos de código.
 
 ¡Disfruta!
 
