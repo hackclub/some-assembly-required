@@ -8,6 +8,7 @@
 - [@tejasag](https://github.com/tejasag)
 - [@HenryBass](https://github.com/HenryBass)
 - [@japrozs](https://github.com/japrozs)
+- [@khalidbelk](https://github.com/khalidbelk)
 - [@sporeball](https://github.com/sporeball)
 - [@sampoder](https://github.com/sampoder)
 - [@christinaasquith](https://github.com/christinaasquith)
@@ -33,3 +34,4 @@
 - [@JulianGindi](https://github.com/JulianGindi)
 - [@el10savio](https://github.com/el10savio)
 - [@javierzaleta](https://github.com/javierzaleta)
+- [@Domssson](https://github.com/Domssson)

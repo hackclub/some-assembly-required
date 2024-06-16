@@ -27,6 +27,9 @@
   - https://blog.devgenius.io/finding-an-efficient-development-cycle-for-writing-assembly-language-be2092e6db6a
   - https://blog.devgenius.io/writing-an-x86-64-assembly-language-program-648b6005e8e
 
+### GNU Assembler
+  - https://cs.lmu.edu/~ray/notes/gasexamples/
+
 ### Guides
   - https://cs61.seas.harvard.edu/site/2018/Asm1/
   - https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
