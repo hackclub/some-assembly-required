@@ -7,7 +7,6 @@
 </p>
 <br />
 
-
 Desde siempre, he querido intentar escribir assembly, aunque sea solo para entender por qué el [creador de Rollercoaster Tycoon escribiría el 99% del juego](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.) en él. Honestamente, incluso después de todo esto, todavía no entiendo por qué hizo eso.
 
 Al embarcarme en esta búsqueda, rápidamente encontré muchos recursos dispersos y difíciles de entender. Fue necesario compilar un montón de materiales diferentes para llegar a un alto nivel de comprensión de lo que está sucediendo en mi computadora.
