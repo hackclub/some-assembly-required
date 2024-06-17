@@ -17,7 +17,7 @@ void print_argument(char *arg);
 
 int main(int argc, char **argv) {
   // Uncomment this to print out number of arguments
-  // printNumberOfArgs(argc);
+  // print_number_of_args(argc);
 
   // Our first argument is the path used to run the program
   // In this case, that's ./uppercaser
