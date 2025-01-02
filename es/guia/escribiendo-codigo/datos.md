@@ -20,7 +20,7 @@ Un byte se compone de **8 bits**. Por eso, el 8 es un número mágico: _todo_ ac
 
 ¿Por qué el número mágico es 8?
 
-Bueno, cuando representamos un solo carácter (como `A`), hacen falta **8 bits** para representar ese carácter en los datos.
+Bueno, ASCII utiliza 7 bits para representar caracteres (como `A`), pero normalmente se almacena en **8 bits** porque así es como la mayoría de los ordenadores manejan los datos.
 
 Esto tiene que ver con el hecho de que cada letra está representada por un número. Como cada carácter está representado por un número, tenemos que tener una tabla que indique qué número representa a qué letra. Podemos utilizar esa tabla para ver qué caracteres se corresponden con qué números.
 
