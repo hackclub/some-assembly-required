@@ -34,6 +34,44 @@
 ; Run this line to run all the commands from above:
 ; yasm -f macho64 hello-world-mac.asm && ld hello-world-mac.o -o hello-world-mac -macosx_version_min 12.4 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem -no_pie && ./hello-world-mac
 
+;; Windows 11 assembly instructions
+
+; Assembler used: YASM
+; Assembly syntax: x86 Intel
+; CPU architecture: Intel x86-64
+; Platform architecture: PC
+; OS: Windows 11
+
+; We have 3 steps to run our program on Windows:
+; 1. Assemble it into an object file
+; 2. Link it into an executable
+; 3. Run the executable
+
+;; 1. Assemble it into an object file
+; yasm is the assembler, -f flag specifies the output file format
+; win64 is the format for 64-bit Windows
+; This command takes your .asm file and outputs an object file (.obj)
+;
+; yasm -f win64 hello-world-win.asm -o hello-world-win.obj
+
+;; 2. Link the object file into an executable
+; You need a linker like GoLink, MSVC's link.exe, or similar
+; Here's an example using GoLink (very simple lightweight linker)
+;
+; GoLink.exe /entry main hello-world-win.obj kernel32.dll user32.dll
+
+; (If using MSVC link.exe, the command looks like:)
+; link hello-world-win.obj /subsystem:console /defaultlib:kernel32.lib /defaultlib:user32.lib /entry:main
+
+;; 3. Run your executable
+; After linking, your .exe will be ready to launch
+;
+; hello-world-win.exe
+
+; 🔥 To do it all at once (assemble + link + run):
+; yasm -f win64 hello-world-win.asm -o hello-world-win.obj && GoLink.exe /entry main hello-world-win.obj kernel32.dll user32.dll && hello-world-win.exe
+
+
 ;; Assembly Code
 
 ; Section for read-only constants
