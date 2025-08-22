@@ -65,5 +65,7 @@ _start:
     syscall                 ; invoke operating system to do the write
 
     mov     rax, 1  ; system call for exit.
-    mov     rdi, 0          ; exit code 0
+    xor     rdi, rdi          ; rdi is exit code
+                              ; more efficient than mov rdi, 0 (0 is success), as it is smaller in byte code
+                              ; xor returns 0 if both inputs are the same, rdi will always == rdi, always returns 0
     syscall                 ; invoke operating system to exit
