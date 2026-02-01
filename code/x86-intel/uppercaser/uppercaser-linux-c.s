@@ -7,64 +7,81 @@
 ##
 # Program to demonstrate the SystemV AMD64 ABI while interfacing with the C library
 # Will print out command-line arguments and argument count
+# and convert each argument string to uppercase in-place before printing
 # 
-# Compile with: clang -fPIE -s test.s
+# Compile with: clang -fPIE -no-pie uppercaser-linux-c.s -o uppercaser-linux-c
 # 
 # Author: @theonekevin on GitHub
 ##
-
 .intel_syntax noprefix
 .global main
-.global printf
-.global exit
+.extern printf
+.extern exit
 
 .text
 
 main:
-    int 3                       # Set breakpoint
-    push    rbp                 # Set up stack frame
-    mov     rbp, rsp            # Stack frame looks like:
-                                # +0x0000: junk values          <- rsp,rbp
-                                # +0x0008: old rbp
-                                # +0x0010: main return address
-                                # +0x0018: argv**
-                                # +0x0020: argc
-                                ##
-                                # Note: We should only use r12-r14 and ebx (callee saved regs)
-                                # See https://www.uclibc.org/docs/psABI-x86_64.pdf Fig3.4
-    mov     r12, [rbp+0x20]     # r12 = argc
-    mov     r13, [rbp+0x18]     # r13 = argv
-                                ##
-    shr     r12, 32             # Take upper 32-bits, since argc is an int
-    dec     r12                 # Skip first argv, argc = argc-1
-                                ##
-    lea     rdi, [rip+msg1]     # rdi = arg1, address of msg
-    mov     rsi, r12            # rsi = arg2, argc
-    mov     al, 0               # Since we're using vardiac arguments, the SystemV ABI
-                                # requires us to set al = # of vector registers used = 0
-    call    printf              # printf(msg1, argc)
-                                ##
-    mov     r14, 1              # i = r14 = 1
+    push    rbp
+    mov     rbp, rsp
+
+    # System V AMD64 ABI:
+    #   rdi = argc (int, zero-extended to 64 bits)
+    #   rsi = argv (char **)
+    mov     r12, rdi            # r12 = argc
+    mov     r13, rsi            # r13 = argv
+
+    # Ignore argv[0], so we count only "real" arguments
+    dec     r12                 # effective_argc = argc - 1
+
+    # printf("Number of args: %d\n", effective_argc)
+    lea     rdi, [rip+msg1]     # 1st argument: format string
+    mov     rsi, r12            # 2nd argument: effective_argc
+    xor     eax, eax            # no vector registers in use (required for varargs)
+    call    printf
+
+    # Loop over each argument starting at argv[1]
+    mov     r14, 1              # i = 1
     add     r13, 8              # argv = &argv[1]
 
 Lcompare:
     cmp     r12, r14
-    jl      Lexit               # Goto Lexit if argc < i
-    
+    jl      Lexit               # if i > effective_argc → exit
+
 Lloop:
-    lea     rdi, [rip+msg2]
-    mov     rsi, r14
-    mov     rdx, [r13]
-    mov     al, 0
-    call    printf              # printf(msg2, i, *argv)
-    
-    inc     r14                 # i++
-    add     r13, 8              # argv = &argv[1]
+    # Uppercase argv[i] in-place before printing
+    mov     r8, [r13]          # r8 = char *p = argv[i]
+
+UpperLoop:
+    mov     al, byte ptr [r8]  # load *p
+    test    al, al             # check for '\0'
+    je      DoneUpper
+
+    cmp     al, 'a'
+    jb      NotLower
+    cmp     al, 'z'
+    ja      NotLower
+    sub     al, 32             # convert 'a'..'z' → 'A'..'Z'
+    mov     byte ptr [r8], al  # store back
+
+NotLower:
+    inc     r8                 # p++
+    jmp     UpperLoop
+
+DoneUpper:
+    # printf("Arg %d is \"%s\"\n", i, argv[i])
+    lea     rdi, [rip+msg2]    # format string
+    mov     rsi, r14           # i
+    mov     rdx, [r13]         # argv[i] (now uppercased)
+    xor     eax, eax
+    call    printf
+
+    inc     r14                # i++
+    add     r13, 8             # argv++
     jmp     Lcompare
-    
+
 Lexit:
-    mov     rdi, 0
-    call    exit                # exit(0)
+    xor     edi, edi            # return code = 0
+    call    exit                # does not return
 
 .data
 
