@@ -46,6 +46,7 @@ add rbx, 1 ; Sólo llegamos a esta línea si no se ejecuta el salto
 .jumpToHere
   ; haz algo
 ```
+
 <details>
 <summary><i>En este ejemplo, ¿se ejecutará el salto?</i></summary>
 
@@ -68,6 +69,7 @@ add rbx, 1 ; Sólo llegaremos a esta línea si no se ejecuta el salto
 .jumpToHere
   ; haz algo
 ```
+
 <details>
 <summary><i>En este ejemplo, ¿se ejecutará el salto?</i></summary>
 
@@ -85,6 +87,7 @@ Hay 5 flags en un procesador x86-64, pero vamos a hablar del flag cero, o `ZF`.
 Después de una operación, si el resultado **es** `0`, el flag `ZF` se pone a `1`. Si el resultado **no** es `0`, el flag se pone a `0`.
 
 Esto puede parecer contraintuitivo, pero cuando se habla de los dígitos binarios de «1» y «0»:
+
 - `1` también significa **verdadero**.
 - `0` también significa **falso**.
 
@@ -97,6 +100,7 @@ Por ejemplo, tomemos la siguiente instrucción:
 mov rax, 3;
 add rax, 1;
 ```
+
 _En assembly, estamos añadiendo `1` al contenido del registro `rax`. Al final de esto, `rax` contendrá el valor `4`._
 
 <details>
@@ -114,6 +118,7 @@ Otro caso:
 mov rax, 1;
 sub rax, 1;
 ```
+
 _En assembly, estamos restando `1` al contenido del registro `rax`. Al final de esto, `rax` contendrá el valor `0`._
 
 <details>
@@ -129,8 +134,8 @@ _En assembly, estamos restando `1` al contenido del registro `rax`. Al final de 
 
 <a href="/es/guia/escribiendo-codigo/instrucciones/jumps.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -148,7 +153,7 @@ _En assembly, estamos restando `1` al contenido del registro `rax`. Al final de 
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

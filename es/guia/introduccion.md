@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img width="375" src="https://cloud-a2erelxdf-hack-club-bot.vercel.app/0computer.png" />
+  <img width="375" src="https://cdn.hackclub.com/019c1b70-326c-79eb-9d2d-2eb4fb7fdaad/image.png" />
 </p>
 
 Puede sonar contradictorio, pero los ordenadores no son muy listos. Sé que estarás negando con la cabeza, insistiendo en que mi afirmación no puede ser cierta, pero te prometo que literalmente todo lo que hace tu ordenador puede representarse con sólo dos valores: **0** y **1**.
@@ -10,7 +10,6 @@ Puede sonar contradictorio, pero los ordenadores no son muy listos. Sé que esta
 Aquí está el truco: he dicho que son fundamentalmente sencillos, pero no que sean siempre fáciles de entender. A pesar de que, en esencia, los ordenadores realizan tareas bastante sencillas, aprender a manejarlos puede resultar muy confuso. Hay que recordar que los ordenadores se han ido construyendo capa a capa a lo largo de mucho tiempo. Estas capas han dado lugar a las máquinas asombrosas, eficientes e increíbles que utilizamos hoy en día. Pero estas capas también hacen que aprender informática parezca a veces una pesadilla, porque hay *tantas cosas* que aprender.
 
 Diré que comunicarse directamente con la CPU es, por lo general, bastante innecesario, ya que ahora tenemos lenguajes de alto nivel que son lo suficientemente rápidos para la mayoría de nuestras necesidades. Dicho esto, el juego [RollerCoaster Tycoon está escrito al 99% en lenguaje assembly.](https://es.wikipedia.org/wiki/RollerCoaster_Tycoon#:~:text=Sawyer%20wrote%2099%25%20of%20the,%2C%20rendering%2C%20and%20paint%20programs.)
-
 
 No sólo eso, sino que si estás
 
@@ -24,7 +23,7 @@ A menudo [escribes directamente en Assembly](https://www.youtube.com/watch?v=rX0
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cloud-ck0ojs3qv-hack-club-bot.vercel.app/0image.png">
+  <img width="460" height="300" src="https://cdn.hackclub.com/019c1b80-8c78-7a7c-97ee-108395e49d70/image.png">
   <br />
   <span>
     <em>
@@ -40,15 +39,14 @@ Es como ser piloto de carreras. Técnicamente, los pilotos de carreras no necesi
 
 Espero que esta guía te ayude a desmitificar algunas de las capas más bajas, y a convertirlo de algo que parece magia a algo que parece asequible. Yo personalmente no sabía cómo funcionaban estas cosas antes de empezar a escribir esta guía, y quería convertir las cosas que fui reconstruyendo durante mis aprendizajes en algo que pueda ayudar a otros en sus trayectos.
 
-
 <br />
 
 ---
 
 <a href="/es/guia/tabla-de-contenido.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -66,7 +64,7 @@ Espero que esta guía te ayude a desmitificar algunas de las capas más bajas, y
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

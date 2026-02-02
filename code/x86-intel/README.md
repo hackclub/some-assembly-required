@@ -133,7 +133,7 @@ Registers in x86-64 are 64 bits.
 
 <p align="center">
   <br />
-  <img height="600" src="https://cloud-1dple0n1y-hack-club-bot.vercel.app/0screen_shot_2022-06-01_at_10.49.40_am.png">
+  <img height="600" src="https://cdn.hackclub.com/019c206c-5e30-734d-8f67-87b391685c83/image.png">
   <br />
   <span>
     <em>

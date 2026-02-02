@@ -8,7 +8,7 @@ When we ask the CPU to do something, we do that by way of an **instruction**. We
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-5lw2nkej5-hack-club-bot.vercel.app/0cycle.png">
+  <img height="250" src="https://cdn.hackclub.com/019c2057-5454-73bf-8ab8-f9986f81b105/image.png">
 </p>
 
 ## Fetch
@@ -17,7 +17,7 @@ In the first phase, the CPU must fetch the instruction data from **memory**, so 
 
 <p align="center">
   <br />
-  <img height="400" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
+  <img height="400" src="https://cdn.hackclub.com/019c2058-0655-7f71-ba4e-97afe2da09c9/image.png">
 </p>
 <br />
 
@@ -29,7 +29,7 @@ Our box racks _(memory)_ has quite a bit of room to store our things - enough to
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-9dq9biuyn-hack-club-bot.vercel.app/0cubbies.png">
+  <img height="250" src="https://cdn.hackclub.com/019c2058-8210-7a48-a101-92b8f19d56be/image.png">
 </p>
 
 Registers are where the CPU can store small pieces of data so that it can keep interacting with them. For example, let's say we need to add two numbers together.
@@ -69,6 +69,7 @@ Each CPU has a set of instructions that is built _physically into the chip_, whi
 The first part of the data it fetches is the **opcode**, which is the unique identifier for an action that the CPU can run. In the case of adding two numbers together, that opcode might look like `add`.
 
 The next numbers that are fetched are the arguments to be executed. For a hypothetical example, let's say we have an instruction like:
+
 ```asm
 add 3, 4
 ```
@@ -87,8 +88,8 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 <a href="/guide/cpu/communicating.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -106,7 +107,7 @@ If the instruction is arithmetic (like adding or subtracting) or logical (like c
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

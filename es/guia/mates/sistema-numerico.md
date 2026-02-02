@@ -8,7 +8,7 @@ Pero en realidad, los números en los que tú y yo pensamos (1, 2, 3, etc.) son 
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-qs4ujxdmd-hack-club-bot.vercel.app/0hands.png">
+  <img height="250" src="https://cdn.hackclub.com/019c1f10-dc0c-7835-8d33-037acf5c9209/image.png">
   <br />
   <span>
     <em>
@@ -69,6 +69,7 @@ Como ya sabemos con el binario, sólo hay dos dígitos representados: **0** y **
 111 // 7
 ```
 
+
 <details>
 <summary><i>Teniendo en cuenta este patrón, ¿cuánto será 8 en binario?</i></summary>
 <br />
@@ -112,6 +113,7 @@ Como recordatorio, estamos calculando de derecha a izquierda.
 
 Así que `1011001` es 89 en base 10.
 </i>
+
 </details>
 
 ¡Enhorabuena, sabelotodo! Oficialmente sabes leer en binario.
@@ -155,7 +157,7 @@ E // 14
 F // 15
 ```
 
-Así que esas letras corresponden a números.
+sí que esas letras corresponden a números.
 
 ¿Qué pasaría si pasáramos del 15? Hacemos lo mismo que antes: cambiamos 1 y volvemos a empezar. Vamos a probarlo.
 
@@ -254,8 +256,8 @@ Para más información sobre el sistema numérico, visita [este sitio](https://w
 
 <a href="/guide/writing-code/uppercaser.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -273,7 +275,7 @@ Para más información sobre el sistema numérico, visita [este sitio](https://w
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

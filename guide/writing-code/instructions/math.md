@@ -9,6 +9,7 @@ First, we'll talk about the `add` instruction.
 let a = 3;
 a = a + 1;
 ```
+
 _In JavaScript, we're adding `1` to the contents of the variable `a`. At the end of this, `a` will contain the value `4`._
 
 ```asm
@@ -16,6 +17,7 @@ _In JavaScript, we're adding `1` to the contents of the variable `a`. At the end
 mov rax, 3;
 add rax, 1;
 ```
+
 _In assembly, we're adding `1` to the contents of the register `rax`. At the end of this, `rax` will contain the value `4`._
 
 The `add` instruction adds the value on the right side (`1`) to the contents of the register on the left side (`rax`, which contains `3`). It then takes the sum of these two numbers and, like our `mov` instruction, stores the value _into_ the register on the left side (`rax`).
@@ -31,6 +33,7 @@ let b = 1;
 
 a = a + b;
 ```
+
 _In JavaScript, we're adding the contents of `b` to the contents of `a`. At the end of this, `a` will contain the value `4`._
 
 ```asm
@@ -40,6 +43,7 @@ mov rbx, 1;
 
 add rax, rbx;
 ```
+
 <details>
 <summary><i>In this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
@@ -59,6 +63,7 @@ let b = 1;
 
 a = a - b;
 ```
+
 _In JavaScript, we're subtracting the contents of `b` from the contents of `a`. At the end of this, `a` will contain the value `2`._
 
 ```asm
@@ -68,6 +73,7 @@ mov rbx, 1;
 
 sub rax, rbx;
 ```
+
 <details>
 <summary><i>In this example, what do you think the value of <code>rax</code> will be?</i></summary>
 
@@ -89,6 +95,7 @@ let b = 3;
 
 a = a * b;
 ```
+
 _In JavaScript, we're multiplying the contents of `b` with the contents of `a`. At the end of this, `a` will contain the value `6`._
 
 ```asm
@@ -98,6 +105,7 @@ mov rbx, 3;
 
 mul rax, rbx;
 ```
+
 <details>
 <summary><i>In assembly, we're multiplying the contents of <code>rbx</code> with the contents of <code>rax</code>. At the end of this, <code>rax</code> will contain the value <code>6</code>. Can you guess how the <code>mul</code> instruction works?</i></summary>
 
@@ -112,7 +120,7 @@ Now that we have some basic math under our belt, let's try to map a real equatio
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
+  <img height="200" src="https://cdn.hackclub.com/019c1ebe-c2df-7106-9b2f-081fb16d4c5a/image.png">
   <br />
 </p>
 <p align="center">
@@ -156,8 +164,8 @@ Thanks for sticking with me to re-learn a little math. I think it's important to
 
 <a href="/guide/writing-code/instructions/mov.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -175,7 +183,7 @@ Thanks for sticking with me to re-learn a little math. I think it's important to
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

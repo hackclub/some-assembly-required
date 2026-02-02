@@ -8,7 +8,7 @@ We'll be talking about the **x86-64** registers here, but the concepts apply to 
 
 <p align="center">
   <br />
-  <img src="https://cloud-957sbc0qw-hack-club-bot.vercel.app/0registers.png">
+  <img src="https://cdn.hackclub.com/019c1ebb-cc4f-70a5-9198-7f0cb3a56ae1/image.png">
   <br />
   <span>
     <em>Commonly used registers</em>
@@ -23,6 +23,7 @@ There are a few registers to choose from, and each one of them has a convention 
 As we learned earlier, the only things we can store in our registers are numbers, since a computer can only understand numbers.
 
 The data saved in registers are:
+
 1. Numbers (`10`)
 1. Letters (`"M"`)
 1. Memory addresses (`0x12345678`)
@@ -69,8 +70,8 @@ So, another way to refer to the register size is as a quadruple word, or **qword
 
 <a href="/guide/writing-code/data.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -88,7 +89,7 @@ So, another way to refer to the register size is as a quadruple word, or **qword
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

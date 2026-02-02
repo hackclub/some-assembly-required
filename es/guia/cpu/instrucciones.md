@@ -8,15 +8,16 @@ Cuando le pedimos a la CPU que haga algo, lo hacemos mediante una instrucción. 
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-5lw2nkej5-hack-club-bot.vercel.app/0cycle.png">
+  <img height="250" src="https://cdn.hackclub.com/019c2057-5454-73bf-8ab8-f9986f81b105/image.png">
 </p>
 
 ## Fetch
 
 En la primera fase, la CPU debe obtener los datos de la instrucción de la **memoria**, para poder ver lo que le estás pidiendo que haga. La memoria, también conocida como memoria de acceso aleatorio o RAM, es un tipo de almacenamiento a corto plazo que tiene tu ordenador. Hay lugares de almacenamiento a más largo plazo, como el disco duro, pero utilizamos la memoria cuando necesitamos guardar algo temporalmente.
+
 <p align="center">
   <br />
-  <img height="400" src="https://cloud-o0rjdm5vl-hack-club-bot.vercel.app/0shelves.png">
+  <img height="400" src="https://cdn.hackclub.com/019c2058-0655-7f71-ba4e-97afe2da09c9/image.png">
 </p>
 <br />
 
@@ -28,7 +29,7 @@ Nuestro almacén _(memoria)_ tiene bastante espacio para almacenar nuestras cosa
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-9dq9biuyn-hack-club-bot.vercel.app/0cubbies.png">
+  <img height="250" src="https://cdn.hackclub.com/019c2058-8210-7a48-a101-92b8f19d56be/image.png">
 </p>
 
 Los registros son el lugar donde la CPU puede almacenar pequeños fragmentos de datos para poder seguir interactuando con ellos. Por ejemplo, supongamos que necesitamos sumar dos números.
@@ -68,6 +69,7 @@ Cada CPU tiene un conjunto de instrucciones que está construido _físicamente e
 La primera parte de los datos que obtiene es el **opcode**, que es el identificador único de una acción que la CPU puede ejecutar. En el caso de sumar dos números, ese opcode podría ser `add`.
 
 Los siguientes números que se obtienen son los argumentos a ejecutar. Por ejemplo, digamos que tenemos una instrucción como:
+
 ```asm
 add 3, 4
 ```
@@ -86,8 +88,8 @@ Si la instrucción es aritmética (como sumar o restar) o lógica (como comparar
 
 <a href="comunicando.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -105,7 +107,7 @@ Si la instrucción es aritmética (como sumar o restar) o lógica (como comparar
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

@@ -8,7 +8,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-qs4ujxdmd-hack-club-bot.vercel.app/0hands.png">
+  <img height="250" src="https://cdn.hackclub.com/019c1f10-dc0c-7835-8d33-037acf5c9209/image.png">
   <br />
   <span>
     <em>
@@ -23,6 +23,7 @@ But really, the numbers you and I think about, (1, 2, 3, etc.) are symbols that 
 Base 10, also known as decimal, is something called a number system. The most common way we refer to numbers is in base 10, and it means that we have 10 digits we can use to represent any number.
 
 Those digits are 0 - 9. So, what happens when we run out of digits? We shift over to the left by 1 place, and we start all over again. For example:
+
 ```js
   0
   1
@@ -59,14 +60,14 @@ It's helpful to be able to decode binary when we're talking at this low of a lev
 As we already know with binary, there are only two digits represented: **0** and **1**. Now, what's nice about number bases is they all work the same way. Once we run out of digits, we shift over by one place. So let's try it out:
 
 ```js
-  0 // 0
-  1 // 1
- 10 // 2 - Note that we shifted over by 1 place
- 11 // 3
-100 // 4 - Note that we shifted over by 1 place
-101 // 5
-110 // 6 - Since we ran out of digits in the "ones" place, we increment the "twos" place and start the "ones" place over
-111 // 7
+0; // 0
+1; // 1
+10; // 2 - Note that we shifted over by 1 place
+11; // 3
+100; // 4 - Note that we shifted over by 1 place
+101; // 5
+110; // 6 - Since we ran out of digits in the "ones" place, we increment the "twos" place and start the "ones" place over
+111; // 7
 ```
 
 <details>
@@ -111,6 +112,7 @@ As a reminder, we're calculating from right to left.
 
 So `1011001` is 89 in base 10.
 </i>
+
 </details>
 
 Congratulations, you smartie you! You officially know how to read binary!
@@ -136,22 +138,22 @@ _Whoa whoa whoa. Now wait a minute. Why are there letters?_
 Well, we have to remember - our base is 16. That means we have 16 digits to represent our numbers. Those digits are:
 
 ```js
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-A // 10 - In base 10, we'd have to shift over because we run out of digits. In base 16, we have more digits to use!
-B // 11
-C // 12
-D // 13
-E // 14
-F // 15
+0;
+1;
+2;
+3;
+4;
+5;
+6;
+7;
+8;
+9;
+A; // 10 - In base 10, we'd have to shift over because we run out of digits. In base 16, we have more digits to use!
+B; // 11
+C; // 12
+D; // 13
+E; // 14
+F; // 15
 ```
 
 So those letters map to numbers!
@@ -237,6 +239,7 @@ Our number is $B1$.
 
 So `B1` is 177 in base 10.
 </i>
+
 </details>
 
 ---
@@ -253,8 +256,8 @@ For more number system goodness, check out [this site](https://www.mathsisfun.co
 
 <a href="/guide/writing-code/uppercaser.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -272,7 +275,7 @@ For more number system goodness, check out [this site](https://www.mathsisfun.co
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

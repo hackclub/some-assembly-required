@@ -12,7 +12,7 @@ El lenguaje ensamblador es el nivel más bajo de abstracción en informática, e
 
 <p align="center">
   <br />
-  <img height="300" src="https://cloud-lrwvwyim3-hack-club-bot.vercel.app/0wheel.png">
+  <img height="300" src="https://cdn.hackclub.com/019c2054-f9c7-70f2-84b1-3d9ccfd9f55f/image.png">
 </p>
 <br />
 
@@ -30,7 +30,7 @@ Es como si fueras estadounidense y le dieras a tu amigo islandés una receta de 
 
 <p align="center">
   <br />
-  <img src="https://cloud-r72u23edw-hack-club-bot.vercel.app/0recipe-resized.png">
+  <img src="https://cdn.hackclub.com/019c2055-f375-73ab-b8de-f1b53b518aa8/image.png">
 </p>
 <br />
 
@@ -60,8 +60,8 @@ Todos los lenguajes de programación tienen algún nivel de abstracción por enc
 
 <a href="cpu.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -79,7 +79,7 @@ Todos los lenguajes de programación tienen algún nivel de abstracción por enc
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

@@ -20,7 +20,7 @@ Así que digamos que nuestra primera instrucción está en la dirección de memo
 
 <p align="center">
   <br />
-  <img height="375" src="https://cloud-qhibd7tkn-hack-club-bot.vercel.app/0instructionpointer.png">
+  <img height="375" src="https://cdn.hackclub.com/019c1ebf-cfa3-72cf-a3b0-399a99c91881/image.png">
 </p>
 <br />
 
@@ -50,7 +50,7 @@ Como nota, las direcciones de memoria están en formato <a href="/es/guia/mates/
 
 <p align="center">
   <br />
-  <img height="275" src="https://cloud-rofot9pi9-hack-club-bot.vercel.app/0jump.png">
+  <img height="275" src="https://cdn.hackclub.com/019c1ec0-c2fe-73b8-96b5-60cd69001d3e/image.png">
   <br />
   <br />
   <span>
@@ -64,8 +64,8 @@ Como nota, las direcciones de memoria están en formato <a href="/es/guia/mates/
 
 <a href="/es/guia/escribiendo-codigo/instrucciones/mates.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -83,7 +83,7 @@ Como nota, las direcciones de memoria están en formato <a href="/es/guia/mates/
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>
