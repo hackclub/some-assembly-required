@@ -2,9 +2,9 @@
 
 1. [Introducción](/es/guia/introduccion.md)
 1. [La CPU](/es/guia/cpu/cpu.md)
-2. [Programar](/guide/writing-code/multitude.md)
-3. [La Seccion de Matématicas](/es/guia/mates/sistema-numerico.md)
-4. [Fuentes](/guide/resources.md)
+1. [Programar](/guide/writing-code/multitude.md)
+1. [La Seccion de Matématicas](/es/guia/mates/sistema-numerico.md)
+1. [Fuentes](/guide/resources.md)
 
 ## Ejemplos funcionales de código
 
@@ -24,8 +24,8 @@
 
 <a href="https://github.com/hackclub/some-assembly-required">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -47,3 +47,4 @@
     Hecho con amor por Hack Club
   </a>
 </p>
+
