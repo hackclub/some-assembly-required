@@ -5,9 +5,10 @@ A menudo, en programación, necesitamos ejecutar el mismo código sobre un conju
 Esto se explica mejor con un ejemplo. Por ejemplo, ¿qué pasaría si quisiéramos calcular la cantidad de números posibles que podemos almacenar en un **byte**?
 
 Como recordatorio:
-  - un bit tiene 2 posibilidades, `1` o `0`.
-  - un byte son 8 bits
-  - dado eso, $2^8$ es el número de posibilidades que puedes almacenar en un byte
+
+- un bit tiene 2 posibilidades, `1` o `0`.
+- un byte son 8 bits
+- dado eso, $2^8$ es el número de posibilidades que puedes almacenar en un byte
 
 ¿Como quedaría esto en JavaScript?
 
@@ -18,7 +19,7 @@ const exponent = 8;
 let result = 1; /// como nuestro contador empieza a 0, empezamos nuestro resultado a 2^0, que es 1
 
 for (let counter = 0; counter < exponent; counter++) {
-  result *= base
+  result *= base;
 }
 ```
 
@@ -69,8 +70,8 @@ Ahora `cmp` comparamos nuestro contador `rdx` con nuestro exponente `rax`, que e
 
 <a href="/es/guia/escribiendo-codigo/instrucciones/condicionales.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -88,7 +89,7 @@ Ahora `cmp` comparamos nuestro contador `rdx` con nuestro exponente `rax`, que e
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

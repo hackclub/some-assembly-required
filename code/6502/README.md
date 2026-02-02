@@ -35,7 +35,7 @@ So, if we want to store anything above 8 bits in a register or in memory, we nee
 
 <p align="center">
   <br />
-  <img height="300" src="https://cloud-b9atiigzn-hack-club-bot.vercel.app/0img_1977.jpg">
+  <img height="300" src="https://cdn.hackclub.com/019c2064-ae9b-752e-a082-c2a67caa966a/image.png">
 </p>
 <br />
 
@@ -358,7 +358,7 @@ We also need a processor that actually understands the instructions given. We ca
 
 <p align="center">
   <br />
-  <video width="460" height="300" src="https://cloud-mot0vtomh-hack-club-bot.vercel.app/0screen_recording_2022-06-03_at_4.39.49_pm.mp4">
+  <video width="460" height="300" src="https://cdn.hackclub.com/019c2065-edc0-75c4-b306-6e28cf96b758/video.mp4">
   <br />
 </p>
 <br />
@@ -367,7 +367,7 @@ Now, we need to download the git repository template here: https://github.com/Es
 
 <p align="center">
   <br />
-  <img width="460" height="300" src="https://cloud-2412fkzyb-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_5.11.29_pm.png">
+  <img width="460" height="300" src="https://cdn.hackclub.com/019c2067-bc31-7c02-852c-c5de7e60e370/image.png">
   <br />
   <span>
     <em>
@@ -442,7 +442,7 @@ When you're done, to assemble the code, _Press SHIFT + COMMAND + B (On Windows, 
 </p>
 <br />
 
-   Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cloud-411nkqhe8-hack-club-bot.vercel.app/0screenshot_2022-06-03_at_6.38.19_pm.png), you can do this by opening the file in terminal and right click to select open with > x64sc.
+   Note: If it doesn't open the VICE Emulator but you don't see any errors in the terminal, open the build/main.prg (the binary executable) file directly with VICE. [On Mac](https://cdn.hackclub.com/019c2068-e666-71ff-8c26-092810c134cb/image.png), you can do this by opening the file in terminal and right click to select open with > x64sc.
 
    On Errors: If you see a `failed to launch (exit code: 126)` in the terminal, you might have missed `/Contents/MacOS/x64sc` and if you see `failed to launch (exit code: 127)` in the terminal, you're not pointing to the correct file location where your VICE Emulator is.
 

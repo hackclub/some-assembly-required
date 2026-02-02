@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img height="300" src="https://cloud-iprjhyjdt-hack-club-bot.vercel.app/0processor.png">
+  <img height="300" src="https://cdn.hackclub.com/019c2056-9fd0-790d-ac31-0e30362e9e12/image.png">
 </p>
 <br />
 
@@ -22,8 +22,8 @@ Le das los números y se pone a trabajar para procesar los datos como tú quiera
 
 <a href="es/guia/programar/introduccion.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -41,7 +41,7 @@ Le das los números y se pone a trabajar para procesar los datos como tú quiera
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

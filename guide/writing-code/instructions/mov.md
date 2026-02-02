@@ -17,6 +17,7 @@ As we talked about earlier, in higher level programming, you'd use a **variable*
 ; X86-64 Intel Syntax Assembly
 mov rax, 5;
 ```
+
 _In assembly, we're setting the value of a register, `rax`, to the number `5`._
 
 We're using a **mov** instruction here (short for "Move"). This moves the value on the right side (`5`) _into_ the register on the left side (`rax`).
@@ -34,6 +35,7 @@ With **variables**, you can create an _unlimited amount_ of them and _name them 
 let a = 3;
 let b = a;
 ```
+
 _At the end of this, `b` will contain the value `3`._
 
 ```asm
@@ -41,6 +43,7 @@ _At the end of this, `b` will contain the value `3`._
 mov rax, 3;
 mov rbx, rax;
 ```
+
 <details>
 <summary><i>At the end of this example, what do you think the value of <code>rbx</code> will be?</i></summary>
 <br />
@@ -58,6 +61,7 @@ let b = 5;
 
 a = b;
 ```
+
 _Even though we set `a` to `3` in the beginning, at the end of this example, `a` is `5` since we set `a` to the contents of `b`._
 
 ```asm
@@ -80,8 +84,8 @@ mov rax, rbx;
 
 <a href="/guide/writing-code/registers.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -99,7 +103,7 @@ mov rax, rbx;
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

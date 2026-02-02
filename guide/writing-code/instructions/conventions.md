@@ -8,7 +8,7 @@ Let's take this JavaScript code, for example, where we're doing our handy dandy 
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
+  <img height="200" src="https://cdn.hackclub.com/019c1ebe-c2df-7106-9b2f-081fb16d4c5a/image.png">
   <br />
 </p>
 <p align="center">
@@ -23,7 +23,7 @@ Let's take this JavaScript code, for example, where we're doing our handy dandy 
 const y = getSlopeIntercept(3, 5, 2);
 
 function getSlopeIntercept(m, x, b) {
-    return ( m * x ) + b;
+  return m * x + b;
 }
 ```
 
@@ -154,8 +154,8 @@ However, if you break these conventions too often, you'll end up overwriting val
 
 <a href="/guide/writing-code/instructions/stack.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -173,7 +173,7 @@ However, if you break these conventions too often, you'll end up overwriting val
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

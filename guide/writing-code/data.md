@@ -6,7 +6,7 @@ One unit of data, which is just a single 1 or 0, is called a **bit**.
 
 <p align="center">
   <br />
-  <img height="150" src="https://cloud-1csdtyu7d-hack-club-bot.vercel.app/0bit.png">
+  <img height="150" src="https://cdn.hackclub.com/019c1e4d-e7b8-71d3-94fb-3af451a0550d/image.png">
 </p>
 <br />
 
@@ -28,7 +28,7 @@ This is done with the [ASCII table](https://www.asciitable.com/)!
 
 <p align="center">
   <br />
-  <img height="500" src="https://cloud-m6tqomah2-hack-club-bot.vercel.app/0ascii.png">
+  <img height="500" src="https://cdn.hackclub.com/019c1e4f-6d75-7f4d-bdb2-b1c5708443e0/image.png">
   <br />
   <br />
   <span>
@@ -51,8 +51,8 @@ _Note: For more information on number systems and converting to binary, see the 
 
 <a href="/guide/writing-code/multitude.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -70,7 +70,7 @@ _Note: For more information on number systems and converting to binary, see the 
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

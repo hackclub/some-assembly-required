@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img width="375" src="https://cloud-ksjv20zq7-hack-club-bot.vercel.app/0communicate.png">
+  <img width="375" src="https://cdn.hackclub.com/019c2059-35f0-7d6d-a528-69f1b2852d13/image.png">
   <br />
 </p>
 
@@ -11,7 +11,6 @@
 Puede que te estés preguntando qué aspecto puede tener esto. Si es así, ¡estás de suerte! Vamos a convertir una instrucción en código máquina.
 
 ¿Recuerdas nuestros registros? Hablaremos de ellos [más adelante](/es/guia/programar/registros.md), pero para este ejemplo, sólo necesitamos recordar que son lugares donde puedes almacenar cosas temporalmente.
-
 
 ```asm
 add r12, 4 ; Añade el número 4 al número guardado en el registro 12
@@ -74,8 +73,8 @@ Luego todo esto se ejecuta. La CPU envía el número `4` y el número almacenado
 
 <a href="instrucciones.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -93,7 +92,7 @@ Luego todo esto se ejecuta. La CPU envía el número `4` y el número almacenado
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

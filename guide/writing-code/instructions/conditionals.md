@@ -68,6 +68,7 @@ add rbx, 1 ; We only get to this line if the jump is not executed
 .jumpToHere
   ; do some code
 ```
+
 <details>
 <summary><i>In this example, will the jump be executed?</i></summary>
 
@@ -85,6 +86,7 @@ There are 5 flags on an x86-64 processor, but let's talk about the zero flag, or
 After an operation, if the result **is** `0`, the `ZF` flag gets set to `1`. If the result **is not** `0`, the flag gets set to `0`.
 
 This might seem counter-intuitive, but when talking about the binary digits of `1` and `0`:
+
 - `1` also stands for **true**
 - `0` also stands for **false**
 
@@ -97,6 +99,7 @@ For example, lets take the following instruction:
 mov rax, 3;
 add rax, 1;
 ```
+
 _In assembly, we're adding `1` to the contents of the register `rax`. At the end of this, `rax` will contain the value `4`._
 
 <details>
@@ -114,6 +117,7 @@ Another case:
 mov rax, 1;
 sub rax, 1;
 ```
+
 _In assembly, we're subtracting `1` to the contents of the register `rax`. At the end of this, `rax` will contain the value `0`._
 
 <details>
@@ -129,8 +133,8 @@ _In assembly, we're subtracting `1` to the contents of the register `rax`. At th
 
 <a href="/guide/writing-code/instructions/jumps.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -148,7 +152,7 @@ _In assembly, we're subtracting `1` to the contents of the register `rax`. At th
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

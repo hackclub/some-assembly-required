@@ -6,7 +6,7 @@ It's the first program I've written in assembly that actually does something (ot
 
 <p align="center">
   <br />
-  <img src="https://cloud-b8fumzsy2-hack-club-bot.vercel.app/0uppercaser.png">
+  <img src="https://cdn.hackclub.com/019c1eba-edb0-78b6-89af-349896d76df1/image.png">
   <br />
   <span>
     <em>
@@ -401,8 +401,8 @@ _main:
 
 <a href="/guide/writing-code/instructions/stack.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -420,7 +420,7 @@ _main:
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

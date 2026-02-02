@@ -2,7 +2,7 @@
 
 <p align="center">
   <br />
-  <img height="250" src="https://cloud-kg18p3n25-hack-club-bot.vercel.app/0multitude.png">
+  <img height="250" src="https://cdn.hackclub.com/019c1e52-462f-7132-9662-84c78b17e453/image.png">
 </p>
 <br />
 
@@ -46,7 +46,7 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <p align="center">
   <br />
-  <img width="250" src="https://cloud-asomlih8p-hack-club-bot.vercel.app/0toolbox.png" />
+  <img width="250" src="https://cdn.hackclub.com/019c1e52-ee7c-749a-aa14-35eb9bfe48cb/image.png" />
 </p>
 
 <br />
@@ -55,8 +55,8 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <a href="/guide/cpu/physical-world.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -74,7 +74,7 @@ Given that the processor on my MacBook Pro is an Intel X86 64 bit processor, I w
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Made with love by Hack Club
   </a>
 </p>

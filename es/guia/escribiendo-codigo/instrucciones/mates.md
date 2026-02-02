@@ -9,6 +9,7 @@ Primero, hablaremos de la instrucción `add`.
 let a = 3;
 a = a + 1;
 ```
+
 _En JavaScript, estamos añadiendo `1` al contenido de la variable `a`. Al final, `a` contendrá el valor `4`._
 
 ```asm
@@ -42,6 +43,7 @@ mov rbx, 1;
 
 add rax, rbx;
 ```
+
 <details>
 <summary><i>En este ejemplo, ¿cuál crees que será el valor de <code>rax</code> ?</i></summary>
 
@@ -61,6 +63,7 @@ let b = 1;
 
 a = a - b;
 ```
+
 _En JavaScript, estamos restando el contenido de `b` del contenido de `a`. Al final de esto, `a` contendrá el valor `2`._
 
 ```asm
@@ -70,6 +73,7 @@ mov rbx, 1;
 
 sub rax, rbx;
 ```
+
 <details>
 <summary><i>En este ejemplo, ¿cuál crees que será el valor de <code>rax</code> ?</i></summary>
 
@@ -91,6 +95,7 @@ let b = 3;
 
 a = a * b;
 ```
+
 _En JavaScript, estamos multiplicando los contenidos de `b` con los contenidos de `a`. Al final de esto, `a` contendrá el valor `6`._
 
 ```asm
@@ -100,6 +105,7 @@ mov rbx, 3;
 
 mul rax, rbx;
 ```
+
 <details>
 <summary><i>En assembly, estamos multiplicando los contenidos de <code>rbx</code> con los contenidos de <code>rax</code>. Al final de esto, <code>rax</code> contendrá el valor <code>6</code>. ¿Puedes adivinar cómo funciona la instrucción <code>mul</code> ?</i></summary>
 
@@ -114,7 +120,7 @@ Ahora que ya sabemos algo de matemáticas básicas, ¡intentemos representar una
 
 <p align="center">
   <br />
-  <img height="200" src="https://cloud-jnidfb52p-hack-club-bot.vercel.app/0graph.png">
+  <img height="200" src="https://cdn.hackclub.com/019c1ebe-c2df-7106-9b2f-081fb16d4c5a/image.png">
   <br />
 </p>
 <p align="center">
@@ -154,13 +160,12 @@ Gracias por quedarte conmigo para reaprender un poco de matemáticas. Creo que e
 
 <br />
 
-
 ---
 
 <a href="/es/guia/escribiendo-codigo/instrucciones/mov.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -178,7 +183,7 @@ Gracias por quedarte conmigo para reaprender un poco de matemáticas. Creo que e
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>

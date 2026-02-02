@@ -8,7 +8,7 @@ Aquí hablaremos de los registros del **x86-64**, pero los conceptos se aplican 
 
 <p align="center">
   <br />
-  <img src="https://cloud-957sbc0qw-hack-club-bot.vercel.app/0registers.png">
+  <img src="https://cdn.hackclub.com/019c1ebb-cc4f-70a5-9198-7f0cb3a56ae1/image.png">
   <br />
   <span>
     <em>Registros utilizados habitualmente</em>
@@ -23,6 +23,7 @@ Hay unos cuantos registros entre los que elegir, y cada uno de ellos tiene una c
 Como hemos aprendido antes, lo único que podemos almacenar en nuestros registros son números, ya que un ordenador sólo puede entender números.
 
 Los datos que se guardan en los registros son:
+
 1. Números (`10`)
 1. Letras (`"M"`)
 1. Direcciones de memoria (`0x12345678`)
@@ -69,8 +70,8 @@ Por lo tanto, otra forma de referirse al tamaño del registro es como una palabr
 
 <a href="/es/guia/escribiendo-codigo/datos.md">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg">
-    <img align="left" width="70" src="https://cloud-c4m75tmer-hack-club-bot.vercel.app/0back.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png">
+    <img align="left" width="70" src="https://cdn.hackclub.com/019c1b78-0beb-7c82-9479-51e12c90a5b4/image.png" />
   </picture>
 </a>
 
@@ -88,7 +89,7 @@ Por lo tanto, otra forma de referirse al tamaño del registro es como una palabr
 
 <p align="center">
   <a href="https://hackclub.com/">
-    <img width="35" src="https://cloud-l0g1cgz4b-hack-club-bot.vercel.app/0h.png"><br/>
+    <img width="35" src="https://cdn.hackclub.com/019c1b71-2582-7e9c-9125-3792c8a88142/image.png"><br/>
     Hecho con amor por Hack Club
   </a>
 </p>
